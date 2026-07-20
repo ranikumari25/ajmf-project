@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure - AJMF Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- Fundamental Resets --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fbfcfa;
+    color: #2d3748;
+    overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    position:sticky;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:100;
+    padding:15px 0; /* Padding optimized so header doesn't swallow the hero section */
+    background:#0B1F44;
+    transition: .35s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header .container{
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    border-radius: 50%;
+    width:75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.logo-content h2{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    color:#fff;
+    font-size:20px;
+    line-height:1.2;
+}
+
+.logo-content p{
+     font-family: 'poppins' , sans-serif;
+    color:#f57c00;
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.navbar ul{
+    display:flex;
+    gap:30px;
+    list-style: none;
+    align-items: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 15px;      
+    font-weight: 500;    
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    transition: 0.3s ease;
+    padding: 8px 0;
+    letter-spacing: 0.5px;
+}
+
+.navbar ul li a:hover{
+    color: #f57c00;
+}
+
+.donate-btn{
+    font-family:'Poppins',sans-serif;
+    background: #f57c00;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:6px;
+    font-weight:600;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    text-decoration: none;
+}
+
+/* =================  HERO SECTION ================= */
+
+.micro-hero {
+    position: relative;
+    background: #0B1F44; 
+    min-height: 320px; /* Text aur height ke liye balanced space */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Diagonal Tilted Background Cut using ::before */
+.micro-hero::before {
+    /* content: ''; */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 380px;
+    background: #0B1F44;
+    /* Tilted bottom cut */
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+    z-index: -1;
+}
+
+/* 1. The Micro 6x4 Dots Grid Element */
+.decorative-dots {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 120px;
+    height: 80px;
+    background-image: radial-gradient(rgba(245, 124, 0, 0.4) 2px, transparent 2px);
+    background-size: 16px 16px;
+    z-index: 2;
+}
+
+/* 2. Transparent Glowing Circular Arcs */
+.decorative-rings {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+.decorative-rings::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 240px;
+    height: 240px;
+    border: 1px dashed rgba(245, 124, 0, 0.15);
+    border-radius: 50%;
+}
+
+/* 🔴 IMAGE KO BACKGROUND ME SMOOTHLY MERGE KARNE KE LIYE 🔴 */
+.hero-bg-merge-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%; /* Image screen ke right side par 55% space legi */
+    height: 100%;
+    
+    /* Pehla gradient left side ko pure navy blue (#0B1F44) mein merge karega, dusra image ko thoda soft dark tone dega */
+    background: linear-gradient(to right, #0B1F44 0%, rgba(11, 31, 68, 0.7) 40%, rgba(11, 31, 68, 0.2) 100%),
+                linear-gradient(rgba(11, 31, 68, 0.1), rgba(11, 31, 68, 0.3)),
+                url('images/Building.jpeg'); 
+                
+    background-size: cover;
+    background-position: center 75%;
+    z-index: 2;
+    opacity: 0.85; /* Home page jaisi soft overlay visible karne ke liye */
+}
+
+/* Content layer coordinates */
+.hero-inner-container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Text ko left side rakhega aur right side par image ko space dega */
+    align-items: center;
+    position: relative;
+    z-index: 10; /* Content hamesha image ke upar rahega */
+}
+
+.hero-left-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.8rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.orange-accent-line {
+    width: 70px;
+    height: 4px;
+    background-color: #f57c00;
+    margin: 24px 0;
+    border-radius: 2px;
+}
+
+.hero-left-text p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    max-width: 540px;
+}
+
+
+.hero-right-wave-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.hero-right-wave-wrapper:hover .building-image-layer {
+    transform: scale(1.05);
+}
+
+/* Asymmetrical Wave Divider above the footer layout styling */
+.footer-asymmetric-wave {
+    width: 100%;
+    line-height: 0;
+    background-color: #fbfcfa;
+}
+.wave-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Facilities Sections (3 & 4 Layout Setup) --- */
+.facilities-area {
+    max-width: 1340px;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+
+.facilities-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.facilities-header h2 {
+    font-size: 2.6rem;
+    color: #0f2c59;
+    margin-bottom: 12px;
+}
+
+.facilities-header p {
+    color: #718096;
+    font-size: 1.05rem;
+}
+
+.grid-row-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.grid-row-four {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.clean-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.card-title-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-circle {
+    background: #0f2c59;
+    color: #f07c00;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.clean-card h3 {
+    color: #0f2c59;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.small-orange-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #f07c00;
+    margin: 10px 0 15px 0;
+}
+
+.clean-card p {
+    color: #5a6a85;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    margin-top: 0;
+    background:#061b36;
+    color:#ffffff;
+    font-family:'Poppins',sans-serif;
+    width:100%;
+    border-top: 5px solid white;
+    padding-top: 30px;
+}
+.footer-container{
+    width:100%;
+    margin:auto;
+    padding:40px 50px 25px;
+    display:flex;
+    grid-template-columns: 1.8fr 1fr 1fr 1.2fr 1.2fr;
+    gap:40px;
+}
+
+.footer-col{
+    position:relative;
+}
+
+.footer-col:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:-20px;
+    top:0;
+    width:1px;
+    height:100%;
+    background:rgba(255,255,255,.12);
+}
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.logo-box img{
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+.footer-logo-content p{
+    font-family:'Poppins',sans-serif;
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:2px;
+    color:#cfcfcf;
+    text-transform:uppercase;
+    margin-top:6px;
+}
+
+ .foundation h5{
+    font-weight: 400;
+    font-size:11px;
+     line-height:1.8; 
+     color:#d9d9d9; 
+ }  
+
+.foundation-text{
+    color:#d8d8d8;
+    font-size:14px;
+    line-height:1.8;
+    max-width:290px;
+}
+
+.footer-col h3{
+    font-family:'Playfair Display',serif;
+    font-size:24px;
+    font-weight:500;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col ul li{
+    margin-bottom:12px;
+}
+
+.footer-col ul li a{
+    font-family:'Poppins',sans-serif;
+    text-decoration:none;
+    color:#e7e7e7;
+    font-weight: 400;
+    font-size:13px;
+    transition:.3s;
+}
+
+.footer-col ul li a:hover{
+    color:#f57c00;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-icons a{
+    width:38px;
+    height:38px;
+    background: #453722;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fe8307;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    transform:translateY(-3px);
+}
+
+.contact p{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:18px;
+    line-height:1.7;
+    color:#e7e7e7;
+    font-size:13px;
+}
+
+.contact i{
+    color:#f57c00;
+    margin-top:5px;
+    font-size:16px;
+}
+
+.newsletter p{
+    color:#dcdcdc;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.newsletter input{
+    width:100%;
+    height:48px;
+    border:none;
+    outline:none;
+    padding:0 15px;
+    font-size:14px;
+    background:#ffffff;
+    border-radius:3px;
+    margin-bottom:12px;
+}
+
+.newsletter button{
+    width:100%;
+    height:48px;
+    border:none;
+    cursor:pointer;
+    background:#f57c00;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    border-radius:3px;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:#e56f00;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:18px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#d8d8d8;
+    font-size:14px;
+}
+
+/* Responsive Breakpoints */
+@media(max-width: 992px) {
+    .micro-hero {
+        padding: 60px 0;
+        min-height: auto;
+    }
+    .hero-inner-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    .hero-left-text h1 {
+        font-size: 2.8rem;
+    }
+    .orange-accent-line {
+        margin: 15px auto;
+    }
+    .hero-left-text p {
+        margin: 0 auto;
+    }
+    .hero-right-wave-wrapper {
+        height: 320px;
+        clip-path: none; 
+        border-radius: 20px;
+    }
+    .building-image-layer {
+        width: 100%;
+        left: 0;
+    }
+    .decorative-dots {
+        display: none;
+    }
+}
+
+@media(max-width:1100px){
+    .footer-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-col::after{
+        display:none;
+    }
+}
+
+@media(max-width:768px){
+    .footer-container{
+        grid-template-columns:1fr;
+        padding:40px 25px;
+    }
+    .footer-bottom{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+        padding:20px;
+    }
+}
+    </style>
+</head>
+<body>
+
+   <header class="header">
+        <div class="container">
+            <div class="logo-area">
+                <img src="images/logo.jpeg" alt="AJMF Logo">
+                <div class="logo-content">
+                    <h2>Anish Jadhav <br> Memorial Foundation</h2>
+                    <p>EDUCATE • EMPOWER • ELEVATE</p>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="About.html" class="active">Home</a></li>
+                    <li><a href="final.html">About Us</a></li>
+                    <li><a href="head.html">Our Programs</a></li>
+                    <li><a href="second.html">Impact</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="donate-btn">
+                <i class="fa-solid fa-heart"></i>
+                Apply Here
+            </a>
+        </div>
+   </header>
+
+    <section class="micro-hero">
+    <div class="decorative-dots"></div>
+    <div class="decorative-rings"></div>
+    
+    <!-- 🔴 BACKGROUND MERGE IMAGE LAYER 🔴 -->
+    <div class="hero-bg-merge-image"></div>
+
+    <div class="hero-inner-container">
+        <div class="hero-left-text">
+            <h1>Infrastructure</h1>
+            <div class="orange-accent-line"></div>
+            <p>A nurturing residential environment designed to foster learning, growth, and community living.</p>
+        </div>
+        
+        <div></div> 
+    </div>
+</section>
+
+    <section class="facilities-area">
+        <div class="facilities-header">
+            <h2>Our Facilities</h2>
+            <p>Every aspect of our campus is designed to support student success, from academics to wellness.</p>
+        </div>
+
+        <div class="grid-row-three">
+            <div class="clean-card">
+                <div class="card-title-row">
+                    <div class="icon-circle"><i class="fas fa-desktop"></i></div>
+                    <h3>Training & Conference</h3>
+                </div>
+                <div class="small-orange-bar"></div>
+                <p>8 state-of-the-art training rooms equipped with projectors and audio systems, plus a mini auditorium and conference hall for large gatherings and workshops.</p>
+            </div>
+
+            <div class="clean-card">
+                <div class="card-title-row">
+                    <div class="icon-circle"><i class="fas fa-building"></i></div>
+                    <h3>Student Accommodation</h3>
+                </div>
+                <div class="small-orange-bar"></div>
+                <p>Safe and comfortable residential dormitories capable of housing 150 students, along with dedicated separate accommodation for 10 full-time instructors.</p>
+            </div>
+
+            <div class="clean-card">
+                <div class="card-title-row">
+                    <div class="icon-circle"><i class="fas fa-utensils"></i></div>
+                    <h3>Kitchen & Dining</h3>
+                </div>
+                <div class="small-orange-bar"></div>
+                <p>A hygienic, fully functional industrial-grade kitchen and a spacious community dining hall serving nutritious, balanced meals three times a day.</p>
+            </div>
+        </div>
+
+        <div class="grid-row-four">
+            <div class="clean-card">
+                <div class="card-title-row">
+                    <div class="icon-circle"><i class="fas fa-book"></i></div>
+                    <h3>Admin & Learning Center</h3>
+                </div>
+                <div class="small-orange-bar"></div>
+                <p>A central hub containing the reception, administrative offices, staff rooms, and a well-stocked library for self-paced learning.</p>
+            </div>
+
+            <div class="clean-card">
+                <div class="card-title-row">
+                    <div class="icon-circle"><i class="fas fa-solar-panel"></i></div>
+                    <h3>Eco-Friendly Infra</h3>
+                </div>
+                <div class="small-orange-bar"></div>
+                <p>Committed to sustainability with a Sewage Treatment Plant (STP), Solar Power generation, Rainwater Harvesting, and energy-efficient architecture.</p>
+            </div>
+
+            <div class="clean-card">
+                <div class="card-title-row">
+                    <div class="icon-circle"><i class="fas fa-laptop"></i></div>
+                    <h3>Digital Infrastructure</h3>
+                </div>
+                <div class="small-orange-bar"></div>
+                <p>High-speed internet access across campus, provision of laptops for every student, and a dedicated computer lab for technical training.</p>
+            </div>
+
+            <div class="clean-card">
+                <div class="card-title-row">
+                    <div class="icon-circle"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Sports & Recreation</h3>
+                </div>
+                <div class="small-orange-bar"></div>
+                <p>A large outdoor playground for cricket, volleyball, and morning yoga sessions to ensure physical fitness alongside mental growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-asymmetric-wave">
+        <svg viewBox="0 0 1440 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="wave-svg">
+            <path d="M0,32L120,48C240,64,480,96,720,101.3C960,107,1200,85,1320,74.7L1440,64L1440,160L1320,160C1200,160,960,160,720,160C480,160,240,160,120,160L0,160Z" fill="#0f2c59"></path>
+        </svg>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col foundation">
+            <div class="logo-box">
+                <img src="images/logo.jpeg" alt="AJMF Logo">
+                <div class="footer-logo-content">
+                    <h3>Anish Jadhav <br> Memorial Foundation</h3>
+                    <h5>EDUCATE • EMPOWER • ELEVATE</h5>
+                </div>
+            </div>
+            <p class="foundation-text">
+                Empowering young minds through education, research and community support.
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Programs</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Our Programs</h3>
+            <ul>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Community Development</a></li>
+                <li><a href="#">Research & Innovation</a></li>
+                <li><a href="#">Scholarships</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i>123, Foundation House,<br>Pune, Maharashtra, India</p>
+            <p><i class="fas fa-phone-alt"></i>+91 98765 43210</p>
+            <p><i class="fas fa-envelope"></i>info@ajmfoundation.org</p>
+            <p><i class="fas fa-globe"></i>http://anishjadhavmemorialfoundation.org/</p> 
+        </div>
+
+        <div class="footer-col newsletter">
+            <h3>Newsletter</h3>
+            <p>Stay updated with our latest initiatives and stories.</p>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Anish Jadhav Memorial Foundation. All Rights Reserved.</p>
+        <p>Designed with ❤️ for a better tomorrow</p>
+    </div>
+</footer>
+
+</body>
+</html>
