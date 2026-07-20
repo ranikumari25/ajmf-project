@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Anish Jadhav Memorial Foundation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           1. CORE RESETS & GLOBAL STYLES (No :root variables used)
+           ========================================================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FDFBFA; /* Warm Cream White */
+            color: #2D3748; /* Dark Slate Gray */
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+/* ================= HEADER ================= */
+
+.header{
+    position:sticky;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:100;
+    padding:15px 0; /* Padding optimized so header doesn't swallow the hero section */
+    background:#0B1F44;
+    transition: .35s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header .container{
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    border-radius: 50%;
+    width:75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.logo-content h2{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    color:#fff;
+    font-size:20px;
+    line-height:1.2;
+}
+
+.logo-content p{
+     font-family: 'poppins' , sans-serif;
+    color:#f57c00;
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.navbar ul{
+    display:flex;
+    gap:30px;
+    list-style: none;
+    align-items: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 15px;      
+    font-weight: 500;    
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    transition: 0.3s ease;
+    padding: 8px 0;
+    letter-spacing: 0.5px;
+}
+
+.navbar ul li a:hover{
+    color: #f57c00;
+}
+
+.donate-btn{
+    font-family:'Poppins',sans-serif;
+    background: #f57c00;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:6px;
+    font-weight:600;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    text-decoration: none;
+}
+
+
+
+        /* ==========================================================================
+           3. PREMIUM HERO SECTION (Warm Off-white & Radial glow)
+           ========================================================================== */
+        .clean-hero {
+            background: radial-gradient(circle at top right, #FFFFFF 0%, #FAF6F0 100%);
+            padding: 100px 0 80px 0;
+            text-align: center;
+            position: relative;
+            border-bottom: 1px solid #EBEFF5;
+        }
+
+        .clean-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54 48c-2 0-3 1.2-3 3s1 3 3 3 3-1.2 3-3-1-3-3-3zM6 12c-2 0-3 1.2-3 3s1 3 3 3 3-1.2 3-3-1-3-3-3zm0 36c-2 0-3 1.2-3 3s1 3 3 3 3-1.2 3-3-1-3-3-3zm48-36c-2 0-3 1.2-3 3s1 3 3 3 3-1.2 3-3-1-3-3-3z' fill='%23e06a28' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #FDF2EB; /* Very Light Orange background */
+            color: #E06A28;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+        }
+
+        .hero-badge i {
+            font-size: 10px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Marcellus', serif;
+            font-size: 48px;
+            color: #0A1D37;
+            font-weight: 500;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .hero-content h1 span {
+            color: #E06A28;
+        }
+
+        .hero-subtext {
+            font-size: 16px;
+            color: #5A6A80;
+            line-height: 1.7;
+            max-width: 750px;
+            margin: 0 auto 36px auto;
+        }
+
+        .hero-subtext strong {
+            color: #0A1D37;
+            font-weight: 700;
+        }
+
+        .btn-orange-glow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #E06A28 0%, #E85E15 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 38px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 8px 24px rgba(224, 106, 40, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-orange-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(224, 106, 40, 0.3);
+        }
+
+        /* ==========================================================================
+           4. TARGET SECTION: WHO CAN APPLY (Original Text Kept)
+           ========================================================================== */
+        .target-section {
+            padding: 90px 0;
+            background-color: #FFFFFF;
+        }
+
+        .section-title-wrap {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 60px auto;
+        }
+
+        .section-title-wrap h2 {
+            font-family: 'Marcellus', serif;
+            font-size: 34px;
+            color: #0A1D37;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .title-underline {
+            width: 48px;
+            height: 3px;
+            background-color: #E06A28;
+            margin: 0 auto 16px auto;
+            border-radius: 2px;
+        }
+
+        .section-intro {
+            font-size: 14.5px;
+            color: #5A6A80;
+            line-height: 1.6;
+        }
+
+        .target-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .target-card {
+            background: #FFFFFF;
+            border: 1px solid #EBEFF5;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(10, 29, 55, 0.03);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .target-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #E06A28;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .target-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(10, 29, 55, 0.06);
+            border-color: rgba(224, 106, 40, 0.15);
+        }
+
+        .target-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card-icon-wrap {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background-color: #FDF2EB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 28px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-icon {
+            font-size: 22px;
+            color: #E06A28;
+        }
+
+        .target-card:hover .card-icon-wrap {
+            background-color: #E06A28;
+        }
+
+        .target-card:hover .card-icon {
+            color: #FFFFFF;
+        }
+
+        .target-card h3 {
+            font-family: 'Marcellus', serif;
+            font-size: 20px;
+            color: #0A1D37;
+            margin-bottom: 14px;
+        }
+
+        .target-card p {
+            color: #5A6A80;
+            font-size: 13.5px;
+            line-height: 1.65;
+        }
+
+        /* ==========================================================================
+           5. SELECTION PROCESS TIMELINE ROADMAP (Clean Border-Top Style)
+           ========================================================================== */
+        .selection-section {
+            padding: 90px 0;
+            background-color: #FDFBFA; /* Warm Off-white */
+            border-top: 1px solid #EBEFF5;
+            border-bottom: 1px solid #EBEFF5;
+        }
+
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .step-box {
+            background: #FFFFFF;
+            border: 1px solid #EBEFF5;
+            padding: 35px 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(10, 29, 55, 0.03);
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Simple timeline arrow markers */
+        .step-box::after {
+            content: '\f0da';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: -16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #EBEFF5;
+            font-size: 20px;
+            z-index: 2;
+        }
+
+        .step-box:last-child::after {
+            display: none;
+        }
+
+        .step-num {
+            font-size: 13px;
+            font-weight: 800;
+            color: #E06A28;
+            background-color: #FDF2EB;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .step-box h3 {
+            font-family: 'Marcellus', serif;
+            font-size: 18px;
+            color: #0A1D37;
+            margin-bottom: 12px;
+        }
+
+        .step-box p {
+            color: #5A6A80;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .step-box:hover {
+            border-color: rgba(13, 90, 167, 0.15);
+            box-shadow: 0 12px 30px rgba(10, 29, 55, 0.06);
+            transform: translateY(-2px);
+        }
+
+        /* ==========================================================================
+           6. FAQ ACCORDION SECTION 
+           ========================================================================== */
+        .faq-section {
+            padding: 90px 0;
+            background-color: #FFFFFF;
+        }
+
+        .faq-max-width {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: #FDFBFA;
+            border: 1px solid #EBEFF5;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-trigger {
+            width: 100%;
+            padding: 22px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .faq-trigger h4 {
+            font-family: 'Marcellus', serif;
+            font-size: 17px;
+            color: #0A1D37;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-trigger i {
+            color: #E06A28;
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #FFFFFF;
+        }
+
+        .faq-panel p {
+            padding: 0 28px 24px 28px;
+            color: #5A6A80;
+            font-size: 13.5px;
+            line-height: 1.65;
+        }
+
+        .faq-item.active {
+            border-color: #E06A28;
+            box-shadow: 0 4px 12px rgba(10, 29, 55, 0.03);
+        }
+
+        .faq-item.active .faq-trigger h4 {
+            color: #E06A28;
+        }
+
+        .faq-item.active .faq-trigger i {
+            transform: rotate(180deg);
+        }
+
+        /* ==========================================================================
+           7. CALL TO ACTION PANEL
+           ========================================================================== */
+.cta-strip-wrapper {
+    background-color: #FFFFFF; 
+    padding: 60px 0; 
+}
+
+/* The actual floating curved card matching your image style */
+.cta-strip {
+    background-color: #0A1D37; /* Navy Blue inside card */
+    color: #FFFFFF;
+    max-width: 1140px; /* Restricts width so it looks like a clean box */
+    margin: 0 auto; /* Centers the box horizontally */
+    padding: 60px 40px; /* Comfortable inner breathing space */
+    border-radius: 24px; /* Soft curved corners matching your image */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(10, 29, 55, 0.15); /* Soft premium floating shadow */
+}
+
+/* Light background accent glow inside the box */
+.cta-strip::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(224, 106, 40, 0.15) 0%, transparent 70%);
+    top: -120px;
+    right: -60px;
+    pointer-events: none;
+}
+
+.cta-strip h3 {
+    font-family: 'Marcellus', serif;
+    font-size: 34px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.cta-strip p {
+    font-size: 15px;
+    color: #CBD5E1;
+    max-width: 650px;
+    margin: 0 auto 36px auto;
+    line-height: 1.6;
+}
+
+/* Clean Orange Button Tuning */
+.btn-orange-glow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #E06A28; /* Your brand orange */
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-orange-glow:hover {
+    background-color: #c9591e;
+    transform: translateY(-2px);
+}
+/* ================= FOOTER ================= */
+
+.footer{
+    margin-top: 0;
+    background:#061b36;
+    color:#ffffff;
+    font-family:'Poppins',sans-serif;
+    width:100%;
+}
+
+/* Top Section */
+
+.footer-container{
+    width:100%;
+    margin:auto;
+    padding:40px 50px 25px;
+    display:flex;
+    grid-template-columns:
+    1.8fr
+    1fr
+    1fr
+    1.2fr
+    1.2fr;
+    gap:40px;
+}
+
+/* Vertical Dividers */
+
+.footer-col{
+    position:relative;
+}
+
+.footer-col:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:-20px;
+    top:0;
+    width:1px;
+    height:100%;
+    background:rgba(255,255,255,.12);
+}
+
+/* Logo */
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.logo-box img{
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+.footer-logo-content p{
+    font-family:'Poppins',sans-serif;
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:2px;
+    color:#cfcfcf;
+    text-transform:uppercase;
+    margin-top:6px;
+}
+
+ .foundation h5{
+    font-weight: 400;
+    font-size:11px;
+     line-height:1.8; 
+     color:#d9d9d9; 
+ }  
+
+/* Text */
+
+.foundation-text{
+    color:#d8d8d8;
+    font-size:14px;
+    line-height:1.8;
+    max-width:290px;
+}
+
+/* Headings */
+
+.footer-col h3{
+    font-family:'Playfair Display',serif;
+    font-size:24px;
+    font-weight:500;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+/* Links */
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col ul li{
+    margin-bottom:12px;
+}
+
+.footer-col ul li a{
+    font-family:'Poppins',sans-serif;
+    text-decoration:none;
+    color:#e7e7e7;
+    font-weight: 400;
+    font-size:13px;
+    transition:.3s;
+}
+
+.footer-col ul li a:hover{
+    color:#f57c00;
+}
+
+/* Social */
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-icons a{
+    width:38px;
+    height:38px;
+    background: #453722;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fe8307;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    transform:translateY(-3px);
+}
+
+/* Contact */
+
+.contact p{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:18px;
+    line-height:1.7;
+    color:#e7e7e7;
+    font-size:13px;
+}
+
+.contact i{
+    color:#f57c00;
+    margin-top:5px;
+    font-size:16px;
+}
+
+/* Newsletter */
+
+.newsletter p{
+    color:#dcdcdc;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.newsletter input{
+    width:100%;
+    height:48px;
+    border:none;
+    outline:none;
+    padding:0 15px;
+    font-size:14px;
+    background:#ffffff;
+    border-radius:3px;
+    margin-bottom:12px;
+}
+
+.newsletter button{
+    width:100%;
+    height:48px;
+    border:none;
+    cursor:pointer;
+    background:#f57c00;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    border-radius:3px;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:#e56f00;
+}
+
+/* Bottom Bar */
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:18px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#d8d8d8;
+    font-size:14px;
+}
+
+.footer-bottom p{
+    margin:0;
+}
+
+/* Responsive */
+
+@media(max-width:1100px){
+
+    .footer-container{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .footer-col::after{
+        display:none;
+    }
+}
+
+@media(max-width:768px){
+
+    .footer-container{
+        grid-template-columns:1fr;
+        padding:40px 25px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+        padding:20px;
+    }
+}
+        /* ==========================================================================
+           9. MEDIA RESPONSIVE RULES
+           ========================================================================== */
+        @media (max-width: 992px) {
+            .target-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            .process-timeline {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            .step-box::after {
+                display: none;
+            }
+            .footer-grid-layout {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 34px;
+            }
+            .target-grid, .process-timeline {
+                grid-template-columns: 1fr;
+            }
+            .nav-links-list, .btn-header-donate {
+                display: none;
+            }
+            .footer-grid-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .footer-copyright-bottom-bar {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <!---  HEADER  --->
+
+    <header class="header">
+        <div class="container">
+
+            <div class="logo-area">
+
+                <img src="images/logo.jpeg" alt="AJMF Logo">
+
+                <div class="logo-content">
+                    <h2>Anish Jadhav <br> Memorial Foundation</h2>
+                    <p>EDUCATE • EMPOWER • ELEVATE</p>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="About.html" class="active">Home</a></li>
+                    <li><a href="final.html">About Us</a></li>
+                    <li><a href="head.html">Our Programs</a></li>
+                    <li><a href="second.html">Impact</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="donate-btn">
+                <i class="fa-solid fa-heart"></i>
+                Apply Here
+            </a>
+
+        </div>
+   </header>
+
+    <!-- ==========================================================================
+       HERO COVER SECTION
+       ========================================================================== -->
+    <section class="clean-hero">
+        <div class="container-wrapper hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i> Admissions Open 2026
+            </div>
+            <h1>Join the Revolution in <span>Education</span></h1>
+            <p class="hero-subtext">
+                In proud collaboration with <strong>NavGurukul</strong>, we offer a completely fully-funded software engineering residential program designed for high-potential youth from underserved Indian communities.
+            </p>
+            <div class="hero-action">
+                <a href="https://admissions.navgurukul.org/students" class="btn-orange-glow">Start Your Application <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       TARGET SECTION: ELIGIBILITY & WHO CAN APPLY
+       ========================================================================== -->
+    <section class="target-section">
+        <div class="container-wrapper">
+            <div class="section-title-wrap">
+                <h2>Who Can Apply?</h2>
+                <div class="title-underline"></div>
+                <p class="section-intro">Targeting passionate youth aged 16+ from lower-income backgrounds who carry a strong internal drive to learn, transform, and build a tech-enabled future.</p>
+            </div>
+
+            <div class="target-grid">
+                <!-- Target Card 1 -->
+                <div class="target-card">
+                    <div class="card-icon-wrap">
+                        <i class="fas fa-user-friends card-icon"></i>
+                    </div>
+                    <h3>Underprivileged Youths</h3>
+                    <p>Dedicated boys and girls from economically constrained families who have high aspiration levels but lack access to basic premium learning resources.</p>
+                </div>
+
+                <!-- Target Card 2 -->
+                <div class="target-card">
+                    <div class="card-icon-wrap">
+                        <i class="fas fa-hands-helping card-icon"></i>
+                    </div>
+                    <h3>Daughters of Daily Earners</h3>
+                    <p>We actively empower daughters of auto drivers, watchmen, and helpers by providing a highly safe, residential space for complete technical instruction.</p>
+                </div>
+
+                <!-- Target Card 3 -->
+                <div class="target-card">
+                    <div class="card-icon-wrap">
+                        <i class="fas fa-graduation-cap card-icon"></i>
+                    </div>
+                    <h3>Graduates Lacking Direction</h3>
+                    <p>Young graduates seeking concrete, job-ready skills in software engineering but held back by high educational tuition fees and job placement support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SELECTION TIMELINE PROCESS ROADMAP
+       ========================================================================== -->
+    <section class="selection-section" id="selection">
+        <div class="container-wrapper">
+            <div class="section-title-wrap">
+                <h2>The Admission Journey</h2>
+                <div class="title-underline"></div>
+                <p class="section-intro">Our four-step, highly transparent process designed to identify high-potential candidates across all regions.</p>
+            </div>
+
+            <div class="process-timeline">
+                <!-- Step Box 1 -->
+                <div class="step-box">
+                    <span class="step-num">STEP 01</span>
+                    <h3>Profile Registration</h3>
+                    <p>Submit your basic academic information online or directly reach out to our Pune campus team to initiate profile tracking.</p>
+                </div>
+
+                <!-- Step Box 2 -->
+                <div class="step-box">
+                    <span class="step-num">STEP 02</span>
+                    <h3>Aptitude Evaluation</h3>
+                    <p>A simple, logical reasoning evaluation designed to check candidate logic patterns, basic arithmetic, and analytical mindsets.</p>
+                </div>
+
+                <!-- Step Box 3 -->
+                <div class="step-box">
+                    <span class="step-num">STEP 03</span>
+                    <h3>Scholarship Award</h3>
+                    <p>Successful candidates receive a 100% scholarship covering high-quality residential boarding, food, books, and computers.</p>
+                </div>
+
+                <!-- Step Box 4 -->
+                <div class="step-box">
+                    <span class="step-num">STEP 04</span>
+                    <h3>Intensive Prep & Job</h3>
+                    <p>Complete a structured software course, soft skills curriculum, and face-to-face mentorship to land your dream IT job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       DYNAMIC ACCORDION FAQ SECTION
+       ========================================================================== -->
+    <section class="faq-section">
+        <div class="container-wrapper">
+            <div class="section-title-wrap">
+                <h2>Frequently Asked Questions</h2>
+                <div class="title-underline"></div>
+                <p class="section-intro">Clear answers to help you navigate your residential scholarship journey with complete confidence.</p>
+            </div>
+
+            <div class="faq-max-width">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        <h4>Is the residential training course completely free?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-panel">
+                        <p>Yes, absolutely. The Anish Jadhav Memorial Foundation in collaboration with NavGurukul provides 100% free lodging, boarding, study resources, laptops, and technical mentorship. You don't have to pay anything.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        <h4>What is the minimum age and qualification needed?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-panel">
+                        <p>We welcome driven youth who are 16 years of age or older. There is no strict pre-requisite for high-level computer education; basic logical skills and high motivation are sufficient.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="toggleFaq(this)">
+                        <h4>Where is the residential campus located?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-panel">
+                        <p>The residential setup is based in Lohegaon, Pune, Maharashtra. The facility provides safe, hygienic residential spaces for students to learn collaboratively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONVERSION CALL TO ACTION STRIP
+       ========================================================================== -->
+    <div class="cta-strip-wrapper">
+    <section class="cta-strip">
+        <div class="container-wrapper">
+            <h3>Start Your Professional Tech Career Today</h3>
+            <p>Our admission experts are ready to guide you or your family members through the registration and logic interview steps. Apply now!</p>
+            
+            <!-- 'fas' replaced with 'fa-regular' for clean linear icon look -->
+            <a href="mailto:info@ajmt.org" class="btn-orange-glow">
+                <i class="fa-regular fa-envelope"></i> Contact Admission Desk
+            </a>
+        </div>
+    </section>
+</div>
+<!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+        <div class="footer-col foundation">
+            <div class="logo-box">
+                <img src="images/logo.jpeg" alt="AJMF Logo">
+
+          <div class="footer-logo-content">
+
+        <h3>Anish Jadhav <br> Memorial Foundation</h3>
+
+        <h5>EDUCATE • EMPOWER • ELEVATE</h5>
+
+    </div>
+
+            </div>
+
+            <p class="foundation-text">
+                Empowering young minds through education,
+                research and community support.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Programs</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+            <h3>Our Programs</h3>
+
+            <ul>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Community Development</a></li>
+                <li><a href="#">Research & Innovation</a></li>
+                <li><a href="#">Scholarships</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col contact">
+            <h3>Contact Us</h3>
+
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                123, Foundation House,<br>
+                Pune, Maharashtra, India
+            </p>
+
+            <p>
+                <i class="fas fa-phone-alt"></i>
+                +91 98765 43210
+            </p>
+
+            <p>
+                <i class="fas fa-envelope"></i>
+                info@ajmfoundation.org
+            </p>
+
+            <p>
+                <i class="fas fa-globe"></i>
+                http://anishjadhavmemorialfoundation.org/
+            </p> 
+        </div>
+
+        <!-- Column 5 -->
+        <div class="footer-col newsletter">
+            <h3>Newsletter</h3>
+
+            <p>
+                Stay updated with our latest
+                initiatives and stories.
+            </p>
+
+            <form>
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                >
+                <button type="submit">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Anish Jadhav Memorial Foundation.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Designed with ❤️ for a better tomorrow
+        </p>
+    </div>
+</footer>
+
+    <!-- INTERACTIVE ACCORDION SCRIPT -->
+    <script>
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            const faqPanel = button.nextElementSibling;
+            
+            // Check if active
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-panel').style.maxHeight = null;
+            });
+            
+            // Toggle clicked item
+            if (!isActive) {
+                faqItem.classList.add('active');
+                faqPanel.style.maxHeight = faqPanel.scrollHeight + "px";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
