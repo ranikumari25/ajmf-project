@@ -1,3 +1,13 @@
+/* ================= GLOBAL RESETS & FONTS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* ==========================
    RESET
 ========================== */
@@ -6,7 +16,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
 }
 
 html{
@@ -275,34 +285,7 @@ ul{
     background:#ff7300;
 
 }
-@media(max-width:992px){
 
-.event-card,
-.reverse{
-
-    flex-direction:column;
-
-}
-
-.event-image {
-
-    height:320px;
-
-}
-
-.section-heading h2{
-
-    font-size:40px;
-
-}
-
-.event-content{
-
-    text-align:center;
-
-}
-
-}
 /* ================= FOOTER ================= */
 
 .footer{
@@ -517,31 +500,522 @@ ul{
 .footer-bottom p{
     margin:0;
 }
-/* Responsive */
 
-@media(max-width:1100px){
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+
+/* ================= LARGE LAPTOP / DESKTOP ================= */
+
+@media (max-width: 1400px){
+
+    .header .container{
+        width:94%;
+    }
+
+    .navbar ul{
+        gap:25px;
+    }
+
+    .navbar ul li a{
+        font-size:16px;
+    }
+
+    .event-content h3{
+        font-size:36px;
+    }
+
+    .event-content p{
+        font-size:18px;
+    }
+
+}
+
+
+/* ================= LAPTOP ================= */
+
+@media (max-width: 1200px){
+
+    .header{
+        height:95px;
+    }
+
+    .logo-area{
+        gap:10px;
+    }
+
+    .logo-area img{
+        width:75px;
+    }
+
+    .logo-content h2{
+        font-size:21px;
+    }
+
+    .logo-content p{
+        font-size:9px;
+    }
+
+    .navbar ul{
+        gap:18px;
+    }
+
+    .navbar ul li a{
+        font-size:14px;
+    }
+
+    .donate-btn{
+        padding:12px 18px;
+        font-size:14px;
+    }
+
+    .events-section{
+        width:92%;
+        margin:80px auto;
+    }
+
+    .event-card{
+        gap:30px;
+        padding:25px;
+    }
+
+    .event-image{
+        height:360px;
+    }
+
+    .event-content h3{
+        font-size:32px;
+    }
+
+    .event-content p{
+        font-size:17px;
+        line-height:1.7;
+    }
 
     .footer-container{
         grid-template-columns:
-        repeat(2,1fr);
+        1.5fr
+        1fr
+        1fr
+        1.2fr;
+    }
+
+    .newsletter{
+        grid-column:span 2;
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px){
+
+    /* HEADER */
+
+    .header{
+        height:auto;
+        min-height:90px;
+    }
+
+    .header .container{
+        width:94%;
+        flex-wrap:wrap;
+        padding:15px 0;
+        gap:15px;
+    }
+
+    .logo-area{
+        flex:1;
+    }
+
+    .logo-area img{
+        width:70px;
+    }
+
+    .logo-content h2{
+        font-size:20px;
+    }
+
+    .navbar{
+        order:3;
+        width:100%;
+    }
+
+    .navbar ul{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px 25px;
+    }
+
+    .navbar ul li a{
+        font-size:14px;
+    }
+
+    .donate-btn{
+        font-size:13px;
+        padding:11px 16px;
+    }
+
+
+    /* EVENTS */
+
+    .events-section{
+        width:92%;
+        margin:70px auto;
+    }
+
+    .section-heading{
+        margin-bottom:50px;
+    }
+
+    .section-heading span{
+        font-size:16px;
+    }
+
+    .section-heading h2{
+        font-size:42px;
+    }
+
+    .section-heading p{
+        font-size:18px;
+    }
+
+    .event-card,
+    .event-card.reverse{
+        flex-direction:column;
+        align-items:stretch;
+        gap:30px;
+        padding:25px;
+    }
+
+    .event-image{
+        width:100%;
+        height:400px;
+    }
+
+    .event-content{
+        width:100%;
+    }
+
+    .event-content h3{
+        font-size:32px;
+    }
+
+    .event-content p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .event-highlights{
+        text-align:left;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px 30px;
+        padding:45px 35px 30px;
     }
 
     .footer-col::after{
         display:none;
     }
+
+    .newsletter{
+        grid-column:span 1;
+    }
+
 }
 
-@media(max-width:768px){
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+    /* HEADER */
+
+    .header{
+        position:relative;
+    }
+
+    .header .container{
+        width:92%;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .logo-area{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .logo-area img{
+        width:75px;
+    }
+
+    .logo-content h2{
+        font-size:22px;
+    }
+
+    .logo-content p{
+        font-size:9px;
+        letter-spacing:1.5px;
+    }
+
+    .navbar{
+        width:100%;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    .navbar ul li a{
+        font-size:15px;
+    }
+
+    .donate-btn{
+        width:100%;
+        max-width:220px;
+        justify-content:center;
+    }
+
+
+    /* EVENTS */
+
+    .events-section{
+        width:92%;
+        margin:55px auto;
+    }
+
+    .section-heading{
+        margin-bottom:40px;
+    }
+
+    .section-heading span{
+        font-size:14px;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .section-heading p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .event-card,
+    .event-card.reverse{
+        padding:18px;
+        gap:25px;
+        border-radius:15px;
+        margin-bottom:35px;
+    }
+
+    .event-image{
+        height:250px;
+        border-radius:14px;
+    }
+
+    .event-image video{
+        border-radius:14px;
+    }
+
+    .event-date{
+        font-size:13px;
+        padding:7px 14px;
+        margin-bottom:15px;
+    }
+
+    .event-content h3{
+        font-size:26px;
+        line-height:1.3;
+        margin-bottom:15px;
+    }
+
+    .event-content p{
+        font-size:15px;
+        line-height:1.7;
+        margin-bottom:20px;
+    }
+
+    .event-highlights{
+        padding:16px;
+        border-top-width:5px;
+    }
+
+    .event-highlights h4{
+        font-size:15px;
+        margin-bottom:12px;
+    }
+
+    .event-highlights li{
+        font-size:14px;
+        line-height:1.5;
+        margin-bottom:10px;
+    }
+
+    .event-btn{
+        display:inline-block;
+        padding:12px 25px;
+        font-size:14px;
+    }
+
+
+    /* FOOTER */
 
     .footer-container{
         grid-template-columns:1fr;
-        padding:40px 25px;
+        padding:40px 25px 25px;
+        gap:35px;
+    }
+
+    .logo-box{
+        justify-content:flex-start;
+    }
+
+    .logo-box img{
+        width:75px;
+        height:75px;
+    }
+
+    .footer-logo-content h3{
+        font-size:20px;
+    }
+
+    .footer-logo-content h5{
+        font-size:9px;
+    }
+
+    .foundation-text{
+        font-size:13px;
+    }
+
+    .footer-col h3{
+        font-size:21px;
+    }
+
+    .footer-col ul li a{
+        font-size:14px;
+    }
+
+    .contact p{
+        font-size:13px;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        height:45px;
     }
 
     .footer-bottom{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-        padding:20px;
+        padding:20px 15px;
+        font-size:12px;
+        line-height:1.6;
     }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+    .logo-area img{
+        width:65px;
+    }
+
+    .logo-content h2{
+        font-size:19px;
+    }
+
+    .logo-content p{
+        font-size:8px;
+    }
+
+    .section-heading h2{
+        font-size:29px;
+    }
+
+    .section-heading p{
+        font-size:14px;
+    }
+
+    .event-card{
+        padding:14px;
+    }
+
+    .event-image{
+        height:210px;
+    }
+
+    .event-content h3{
+        font-size:23px;
+    }
+
+    .event-content p{
+        font-size:14px;
+    }
+
+    .event-highlights li{
+        font-size:13px;
+    }
+
+    .logo-box{
+        align-items:flex-start;
+    }
+
+    .logo-box img{
+        width:60px;
+        height:60px;
+    }
+
+    .footer-logo-content h3{
+        font-size:17px;
+    }
+
+    .footer-bottom{
+        font-size:11px;
+    }
+
+}
+
+
+/* ================= VERY SMALL DEVICES ================= */
+
+@media (max-width: 360px){
+
+    .section-heading h2{
+        font-size:25px;
+    }
+
+    .event-content h3{
+        font-size:21px;
+    }
+
+    .event-image{
+        height:180px;
+    }
+
+    .event-highlights{
+        padding:12px;
+    }
+
+    .event-highlights li{
+        font-size:12px;
+    }
+
+    .footer-container{
+        padding:35px 18px;
+    }
+
 }
