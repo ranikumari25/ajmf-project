@@ -1,34 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfect Layout Matching Mockup</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
 
-    /* ================= GLOBAL RESETS & FONTS ================= */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-        }
-
+  
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         body {
-            /* font-family: 'Plus Jakarta Sans', sans-serif; */
+            font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #FDFBFA;
         }
         .container-wrapper {
@@ -74,15 +52,15 @@
 }
 
 .logo-content h2{
-    /* font-family: 'poppins', sans-serif; */
-    /* font-weight: 500; */
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
     color:#fff;
     font-size:20px;
     line-height:1.2;
 }
 
 .logo-content p{
-     /* font-family: 'poppins' , sans-serif; */
+     font-family: 'poppins' , sans-serif;
     color:#f57c00;
     font-size:10px;
     letter-spacing:2px;
@@ -97,8 +75,8 @@
 .navbar ul li a{
     text-decoration: none;
     font-size: 15px;      
-    /* font-weight: 500;     */
-    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 500;    
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;
     transition: 0.3s ease;
     padding: 8px 0;
@@ -110,12 +88,12 @@
 }
 
 .donate-btn{
-    /* font-family:'Poppins',sans-serif; */
+    font-family:'Poppins',sans-serif;
     background: #f57c00;
     color:#fff;
     padding:14px 28px;
     border-radius:6px;
-    /* font-weight:600; */
+    font-weight:600;
     display:flex;
     gap:10px;
     align-items:center;
@@ -158,15 +136,15 @@
             font-size: 11px;
             letter-spacing: 2px;
             color: #E06A28;
-            /* font-weight: 700; */
+            font-weight: 700;
             margin: 0 0 16px 0;
             text-transform: uppercase;
         }
 
         .hero-main-title {
-            /* font-family: 'Marcellus', Georgia, serif; */
+            font-family: 'Marcellus', Georgia, serif;
             font-size: 56px;
-            /* font-weight: 400; */
+            font-weight: 400;
             color: #FFFFFF;
             margin: 0 0 10px 0;
             line-height: 1.12;
@@ -179,7 +157,7 @@
         .hero-subtitle {
             font-size: 19px;
             color: #A0AEC0;
-            /* font-weight: 400; */
+            font-weight: 400;
             margin: 0 0 24px 0;
             font-style: italic;
         }
@@ -201,7 +179,7 @@
         .btn-hero {
             padding: 12px 28px;
             border-radius: 4px;
-            /* font-weight: 600; */
+            font-weight: 600;
             font-size: 13px;
             text-decoration: none;
             display: inline-flex;
@@ -268,7 +246,7 @@
             font-size: 13px;
             line-height: 1.6;
             color: #2D3748;
-            /* font-weight: 600; */
+            font-weight: 600;
             margin: 0 0 5px 0;
         }
 
@@ -285,7 +263,7 @@
             bottom: 0;
             width: 640px;
             height: 100%;
-            background-image: url('images/WhatsApp Image 2026-06-25 at 12.57.31 PM.jpeg');
+            background-image: url('images-photo/anish\'s_smile.jpeg');
             background-size: cover;
             background-position: top center;
             z-index: 1;
@@ -344,7 +322,7 @@
         }
 
         .journey-main-heading {
-            /* font-family: 'Marcellus', Georgia, serif; */
+            font-family: 'Marcellus', Georgia, serif;
             font-size: 32px;
             color: #0A1D37;
             line-height: 1.3;
@@ -365,7 +343,7 @@
             color: #E06A28;
             text-decoration: none;
             font-size: 13px;
-            /* font-weight: 700; */
+            font-weight: 700;
         }
 
         .journey-col-center {
@@ -408,7 +386,7 @@
 
         .timeline-text-node h3 {
             font-size: 15px;
-            /* font-weight: 700; */
+            font-weight: 700;
             color: #0A1D37;
             margin-bottom: 6px;
         }
@@ -443,16 +421,16 @@
             font-size: 11px;
             letter-spacing: 2px;
             color: #E06A28;
-            /* font-weight: 700; */
+            font-weight: 700;
             margin-bottom: 8px;
             text-transform: uppercase;
         }
 
         .ajmf-section-title {
-            /* font-family: 'Marcellus', Georgia, serif; */
+            font-family: 'Marcellus', Georgia, serif;
             font-size: 32px;
             color: #0A1D37;
-            /* font-weight: 500; */
+            font-weight: 500;
             margin-bottom: 12px;
         }
 
@@ -504,7 +482,7 @@
         .ajmf-card-heading {
             font-size: 16px;
             color: #0A1D37;
-            /* font-weight: 700; */
+            font-weight: 700;
             margin-bottom: 8px;
         }
 
@@ -576,7 +554,7 @@
 
         .ajmf-stat-number {
             font-size: 32px;
-            /* font-weight: 700; */
+            font-weight: 700;
             color: #E06A28;
             line-height: 1.1;
         }
@@ -584,7 +562,7 @@
         .ajmf-stat-label {
             font-size: 12px;
             color: #0A1D37;
-            /* font-weight: 700; */
+            font-weight: 700;
             margin-top: 4px;
         }
 
@@ -791,7 +769,7 @@
     bottom: 0;
     width: 50%;
     background-image: linear-gradient(to right, #0A192F 0%, rgba(10, 25, 47, 0.6) 40%, rgba(10, 25, 47, 0.1) 100%), 
-                      url('images/WhatsApp Image 2026-06-23 at 8.02.27 AM(1).jpeg');
+                      url('images-photo/anish_camra.jpeg');
     background-size: cover;
     /* Face matrix settings: Locks position precisely to avoid neck view */
     background-position: center 12%; 
@@ -876,7 +854,7 @@
     margin-top: 0;
     background:#061b36;
     color:#ffffff;
-    /* font-family:'Poppins',sans-serif; */
+    font-family:'Poppins',sans-serif;
     width:100%;
 }
 
@@ -930,9 +908,9 @@
 }
 
 .footer-logo-content p{
-    /* font-family:'Poppins',sans-serif; */
+    font-family:'Poppins',sans-serif;
     font-size:14px;
-    /* font-weight:400; */
+    font-weight:400;
     letter-spacing:2px;
     color:#cfcfcf;
     text-transform:uppercase;
@@ -960,7 +938,7 @@
 .footer-col h3{
     font-family:'Playfair Display',serif;
     font-size:24px;
-    /* font-weight:500; */
+    font-weight:500;
     margin-bottom:20px;
     color:#fff;
 }
@@ -979,7 +957,7 @@
     font-family:'Poppins',sans-serif;
     text-decoration:none;
     color:#e7e7e7;
-    /* font-weight: 400; */
+    font-weight: 400;
     font-size:13px;
     transition:.3s;
 }
@@ -1060,7 +1038,7 @@
     background:#f57c00;
     color:#fff;
     font-size:15px;
-    /* font-weight:500; */
+    font-weight:500;
     border-radius:3px;
     transition:.3s;
 }
@@ -1116,418 +1094,4 @@
 
 
     
-    </style>
-</head>
-<body>
-
-  <!---  HEADER  --->
-
-    <header class="header">
-        <div class="container">
-
-            <div class="logo-area">
-
-                <img src="images-photo/logo.jpeg" alt="AJMF Logo">
-
-                <div class="logo-content">
-                    <h2>Anish Jadhav <br> Memorial Foundation</h2>
-                    <p>EDUCATE • EMPOWER • ELEVATE</p>
-                </div>
-            </div>
-
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="About.html">About Us</a></li>
-                    <li><a href="A_day.html">Our Programs</a></li>
-                    <li><a href="Campus&Facility.html">Impact</a></li>
-                    <li><a href="#">Get Involved</a></li>
-                    <li><a href="Apply.html">Contact Us</a></li>
-                </ul>
-            </nav>
-
-            <a href="https://admissions.navgurukul.org/students/" class="donate-btn">
-                <i class="fa-solid fa-heart"></i>
-                Apply Here
-            </a>
-
-        </div>
-   </header>
-
-<section class="hero-banner-section">
-    <div class="hero-container">
-        
-        <div class="hero-content-left">
-            <p class="hero-tagline">IN LOVING MEMORY OF</p>
-            <h1 class="hero-main-title">Anish <span class="highlight-orange">Jadhav</span></h1>
-            <p class="hero-subtitle">Inspiring Lives Beyond Time</p>
-            <p class="hero-description">
-                The Anish Jadhav Memorial Foundation (AJMF) was established in loving memory of Anish, the beloved son of Brigadier Kishor and Mrs. Neeta Jadhav.
-            </p>
-            
-            <div class="hero-btn-group">
-                <a href="#" class="btn-hero btn-orange">
-                    Our Story <i class="fas fa-chevron-right"></i>
-                </a>
-                <a href="#" class="btn-hero btn-transparent">
-                    Get Involved <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="hero-floating-box">
-            <div class="heart-icon-circle">
-                <i class="fas fa-heart"></i>
-            </div>
-            <p class="floating-box-text">
-                A life that touched many, continues to inspire millions.
-            </p>
-            <div class="floating-box-divider"></div>
-        </div>
-
-    </div>
-
-    <div class="hero-portrait-background"></div>
     
-    <div class="hero-ambient-glow"></div>
-</section>
-
-<section class="journey-content-section">
-    <div class="journey-container">
-        
-        <div class="journey-col-left">
-            <div class="orange-top-accent-line"></div>
-            <p class="journey-tag-label">ANISH'S JOURNEY</p>
-            <h2 class="journey-main-heading">A Life of Passion, Purpose & Impact</h2>
-            <p class="journey-intro-text">
-                Anish was a bright, compassionate and talented young man whose life, though brief, continued to inspire many. He supported excellence, creativity and giving back to society.
-            </p>
-            <a href="#" class="btn-view-photos">
-                <i class="far fa-image photo-icon-left"></i> Read More 
-            </a>
-        </div>
-
-        <div class="journey-col-center">
-            <div class="center-portrait-card">
-                <img src="images-photo/anish.png" alt="Anish Journey" class="journey-card-img">
-            </div>
-        </div>
-
-        <div class="journey-col-right">
-            <div class="timeline-list-wrapper">
-                
-                <div class="timeline-item-row">
-                    <div class="timeline-orange-dot"></div>
-                    <div class="timeline-text-node">
-                        <h3>Early Life & Education</h3>
-                        <p>Excelled in academics and developed a curiosity for learning and exploring new ideas.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item-row">
-                    <div class="timeline-orange-dot"></div>
-                    <div class="timeline-text-node">
-                        <h3>Passion for Photography</h3>
-                        <p>A gifted photographer who saw the world through a unique and creative time.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item-row">
-                    <div class="timeline-orange-dot"></div>
-                    <div class="timeline-text-node">
-                        <h3>Career at Nikon</h3>
-                        <p>Associated with Nikon India Ltd., where the talent and dedication were truly recognized.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item-row">
-                    <div class="timeline-orange-dot"></div>
-                    <div class="timeline-text-node">
-                        <h3>Community Impact</h3>
-                        <p>Supported education, conducted workshops and inspired young minds to learn big.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<div class="ajmf-custom-wrapper">
-
-    <section class="ajmf-section-container">
-        <div class="ajmf-section">His Values, Our Guiding Light</div>
-        <h2 class="ajmf-section-title">The Values He Lived By</h2>
-        <!-- <div class="ajmf-title-divider"></div> -->
-
-        <div class="ajmf-values-grid">
-            <div class="ajmf-value-card">
-                <div class="ajmf-icon-circle">
-                    <i class="fas fa-hand-holding-heart brand-custom-icon" ></i>
-                </div>
-                <h3 class="ajmf-card-heading">Compassion</h3>
-                <div class="ajmf-card-divider"></div>
-                <p class="ajmf-card-text">He cared deeply for people and believed in making a difference.</p>
-            </div>
-
-            <div class="ajmf-value-card">
-                <div class="ajmf-icon-circle">
-                    <i class="fas fa-book-open brand-custom-icon"></i>
-                </div>
-                <h3 class="ajmf-card-heading">Education</h3>
-                <div class="ajmf-card-divider"></div>
-                <p class="ajmf-card-text">He valued knowledge and supported learning for all.</p>
-            </div>
-
-            <div class="ajmf-value-card">
-                <div class="ajmf-icon-circle">
-                    <i class="fas fa-camera brand-custom-icon"></i>
-                     <!-- <i class="fa-light fa-camera"></i> -->
-                </div>
-                <h3 class="ajmf-card-heading">Creativity</h3>
-                <div class="ajmf-card-divider"></div>
-                <p class="ajmf-card-text">His creativity and passion inspired everyone around him.</p>
-            </div>
-
-            <div class="ajmf-value-card">
-                <div class="ajmf-icon-circle">
-                    <i class="fas fa-user-group brand-custom-icon"></i>
-                </div>
-                <h3 class="ajmf-card-heading">Leadership</h3>
-                <div class="ajmf-card-divider"></div>
-                <p class="ajmf-card-text">A natural leader who motivated and empowered others.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="ajmf-section-container ajmf-stats-banner">
-        <div class="ajmf-section-tagline">His Legacy In Numbers</div>
-        <h2 class="ajmf-section-title">Creating Impact That Lasts</h2>
-        <div class="ajmf-title-divider"></div>
-
-        <div class="ajmf-stats-row">
-            <div class="ajmf-stat-item">
-                <div class="ajmf-stat-icon-circle">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="ajmf-stat-info">
-                    <div class="ajmf-stat-number">500+</div>
-                    <div class="ajmf-stat-label">Students Inspired</div>
-                </div>
-            </div>
-
-            <div class="ajmf-stat-item">
-                <div class="ajmf-stat-icon-circle">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                </div>
-                <div class="ajmf-stat-info">
-                    <div class="ajmf-stat-number">7+</div>
-                    <div class="ajmf-stat-label">Programs Conducted</div>
-                </div>
-            </div>
-
-            <div class="ajmf-stat-item">
-                <div class="ajmf-stat-icon-circle">
-                    <i class="fas fa-handshake"></i>
-                </div>
-                <div class="ajmf-stat-info">
-                    <div class="ajmf-stat-number">10+</div>
-                    <div class="ajmf-stat-label">Partner Organizations</div>
-                </div>
-            </div>
-
-            <div class="ajmf-stat-item">
-                <div class="ajmf-stat-icon-circle">
-                    <i class="fas fa-calendar-check"></i>
-                </div>
-                <div class="ajmf-stat-info">
-                    <div class="ajmf-stat-number">25+</div>
-                    <div class="ajmf-stat-label">Events</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-
-<section class="ajmf-gallery-section">
-    <div class="ajmf-gallery-container">
-        <div class="ajmf-section-tagline">Glimpses Of Anish</div>
-        <h2 class="ajmf-section-title">Memories That Inspire</h2>
-        <div class="ajmf-title-divider"></div>
-
-        <div class="ajmf-gallery-grid">
-            
-            <div class="ajmf-gallery-card" style="background-image: url('images-photo/anish_camra.jpeg');">
-                <div class="ajmf-gallery-overlay">
-                    <div class="ajmf-gallery-icon-circle">
-                        <i class="fas fa-regular fa-camera"></i>
-                    </div>
-                    <h4>A Visionary<br>Eye for Life</h4>
-                </div>
-            </div>
-
-            <div class="ajmf-gallery-card" style="background-image: url('images-photo/anish\'s_smile.jpeg');">
-                <div class="ajmf-gallery-overlay">
-                    <div class="ajmf-gallery-icon-circle">
-                        <i class="fas fa-regular fa-face-smile"></i>
-                    </div>
-                    <h4>The Smile<br>That Led Teams</h4>
-                </div>
-            </div>
-
-            <div class="ajmf-gallery-card" style="background-image: url('images-photo/anish.png');">
-                <div class="ajmf-gallery-overlay">
-                    <div class="ajmf-gallery-icon-circle">
-                        <i class="fas fa-regular fa-star"></i>
-                    </div>
-                    <h4>Driven by<br>Professional Excellence</h4>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<body>
-   <div class="ajmf-vision-section-wrapper">
-    <section class="ajmf-vision-banner">
-        <div class="ajmf-vision-content-left">
-            <div class="ajmf-vision-quote">
-                <i class="fas fa-quote-left"></i>
-            </div>
-            <h3 class="ajmf-vision-text">His vision continues to inspire future generations every day.</h3>
-            <div class="ajmf-vision-divider"></div>
-            <a href="#" class="ajmf-vision-btn">
-                Support The Mission <i class="far fa-gem"></i>
-            </a>
-        </div>
-        
-        <div class="ajmf-vision-image-right"></div>
-    </section>
-</div>
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-    <div class="footer-container">
-
-        <!-- Column 1 -->
-        <div class="footer-col foundation">
-            <div class="logo-box">
-                <img src="images-photo/logo.jpeg" alt="AJMF Logo">
-
-          <div class="footer-logo-content">
-
-        <h3>Anish Jadhav <br> Memorial Foundation</h3>
-
-        <h5>EDUCATE • EMPOWER • ELEVATE</h5>
-
-    </div>
-
-            </div>
-
-            <p class="foundation-text">
-                Empowering young minds through education,
-                research and community support.
-            </p>
-
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-
-        <!-- Column 2 -->
-        <div class="footer-col">
-            <h3>Quick Links</h3>
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Programs</a></li>
-                <li><a href="#">Impact</a></li>
-                <li><a href="#">Get Involved</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 3 -->
-        <div class="footer-col">
-            <h3>Our Programs</h3>
-
-            <ul>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Healthcare</a></li>
-                <li><a href="#">Community Development</a></li>
-                <li><a href="#">Research & Innovation</a></li>
-                <li><a href="#">Scholarships</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 4 -->
-        <div class="footer-col contact">
-            <h3>Contact Us</h3>
-
-            <p>
-                <i class="fas fa-map-marker-alt"></i>
-                123, Foundation House,<br>
-                Pune, Maharashtra, India
-            </p>
-
-            <p>
-                <i class="fas fa-phone-alt"></i>
-                +91 98765 43210
-            </p>
-
-            <p>
-                <i class="fas fa-envelope"></i>
-                info@ajmfoundation.org
-            </p>
-
-            <p>
-                <i class="fas fa-globe"></i>
-                http://anishjadhavmemorialfoundation.org/
-            </p> 
-        </div>
-
-        <!-- Column 5 -->
-        <div class="footer-col newsletter">
-            <h3>Newsletter</h3>
-
-            <p>
-                Stay updated with our latest
-                initiatives and stories.
-            </p>
-
-            <form>
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                >
-                <button type="submit">
-                    Subscribe
-                </button>
-            </form>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>
-            © 2026 Anish Jadhav Memorial Foundation.
-            All Rights Reserved.
-        </p>
-
-        <p>
-            Designed with ❤️ for a better tomorrow
-        </p>
-    </div>
-</footer>
-</body>
-</html>
