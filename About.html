@@ -10,10 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-
+    <link rel="stylesheet" href="About.css">
     
-    </style>
 </head>
 <body>
 
@@ -95,11 +93,22 @@
             <div class="orange-top-accent-line"></div>
             <p class="journey-tag-label">ANISH'S JOURNEY</p>
             <h2 class="journey-main-heading">A Life of Passion, Purpose & Impact</h2>
+
             <p class="journey-intro-text">
-                Anish was a bright, compassionate and talented young man whose life, though brief, continued to inspire many. He supported excellence, creativity and giving back to society.
+                    Anish was a bright, deeply compassionate, and multitalented young man who left a lasting impression on everyone he met before his passing at the age of twenty-five. Academically gifted, he graduated with a BBA in Marketing and earned the "Best Project of the College" award for his insightful comparative study, "Marketing Strategies of Nikon vs Canon." His passion and disciplined self-learning led him to master professional photography, paving the way for a remarkable achievement: being selected for Nikon India Ltd.’s Core Technical Team.  </p>
             </p>
-            <a href="#" class="btn-view-photos">
-                <i class="far fa-image photo-icon-left"></i> Read More 
+
+            <!-- Extra content jo Read More par expand hoga -->
+            <div id="extraInfoText" class="extra-info-text">
+                <p>
+                This prestigious role was typically reserved for film institute graduates with advanced training in cinematography, yet Anish stood out for his exceptional technical competence, interpersonal warmth, and natural ability to connect with people. In this position, he conducted nationwide photography workshops, demonstrated cutting-edge camera technologies, and supported major promotional initiatives. Outside of his professional life, Anish loved playing the guitar, and his cheerful, outgoing nature, quick humor, and genuine kindness earned him a wide, cherished circle of friends. Though his life was brief, his dream, spirit, and legacy continue to inspire those who knew him.</p>
+
+                <p>
+            </div>
+
+            <a href="javascript:void(0);" id="journeyReadMoreBtn" class="btn-view-photos">
+               <span id="journeyBtnText">Read More</span>
+               <i id="journeyBtnIcon" class="fas fa-chevron-down" style="margin-left: 6px;"></i>
             </a>
         </div>
 
@@ -425,5 +434,29 @@
         </p>
     </div>
 </footer>
+
+<!-- Smooth Inline Read More / Read Less Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtn = document.getElementById('journeyReadMoreBtn');
+        const extraText = document.getElementById('extraInfoText');
+        const btnText = document.getElementById('journeyBtnText');
+        const btnIcon = document.getElementById('journeyBtnIcon');
+
+        readMoreBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            if (extraText.classList.contains('show')) {
+                extraText.classList.remove('show');
+                btnText.textContent = "Read More";
+                btnIcon.className = "fas fa-chevron-down";
+            } else {
+                extraText.classList.add('show');
+                btnText.textContent = "Read Less";
+                btnIcon.className = "fas fa-chevron-up";
+            }
+        });
+    });
+</script>
 </body>
 </html>
