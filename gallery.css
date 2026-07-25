@@ -1075,7 +1075,6 @@ FEATURED
 ========================== */
 
 
-<<<<<<< HEAD
 /* ================= TABLET ================= */
 
 @media (max-width: 768px){
@@ -1237,8 +1236,7 @@ FEATURED
     visibility: visible;
     flex-direction: column;
     transform: translateY(0);
-=======
-
+}
 /* ================= GLOBAL RESETS & FONTS ================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
