@@ -3,40 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infrastructure - AJMF Premium</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="final.css">
+    <title>Anish Jadhav Memorial Foundation</title>
 
+    <link rel="stylesheet" href="facility.css">
+    <link rel="stylesheet" href="header.css">
+
+       <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+   
+    <!---  HEADER  --->
 
-   <header class="header">
+    <header class="header">
         <div class="container">
+
             <div class="logo-area">
-                <img src="images-photo/logo.jpeg" alt="AJMF Logo">
-                <div class="logo-content">
-                    <h2>Anish Jadhav <br> Memorial Foundation</h2>
-                    <p>EDUCATE • EMPOWER • ELEVATE</p>
-                </div>
+                <a href="index.html" style="display: flex; align-items: center; gap: 16px; text-decoration: none;">
+                    <img src="logo.jpeg" alt="AJMF Logo">
+                    <div class="logo-content">
+                        <h2>Anish Jadhav <br> Memorial Foundation</h2>
+                        <p>EDUCATE • EMPOWER • ELEVATE</p>
+                    </div>
+                </a>
             </div>
 
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="About.html">About Us</a></li>
-                    <li><a href="A_day.html">Our Programs</a></li>
-                    <li><a href="Campus&Facility.html">Impact</a></li>
-                    <li><a href="#">Get Involved</a></li>
-                    <li><a href="Apply.html">Contact Us</a></li>
-                </ul>
-            </nav>
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
-            <a href="https://admissions.navgurukul.org/students/" class="donate-btn">
-                <i class="fa-solid fa-heart"></i>
-                Apply Here
-            </a>
+            <nav class="navbar" id="navMenu">
+                <ul>
+
+                <!-- HOME -->
+                <li class="dropdown">
+                    <a href="index.html">
+                        Home <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="mission.html#mission">Mission & Vision</a></li>
+                    </ul>
+                </li>
+
+                <!-- ABOUT ANISH -->
+                <li>
+                    <a href="About.html">About Anish</a>
+                </li>
+
+                <!-- ACADEMICS -->
+                <li class="dropdown">
+                    <a href="#">
+                        Academics <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="padagogy.html">Pedagogy</a></li>
+                        <li><a href="campusled.html">Student-Led Campus</a></li>
+                        <li><a href="A_day.html">A Day At Campus</a></li>
+                    </ul>
+                </li>
+
+                <!-- STUDENT LIFE -->
+                <li class="dropdown">
+                    <a href="#">
+                        Student Life <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="facility.html">Campus & Facilities</a></li>
+                        <li><a href="success.html">Success Stories</a></li>
+                    </ul>
+                </li>
+
+                <!-- CONTACT -->
+                <li class="dropdown">
+                    <a href="#">
+                        Contact Us <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="contact.html">Get Involved</a></li>
+                        <li><a href="Apply.html">Apply Now</a></li>
+                        <li><a href="donate.html">Donate Now</a></li>
+                    </ul>
+                </li>
+
+                <li class="mobile-only-item">
+                    <a href="https://admissions.navgurukul.org/students/" class="donate-btn mobile-donate-btn" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-heart"></i>
+                        Apply Here
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Desktop Apply Button -->
+        <a href="https://admissions.navgurukul.org/students/" class="donate-btn desktop-only-btn" target="_blank" rel="noopener">
+            <i class="fa-solid fa-heart"></i>
+            Apply Here
+        </a>
+
         </div>
-   </header>
+    </header>
+
+
 
     <section class="micro-hero">
     <div class="decorative-dots"></div>
@@ -204,5 +280,6 @@
     </div>
 </footer>
 
+    <script src="header.js"></script>
 </body>
 </html>

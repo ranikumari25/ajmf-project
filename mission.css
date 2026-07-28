@@ -26,42 +26,46 @@ ul {
 /* ================= HEADER ================= */
 
 .header{
-    position:sticky;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:100;
-    /* margin: 0 auto; */
-    padding: 20px 0px;
-    background:#0B1F44;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #0B1F44;
+    padding: 26px 0;   /* pehle 20px tha */
     transition: .35s;
 }
 
+.hero-content{
+    padding-left: 60px;
+}
+
 .header .container{
-    width: 90%;
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width:98%;
+    max-width:1700px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    /* justify-content:space-between; */
 }
 
 .logo-area{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:16px;
+    margin-left:0px;      /* Left se bas thoda sa space */
+    flex-shrink:0;
 }
 
 .logo-area img{
-    border-radius: 50%;
-    width:100px;
+    width:78px;
+    height:78px;
+    border-radius:50%;
 }
-
 .logo-content h2{
     font-family: 'poppins',sans-serif;
     font-weight: 400;
     color:#fff;
-    font-size:26px;
+    font-size:24px;
     line-height:1.2;
 }
 
@@ -72,16 +76,28 @@ ul {
     letter-spacing:2px;
 }
 
+.navbar{
+    flex:1;
+    margin-left:50px;   
+    margin-right:40px;    
+    justify-content:center;
+}
+
 .navbar ul{
     display:flex;
-    gap:40px;
+    align-items:center;
+    justify-content:space-evenly;
+    /* width:700px;       */
+    gap: 28px;;
 }
+
 .navbar ul li a{
     font-family: 'poppins',sans-serif;
     text-decoration: none;
-    font-size: 14px;      
-    font-weight: 400;    
-    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    align-items: center;
+    gap: 3px;     
+    font-weight: 500;    
     color: #fff;
     transition: 0.3s ease;
     letter-spacing: 0.5px;
@@ -104,6 +120,7 @@ ul {
     font-family:'Poppins',sans-serif;
     background: #f57c00;
     color:#fff;
+    margin-left: 80px;
     padding:14px 28px;
     border-radius:6px;
     font-weight:600;
@@ -124,7 +141,7 @@ ul {
 .hero-container {
     display: flex;
     align-items: center;
-    padding-left: 8%;
+    padding-left: 4%;
     justify-content: space-between;
     min-height: calc(100vh-90px);
 }
@@ -136,28 +153,28 @@ ul {
 
 .hero-subtitle {
     color: #f57C00;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 1px;
     display: block;
 }
 
 .hero-content h1 {
-    font-size: 46px;
+    font-size: 49px;
     color: #031b4e;
-    font-weight: 600;
+    font-weight: 550;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .hero-content h1 span {
     color: #f37022;
-    font-weight:600 ;
+    font-weight:550 ;
 }
 
 .hero-content p {
     color: #555555;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 1.6;
     margin-bottom: 35px;
 }
@@ -233,7 +250,7 @@ ul {
 }
 
 .section-title h2 {
-    font-size: 32px;
+    font-size: 39px;
     color: #031b4e;
     font-weight: 700;
     margin-bottom: 5px;
@@ -241,7 +258,7 @@ ul {
 
 .section-title p {
     color: #666666;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* ================= MISSION & VISION ================= */
@@ -288,14 +305,14 @@ ul {
 }
 
 .mv-content h3 {
-    font-size: 22px;
+    font-size: 25px;
     color: #031b4e;
     margin-bottom: 12px;
 }
 
 .mv-content p {
     color: #666666;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -352,7 +369,7 @@ ul {
 
 .founder-content span {
     color: #f37022;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     display: block;
     margin-bottom: 5px;
@@ -400,20 +417,21 @@ ul {
 
 /* ================= PARTNER & JOURNEY ================= */
 .partner-journey {
-    background: #ffffff; 
+    background: #f8fafc;
     width: 100%;        
-    max-width: 100%;    
+    max-width: 1200%;    
     padding: 40px  10%;  
-    margin: 0;         
+    margin: 0 auto;         
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .partner-card, .journey-card {
     background: #f4f7fc;
     border-radius: 16px;
-    padding: 40px;
-    flex: 1;
+    padding: 20px;
+    width: 100%;
     box-shadow: 0 15px 35px rgba(3, 27, 78, 0.06);
 }
 
@@ -425,7 +443,7 @@ ul {
 }
 
 .partner-card h2, .journey-card h2 {
-    font-size: 24px;
+    font-size: 36px;
     color: #031b4e;
     margin-bottom: 25px;
 }
@@ -441,9 +459,9 @@ ul {
     object-fit: contain;
 }
 
-.partner-content p {
+.partner-content p,  .journey-card p {
     color: #555555;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -479,6 +497,62 @@ ul {
     height: 10px;
     border-radius: 50%;
     color: #f37022;
+}
+
+/* ==========================================================
+   RIGHT SIDE: PHOTOS COLLAGE AREA
+   ========================================================== */
+.initiative-photo-collage {
+    position: relative;
+    width: 450px; /* Collage fixed width */
+    height: 400px; /* Collage fixed height */
+    flex-shrink: 0; /* Responsive flex crash se bachne ke liye */
+}
+
+/* Common Photo Box Styles (Rounded Corners, Shadows) */
+.collage-photo {
+    position: absolute;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth Zoom Animation */
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.collage-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Individual Photo Positioning & Tilting */
+.photo-1 {
+    width: 240px;
+    height: 300px;
+    top: 20px;
+    left: 0;
+    transform: rotate(-3deg); /* Tilted Left */
+    z-index: 2; /* Middle Layer */
+}
+
+.photo-2 {
+    width: 210px;
+    height: 170px;
+    top: 0;
+    right: 10px;
+    transform: rotate(2deg); /* Tilted Right */
+    z-index: 1; /* Bottom Layer */
+}
+
+.photo-3 {
+    width: 220px;
+    height: 170px;
+    bottom: 10px;
+    right: 20px;
+    transform: rotate(-2deg); /* Tilted Left */
+    z-index: 3; /* Top Layer */
 }
 
 /* Timeline/Journey */
@@ -522,6 +596,45 @@ ul {
     display: inline-block;
     font-size: 16px;
     margin-right: 10px;
+}
+
+
+/* ==========================================================
+   RIGHT SIDE: PHOTOS COLLAGE AREA
+   ========================================================== */
+.initiative-photo-collage {
+    position: relative;
+    width: 450px; /* Collage fixed width */
+    height: 400px; /* Collage fixed height */
+    flex-shrink: 0; /* Responsive flex crash se bachne ke liye */
+}
+
+/* Common Photo Box Styles (Rounded Corners, Shadows) */
+.collage-photo {
+    position: absolute;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth Zoom Animation */
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.collage-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Individual Photo Positioning & Tilting */
+.photo-1 {
+    width: 240px;
+    height: 300px;
+    top: 20px;
+    left: 0;
+    transform: rotate(-3deg); /* Tilted Left */
+    z-index: 2; /* Middle Layer */
 }
 
 /* ================= GALLERY ================= */
@@ -628,7 +741,7 @@ ul {
     color:#ff7a00;
     font-size:42px;
     margin:0;
-    font-weight:500;
+    font-weight:300;
 }
 
 .impact-text p{
@@ -936,4 +1049,127 @@ ul {
     color:#fff;
     font-size:45px;
     cursor:pointer;
+}
+
+/*================ DROPDOWN MENU ================*/
+
+.navbar ul li{
+    list-style: none;
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    padding: 8px 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+
+    z-index: 999;
+}
+
+.dropdown-menu li{
+    width: 100%;
+}
+
+.dropdown-menu li a{
+    display: block;
+    padding: 12px 18px;
+    color: #0B1F44 !important;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover{
+    background: #f5f5f5;
+    color: #f57c00 !important;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+
+/* ==========================================================
+   HAMBURGER MENU & MOBILE RESPONSIVE NAVBAR
+   ========================================================== */
+
+/* Desktop view par 3-lines icon hidden rahega */
+.hamburger-menu {
+    display: none;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Mobile dropdown ke andar wale button ke liye class */
+.mobile-only-btn {
+    display: none;
+}
+
+/* ----------------------------------------------------------
+   MOBILE & SMALL SCREEN STYLES (Jab screen 992px se choti ho)
+   ---------------------------------------------------------- */
+@media screen and (max-width: 992px) {
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Mobile screen par 3 lines (Hamburger) icon dikhega */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Desktop wala Apply button chhip jayega */
+    .desktop-only-btn {
+        display: none;
+    }
+
+    /* Mobile Navbar Dropdown Container (By default Hidden) */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #00153c; /* Header Blue Theme */
+        display: none; /* Default me hidden rahega */
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        z-index: 99999;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    /* Jab JavaScript 'is-active' class add karegi tab menu khulega */
+    .navbar.is-active {
+        display: flex !important;
+    }
+
+    .mobile-only-btn {
+        display: inline-flex;
+        margin-top: 15px;
+        justify-content: center;
+    }
 }

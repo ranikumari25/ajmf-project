@@ -1,91 +1,117 @@
+/* ================= GLOBAL RESETS & FONTS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-        /* ==========================================================================
-           1. CORE RESETS & GLOBAL STYLES (No :root variables used)
-           ========================================================================== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #FDFBFA; /* Warm Cream White */
-            color: #2D3748; /* Dark Slate Gray */
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
+body {
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
 
 /* ================= HEADER ================= */
 
 .header{
-    position:sticky;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:100;
-    padding:15px 0; /* Padding optimized so header doesn't swallow the hero section */
-    background:#0B1F44;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #0B1F44;
+    padding: 26px 0;   /* pehle 20px tha */
     transition: .35s;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-content{
+    padding-left: 60px;
 }
 
 .header .container{
-    max-width: 1340px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 30px;
+    width:98%;
+    max-width:1700px;
+    margin:0 auto;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    /* justify-content:space-between; */
 }
 
 .logo-area{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:16px;
+    margin-left:0px;      /* Left se bas thoda sa space */
+    flex-shrink:0;
 }
 
 .logo-area img{
-    border-radius: 50%;
-    width:75px;
-    height: 75px;
-    object-fit: cover;
+    width:78px;
+    height:78px;
+    border-radius:50%;
 }
-
 .logo-content h2{
-    font-family: 'poppins', sans-serif;
-    font-weight: 500;
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
     color:#fff;
-    font-size:20px;
+    font-size:24px;
     line-height:1.2;
 }
 
 .logo-content p{
-     font-family: 'poppins' , sans-serif;
-    color:#f57c00;
-    font-size:10px;
+     font-family: 'poppins',sans-serif;
+    color:#d7d7d7;
+    font-size:11px;
     letter-spacing:2px;
+}
+
+.navbar{
+    flex:1;
+    margin-left:50px;   
+    margin-right:40px;    
+    justify-content:center;
 }
 
 .navbar ul{
     display:flex;
-    gap:30px;
-    list-style: none;
-    align-items: center;
+    align-items:center;
+    justify-content:space-evenly;
+    /* width:700px;       */
+    gap: 28px;;
 }
+
 .navbar ul li a{
+    font-family: 'poppins',sans-serif;
     text-decoration: none;
-    font-size: 15px;      
+    font-size: 20px;
+    align-items: center;
+    gap: 3px;     
     font-weight: 500;    
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
+    color: #fff;
     transition: 0.3s ease;
-    padding: 8px 0;
     letter-spacing: 0.5px;
 }
 
+.navbar a{
+    color:#fff;
+    font-size: 20px;
+    font-family: 'poppins'sans-serif;
+    font-size:15px;
+    text-decoration: none;
+    font-weight:600;
+    transition:.3s;
+}
 .navbar ul li a:hover{
     color: #f57c00;
 }
@@ -94,15 +120,14 @@
     font-family:'Poppins',sans-serif;
     background: #f57c00;
     color:#fff;
+    margin-left: 80px;
     padding:14px 28px;
     border-radius:6px;
     font-weight:600;
     display:flex;
     gap:10px;
     align-items:center;
-    text-decoration: none;
 }
-
 
 
         /* ==========================================================================
@@ -813,3 +838,128 @@
             }
         }
     
+
+    /*================ DROPDOWN MENU ================*/
+
+.navbar ul li{
+    list-style: none;
+    position: relative;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background: #3b3bdd;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 8px 0;
+    opacity: 0;
+    list-style: none;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+    z-index: 999;
+    display: block;
+}
+
+.dropdown-menu li{
+    width: 100%;
+}
+
+.dropdown-menu li a{
+    display: block;
+    padding: 12px 18px;
+    color: #0B1F44;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover{
+    /* background: grey; */
+    color: #2806e6;
+}
+
+.dropdown:hover .dropdown-menu{
+     opacity: 1;
+    visibility: visible;
+    flex-direction: column;
+    transform: translateY(0);
+}
+    
+
+
+/* ==========================================================
+   HAMBURGER MENU & MOBILE RESPONSIVE NAVBAR
+   ========================================================== */
+
+/* Desktop view par 3-lines icon hidden rahega */
+.hamburger-menu {
+    display: none;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Mobile dropdown ke andar wale button ke liye class */
+.mobile-only-btn {
+    display: none;
+}
+
+/* ----------------------------------------------------------
+   MOBILE & SMALL SCREEN STYLES (Jab screen 992px se choti ho)
+   ---------------------------------------------------------- */
+@media screen and (max-width: 992px) {
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Mobile screen par 3 lines (Hamburger) icon dikhega */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Desktop wala Apply button chhip jayega */
+    .desktop-only-btn {
+        display: none;
+    }
+
+    /* Mobile Navbar Dropdown Container (By default Hidden) */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #00153c; /* Header Blue Theme */
+        display: none; /* Default me hidden rahega */
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        z-index: 99999;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    /* Jab JavaScript 'is-active' class add karegi tab menu khulega */
+    .navbar.is-active {
+        display: flex !important;
+    }
+
+    .mobile-only-btn {
+        display: inline-flex;
+        margin-top: 15px;
+        justify-content: center;
+    }
+}
+

@@ -785,3 +785,127 @@ ul {
 .close-card:hover{
     color:#f57c00;
 }
+
+
+/*================ DROPDOWN MENU ================*/
+
+.navbar ul li{
+    list-style: none;
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    padding: 8px 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+
+    z-index: 999;
+}
+
+.dropdown-menu li{
+    width: 100%;
+}
+
+.dropdown-menu li a{
+    display: block;
+    padding: 12px 18px;
+    color: #0B1F44 !important;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover{
+    background: #f5f5f5;
+    color: #f57c00 !important;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+
+/* ==========================================================
+   HAMBURGER MENU & MOBILE RESPONSIVE NAVBAR
+   ========================================================== */
+
+/* Desktop view par 3-lines icon hidden rahega */
+.hamburger-menu {
+    display: none;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Mobile dropdown ke andar wale button ke liye class */
+.mobile-only-btn {
+    display: none;
+}
+
+/* ----------------------------------------------------------
+   MOBILE & SMALL SCREEN STYLES (Jab screen 992px se choti ho)
+   ---------------------------------------------------------- */
+@media screen and (max-width: 992px) {
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Mobile screen par 3 lines (Hamburger) icon dikhega */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Desktop wala Apply button chhip jayega */
+    .desktop-only-btn {
+        display: none;
+    }
+
+    /* Mobile Navbar Dropdown Container (By default Hidden) */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #00153c; /* Header Blue Theme */
+        display: none; /* Default me hidden rahega */
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        z-index: 99999;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    /* Jab JavaScript 'is-active' class add karegi tab menu khulega */
+    .navbar.is-active {
+        display: flex !important;
+    }
+
+    .mobile-only-btn {
+        display: inline-flex;
+        margin-top: 15px;
+        justify-content: center;
+    }
+}

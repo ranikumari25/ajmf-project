@@ -117,3 +117,23 @@ document.addEventListener("keydown", (e) => {
     }
 
 });
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    if (hamburgerBtn && navMenu) {
+        hamburgerBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('is-active');
+
+            // Icon ko ☰ se ✕ mein change karne ke liye
+            const icon = hamburgerBtn.querySelector('i');
+            if (icon) {
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-xmark');
+            }
+        });
+    }
+});
+   
