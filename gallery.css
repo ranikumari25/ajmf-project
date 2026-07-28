@@ -147,7 +147,11 @@ ul {
 
 .video-box video{
     width:100%;
+<<<<<<< HEAD
     height:580px;
+=======
+    height:950px;
+>>>>>>> origin/main
     object-fit:cover;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.2);
@@ -158,6 +162,11 @@ ul {
 
 
 }
+<<<<<<< HEAD
+
+=======
+/* 
+>>>>>>> origin/main
 .side-images{
     flex:1;
     display:flex;
@@ -174,11 +183,19 @@ ul {
     object-fit:cover;
     border-radius:20px;
     transition:.6s;
+<<<<<<< HEAD
 }
 
 .side-images img:hover{
     transform:scale(1.12);
 }
+=======
+} */
+
+/* .side-images img:hover{
+    transform:scale(1.12);
+} */
+>>>>>>> origin/main
 .video-heading{
     text-align:center;
     margin-bottom:30px;
