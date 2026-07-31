@@ -151,7 +151,7 @@ cardsContainer.innerHTML += `
         <p class="p-description">
             ${program.description}
         </p>
-        <h4 style="color:${program.color}; margin-top:15px; font-size:28px;">
+        <h4 class="curriculum-title" style="color:${program.color};">
               Curriculum Highlights
       </h4>
 

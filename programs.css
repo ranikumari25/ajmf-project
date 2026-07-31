@@ -674,156 +674,592 @@ body{
     margin:0;
 }
 
-/* Responsive */
+/* =========================================
+   RESPONSIVE DESIGN - NO HORIZONTAL SCROLL
+========================================= */
 
-@media(max-width:1100px){
+/* ---------- GLOBAL OVERFLOW FIX ---------- */
 
-    .footer-container{
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-
-    .footer-col::after{
-        display:none;
-    }
-}
-
-@media(max-width:768px){
-
-    .footer-container{
-        grid-template-columns:1fr;
-        padding:40px 25px;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-        padding:20px;
-    }
-}
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:900px){
-
-    .hero{
-        flex-direction:column;
-        padding:40px 20px;
-    }
-
-    .hero::before{
-        display:none;
-    }
-
-    .hero-content,
-    .hero-image{
-        width:100%;
-    }
-
-    .hero-content{
-        padding-top:0;
-    }
-
-    .hero-content h1{
-        font-size:40px;
-    }
-
-    .hero-content p{
-        font-size:18px;
-    }
-
-    .hero-image{
-        margin-top:30px;
-    }
-
-    .hero-image img{
-        border-radius:20px;
-    }
-
-    .program-card{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .program-image,
-    .program-content,
-    .career-box{
-        width:100%;
-    }
-
-    .career-box{
-        margin-left:0;
-        margin-top:20px;
-    }
-
-    .stats{
-        justify-content:center;
-    }
-
-    .timeline{
-        justify-content:center;
-        gap:25px;
-    }
-
-    .timeline::before{
-        display:none;
-    }
-
-    .time-item{
-        width:100%;
-        max-width:250px;
-    }
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
+/* ---------- HEADER ---------- */
 
-/*================ DROPDOWN MENU ================*/
-
-.navbar ul li{
-    list-style: none;
-    position: relative;
-}
-
-
-.dropdown-menu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 220px;
-    background: #3b3bdd;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    padding: 8px 0;
-    opacity: 0;
-    list-style: none;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.3s ease;
-    z-index: 999;
-    display: block;
-}
-
-.dropdown-menu li{
+.header {
     width: 100%;
 }
 
-.dropdown-menu li a{
-    display: block;
-    padding: 12px 18px;
-    color: #0B1F44;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
+.header .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 30px;
 }
 
-.dropdown-menu li a:hover{
-    /* background: grey; */
-    color: #2806e6;
+.logo-area img {
+    margin-left: 0;
 }
 
-.dropdown:hover .dropdown-menu{
-     opacity: 1;
-    visibility: visible;
-    flex-direction: column;
-    transform: translateY(0);
+.donate-btn {
+    margin-right: 0;
+}
+
+.navbar ul {
+    gap: 25px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 30px;
+}
+
+.hero-content {
+    min-width: 0;
+}
+
+.hero-image {
+    min-width: 0;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+
+/* ---------- PROGRAM CARDS ---------- */
+
+.program-card {
+    width: 100%;
+    max-width: 100%;
+}
+
+.program-image {
+    min-width: 0;
+}
+
+.program-image img {
+    max-width: 100%;
+}
+
+.program-content {
+    min-width: 0;
+}
+
+.career-box {
+    min-width: 0;
+}
+
+
+/* ---------- STATS ---------- */
+
+.stats {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* ---------- TIMELINE ---------- */
+
+.timeline {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   LAPTOP / SMALL DESKTOP
+========================================= */
+
+@media screen and (max-width: 1200px) {
+
+    .header .container {
+        padding: 0 25px;
+    }
+
+    .logo-area img {
+        margin-left: 0;
+    }
+
+    .donate-btn {
+        margin-right: 0;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding-left: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .tag {
+        font-size: 25px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .programs,
+    .campus {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .program-card {
+        gap: 20px;
+    }
+
+    .p-title {
+        font-size: 30px;
+    }
+
+    .p-description {
+        font-size: 18px;
+    }
+
+    .p-highlights {
+        font-size: 18px;
+    }
+
+    .p-career {
+        font-size: 22px;
+    }
+
+    .career-list li {
+        font-size: 16px;
+        gap: 12px;
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .header .container {
+        padding: 0 15px;
+    }
+
+    .logo-area img {
+        width: 75px;
+    }
+
+    .logo-content h2 {
+        font-size: 21px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .donate-btn {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding-left: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .tag {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    /* PROGRAM CARD */
+
+    .program-card {
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .p-title {
+        font-size: 24px;
+    }
+
+    .p-description {
+        font-size: 15px;
+    }
+
+    .p-highlights {
+        font-size: 15px;
+    }
+
+    .career-box {
+        padding: 15px;
+    }
+
+    .p-career {
+        font-size: 18px;
+    }
+
+    .career-list li {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px 25px 25px;
+        gap: 25px;
+    }
+
+    .footer-col:not(:last-child)::after {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 12px 0;
+    }
+
+    .header .container {
+        width: 100%;
+        padding: 0 15px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo-area {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
+
+    .logo-area img {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+
+    .logo-content h2 {
+        font-size: 17px;
+    }
+
+    .logo-content p {
+        font-size: 8px;
+    }
+
+    .donate-btn {
+        margin: 0;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+    }
+
+    .navbar ul li a {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 45px 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* PROGRAMS */
+
+    .programs {
+        width: 100%;
+        padding: 50px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .program-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .program-image {
+        width: 100%;
+    }
+
+    .program-image img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .program-content {
+        width: 100%;
+    }
+
+    .p-title {
+        font-size: 24px;
+    }
+
+    .p-description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .p-highlights {
+        font-size: 16px;
+    }
+
+    .program-content h4 {
+        font-size: 20px !important;
+    }
+
+    .career-box {
+        width: 100%;
+        margin-left: 0;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .p-career {
+        font-size: 22px;
+    }
+
+    .career-list li {
+        font-size: 16px;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+
+    /* STATS */
+
+    .stats {
+        width: 100%;
+        border-radius: 0;
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+
+
+    /* CAMPUS */
+
+    .campus {
+        width: 100%;
+        padding: 50px 15px;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .time-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 40px 20px 25px;
+    }
+
+    .footer-col:not(:last-child)::after {
+        display: none;
+    }
+
+    .footer-bottom {
+        padding: 18px 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact p {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+      .curriculum-title {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .program-card {
+        padding: 15px;
+    }
+
+    .program-image img {
+        height: 210px;
+    }
+
+    .p-title {
+        font-size: 22px;
+    }
+
+    .p-description {
+        font-size: 15px;
+    }
+
+    .p-highlights {
+        font-size: 15px;
+    }
+
+    .career-box {
+        padding: 15px;
+    }
+
+    .p-career {
+        font-size: 20px;
+    }
+
+    .career-list li {
+        font-size: 15px;
+    }
+
+    .stat-card h2 {
+        font-size: 30px;
+    }
 }

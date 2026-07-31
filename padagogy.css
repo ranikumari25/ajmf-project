@@ -704,3 +704,320 @@ ul {
     visibility: visible;
     transform: translateY(0);
 }
+/* ==========================================
+   RESPONSIVE CSS
+========================================== */
+
+/* ========== Large Laptop (1200px) ========== */
+
+@media (max-width:1200px){
+
+.header .container{
+    width:95%;
+}
+
+.navbar ul{
+    gap:20px;
+}
+
+.logo-area img{
+    width:80px;
+}
+
+.logo-content h2{
+    font-size:22px;
+}
+
+.hero-display-title{
+    font-size:42px;
+}
+
+.five-columns-row-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.four-columns-gap-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+
+/* ========== Laptop (992px) ========== */
+
+@media (max-width:992px){
+
+.header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+.logo-area{
+    text-align:center;
+}
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero-wrapper-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-info-left{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero-description-para{
+    max-width:100%;
+}
+
+.hero-cta-flex-row{
+    justify-content:center;
+}
+
+.five-columns-row-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.four-columns-gap-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.ribbon-flex-container{
+    gap:30px;
+}
+
+.footer-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* ========== Tablet (768px) ========== */
+
+@media (max-width:768px){
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+.header{
+    position:relative;
+}
+
+.logo-area{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo-area img{
+    width:70px;
+}
+
+.logo-content h2{
+    font-size:20px;
+}
+
+.logo-content p{
+    font-size:9px;
+}
+
+.navbar ul{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.donate-btn{
+    width:220px;
+    justify-content:center;
+}
+
+.hero-display-title{
+    font-size:34px;
+}
+
+.hero-description-para{
+    font-size:15px;
+}
+
+.hero-cta-flex-row{
+    flex-direction:column;
+}
+
+.btn-dark-pill,
+.btn-link-orange{
+    width:100%;
+    justify-content:center;
+}
+
+.centered-section-heading h2{
+    font-size:28px;
+}
+
+.five-columns-row-grid{
+    grid-template-columns:1fr;
+}
+
+.four-columns-gap-grid{
+    grid-template-columns:1fr;
+}
+
+.impact-ribbon-bar-section{
+    margin:20px;
+}
+
+.ribbon-flex-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.footer-container{
+    grid-template-columns:1fr;
+    padding:40px 20px;
+}
+
+.footer-col::after{
+    display:none;
+}
+
+.logo-box{
+    flex-direction:column;
+    text-align:center;
+}
+
+.foundation-text{
+    max-width:100%;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+}
+
+}
+
+
+/* ========== Mobile (576px) ========== */
+
+@media (max-width:576px){
+
+.hero-info-left{
+    padding:40px 15px;
+}
+
+.hero-display-title{
+    font-size:28px;
+    line-height:1.3;
+}
+
+.hero-description-para{
+    font-size:14px;
+}
+
+.section-micro-tag{
+    font-size:12px;
+}
+
+.centered-section-heading h2{
+    font-size:24px;
+}
+
+.centered-section-heading p{
+    font-size:14px;
+}
+
+.approach-pillar-card,
+.gap-metric-card{
+    padding:25px 18px;
+}
+
+.ribbon-text-data h3{
+    font-size:24px;
+}
+
+.ribbon-text-data p{
+    font-size:14px;
+}
+
+.logo-box img{
+    width:70px;
+    height:70px;
+}
+
+.footer-col h3{
+    font-size:22px;
+}
+
+.contact p{
+    word-break:break-word;
+}
+
+.newsletter input,
+.newsletter button{
+    width:100%;
+}
+
+}
+
+
+/* ========== Extra Small Mobile (400px) ========== */
+
+@media (max-width:400px){
+
+.logo-content h2{
+    font-size:18px;
+}
+
+.hero-display-title{
+    font-size:24px;
+}
+
+.btn-dark-pill,
+.btn-link-orange{
+    font-size:13px;
+    padding:12px;
+}
+
+.centered-section-heading h2{
+    font-size:22px;
+}
+
+.ribbon-text-data h3{
+    font-size:20px;
+}
+
+.footer-bottom{
+    font-size:12px;
+}
+
+}
+
+
+/* ========== Prevent Horizontal Scroll ========== */
+
+*{
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+body{
+    overflow-x:hidden;
+}

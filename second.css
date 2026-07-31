@@ -290,7 +290,7 @@
             width:100%;
             margin:auto;
             padding:40px 50px 25px;
-            display:flex;
+            display:grid;
             grid-template-columns:
             1.8fr
             1fr
@@ -299,6 +299,14 @@
             1.2fr;
             gap:40px;
         }
+        .footer-container {
+        width: 100%;
+    margin: auto;
+    padding: 40px 50px 25px;
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1.2fr 1.2fr;
+    gap: 40px;
+}
 
         /* Vertical Dividers */
 
@@ -487,62 +495,7 @@
 
         .footer-bottom p{
             margin:0;
-        }
-
-        /* Responsive */
-
-        @media(max-width:1100px){
-
-            .footer-container{
-                grid-template-columns:
-                repeat(2,1fr);
-            }
-
-            .footer-col::after{
-                display:none;
-            }
-        }
-
-        @media(max-width:768px){
-
-            .footer-container{
-                grid-template-columns:1fr;
-                padding:40px 25px;
-            }
-
-            .footer-bottom{
-                flex-direction:column;
-                gap:10px;
-                text-align:center;
-                padding:20px;
-            }
-        }
-
-        /* ==========================================================================
-           6. RESPONSIVE MEDIA QUERIES
-           ========================================================================== */
-        @media (max-width: 900px) {
-            .timeline-content-card, .timeline-block:nth-child(even) .timeline-content-card {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            .timeline-block:nth-child(even) .timeline-info-side {
-                grid-column: 1;
-            }
-            .timeline-block:nth-child(even) .timeline-image-side {
-                grid-column: 1;
-                grid-row: auto;
-            }
-            .footer-grid-layout {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-            .nav-links-list {
-                display: none;
-            }
-        }
-
-        
+        }        
 /*================ DROPDOWN MENU ================*/
 
 .navbar ul li{
@@ -594,3 +547,394 @@
     transform: translateY(0);
 }
     
+        
+/* =========================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================= */
+
+
+/* ================= LARGE DESKTOP ================= */
+
+@media (min-width: 1200px) {
+
+    .header .container {
+        max-width: 1340px;
+    }
+
+    .timeline-wrapper {
+        max-width: 900px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1.8fr 1fr 1fr 1.2fr 1.2fr;
+    }
+}
+
+
+/* ================= LAPTOP / SMALL DESKTOP ================= */
+
+@media (max-width: 1199px) {
+
+    .header .container {
+        padding: 0 25px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .donate-btn {
+        padding: 12px 20px;
+    }
+
+    .timeline-wrapper {
+        max-width: 850px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        padding: 40px 35px 25px;
+    }
+
+    .footer-col::after {
+        display: none;
+    }
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+
+    .header .container {
+        padding: 0 20px;
+    }
+
+    .logo-area {
+        gap: 10px;
+    }
+
+    .logo-area img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-content h2 {
+        font-size: 17px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .donate-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .campus-hero-section {
+        padding: 50px 20px;
+    }
+
+    .campus-hero-title {
+        font-size: 36px;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline-section {
+        padding: 60px 20px;
+    }
+
+    .timeline-wrapper {
+        max-width: 750px;
+    }
+
+    .timeline-content-card,
+    .timeline-block:nth-child(even) .timeline-content-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .timeline-block:nth-child(even) .timeline-info-side,
+    .timeline-block:nth-child(even) .timeline-image-side {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 30px 25px;
+        gap: 30px;
+    }
+
+    .footer-col::after {
+        display: none;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* GLOBAL */
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* HEADER */
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .header .container {
+        padding: 0 15px;
+    }
+
+    .logo-area {
+        gap: 8px;
+    }
+
+    .logo-area img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-content h2 {
+        font-size: 14px;
+    }
+
+    .logo-content p {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .navbar ul {
+        gap: 8px;
+    }
+
+    .navbar ul li a {
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .donate-btn {
+        padding: 8px 10px;
+        font-size: 10px;
+        gap: 5px;
+    }
+
+
+    /* HERO */
+
+    .campus-hero-section {
+        padding: 45px 15px;
+    }
+
+    .campus-hero-title {
+        font-size: 30px;
+    }
+
+    .campus-hero-subtitle {
+        font-size: 13px;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline-section {
+        padding: 50px 15px;
+    }
+
+    .timeline-wrapper {
+        padding-left: 25px;
+        margin-left: 10px;
+        max-width: 100%;
+    }
+
+    .timeline-node {
+        left: -46px;
+        width: 34px;
+        height: 34px;
+        font-size: 11px;
+    }
+
+    .timeline-content-card,
+    .timeline-block:nth-child(even) .timeline-content-card {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 18px;
+        gap: 20px;
+    }
+
+    .timeline-image-side {
+        width: 100%;
+        height: 180px;
+    }
+
+    .event-title {
+        font-size: 20px;
+    }
+
+    .event-description {
+        font-size: 13px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding: 40px 20px 25px;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 20px 15px;
+        font-size: 12px;
+    }
+
+    .logo-box img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer-logo-content p {
+        font-size: 11px;
+    }
+
+    .foundation-text {
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    .header .container {
+        padding: 0 10px;
+    }
+
+    .logo-area img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo-content h2 {
+        font-size: 11px;
+    }
+
+    .logo-content p {
+        font-size: 5px;
+        letter-spacing: 0.8px;
+    }
+
+    .navbar ul {
+        gap: 5px;
+    }
+
+    .navbar ul li a {
+        font-size: 8px;
+    }
+
+    .donate-btn {
+        padding: 7px 8px;
+        font-size: 8px;
+    }
+
+
+    /* HERO */
+
+    .campus-hero-title {
+        font-size: 25px;
+    }
+
+    .campus-hero-subtitle {
+        font-size: 12px;
+    }
+
+
+    /* TIMELINE */
+
+    .timeline-section {
+        padding: 40px 10px;
+    }
+
+    .timeline-wrapper {
+        padding-left: 20px;
+        margin-left: 8px;
+    }
+
+    .timeline-node {
+        left: -38px;
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .timeline-content-card {
+        padding: 15px;
+    }
+
+    .timeline-image-side {
+        height: 160px;
+    }
+
+    .event-title {
+        font-size: 18px;
+    }
+
+    .event-description {
+        font-size: 12px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        padding: 35px 15px 20px;
+    }
+
+    .footer-col h3 {
+        font-size: 21px;
+    }
+
+    .footer-logo-content p {
+        font-size: 10px;
+    }
+}

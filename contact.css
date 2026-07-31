@@ -795,661 +795,307 @@ section{
     margin:0;
 }
 
-/* =====================================================
-   COMPLETE RESPONSIVE DESIGN
-===================================================== */
+/* =========================================
+   FINAL MOBILE RESPONSIVE
+========================================= */
 
+@media (max-width: 768px) {
 
-/* ================= LARGE LAPTOP ================= */
-
-@media (max-width: 1400px){
-
-    .logo-area img{
-        margin-left:40px;
+    * {
+        max-width: 100%;
     }
 
-    .donate-btn{
-        margin-right:40px;
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
     }
 
-    .navbar ul{
-        gap:25px;
+    /* ================= HEADER ================= */
+
+    .header {
+        position: relative;
+        width: 100%;
+        padding: 15px 0;
     }
 
-    .navbar ul li a{
-        font-size:16px;
+    .header .container {
+        width: 100%;
+        padding: 0 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
     }
 
-    .hero h1{
-        font-size:60px;
+    .logo-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
     }
 
-    .hero p{
-        font-size:20px;
+    .logo-area img {
+        width: 70px;
+        height: 70px;
+        margin: 0;
     }
 
-    .impact-container{
-        gap:20px;
+    .logo-content h2 {
+        font-size: 21px;
+        line-height: 1.3;
     }
 
-    .impact-card{
-        padding:35px 20px;
+    .logo-content p {
+        font-size: 8px;
+        letter-spacing: 1.5px;
     }
 
-}
+    /* NAVBAR */
 
-
-/* ================= LAPTOP ================= */
-
-@media (max-width: 1200px){
-
-    .header .container{
-        padding:0 25px;
+    .navbar {
+        width: 100%;
     }
 
-    .logo-area img{
-        width:75px;
-        margin-left:0;
+    .navbar > ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
 
-    .logo-content h2{
-        font-size:21px;
+    .navbar > ul > li {
+        width: 100%;
+        text-align: center;
     }
 
-    .logo-content p{
-        font-size:9px;
+    .navbar ul li a {
+        font-size: 15px;
     }
 
-    .navbar ul{
-        gap:18px;
-    }
+    /* APPLY BUTTON */
 
-    .navbar ul li a{
-        font-size:14px;
-    }
-
-    .donate-btn{
-        margin-right:0;
-        padding:12px 18px;
-        font-size:14px;
-    }
-
-    .hero h1{
-        font-size:52px;
-    }
-
-    .hero p{
-        font-size:18px;
-    }
-
-    .why-join{
-        gap:40px;
-    }
-
-    .why-content h2{
-        font-size:40px;
-    }
-
-    .footer-container{
-        grid-template-columns:
-        1.5fr
-        1fr
-        1fr
-        1.2fr;
-    }
-
-    .newsletter{
-        grid-column:span 2;
-    }
-
-}
-
-
-/* ================= TABLET ================= */
-
-@media (max-width: 992px){
-
-    /* HEADER */
-
-    .header{
-        position:relative;
-    }
-
-    .header .container{
-        width:94%;
-        padding:15px 0;
-        flex-wrap:wrap;
-        gap:15px;
-    }
-
-    .logo-area{
-        flex:1;
-    }
-
-    .logo-area img{
-        width:70px;
-    }
-
-    .logo-content h2{
-        font-size:20px;
-    }
-
-    .logo-content p{
-        font-size:8px;
-    }
-
-    .navbar{
-        order:3;
-        width:100%;
-    }
-
-    .navbar ul{
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:12px 25px;
-    }
-
-    .navbar ul li a{
-        font-size:14px;
-    }
-
-    .donate-btn{
-        padding:11px 16px;
-        font-size:13px;
+    .donate-btn {
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto;
+        justify-content: center;
     }
 
 
-    /* HERO */
+    /* ================= HERO ================= */
 
-    .hero{
-        position:relative;
-        height:700px;
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 620px;
+        min-height: 620px;
     }
 
-    .hero-content{
-        width:90%;
+    .hero-content {
+        width: calc(100% - 40px);
+        max-width: 100%;
     }
 
-    .hero h1{
-        font-size:48px;
+    .hero-tag {
+        font-size: 12px;
+        padding: 8px 18px;
     }
 
-    .hero p{
-        font-size:17px;
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.3;
     }
 
-
-    /* IMPACT */
-
-    .impact{
-        margin-top:0;
-        padding:80px 6%;
+    .hero p {
+        font-size: 14px;
+        line-height: 1.7;
     }
 
-    .impact-container{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-
-    /* WAYS */
-
-    .ways-container{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-
-    /* ROLES */
-
-    .roles-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-
-    /* WHY JOIN */
-
-    .why-join{
-        flex-direction:column;
-        gap:40px;
-    }
-
-    .why-image,
-    .why-content{
-        width:100%;
-    }
-
-    .why-image img{
-        height:450px;
-    }
-
-    .why-content h2{
-        font-size:38px;
-    }
-
-
-    /* CTA */
-
-    .cta h2{
-        font-size:44px;
-    }
-
-
-    /* FOOTER */
-
-    .footer-container{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .footer-col::after{
-        display:none;
-    }
-
-    .newsletter{
-        grid-column:span 1;
-    }
-
-}
-
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px){
-
-    section{
-        padding:65px 20px;
-    }
-
-
-    /* HEADER */
-
-    .header{
-        position:relative;
-        padding:15px 0;
-    }
-
-    .header .container{
-        width:92%;
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-    }
-
-    .logo-area{
-        flex-direction:column;
-        gap:8px;
-    }
-
-    .logo-area img{
-        width:70px;
-    }
-
-    .logo-content h2{
-        font-size:21px;
-    }
-
-    .logo-content p{
-        font-size:8px;
-        letter-spacing:1.5px;
-    }
-
-    .navbar{
-        width:100%;
-    }
-
-    .navbar ul{
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
-    }
-
-    .navbar ul li a{
-        font-size:15px;
-    }
-
-    .donate-btn{
-        width:100%;
-        max-width:220px;
-        justify-content:center;
-        margin:5px auto 0;
-    }
-
-
-    /* HERO */
-
-    .hero{
-        position:relative;
-        height:650px;
-        min-height:650px;
-    }
-
-    .hero-content{
-        width:90%;
-        top:50%;
-    }
-
-    .hero-tag{
-        font-size:13px;
-        padding:8px 18px;
-        margin-bottom:18px;
-    }
-
-    .hero h1{
-        font-size:36px;
-        line-height:1.25;
-    }
-
-    .hero p{
-        font-size:15px;
-        line-height:1.7;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
-        margin-top:30px;
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
     }
 
     .btn-orange,
-    .btn-white{
-        width:100%;
-        max-width:230px;
-        text-align:center;
-        padding:14px 20px;
+    .btn-white {
+        width: 100%;
+        max-width: 230px;
+        text-align: center;
     }
 
 
-    /* SECTION TITLE */
+    /* ================= ALL SECTIONS ================= */
 
-    .section-title{
-        margin-bottom:40px;
+    section {
+        padding: 60px 20px;
     }
 
-    .section-title h2{
-        font-size:32px;
-        line-height:1.3;
+    .section-title h2 {
+        font-size: 30px;
     }
 
-    .section-title p{
-        font-size:15px;
-        line-height:1.6;
-    }
-
-
-    /* IMPACT */
-
-    .impact{
-        margin-top:0;
-        padding:65px 20px;
-        border-radius:30px 30px 0 0;
-    }
-
-    .impact-container{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-
-    .impact-card{
-        padding:35px 20px;
-    }
-
-    .impact-card i{
-        font-size:45px;
-    }
-
-    .impact-card h3{
-        font-size:36px;
+    .section-title p {
+        font-size: 15px;
     }
 
 
-    /* WAYS */
+    /* ================= IMPACT ================= */
 
-    .ways-container{
-        grid-template-columns:1fr;
-        gap:25px;
+    .impact {
+        margin-top: 0;
+        padding: 60px 20px;
     }
 
-    .way-card{
-        padding:35px 25px;
+    .impact-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .way-card h3{
-        font-size:26px;
-    }
-
-
-    /* ROLES */
-
-    .roles-grid{
-        grid-template-columns:1fr;
-        gap:22px;
-    }
-
-    .role-card{
-        padding:32px 22px;
+    .impact-card {
+        width: 100%;
+        padding: 35px 20px;
     }
 
 
-    /* WHY JOIN */
+    /* ================= WAYS ================= */
 
-    .why-join{
-        padding:65px 20px;
-        gap:30px;
+    .ways-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
     }
 
-    .why-image img{
-        height:330px;
-        border-radius:18px;
-    }
-
-    .why-content h2{
-        font-size:31px;
-        line-height:1.35;
-    }
-
-    .why-content li{
-        font-size:16px;
-        line-height:1.5;
-        align-items:flex-start;
-    }
-
-    .why-content li i{
-        min-width:32px;
-        width:32px;
-        height:32px;
-        font-size:13px;
+    .way-card {
+        width: 100%;
+        padding: 35px 22px;
     }
 
 
-    /* CTA */
+    /* ================= ROLES ================= */
 
-    .cta{
-        padding:65px 20px;
+    .roles-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
     }
 
-    .cta h2{
-        font-size:34px;
-        line-height:1.3;
-    }
-
-    .cta p{
-        font-size:16px;
-        line-height:1.7;
-    }
-
-    .cta a{
-        padding:15px 28px;
-        font-size:14px;
+    .role-card {
+        width: 100%;
+        padding: 32px 22px;
     }
 
 
-    /* FOOTER */
+    /* ================= WHY JOIN ================= */
 
-    .footer-container{
-        grid-template-columns:1fr;
-        padding:40px 25px;
-        gap:35px;
+    .why-join {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 20px;
     }
 
-    .logo-box{
-        justify-content:flex-start;
+    .why-image,
+    .why-content {
+        width: 100%;
     }
 
-    .logo-box img{
-        width:70px;
-        height:70px;
+    .why-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
-    .footer-logo-content h3{
-        font-size:20px;
+    .why-content h2 {
+        font-size: 30px;
+        line-height: 1.35;
     }
 
-    .footer-col h3{
-        font-size:21px;
+    .why-content li {
+        font-size: 15px;
     }
 
-    .footer-bottom{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-        padding:20px 15px;
-        font-size:12px;
-        line-height:1.6;
+
+    /* ================= CTA ================= */
+
+    .cta {
+        width: 100%;
+        padding: 60px 20px;
     }
 
-}
-
-
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width: 480px){
-
-    .hero{
-        height:620px;
-        min-height:620px;
+    .cta h2 {
+        font-size: 32px;
     }
 
-    .hero h1{
-        font-size:29px;
+    .cta p {
+        font-size: 15px;
     }
 
-    .hero p{
-        font-size:14px;
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        width: 100%;
+        overflow: hidden;
     }
 
-    .hero-tag{
-        font-size:12px;
+    .footer-container {
+        width: 100%;
+        padding: 40px 20px 25px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 35px;
     }
 
-    .section-title h2{
-        font-size:28px;
+    .footer-col {
+        width: 100%;
+        min-width: 0;
     }
 
-    .impact-card h3{
-        font-size:32px;
+    .footer-col::after {
+        display: none;
     }
 
-    .why-content h2{
-        font-size:27px;
+    .logo-box {
+        width: 100%;
     }
 
-    .why-content li{
-        font-size:14px;
+    .logo-box img {
+        width: 70px;
+        height: 70px;
     }
 
-    .why-image img{
-        height:270px;
+    .foundation-text {
+        max-width: 100%;
     }
 
-    .cta h2{
-        font-size:29px;
+    .contact p {
+        width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
-    .footer-container{
-        padding:35px 18px;
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
     }
 
-}
+    .footer-bottom {
+        width: 100%;
+        padding: 18px 15px;
 
-
-/* ================= VERY SMALL MOBILE ================= */
-
-@media (max-width: 360px){
-
-    .hero{
-        height:600px;
-        min-height:600px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
-
-    .hero h1{
-        font-size:25px;
-    }
-
-    .hero p{
-        font-size:13px;
-    }
-
-    .section-title h2{
-        font-size:25px;
-    }
-
-    .why-content h2{
-        font-size:24px;
-    }
-
-    .cta h2{
-        font-size:26px;
-    }
-
-}
-
-
-/*================ DROPDOWN MENU ================*/
-
-.navbar ul li{
-    list-style: none;
-    position: relative;
-}
-
-
-.dropdown-menu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 220px;
-    background: #3b3bdd;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    padding: 8px 0;
-    opacity: 0;
-    list-style: none;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.3s ease;
-    z-index: 999;
-    display: block;
-}
-
-.dropdown-menu li{
-    width: 100%;
-}
-
-.dropdown-menu li a{
-    display: block;
-    padding: 12px 18px;
-    color: #0B1F44;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.dropdown-menu li a:hover{
-    /* background: grey; */
-    color: #2806e6;
-}
-
-.dropdown:hover .dropdown-menu{
-     opacity: 1;
-    visibility: visible;
-    flex-direction: column;
-    transform: translateY(0);
 }
