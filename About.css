@@ -589,7 +589,8 @@ ul {
             flex: 1;
             min-width: 220px;
             justify-content: center;
-        }
+        } 
+            
 
         .ajmf-stat-item:not(:last-child) {
             border-right: 1px solid #F0E6DF;
@@ -1161,53 +1162,11 @@ ul {
 
 /*================ DROPDOWN MENU ================*/
 
+/*================ DROPDOWN MENU (Handled centrally in header.css) ================*/
+
 .navbar ul li{
     list-style: none;
     position: relative;
-}
-
-
-.dropdown-menu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 220px;
-    background: #3b3bdd;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    padding: 8px 0;
-    opacity: 0;
-    list-style: none;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.3s ease;
-    z-index: 999;
-    display: block;
-}
-
-.dropdown-menu li{
-    width: 100%;
-}
-
-.dropdown-menu li a{
-    display: block;
-    padding: 12px 18px;
-    color: #0B1F44;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.dropdown-menu li a:hover{
-    /* background: grey; */
-    color: #2806e6;
-}
-
-.dropdown:hover .dropdown-menu{
-     opacity: 1;
-    visibility: visible;
-    flex-direction: column;
-    transform: translateY(0);
 }
 
 

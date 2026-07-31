@@ -26,7 +26,7 @@ ul {
 /* ================= HEADER ================= */
 
 .header{
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -194,14 +194,6 @@ ul {
     padding:18px 45px;
     border-radius:8px;
     font-weight:600;
-}
-
-.secondary-btn{
-    font-family:'Poppins',sans-serif;
-    border:2px solid  #D87A1C;
-    color:#fff;
-    padding:18px 45px;
-    border-radius:8px;
 }
 
 /* ================= STATS ================= */
@@ -544,7 +536,7 @@ ul {
     font-family:'Playfair Display',serif;
     color: #fff;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 10px;
     line-height: 1;
 }
@@ -552,7 +544,7 @@ ul {
 .impact-item p{ 
     font-family:'Poppins',sans-serif;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
 }
@@ -578,7 +570,7 @@ ul {
 
 .section-heading h2{
     font-family:'Playfair Display',serif;
-    font-size: 35px;
+    font-size: 39px;
     margin-top: 10px;
     color: #111;
 }
@@ -695,7 +687,7 @@ ul {
 }
 
 .testimonial-user h4{
-        font-family:'Poppins',sans-serif;
+    font-family:'Poppins',sans-serif;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 3px;
@@ -710,6 +702,7 @@ ul {
 /* ================= FOOTER ================= */
 
 .footer{
+    margin-top: 0;
     background:#061b36;
     color:#ffffff;
     font-family:'Poppins',sans-serif;
@@ -729,7 +722,7 @@ ul {
     1fr
     1.2fr
     1.2fr;
-    gap:40px;
+    gap:90px;
 }
 
 /* Vertical Dividers */
@@ -767,7 +760,7 @@ ul {
 
 .footer-logo-content p{
     font-family:'Poppins',sans-serif;
-    font-size:14px;
+    font-size:15px;
     font-weight:400;
     letter-spacing:2px;
     color:#cfcfcf;
@@ -777,17 +770,16 @@ ul {
 
  .foundation h5{
     font-weight: 400;
-    font-size:11px;
+    font-size:12px;
      line-height:1.8; 
      color:#d9d9d9; 
-     margin-top:8px; 
  }  
 
 /* Text */
 
 .foundation-text{
     color:#d8d8d8;
-    font-size:14px;
+    font-size:15px;
     line-height:1.8;
     max-width:290px;
 }
@@ -817,7 +809,7 @@ ul {
     text-decoration:none;
     color:#e7e7e7;
     font-weight: 400;
-    font-size:13px;
+    font-size:15px;
     transition:.3s;
 }
 
@@ -834,8 +826,8 @@ ul {
 }
 
 .social-icons a{
-    width:38px;
-    height:38px;
+    width:40px;
+    height:40px;
     background: #453722;
     border-radius:50%;
     display:flex;
@@ -843,12 +835,16 @@ ul {
     align-items:center;
     color:#fe8307;
     text-decoration:none;
-    font-size:15px;
-    transition:.3s;
+    font-size:16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .social-icons a:hover{
-    transform:translateY(-3px);
+    background: #f57c00;
+    color: #ffffff;
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 6px 15px rgba(245, 124, 0, 0.4);
 }
 
 /* Contact */
@@ -860,19 +856,31 @@ ul {
     margin-bottom:18px;
     line-height:1.7;
     color:#e7e7e7;
-    font-size:13px;
+    font-size:15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contact p:hover{
+    color: #f57c00;
+}
+
+.contact p:hover i{
+    color: #f57c00;
 }
 
 .contact i{
     color:#f57c00;
     margin-top:5px;
-    font-size:16px;
+    font-size:17px;
+    transition: color 0.3s ease;
 }
 
 /* Newsletter */
 
 .newsletter p{
     color:#dcdcdc;
+    font-size:15px;
     line-height:1.8;
     margin-bottom:18px;
 }
@@ -883,7 +891,7 @@ ul {
     border:none;
     outline:none;
     padding:0 15px;
-    font-size:14px;
+    font-size:15px;
     background:#ffffff;
     border-radius:3px;
     margin-bottom:12px;
@@ -915,62 +923,48 @@ ul {
     justify-content:space-between;
     align-items:center;
     color:#d8d8d8;
-    font-size:14px;
+    font-size:15px;
 }
 
 .footer-bottom p{
     margin:0;
 }
 
-/*================ DROPDOWN MENU ================*/
+/* Responsive */
+
+@media(max-width:1100px){
+
+    .footer-container{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .footer-col::after{
+        display:none;
+    }
+}
+
+@media(max-width:768px){
+
+    .footer-container{
+        grid-template-columns:1fr;
+        padding:40px 25px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+        padding:20px;
+    }
+}
+
+
+/*================ DROPDOWN MENU (Handled centrally in header.css) ================*/
 
 .navbar ul li{
     list-style: none;
     position: relative;
-}
-
-
-.dropdown-menu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 220px;
-    background: #3b3bdd;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    padding: 8px 0;
-    opacity: 0;
-    list-style: none;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.3s ease;
-    z-index: 999;
-    display: block;
-}
-
-.dropdown-menu li{
-    width: 100%;
-}
-
-.dropdown-menu li a{
-    display: block;
-    padding: 12px 18px;
-    color: #0B1F44;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.dropdown-menu li a:hover{
-    /* background: grey; */
-    color: #2806e6;
-}
-
-.dropdown:hover .dropdown-menu{
-     opacity: 1;
-    visibility: visible;
-    flex-direction: column;
-    transform: translateY(0);
 }
 
 /* ================= FORCE MOBILE & OVERFLOW FIX FOR INDEX/HOME ================= */

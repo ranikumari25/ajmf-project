@@ -151,7 +151,7 @@ cardsContainer.innerHTML += `
         <p class="p-description">
             ${program.description}
         </p>
-        <h4 style="color:${program.color}; margin-top:15px; font-size:28px;">
+        <h4 class="highlights-title" style="color:${program.color}; margin-top:18px; margin-bottom:10px; font-size:18px; font-family:'Poppins', sans-serif; font-weight:700; letter-spacing:0.5px;">
               Curriculum Highlights
       </h4>
 
@@ -297,22 +297,4 @@ timeline.innerHTML += `
 
 });
 
-
-        document.addEventListener('DOMContentLoaded', () => {
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const navMenu = document.getElementById('navMenu');
-
-    if (hamburgerBtn && navMenu) {
-        hamburgerBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('is-active');
-
-            // Icon ko ☰ se ✕ mein change karne ke liye
-            const icon = hamburgerBtn.querySelector('i');
-            if (icon) {
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-xmark');
-            }
-        });
-    }
-});
-    
+
