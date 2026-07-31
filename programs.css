@@ -1,5 +1,5 @@
 /* ================= GLOBAL RESETS & FONTS ================= */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -340,20 +340,232 @@ ul {
 }
 
 .p-description{
-    font-size:24px;
+    font-size:16px;
+    font-family:'Poppins', sans-serif;
+    line-height:1.65;
+    color:#555555;
 }
 
 .p-title{
-    font-size:35px;
+    font-size:28px;
+    font-family:'Playfair Display', Georgia, serif;
+    font-weight:700;
+    color:#08245c;
 }
 
 .p-highlights{
-    font-size:25px;
+    font-size:14.5px;
+    font-family:'Poppins', sans-serif;
+    line-height:1.6;
+    color:#444444;
 }
 
 .p-career{
-    font-size:30px;
-    font-weight:bold;
+    font-size:18px;
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    letter-spacing:0.3px;
+}
+
+/* ==========================================================
+   OUR PROGRAMS PAGE TYPOGRAPHY REFINEMENTS
+   Matches Reference Image Typography Style
+   ========================================================== */
+
+/* Scoped font styling for Our Programs page */
+body.our-programs-page {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Taglines & Small Section Labels ("OUR PROGRAMS", "OUR SCHOOLS", etc.) */
+.our-programs-page .tag,
+.our-programs-page .sub-title,
+.our-programs-page .section-title span {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: #ff8c00 !important;
+}
+
+/* Hero Vertical Centering Alignment */
+.our-programs-page .hero {
+    align-items: center !important;
+}
+
+.our-programs-page .hero-content {
+    padding-top: 0 !important;
+    align-self: center !important;
+}
+
+/* Main Hero Title */
+.our-programs-page .hero-content h1 {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: #0b2b6f !important;
+    letter-spacing: -0.5px !important;
+}
+
+.our-programs-page .hero-content h1 .orange {
+    color: #ff8c00 !important;
+    font-family: 'Playfair Display', Georgia, serif !important;
+}
+
+/* Hero Description Subheading */
+.our-programs-page .hero-content p {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+    color: #555555 !important;
+}
+
+/* Hero Buttons Typography */
+.our-programs-page .primary-btn,
+.our-programs-page .secondary-btn {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.4px !important;
+}
+
+/* Section Headings ("Programs That Build Futures", "A Day At Campus") */
+.our-programs-page .section-title h2 {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    color: #08245c !important;
+    letter-spacing: -0.3px !important;
+}
+
+/* Program Card Titles ("School of Programming", "School of Education", etc.) */
+.our-programs-page .program-content h3,
+.our-programs-page .p-title {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 34px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    color: #08245c !important;
+    margin-bottom: 12px !important;
+}
+
+/* Program Card Description */
+.our-programs-page .program-content p,
+.our-programs-page .p-description {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 17.5px !important;
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+    color: #555555 !important;
+}
+
+/* Curriculum Highlights Title & Items */
+.our-programs-page .highlights-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+}
+
+.our-programs-page .p-highlights,
+.our-programs-page .p-highlights li {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15.5px !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    color: #444444 !important;
+}
+
+/* Career Paths Title & Items */
+.our-programs-page .career-box h4,
+.our-programs-page .p-career {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px !important;
+}
+
+.our-programs-page .career-list li {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15.5px !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    color: #333333 !important;
+}
+
+/* Stats Section Typography */
+.our-programs-page .stat-card h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    color: #ffffff !important;
+}
+
+.our-programs-page .stat-card p {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14.5px !important;
+    font-weight: 500 !important;
+    line-height: 1.35 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Campus Timeline Typography */
+.our-programs-page .time-card h4 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #08245c !important;
+}
+
+.our-programs-page .time-card p {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    color: #444444 !important;
+}
+
+/* Footer Typography Refinements for Our Programs Page */
+.our-programs-page .footer-col h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 26px !important;
+    font-weight: 600 !important;
+}
+
+.our-programs-page .footer-col ul li a {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+}
+
+.our-programs-page .foundation-text {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+}
+
+.our-programs-page .contact p {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+}
+
+.our-programs-page .newsletter p {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+}
+
+.our-programs-page .footer-bottom p {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 15px !important;
 }
 
 /* STATS */
@@ -361,9 +573,10 @@ ul {
 .stats{
     display:flex;
     justify-content:space-between;
-    gap:30px;
+    gap:20px;
     background:#061a52;
     padding:40px;
+    margin:0 140px; 
     border-radius:20px;
     color:white;
     flex-wrap:wrap;
@@ -404,8 +617,11 @@ ul {
 
 .stat-card h2{
     margin:0;
-    font-size:38px;
+    font-size:22px;     
+    font-weight:400;       
+    line-height:1.1;
 }
+
 
 .stat-card p{
     margin:5px 0 0;
@@ -496,7 +712,7 @@ ul {
     width:100%;
     margin:auto;
     padding:40px 50px 25px;
-    display:grid;
+    display:flex;
     grid-template-columns:
     1.8fr
     1fr
@@ -541,7 +757,7 @@ ul {
 
 .footer-logo-content p{
     font-family:'Poppins',sans-serif;
-    font-size:14px;
+    font-size:15px;
     font-weight:400;
     letter-spacing:2px;
     color:#cfcfcf;
@@ -551,7 +767,7 @@ ul {
 
  .foundation h5{
     font-weight: 400;
-    font-size:11px;
+    font-size:12px;
      line-height:1.8; 
      color:#d9d9d9; 
  }  
@@ -560,7 +776,7 @@ ul {
 
 .foundation-text{
     color:#d8d8d8;
-    font-size:14px;
+    font-size:15px;
     line-height:1.8;
     max-width:290px;
 }
@@ -590,7 +806,7 @@ ul {
     text-decoration:none;
     color:#e7e7e7;
     font-weight: 400;
-    font-size:13px;
+    font-size:15px;
     transition:.3s;
 }
 
@@ -607,8 +823,8 @@ ul {
 }
 
 .social-icons a{
-    width:38px;
-    height:38px;
+    width:40px;
+    height:40px;
     background: #453722;
     border-radius:50%;
     display:flex;
@@ -616,12 +832,16 @@ ul {
     align-items:center;
     color:#fe8307;
     text-decoration:none;
-    font-size:15px;
-    transition:.3s;
+    font-size:16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .social-icons a:hover{
-    transform:translateY(-3px);
+    background: #f57c00;
+    color: #ffffff;
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 6px 15px rgba(245, 124, 0, 0.4);
 }
 
 /* Contact */
@@ -633,19 +853,31 @@ ul {
     margin-bottom:18px;
     line-height:1.7;
     color:#e7e7e7;
-    font-size:13px;
+    font-size:15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contact p:hover{
+    color: #f57c00;
+}
+
+.contact p:hover i{
+    color: #f57c00;
 }
 
 .contact i{
     color:#f57c00;
     margin-top:5px;
-    font-size:16px;
+    font-size:17px;
+    transition: color 0.3s ease;
 }
 
 /* Newsletter */
 
 .newsletter p{
     color:#dcdcdc;
+    font-size:15px;
     line-height:1.8;
     margin-bottom:18px;
 }
@@ -656,7 +888,7 @@ ul {
     border:none;
     outline:none;
     padding:0 15px;
-    font-size:14px;
+    font-size:15px;
     background:#ffffff;
     border-radius:3px;
     margin-bottom:12px;
@@ -688,7 +920,7 @@ ul {
     justify-content:space-between;
     align-items:center;
     color:#d8d8d8;
-    font-size:14px;
+    font-size:15px;
 }
 
 .footer-bottom p{
@@ -806,48 +1038,7 @@ ul {
 }
 
 
-.dropdown-menu{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 220px;
-    background: #3b3bdd;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    padding: 8px 0;
-    opacity: 0;
-    list-style: none;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.3s ease;
-    z-index: 999;
-    display: block;
-}
-
-.dropdown-menu li{
-    width: 100%;
-}
-
-.dropdown-menu li a{
-    display: block;
-    padding: 12px 18px;
-    color: #0B1F44;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.dropdown-menu li a:hover{
-    /* background: grey; */
-    color: #2806e6;
-}
-
-.dropdown:hover .dropdown-menu{
-     opacity: 1;
-    visibility: visible;
-    flex-direction: column;
-    transform: translateY(0);
-}
+/* Dropdown menu handled centrally in header.css */
 
 
 

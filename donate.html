@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anish Jadhav Memorial Foundation</title>
+    <title>Anish Jadhav Memorial Foundation - Donate Now</title>
 
     <link rel="stylesheet" href="donate.css">
     <link rel="stylesheet" href="header.css">
 
-       <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Playfair Display & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
    
-    <!---  HEADER  --->
+<body class="donate-page">
+
+    <!---  HEADER (UNTOUCHED)  --->
 
     <header class="header">
         <div class="container">
@@ -113,241 +114,387 @@
     </header>
 
     
-<!-- ================= 2. TWO-COLUMN LAYOUT SYSTEM ================= -->
-    <div class="main-page-wrapper">
+    <!-- ================= MAIN DONATE PAGE CONTENT ================= -->
+    <main class="donate-main-wrapper">
         
-        <!-- Blue Backdrop (Sirf Header aur Hero Section ke background ke liye) -->
-        <div class="hero-blue-backdrop"></div>
-
-        <div class="grid-layout-container">
-            
-            <!-- ================= LEFT SIDE COLUMN (60% Width) ================= -->
-            <div class="left-main-column">
+        <!-- ================= HERO & PAYMENT SECTION ================= -->
+        <section class="donate-hero-section">
+            <div class="donate-container hero-grid-wrapper">
                 
-                <!-- Hero Content Area -->
-                <div class="hero-content-section">
-                    <h1 class="hero-title-main">
-                        Empower a Future. <br>
-                        <span class="orange-accent">Donate Today.</span>
+                <!-- Left Side: Hero Text & Info -->
+                <div class="hero-left-content">
+                    <div class="tax-badge">
+                        <i class="fa-solid fa-shield-check"></i> 80G Tax Benefits Available
+                    </div>
+                    <h1 class="hero-main-title">
+                        Empower Futures Through <br>
+                        <span class="orange-accent">Quality Education</span>
                     </h1>
                     <div class="title-underline"></div>
-                    <p class="hero-paragraph-text">
-                        Your contribution, no matter the size, directly supports the education and well-being of underprivileged students.
+                    <p class="hero-subtext">
+                        Your contribution, no matter the size, directly supports underprivileged students with scholarships, meals, housing, and industry training.
                     </p>
-                    <div class="hero-action-buttons">
-                        <a href="#" class="btn-orange-solid" id="donateBtn">
+                    <div class="hero-cta-group">
+                        <a href="#paymentCard" class="btn-donate-primary">
                             <i class="fa-solid fa-heart"></i> Donate Now
                         </a>
-                        <a href="#" class="btn-outline-white">
+                        <a href="#why-matters" class="btn-learn-secondary">
                             Learn More <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
-                    <div class="tax-benefit-badge">
-                        <i class="fa-solid fa-circle-check"></i> 80G Tax Benefits Available
-                    </div>
                 </div>
 
-                <!-- Stats Counter Card (All inside one div with vertical lines) -->
-                <div class="stats-card-container">
-                    <div class="stat-box">
-                        <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
-                        <h2>1500+</h2>
-                        <p>Students Supported</p>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-box">
-                        <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <h2>500+</h2>
-                        <p>Scholarships Provided</p>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-box">
-                        <div class="stat-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                        <h2>₹45L+</h2>
-                        <p>Funds Raised</p>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-box">
-                        <div class="stat-icon"><i class="fa-solid fa-chart-pie"></i></div>
-                        <h2>98%</h2>
-                        <p>Donation Utilized</p>
-                    </div>
-                </div>
-
-                <!-- Why Your Donation Matters Section -->
-                <div class="donation-matters-section">
-                    <h3 class="section-heading-blue">Why Your Donation Matters</h3>
-                    
-                    <div class="matters-inner-split">
-                        <!-- Left List -->
-                        <div class="matters-list">
-                            <div class="benefit-item">
-                                <div class="benefit-icon"><i class="fa-solid fa-book-open"></i></div>
-                                <div class="benefit-details">
-                                    <h4>Quality Education</h4>
-                                    <p>Provide books, fees & study resources.</p>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon"><i class="fa-solid fa-school"></i></div>
-                                <div class="benefit-details">
-                                    <h4>Better Infrastructure</h4>
-                                    <p>Support classrooms, labs & facilities.</p>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon"><i class="fa-solid fa-handshake-angle"></i></div>
-                                <div class="benefit-details">
-                                    <h4>Student Welfare</h4>
-                                    <p>Ensure food, hostel & medical care.</p>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                                <div class="benefit-details">
-                                    <h4>Skill Development</h4>
-                                    <p>Empower students for a better future.</p>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon"><i class="fa-solid fa-briefcase"></i></div>
-                                <div class="benefit-details">
-                                    <h4>Career Opportunities</h4>
-                                    <p>Guidance, training & placement support.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Right Side Photo Frame -->
-                        <div class="matters-photo-frame">
-                            <div class="orange-corner-accent"></div>
-                            <img src="students-group.jpg" alt="Students Reading" class="student-img">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Transparency Bar -->
-                <div class="transparency-section">
-                    <h3 class="section-heading-blue">How We Ensure Transparency</h3>
-                    <div class="transparency-grid-bar">
-                        <span class="trans-item"><i class="fa-regular fa-file-lines"></i> Monthly Reports</span>
-                        <span class="trans-item"><i class="fa-regular fa-clock"></i> 100% Transparency</span>
-                        <span class="trans-item"><i class="fa-regular fa-file-zipper"></i> Annual Audit</span>
-                        <span class="trans-item"><i class="fa-regular fa-id-card"></i> Tax Benefits (80G)</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- ================= RIGHT SIDE COLUMN (40% Width) ================= -->
-            <div class="right-main-column" id="donationSection">
-                
-                <!-- Payment Details Card (Overlaps the top blue backdrop) -->
-                <div class="payment-card-sticky" id="paymentCard">
-                    <div class="payment-card-header">
-                        <h3><i class="fa-solid fa-shield-halved"></i> Payment Details</h3>
-                        <p>Choose your preferred method</p>
+                <!-- Right Side: Hero Photo & Floating Payment Details Card -->
+                <div class="hero-right-content">
+                    <div class="hero-photo-wrap">
+                        <img src="students.png" alt="Students Learning" class="hero-bg-img">
                     </div>
 
-                     <button class="close-card" id="closeCard">
-                          <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    
-                    <div class="payment-tabs-bar">
-                        <button class="pay-tab active"><i class="fa-solid fa-building-columns"></i> Bank Transfer</button>
-                        <button class="pay-tab"><i class="fa-solid fa-qrcode"></i> UPI / QR Code</button>
-                    </div>
-
-                    <div class="payment-card-body">
-                        <div class="pay-field">
-                            <label>ACCOUNT NAME</label>
-                            <div class="copy-input-box">
-                                <span>Anish Jadhav Memorial Foundation</span>
-                                <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
-                            </div>
-                        </div>
+                    <!-- Floating Payment Details & Contribution Card -->
+                    <div class="floating-payment-card" id="paymentCard">
                         
-                        <div class="pay-field">
-                            <label>ACCOUNT NUMBER</label>
-                            <div class="copy-input-box">
-                                <span>02520110052655</span>
-                                <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+                        <div class="card-header-banner">
+                            <div>
+                                <h3><i class="fa-solid fa-hand-holding-heart"></i> Make a Difference</h3>
+                                <p>100% Safe & Secure Encryption</p>
+                            </div>
+                            <div class="shield-badge-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
                             </div>
                         </div>
 
-                        <div class="pay-field">
-                            <label>IFSC CODE</label>
-                            <div class="copy-input-box">
-                                <span>UCBA000252</span>
-                                <button class="copy-btn"><i class="fa-regular fa-copy"></i></button>
+                        <!-- Payment Mode Tabs (Bank Transfer / UPI QR Code) -->
+                        <div class="payment-tab-row">
+                            <button class="pay-tab-btn active" data-tab="bank-tab">
+                                <i class="fa-solid fa-building-columns"></i> Bank Transfer
+                            </button>
+                            <button class="pay-tab-btn" data-tab="upi-tab">
+                                <i class="fa-solid fa-qrcode"></i> UPI / QR Code
+                            </button>
+                        </div>
+
+                        <!-- Tab 1: Bank Transfer Details -->
+                        <div class="tab-content-panel active" id="bank-tab">
+                            <div class="bank-field-group">
+                                <label>ACCOUNT NAME</label>
+                                <div class="copy-box">
+                                    <span class="copy-value">Anish Jadhav Memorial Foundation</span>
+                                    <button class="copy-action-btn" data-copy="Anish Jadhav Memorial Foundation" title="Copy to clipboard">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bank-field-group">
+                                <label>ACCOUNT NUMBER</label>
+                                <div class="copy-box">
+                                    <span class="copy-value">02520110052655</span>
+                                    <button class="copy-action-btn" data-copy="02520110052655" title="Copy to clipboard">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bank-field-group">
+                                <label>IFSC CODE</label>
+                                <div class="copy-box">
+                                    <span class="copy-value">UCBA000252</span>
+                                    <button class="copy-action-btn" data-copy="UCBA000252" title="Copy to clipboard">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bank-field-group">
+                                <label>BANK NAME & BRANCH</label>
+                                <div class="bank-info-text">
+                                    UCO Bank, Yerwada Branch, Pune, Maharashtra
+                                </div>
                             </div>
                         </div>
 
-                        <div class="pay-field">
-                            <label>BANK NAME</label>
-                            <p class="bank-name-text">UCO Bank Branch : Yerwada, Pune, Maharashtra</p>
+                        <!-- Tab 2: UPI / QR Code Details -->
+                        <div class="tab-content-panel" id="upi-tab">
+                            <div class="upi-qr-wrapper">
+                                <div class="upi-field-group">
+                                    <label>UPI ID</label>
+                                    <div class="copy-box">
+                                        <span class="copy-value">ajmf@uco</span>
+                                        <button class="copy-action-btn" data-copy="ajmf@uco" title="Copy to clipboard">
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="qr-code-box">
+                                    <i class="fa-solid fa-qrcode qr-icon"></i>
+                                    <p>Scan with any UPI App (GPay, PhonePe, Paytm)</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="secure-tag-info">
-                            <i class="fa-solid fa-circle-check"></i> Your donation is secure and 100% transparent.
+                        <!-- Contribution Amount Selector -->
+                        <div class="amount-selector-block">
+                            <label class="amount-label">CHOOSE CONTRIBUTION AMOUNT</label>
+                            <div class="amount-grid">
+                                <button class="amt-btn" data-amount="100">₹100</button>
+                                <button class="amt-btn" data-amount="500">₹500</button>
+                                <button class="amt-btn active" data-amount="1000">₹1,000</button>
+                                <button class="amt-btn" data-amount="5000">₹5,000</button>
+                                <button class="amt-btn" data-amount="10000">₹10,000</button>
+                                <button class="amt-btn custom-amt-toggle" data-amount="custom">Custom</button>
+                            </div>
+                            <div class="custom-input-box" id="customInputBox" style="display: none;">
+                                <span class="currency-prefix">₹</span>
+                                <input type="number" id="customAmountInput" placeholder="Enter custom amount (e.g. 2500)" min="1">
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Choose Your Contribution Grid -->
-                <div class="contribution-section">
-                    <h3 class="section-heading-blue">Choose Your Contribution</h3>
-                    <div class="amount-cards-wrapper">
-                        <div class="amt-option-card">
-                            <h3>₹100</h3>
-                            <p>Supporter</p>
+                        <div class="security-footer-tag">
+                            <i class="fa-solid fa-lock"></i> 100% Tax Exempted under 80G
                         </div>
-                        <div class="amt-option-card">
-                            <h3>₹500</h3>
-                            <p>Friend</p>
-                        </div>
-                        <div class="amt-option-card selected">
-                            <h3>₹1,000</h3>
-                            <p>Patron</p>
-                        </div>
-                        <div class="amt-option-card">
-                            <h3>₹5,000</h3>
-                            <p>Sponsor</p>
-                        </div>
-                        <div class="amt-option-card">
-                            <h3>₹10,000</h3>
-                            <p>Champion</p>
-                        </div>
-                        <div class="amt-option-card dashed-card">
-                            <h3>Custom</h3>
-                            <p>Other Amount</p>
-                        </div>
+
                     </div>
                 </div>
 
             </div>
+        </section>
 
-        </div>
-    </div>
 
-   <!-- ================= 4. BOTTOM ACTION BANNER ================= -->
-    <section class="bottom-action-banner">
-        <div class="section-container">
-            <div class="wave-action-box">
-                <div class="wave-left">
-                    <div class="white-circular-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                    <div class="wave-text">
-                        <h2>Ready to Transform a Life?</h2>
-                        <p>Every contribution creates a lasting impact.</p>
+        <!-- ================= IMPACT STATISTICS SECTION ================= -->
+        <section class="impact-stats-section">
+            <div class="donate-container">
+                <div class="stats-row-grid">
+                    
+                    <div class="impact-card">
+                        <div class="impact-icon-wrap">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <div class="impact-info">
+                            <h3 class="stat-number">1,500+</h3>
+                            <p class="stat-label">Students Supported</p>
+                        </div>
+                    </div>
+
+                    <div class="impact-card">
+                        <div class="impact-icon-wrap">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="impact-info">
+                            <h3 class="stat-number">500+</h3>
+                            <p class="stat-label">Scholarships Provided</p>
+                        </div>
+                    </div>
+
+                    <div class="impact-card">
+                        <div class="impact-icon-wrap">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <div class="impact-info">
+                            <h3 class="stat-number">₹50L+</h3>
+                            <p class="stat-label">Funds Raised</p>
+                        </div>
+                    </div>
+
+                    <div class="impact-card">
+                        <div class="impact-icon-wrap">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="impact-info">
+                            <h3 class="stat-number">100%</h3>
+                            <p class="stat-label">Donation Utilized</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= WHY YOUR DONATION MATTERS ================= -->
+        <section class="why-matters-section" id="why-matters">
+            <div class="donate-container">
+                <div class="section-title-center">
+                    <span class="sub-badge">YOUR IMPACT</span>
+                    <h2>Why Your Donation Matters</h2>
+                    <p>Every rupee you donate creates opportunities for talented young individuals to transform their lives through education.</p>
+                </div>
+
+                <div class="why-grid-split">
+                    <!-- Left Side: List of Benefits -->
+                    <div class="benefits-list">
+                        
+                        <div class="benefit-card">
+                            <div class="b-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                            <div class="b-text">
+                                <h4>Quality Education</h4>
+                                <p>Funding tuition fees, laptop access, coding bootcamps, and comprehensive study materials.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="b-icon"><i class="fa-solid fa-school-flag"></i></div>
+                            <div class="b-text">
+                                <h4>Better Infrastructure</h4>
+                                <p>Supporting high-speed computer labs, quiet study spaces, and comfortable residential dorms.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="b-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <div class="b-text">
+                                <h4>Student Welfare</h4>
+                                <p>Providing 3 nutritious meals daily, health insurance, emergency care, and mental health counseling.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="b-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="b-text">
+                                <h4>Skill Development</h4>
+                                <p>Hands-on software development, English communication, public speaking, and peer leadership skills.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="b-icon"><i class="fa-solid fa-briefcase"></i></div>
+                            <div class="b-text">
+                                <h4>Career Opportunities</h4>
+                                <p>Interview preparation, resume building, corporate placement drives, and lifetime alumni mentorship.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Side: Featured Photo Frame -->
+                    <div class="photo-feature-box">
+                        <img src="building.jpeg" alt="Campus & Learning" class="feature-img">
+                        <div class="feature-overlay-badge">
+                            <div class="badge-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p>"Education is the most powerful weapon which you can use to change the world."</p>
+                        </div>
                     </div>
                 </div>
-                <a href="#" class="wave-orange-btn"><i class="fa-solid fa-heart"></i> Donate Now</a>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-- ================= FOOTER ================= -->
+        <!-- ================= TRANSPARENCY SECTION ================= -->
+        <section class="transparency-bar-section">
+            <div class="donate-container">
+                <div class="transparency-header">
+                    <h3><i class="fa-solid fa-shield-halved"></i> Our Commitment to 100% Transparency</h3>
+                </div>
+                <div class="transparency-row">
+                    <div class="trans-pill">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>Monthly Reports</span>
+                    </div>
+                    <div class="trans-pill">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>100% Transparency</span>
+                    </div>
+                    <div class="trans-pill">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <span>Annual Audit</span>
+                    </div>
+                    <div class="trans-pill">
+                        <i class="fa-solid fa-award"></i>
+                        <span>80G Tax Benefits</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= STORIES OF CHANGE (TESTIMONIALS) ================= -->
+        <section class="stories-section">
+            <div class="donate-container">
+                <div class="section-title-center">
+                    <span class="sub-badge">REAL IMPACT STORIES</span>
+                    <h2>Stories of Change</h2>
+                    <p>Meet the inspiring students whose lives were transformed through the generosity of donors like you.</p>
+                </div>
+
+                <div class="testimonials-slider-container">
+                    <div class="testimonials-grid" id="testimonialGrid">
+                        
+                        <!-- Story 1 -->
+                        <div class="testimonial-card">
+                            <div class="quote-watermark"><i class="fa-solid fa-quote-right"></i></div>
+                            <div class="student-profile-row">
+                                <img src="DISCO.jpeg" alt="Priyanka" class="student-avatar">
+                                <div class="student-meta">
+                                    <h4>Priyanka Kumari</h4>
+                                    <span>Software Development Batch 2025</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                "Coming from a small village, I never imagined I would code software applications. The AJMF scholarship gave me a home, laptop, and training. Today I work as a frontend developer!"
+                            </p>
+                        </div>
+
+                        <!-- Story 2 -->
+                        <div class="testimonial-card">
+                            <div class="quote-watermark"><i class="fa-solid fa-quote-right"></i></div>
+                            <div class="student-profile-row">
+                                <img src="AF.jpeg" alt="Anjali" class="student-avatar">
+                                <div class="student-meta">
+                                    <h4>Anjali Sharma</h4>
+                                    <span>School of Education 2025</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                "The support from AJMF donors provided me with books, meals, and mentorship. I am now leading academic peer circles and inspiring dozens of young girls to pursue education."
+                            </p>
+                        </div>
+
+                        <!-- Story 3 -->
+                        <div class="testimonial-card">
+                            <div class="quote-watermark"><i class="fa-solid fa-quote-right"></i></div>
+                            <div class="student-profile-row">
+                                <img src="health.jpeg" alt="Pooja" class="student-avatar">
+                                <div class="student-meta">
+                                    <h4>Pooja Jadhav</h4>
+                                    <span>School of Business 2025</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">
+                                "Your donation built our computer lab and healthcare facilities. It allowed me to focus entirely on my studies without financial stress. Thank you for believing in us!"
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= BOTTOM CTA BANNER ================= -->
+        <section class="donate-cta-section">
+            <div class="donate-container">
+                <div class="cta-dark-card">
+                    <div class="cta-left">
+                        <div class="cta-icon-badge">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="cta-text">
+                            <h2>Ready to Transform a Life Today?</h2>
+                            <p>Join hundreds of compassionate donors building a brighter future for deserving young minds. Every contribution creates lasting change.</p>
+                        </div>
+                    </div>
+                    <div class="cta-right">
+                        <a href="#paymentCard" class="btn-cta-donate">
+                            <i class="fa-solid fa-heart"></i> Donate Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!---  FOOTER (UNTOUCHED)  --->
 
     <footer class="footer">
     <div class="footer-container">
@@ -467,7 +614,7 @@
     </div>
 </footer>
 
-
 <script src="header.js"></script>
+<script src="donate.js"></script>
 </body>
 </html>
