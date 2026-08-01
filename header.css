@@ -136,48 +136,61 @@
     background: #e06d00;
 }
 
-/* Desktop Dropdown Menu */
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 220px;
-    background: #0B1F44;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    padding: 8px 0;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
-    z-index: 999;
-    list-style: none;
-}
-
-.dropdown-menu li {
-    width: 100%;
-}
-
-.dropdown-menu li a {
-    display: block;
-    padding: 10px 18px;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.dropdown-menu li a:hover {
-    color: #f57c00;
-    background: rgba(255, 255, 255, 0.05);
-}
-
+/* Desktop Dropdown Menu (Reference: Mission & Vision Page) */
 @media screen and (min-width: 1024px) {
+    .navbar .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 220px;
+        background: #0B1F44 !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 8px !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+        padding: 8px 0 !important;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease !important;
+        z-index: 999 !important;
+        list-style: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        gap: 0 !important;
+        margin: 0 !important;
+    }
+
+    .navbar .dropdown-menu li {
+        width: 100% !important;
+        border-bottom: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+    .navbar .dropdown-menu li a {
+        display: block !important;
+        padding: 10px 18px !important;
+        color: #ffffff !important;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        line-height: 1.4 !important;
+        text-decoration: none !important;
+        transition: color 0.3s ease, background 0.3s ease !important;
+        white-space: nowrap !important;
+    }
+
+    .navbar .dropdown-menu li a:hover {
+        background: rgba(255, 255, 255, 0.08) !important;
+        color: #f57c00 !important;
+    }
+
     .dropdown:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
     }
 }
 
