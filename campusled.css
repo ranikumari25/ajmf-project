@@ -550,265 +550,7 @@
     border-color: #ffffff;
 }
 
-/* ================= FOOTER ================= */
-
-.footer{
-    margin-top: 0;
-    background:#061b36;
-    color:#ffffff;
-    font-family:'Poppins',sans-serif;
-    width:100%;
-}
-
-/* Top Section */
-
-.footer-container{
-    width:100%;
-    margin:auto;
-    padding:40px 50px 25px;
-    display:flex;
-    grid-template-columns:
-    1.8fr
-    1fr
-    1fr
-    1.2fr
-    1.2fr;
-    gap:90px;
-}
-
-/* Vertical Dividers */
-
-.footer-col{
-    position:relative;
-}
-
-.footer-col:not(:last-child)::after{
-    content:"";
-    position:absolute;
-    right:-20px;
-    top:0;
-    width:1px;
-    height:100%;
-    background:rgba(255,255,255,.12);
-}
-
-/* Logo */
-
-.logo-box{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin-bottom:20px;
-}
-
-.logo-box img{
-    border-radius: 50%;
-    width:100px;
-    height:100px;
-    object-fit:contain;
-    flex-shrink:0;
-}
-
-.footer-logo-content p{
-    font-family:'Poppins',sans-serif;
-    font-size:15px;
-    font-weight:400;
-    letter-spacing:2px;
-    color:#cfcfcf;
-    text-transform:uppercase;
-    margin-top:6px;
-}
-
- .foundation h5{
-    font-weight: 400;
-    font-size:12px;
-     line-height:1.8; 
-     color:#d9d9d9; 
- }  
-
-/* Text */
-
-.foundation-text{
-    color:#d8d8d8;
-    font-size:15px;
-    line-height:1.8;
-    max-width:290px;
-}
-
-/* Headings */
-
-.footer-col h3{
-    font-family:'Playfair Display',serif;
-    font-size:24px;
-    font-weight:500;
-    margin-bottom:20px;
-    color:#fff;
-}
-
-/* Links */
-
-.footer-col ul{
-    list-style:none;
-}
-
-.footer-col ul li{
-    margin-bottom:12px;
-}
-
-.footer-col ul li a{
-    font-family:'Poppins',sans-serif;
-    text-decoration:none;
-    color:#e7e7e7;
-    font-weight: 400;
-    font-size:17px;
-    transition:.3s;
-}
-
-.footer-col ul li a:hover{
-    color:#f57c00;
-}
-
-/* Social */
-
-.social-icons{
-    display:flex;
-    gap:15px;
-    margin-top:20px;
-}
-
-.social-icons a{
-    width:40px;
-    height:40px;
-    background: #453722;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fe8307;
-    text-decoration:none;
-    font-size:16px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.social-icons a:hover{
-    background: #f57c00;
-    color: #ffffff;
-    transform: translateY(-4px) scale(1.08);
-    box-shadow: 0 6px 15px rgba(245, 124, 0, 0.4);
-}
-
-/* Contact */
-
-.contact p{
-    display:flex;
-    align-items:flex-start;
-    gap:12px;
-    margin-bottom:18px;
-    line-height:1.7;
-    color:#e7e7e7;
-    font-size:17px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.contact p:hover{
-    color: #f57c00;
-}
-
-.contact p:hover i{
-    color: #f57c00;
-}
-
-.contact i{
-    color:#f57c00;
-    margin-top:5px;
-    font-size:17px;
-    transition: color 0.3s ease;
-}
-
-/* Newsletter */
-
-.newsletter p{
-    color:#dcdcdc;
-    font-size:17px;
-    line-height:1.8;
-    margin-bottom:18px;
-}
-
-.newsletter input{
-    width:100%;
-    height:48px;
-    border:none;
-    outline:none;
-    padding:0 15px;
-    font-size:17px;
-    background:#ffffff;
-    border-radius:3px;
-    margin-bottom:12px;
-}
-
-.newsletter button{
-    width:100%;
-    height:48px;
-    border:none;
-    cursor:pointer;
-    background:#f57c00;
-    color:#fff;
-    font-size:15px;
-    font-weight:500;
-    border-radius:3px;
-    transition:.3s;
-}
-
-.newsletter button:hover{
-    background:#e56f00;
-}
-
-/* Bottom Bar */
-
-.footer-bottom{
-    border-top:1px solid rgba(255,255,255,.08);
-    padding:18px 70px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    color:#d8d8d8;
-    font-size:15px;
-}
-
-.footer-bottom p{
-    margin:0;
-}
-
-/* Responsive */
-
-@media(max-width:1100px){
-
-    .footer-container{
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-
-    .footer-col::after{
-        display:none;
-    }
-}
-
-@media(max-width:768px){
-
-    .footer-container{
-        grid-template-columns:1fr;
-        padding:40px 25px;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-        padding:20px;
-    }
-}
+/* ================= FOOTER (HANDLED CENTRALLY IN FOOTER.CSS) ================= */
 
 /* ==========================================================
    6. RESPONSIVE DESIGN BREAKPOINTS
@@ -905,7 +647,7 @@
 /* Mobile (max-width: 600px) */
 @media screen and (max-width: 600px) {
     .student-led-campus-page .council-hero-content h1 {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .student-led-campus-page .hero-buttons {
@@ -919,25 +661,31 @@
     }
 
     .student-led-campus-page .section-heading h2 {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .student-led-campus-page .filter-buttons {
         gap: 8px;
+        justify-content: center;
     }
 
     .student-led-campus-page .filter-btn {
-        padding: 8px 16px;
-        font-size: 13.5px;
+        padding: 8px 14px;
+        font-size: 13px;
     }
 
     .student-led-campus-page .council-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
+    }
+
+    .student-led-campus-page .ready-box {
+        padding: 24px 16px !important;
+        border-radius: 16px !important;
     }
 
     .student-led-campus-page .ready-content h2 {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .student-led-campus-page .ready-right {
@@ -951,6 +699,7 @@
     }
 
     .council-modal-card {
-        padding: 24px 18px;
+        padding: 20px 14px !important;
+        max-width: 95% !important;
     }
 }

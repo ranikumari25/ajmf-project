@@ -1230,11 +1230,11 @@
 /* Mobile (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .donate-hero-section {
-        padding: 50px 0 60px;
+        padding: 40px 16px 50px;
     }
 
     .hero-main-title {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .hero-cta-group {
@@ -1253,7 +1253,18 @@
     }
 
     .section-title-center h2 {
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .photo-feature-box {
+        height: 250px;
+    }
+
+    .feature-overlay-badge {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        padding: 12px 14px;
     }
 
     .testimonials-grid {
@@ -1263,8 +1274,8 @@
     .cta-dark-card {
         flex-direction: column;
         text-align: center;
-        gap: 25px;
-        padding: 35px 25px;
+        gap: 20px;
+        padding: 28px 16px;
     }
 
     .cta-left {
@@ -1288,52 +1299,5 @@
     .transparency-row {
         flex-direction: column;
         align-items: flex-start;
-    }
-}
-
-/* Header Hamburger Responsiveness */
-@media screen and (max-width: 992px) {
-    .container {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .desktop-only-btn {
-        display: none;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #00153c;
-        display: none;
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        z-index: 99999;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
-    }
-
-    .navbar.is-active {
-        display: flex !important;
-    }
-
-    .mobile-only-btn {
-        display: inline-flex;
-        margin-top: 15px;
-        justify-content: center;
     }
 }
