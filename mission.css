@@ -777,265 +777,7 @@ ul {
     }
 }
 
-/* ================= FOOTER ================= */
-
-.footer{
-    margin-top: 0;
-    background:#061b36;
-    color:#ffffff;
-    font-family:'Poppins',sans-serif;
-    width:100%;
-}
-
-/* Top Section */
-
-.footer-container{
-    width:100%;
-    margin:auto;
-    padding:40px 50px 25px;
-    display:flex;
-    grid-template-columns:
-    1.8fr
-    1fr
-    1fr
-    1.2fr
-    1.2fr;
-    gap:40px;
-}
-
-/* Vertical Dividers */
-
-.footer-col{
-    position:relative;
-}
-
-.footer-col:not(:last-child)::after{
-    content:"";
-    position:absolute;
-    right:-20px;
-    top:0;
-    width:1px;
-    height:100%;
-    background:rgba(255,255,255,.12);
-}
-
-/* Logo */
-
-.logo-box{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin-bottom:20px;
-}
-
-.logo-box img{
-    border-radius: 50%;
-    width:100px;
-    height:100px;
-    object-fit:contain;
-    flex-shrink:0;
-}
-
-.footer-logo-content p{
-    font-family:'Poppins',sans-serif;
-    font-size:15px;
-    font-weight:400;
-    letter-spacing:2px;
-    color:#cfcfcf;
-    text-transform:uppercase;
-    margin-top:6px;
-}
-
- .foundation h5{
-    font-weight: 400;
-    font-size:12px;
-     line-height:1.8; 
-     color:#d9d9d9; 
- }  
-
-/* Text */
-
-.foundation-text{
-    color:#d8d8d8;
-    font-size:15px;
-    line-height:1.8;
-    max-width:290px;
-}
-
-/* Headings */
-
-.footer-col h3{
-    font-family:'Playfair Display',serif;
-    font-size:24px;
-    font-weight:500;
-    margin-bottom:20px;
-    color:#fff;
-}
-
-/* Links */
-
-.footer-col ul{
-    list-style:none;
-}
-
-.footer-col ul li{
-    margin-bottom:12px;
-}
-
-.footer-col ul li a{
-    font-family:'Poppins',sans-serif;
-    text-decoration:none;
-    color:#e7e7e7;
-    font-weight: 400;
-    font-size:15px;
-    transition:.3s;
-}
-
-.footer-col ul li a:hover{
-    color:#f57c00;
-}
-
-/* Social */
-
-.social-icons{
-    display:flex;
-    gap:15px;
-    margin-top:20px;
-}
-
-.social-icons a{
-    width:40px;
-    height:40px;
-    background: #453722;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fe8307;
-    text-decoration:none;
-    font-size:16px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.social-icons a:hover{
-    background: #f57c00;
-    color: #ffffff;
-    transform: translateY(-4px) scale(1.08);
-    box-shadow: 0 6px 15px rgba(245, 124, 0, 0.4);
-}
-
-/* Contact */
-
-.contact p{
-    display:flex;
-    align-items:flex-start;
-    gap:12px;
-    margin-bottom:18px;
-    line-height:1.7;
-    color:#e7e7e7;
-    font-size:15px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.contact p:hover{
-    color: #f57c00;
-}
-
-.contact p:hover i{
-    color: #f57c00;
-}
-
-.contact i{
-    color:#f57c00;
-    margin-top:5px;
-    font-size:17px;
-    transition: color 0.3s ease;
-}
-
-/* Newsletter */
-
-.newsletter p{
-    color:#dcdcdc;
-    font-size:15px;
-    line-height:1.8;
-    margin-bottom:18px;
-}
-
-.newsletter input{
-    width:100%;
-    height:48px;
-    border:none;
-    outline:none;
-    padding:0 15px;
-    font-size:15px;
-    background:#ffffff;
-    border-radius:3px;
-    margin-bottom:12px;
-}
-
-.newsletter button{
-    width:100%;
-    height:48px;
-    border:none;
-    cursor:pointer;
-    background:#f57c00;
-    color:#fff;
-    font-size:15px;
-    font-weight:500;
-    border-radius:3px;
-    transition:.3s;
-}
-
-.newsletter button:hover{
-    background:#e56f00;
-}
-
-/* Bottom Bar */
-
-.footer-bottom{
-    border-top:1px solid rgba(255,255,255,.08);
-    padding:18px 70px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    color:#d8d8d8;
-    font-size:15px;
-}
-
-.footer-bottom p{
-    margin:0;
-}
-
-/* Responsive */
-
-@media(max-width:1100px){
-
-    .footer-container{
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-
-    .footer-col::after{
-        display:none;
-    }
-}
-
-@media(max-width:768px){
-
-    .footer-container{
-        grid-template-columns:1fr;
-        padding:40px 25px;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-        padding:20px;
-    }
-}
+/* ================= FOOTER (HANDLED CENTRALLY IN FOOTER.CSS) ================= */
 
 /*==============================
       IMAGE VIEWER
@@ -1165,55 +907,139 @@ ul {
     display: none;
 }
 
-/* ----------------------------------------------------------
-   MOBILE & SMALL SCREEN STYLES (Jab screen 992px se choti ho)
-   ---------------------------------------------------------- */
+/* ================= COMPREHENSIVE RESPONSIVE MEDIA QUERIES FOR MISSION PAGE ================= */
 @media screen and (max-width: 992px) {
-    .container {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Mobile screen par 3 lines (Hamburger) icon dikhega */
-    .hamburger-menu {
-        display: block;
-    }
-
-    /* Desktop wala Apply button chhip jayega */
-    .desktop-only-btn {
-        display: none;
-    }
-
-    /* Mobile Navbar Dropdown Container (By default Hidden) */
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #00153c; /* Header Blue Theme */
-        display: none; /* Default me hidden rahega */
+    .hero-container {
         flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        z-index: 99999;
+        padding: 40px 16px;
+        text-align: center;
+        min-height: auto;
     }
 
-    .navbar ul {
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
+    .hero-content {
+        max-width: 100%;
+        padding-left: 0;
+        margin-bottom: 30px;
     }
 
-    /* Jab JavaScript 'is-active' class add karegi tab menu khulega */
-    .navbar.is-active {
-        display: flex !important;
+    .hero-content h1 {
+        font-size: 32px;
     }
 
-    .mobile-only-btn {
-        display: inline-flex;
-        margin-top: 15px;
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
         justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 240px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .section-title {
+        margin-top: 20px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .mission-vision {
+        padding: 40px 16px;
+        border-radius: 30px 0 0 0;
+    }
+
+    .mv-wrapper {
+        flex-direction: column;
+    }
+
+    .founder {
+        padding: 30px 16px;
+    }
+
+    .founder-container {
+        flex-direction: column;
+        padding: 30px 16px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .founder-image img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .founder-content h2 {
+        font-size: 24px;
+    }
+
+    .partner-journey {
+        padding: 30px 16px;
+        max-width: 100%;
+    }
+
+    .partner-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .initiative-photo-collage {
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .collage-photo {
+        position: relative !important;
+        width: 100% !important;
+        height: 200px !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .gallery-container h2 {
+        font-size: 24px;
     }
 }

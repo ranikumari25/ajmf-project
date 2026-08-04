@@ -1,1463 +1,590 @@
-/* ================= GLOBAL RESETS & FONTS ================= */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* ==========================================================
+   GET INVOLVED (CONTACT) PAGE REDESIGN STYLES
+   Scoped under .get-involved-page / .get-involved-body
+   ========================================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-body {
+.get-involved-body {
     background-color: #ffffff;
     color: #333333;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
-a {
-    text-decoration: none;
-    transition: all 0.3s ease;
+.get-involved-body * {
+    box-sizing: border-box;
 }
 
-ul {
-    list-style: none;
-}
+/* ================= HEADER (HANDLED CENTRALLY IN HEADER.CSS) ================= */
 
-/* ================= HEADER ================= */
 
-.header{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background: #0B1F44;
-    padding: 26px 0;   /* pehle 20px tha */
-    transition: .35s;
-}
-
-.hero-content{
-    padding-left: 60px;
-}
-
-.header .container{
-    width:98%;
-    max-width:1700px;
-    margin:0 auto;
-    display:flex;
-    align-items:center;
-    /* justify-content:space-between; */
-}
-
-.logo-area{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin-left:0px;      /* Left se bas thoda sa space */
-    flex-shrink:0;
-}
-
-.logo-area img{
-    width:78px;
-    height:78px;
-    border-radius:50%;
-}
-.logo-content h2{
-    font-family: 'poppins',sans-serif;
-    font-weight: 400;
-    color:#fff;
-    font-size:24px;
-    line-height:1.2;
-}
-
-.logo-content p{
-     font-family: 'poppins',sans-serif;
-    color:#d7d7d7;
-    font-size:11px;
-    letter-spacing:2px;
-}
-
-.navbar{
-    flex:1;
-    margin-left:50px;   
-    margin-right:40px;    
-    justify-content:center;
-}
-
-.navbar ul{
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
-    /* width:700px;       */
-    gap: 28px;;
-}
-
-.navbar ul li a{
-    font-family: 'poppins',sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-    align-items: center;
-    gap: 3px;     
-    font-weight: 500;    
-    color: #fff;
-    transition: 0.3s ease;
-    letter-spacing: 0.5px;
-}
-
-.navbar a{
-    color:#fff;
-    font-size: 20px;
-    font-family: 'poppins'sans-serif;
-    font-size:15px;
-    text-decoration: none;
-    font-weight:600;
-    transition:.3s;
-}
-.navbar ul li a:hover{
-    color: #f57c00;
-}
-
-.donate-btn{
-    font-family:'Poppins',sans-serif;
-    background: #f57c00;
-    color:#fff;
-    margin-left: 80px;
-    padding:14px 28px;
-    border-radius:6px;
-    font-weight:600;
-    display:flex;
-    gap:10px;
-    align-items:center;
-}
-
-
-/* ================= HERO ================= */
-
-.hero{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    z-index:1;
-    overflow:hidden;
-
-    transition:opacity .4s ease;
-}
-.hero-bg{
-    position:absolute;
-    inset:0;
-
-    background:
-    linear-gradient(rgba(36, 71, 141, 0.65),rgba(44, 79, 150, 0.65)),
-    url("get-img.jpeg");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    transform:scale(1);
-    transition:transform .4s ease;
-}
-
-.hero-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.15);
-}
-
-.hero-content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:90%;
-    max-width:900px;
-    text-align:center;
-    color:#fff;
-    z-index:2;
-
-    transition:.4s;
-}
-
-.hero-tag{
-    display:inline-block;
-    padding:10px 24px;
-    border-radius:30px;
-    background:#f57c00;
-    color:#fff;
-    font-size:15px;
-    font-weight:600;
-    margin-bottom:25px;
-}
-
-.hero h1{
-    font-size:72px;
-    line-height:1.15;
-    margin-bottom:25px;
-}
-
-.hero h1 span{
-    color:#f57c00;
-}
-
-.hero p{
-    font-size:22px;
-    line-height:1.8;
-    max-width:760px;
-    margin:auto;
-}
-
-.hero-buttons{
-    margin-top:40px;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
-
-.btn-orange,
-.btn-white{
-    padding:16px 34px;
-    border-radius:8px;
-    font-weight:600;
-    transition:.35s;
-}
-
-.btn-orange{
-    background:#f57c00;
-    color:#fff;
-}
-
-.btn-white{
-    background:#fff;
-    color:#0B1F44;
-}
-
-.btn-orange:hover,
-.btn-white:hover{
-    transform:translateY(-5px);
-}
-
-/* Scroll Effect */
-
-.hero.hide .hero-content{
-    opacity:0;
-    transform:translate(-50%,-60%);
-}
-
-.hero.hide .hero-bg{
-    transform:scale(1.1);
-}
-
-/* ================= IMPACT ================= */
-
-.impact{
-    position:relative;
-    z-index:5;
-
-    margin-top:60vh;
-
-    background:#fff;
-    border-radius:45px 45px 0 0;
-
-    padding:120px 8%;
-}
-.impact-container{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
-}
-
-.impact-card{
-    background:#fff;
-    padding:45px 30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-     border-bottom:5px solid orange;
-    border-left:1px solid orange;
-    border-right:1px solid orange;
-    border-top:0.5px solid orange;
-}
-
-.impact-card:hover{
-    transform:translateY(-10px);
-}
-
-.impact-card i{
-    font-size:55px;
-    color:#f57c00;
-    margin-bottom:20px;
-}
-
-.impact-card h3{
-    font-size:42px;
-    color:#0B1F44;
-    margin-bottom:10px;
-}
-
-.impact-card p{
-    color:#666;
-    font-size:18px;
-}
-/* ==========================
-   WAYS
-========================== */
-
-.ways{
-    background:#f5f7fb;
-    position:relative;
-    z-index:5;
-}
-
-.ways-container{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:35px;
-}
-
-.way-card{
-    background:#fff;
-    padding:45px 30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-    border-bottom:5px solid orange;
-    border-left:1px solid orange;
-    border-right:1px solid orange;
-    border-top:0.5px solid orange;
-}
-
-.way-card:hover{
-    transform:translateY(-10px);
-}
-
-.way-card .icon{
-    width:90px;
-    height:90px;
-    margin:auto;
-    margin-bottom:25px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#fff3e7;
-}
-
-.way-card .icon i{
-    font-size:40px;
-    color:#f57c00;
-}
-
-.way-card h3{
-    color:#0B1F44;
-    font-size:30px;
-    margin-bottom:15px;
-}
-
-.way-card p{
-    color:#666;
-    line-height:1.8;
-    margin-bottom:25px;
-}
-
-.way-card a{
-    color:#f57c00;
-    font-weight:600;
-}
-
-/* ==========================
-   ROLES
-========================== */
-
-.roles{
-    background:#fff;
-    position:relative;
-    z-index:5;
-}
-
-.roles-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
-
-.role-card{
-    background:#fff;
-    padding:40px 30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-    border-bottom:5px solid rgb(19, 19, 106);
-    border-left:1px solid rgb(19, 19, 106);
-    border-right:1px solid rgb(19, 19, 106);
-    border-top:0.5px solid rgb(19, 19, 106);
-}
-
-.role-card:hover{
-    transform:translateY(-10px);
-    background:#0B1F44;
-}
-
-.role-card i{
-    font-size:55px;
-    color:#0B1F44;
-    margin-bottom:20px;
-    transition:.3s;
-}
-
-.role-card h3{
-    color:#0B1F44;
-    margin-bottom:15px;
-    transition:.3s;
-}
-
-.role-card p{
-    color:#666;
-    line-height:1.8;
-    transition:.3s;
-}
-
-.role-card:hover i{
-    color:#f57c00;
-}
-
-.role-card:hover h3,
-.role-card:hover p{
-    color:#fff;
-}
-
-/* ==========================
-   WHY JOIN
-========================== */
-
-.why-join{
-    display:flex;
-    align-items:center;
-    gap:70px;
-    background:#f7f9fc;
-    position:relative;
-    z-index:5;
-}
-
-.why-image{
-    flex:1;
-}
-
-.why-image img{
-    height:520px;
-    object-fit:cover;
-    border-radius:25px;
-    border-right:6px solid orange;
-    border-top:2px solid orange;
-    border-left:1px solid orange;
-    border-bottom:2px solid orange;  
-}
-
-.why-content{
-    flex:1;
-}
-
-.why-content h2{
-    font-size:48px;
-    color:#0B1F44;
-    margin-bottom:25px;
-}
-
-.why-content ul{
-    list-style:none;
-}
-
-.why-content li{
-    display:flex;
-    gap:15px;
-    align-items:center;
-    margin-bottom:20px;
-    font-size:20px;
-}
-
-.why-content li i{
-    width:38px;
-    height:38px;
-    border-radius:50%;
-    background:#f57c00;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-.impact,
-.ways,
-.roles,
-.why-join,
-.cta,
-.footer{
+/* ==========================================================
+   MAIN PAGE WRAPPER & CONTAINER
+   ========================================================== */
+.get-involved-page {
+    background-color: #f8fafc;
     position: relative;
-    z-index: 5;
-    background: #fff;
+    width: 100%;
 }
 
-/* ==========================
-   CTA
-========================== */
+.get-container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
 
-.cta{
-    background:linear-gradient(135deg,#0B1F44,#163a72);
-    color:#fff;
-    text-align:center;
-    position:relative;
-    z-index:10;
+/* ==========================================================
+   1. HERO SECTION
+   ========================================================== */
+.get-involved-page .hero-section {
+    position: relative;
+    background: linear-gradient(to right, #00173d 0%, #00173d 50%, rgba(0, 23, 61, 0.88) 70%, rgba(0, 23, 61, 0.3) 100%), 
+                url("get-img.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 110px;
+    color: #ffffff;
+    text-align: center;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-involved-page .hero-content-box {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.get-involved-page .hero-tag {
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 30px;
+    background-color: #ff8800;
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
+}
+
+.get-involved-page .hero-title {
+    font-family: 'Playfair Display', 'Poppins', serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.get-involved-page .hero-title span {
+    color: #ff8800;
+}
+
+.get-involved-page .hero-description {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #cbd5e1;
+    max-width: 760px;
+    margin: 0 auto 35px;
+}
+
+.get-involved-page .hero-buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+}
+
+.get-involved-page .btn-orange {
+    background-color: #ff8800;
+    color: #ffffff;
+    padding: 15px 34px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 18px rgba(255, 136, 0, 0.35);
+}
+
+.get-involved-page .btn-orange:hover {
+    background-color: #e07700;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 22px rgba(255, 136, 0, 0.45);
+}
+
+.get-involved-page .btn-white {
+    background-color: #ffffff;
+    color: #0b1f44;
+    padding: 15px 34px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.get-involved-page .btn-white:hover {
+    background-color: #f8fafc;
+    color: #ff8800;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==========================================================
+   2. OUR IMPACT SECTION
+   ========================================================== */
+.get-involved-page .impact-section {
+    padding: 80px 0 90px;
+    background-color: #ffffff;
+}
+
+.get-involved-page .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.get-involved-page .section-title h2 {
+    font-family: 'Playfair Display', 'Poppins', serif;
+    font-size: 42px;
+    color: #0b1f44;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
-.cta h2{
-    font-size:54px;
-    margin-bottom:20px;
+.get-involved-page .section-title p {
+    font-size: 16px;
+    color: #64748b;
 }
 
-.cta p{
-    font-size:20px;
-    color:#ddd;
-    margin-bottom:35px;
+.get-involved-page .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
-.cta a{
-    display:inline-block;
-    background:#f57c00;
-    color:#fff;
-    padding:18px 40px;
-    border-radius:8px;
-    transition:.3s;
+.get-involved-page .impact-card {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    border-bottom: 4px solid #ff8800;
+    transition: all 0.35s ease;
 }
 
-.cta a:hover{
-    transform:translateY(-4px);
+.get-involved-page .impact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(11, 31, 68, 0.12);
 }
 
-/* ==========================
-   SCROLL ANIMATION
-========================== */
-
-.hidden{
-    opacity:0;
-    transform:translateY(80px);
-    transition:1s;
-}
-
-.show{
-    opacity:1;
-    transform:translateY(0);
-}
-/* ================= FOOTER ================= */
-
-.footer{
-    margin-top: 10;
-        position: relative;
-
-    background:#061b36;
-    color:#ffffff;
-    font-family:'Poppins',sans-serif;
-    width:100%;
-     position: relative;
-    z-index: 11;
-    background:#0B1F44;
-
-}
-
-/* Top Section */
-
-.footer-container{
-    width:100%;
-    margin:auto;
-    padding:40px 50px 25px;
-    display:grid;
-    grid-template-columns:
-    1.8fr
-    1fr
-    1fr
-    1.2fr
-    1.2fr;
-    gap:40px;
-}
-
-/* Vertical Dividers */
-
-.footer-col{
-    position:relative;
-}
-
-.footer-col:not(:last-child)::after{
-    content:"";
-    position:absolute;
-    right:-20px;
-    top:0;
-    width:1px;
-    height:100%;
-    background:rgba(255,255,255,.12);
-}
-
-/* Logo */
-
-.logo-box{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin-bottom:20px;
-}
-
-.logo-box img{
+.get-involved-page .impact-icon-badge {
+    width: 60px;
+    height: 60px;
+    background-color: #fff7ed;
+    color: #ff8800;
     border-radius: 50%;
-    width:100px;
-    height:100px;
-    object-fit:contain;
-    flex-shrink:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 18px;
+    border: 1px solid #ffedd5;
 }
 
-.footer-logo-content p{
-    font-family:'Poppins',sans-serif;
-    font-size:14px;
-    font-weight:400;
-    letter-spacing:2px;
-    color:#cfcfcf;
-    text-transform:uppercase;
-    margin-top:6px;
+.get-involved-page .impact-card h3 {
+    font-size: 38px;
+    color: #0b1f44;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.1;
 }
 
- .foundation h5{
-    font-weight: 400;
-    font-size:11px;
-     line-height:1.8; 
-     color:#d9d9d9; 
- }  
-
-/* Text */
-
-.foundation-text{
-    color:#d8d8d8;
-    font-size:14px;
-    line-height:1.8;
-    max-width:290px;
-}
-
-/* Headings */
-
-.footer-col h3{
-    font-family:'Playfair Display',serif;
-    font-size:24px;
-    font-weight:500;
-    margin-bottom:20px;
-    color:#fff;
-}
-
-/* Links */
-
-.footer-col ul{
-    list-style:none;
-}
-
-.footer-col ul li{
-    margin-bottom:12px;
-}
-
-.footer-col ul li a{
-    font-family:'Poppins',sans-serif;
-    text-decoration:none;
-    color:#e7e7e7;
-    font-weight: 400;
-    font-size:13px;
-    transition:.3s;
-}
-
-.footer-col ul li a:hover{
-    color:#f57c00;
-}
-
-/* Social */
-
-.social-icons{
-    display:flex;
-    gap:15px;
-    margin-top:20px;
-}
-
-.social-icons a{
-    width:38px;
-    height:38px;
-    background: #453722;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fe8307;
-    text-decoration:none;
-    font-size:15px;
-    transition:.3s;
-}
-
-.social-icons a:hover{
-    transform:translateY(-3px);
-}
-
-/* Contact */
-
-.contact p{
-    display:flex;
-    align-items:flex-start;
-    gap:12px;
-    margin-bottom:18px;
-    line-height:1.7;
-    color:#e7e7e7;
-    font-size:13px;
-}
-
-.contact i{
-    color:#f57c00;
-    margin-top:5px;
-    font-size:16px;
-}
-
-/* Newsletter */
-
-.newsletter p{
-    color:#dcdcdc;
-    line-height:1.8;
-    margin-bottom:18px;
-}
-
-.newsletter input{
-    width:100%;
-    height:48px;
-    border:none;
-    outline:none;
-    padding:0 15px;
-    font-size:14px;
-    background:#ffffff;
-    border-radius:3px;
-    margin-bottom:12px;
-}
-
-.newsletter button{
-    width:100%;
-    height:48px;
-    border:none;
-    cursor:pointer;
-    background:#f57c00;
-    color:#fff;
-    font-size:15px;
-    font-weight:500;
-    border-radius:3px;
-    transition:.3s;
-}
-
-.newsletter button:hover{
-    background:#e56f00;
-}
-
-/* Bottom Bar */
-
-.footer-bottom{
-    border-top:1px solid rgba(255,255,255,.08);
-    padding:18px 70px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    color:#d8d8d8;
-    font-size:14px;
-}
-
-.footer-bottom p{
-    margin:0;
-}
-
-/* =====================================================
-   COMPLETE RESPONSIVE DESIGN
-===================================================== */
-
-
-/* ================= LARGE LAPTOP ================= */
-
-@media (max-width: 1400px){
-
-    .logo-area img{
-        margin-left:40px;
-    }
-
-    .donate-btn{
-        margin-right:40px;
-    }
-
-    .navbar ul{
-        gap:25px;
-    }
-
-    .navbar ul li a{
-        font-size:16px;
-    }
-
-    .hero h1{
-        font-size:60px;
-    }
-
-    .hero p{
-        font-size:20px;
-    }
-
-    .impact-container{
-        gap:20px;
-    }
-
-    .impact-card{
-        padding:35px 20px;
-    }
-
+.get-involved-page .impact-card p {
+    color: #64748b;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 
-/* ================= LAPTOP ================= */
+/* ==========================================================
+   3. WAYS YOU CAN HELP
+   ========================================================== */
+.get-involved-page .ways-section {
+    padding: 80px 0 90px;
+    background-color: #f8fafc;
+}
 
-@media (max-width: 1200px){
+.get-involved-page .ways-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
 
-    .header .container{
-        padding:0 25px;
-    }
+.get-involved-page .way-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    border-bottom: 4px solid #ff8800;
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .logo-area img{
-        width:75px;
-        margin-left:0;
-    }
+.get-involved-page .way-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(11, 31, 68, 0.12);
+}
 
-    .logo-content h2{
-        font-size:21px;
-    }
+.get-involved-page .way-icon-badge {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff7ed;
+    color: #ff8800;
+    font-size: 30px;
+    border: 1px solid #ffedd5;
+}
 
-    .logo-content p{
-        font-size:9px;
-    }
+.get-involved-page .way-card h3 {
+    color: #0b1f44;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
 
-    .navbar ul{
-        gap:18px;
-    }
+.get-involved-page .way-card p {
+    color: #64748b;
+    line-height: 1.65;
+    font-size: 14.5px;
+    margin-bottom: 22px;
+}
 
-    .navbar ul li a{
-        font-size:14px;
-    }
+.get-involved-page .way-link {
+    color: #ff8800;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
 
-    .donate-btn{
-        margin-right:0;
-        padding:12px 18px;
-        font-size:14px;
-    }
-
-    .hero h1{
-        font-size:52px;
-    }
-
-    .hero p{
-        font-size:18px;
-    }
-
-    .why-join{
-        gap:40px;
-    }
-
-    .why-content h2{
-        font-size:40px;
-    }
-
-    .footer-container{
-        grid-template-columns:
-        1.5fr
-        1fr
-        1fr
-        1.2fr;
-    }
-
-    .newsletter{
-        grid-column:span 2;
-    }
-
+.get-involved-page .way-link:hover {
+    color: #0b1f44;
+    transform: translateX(4px);
 }
 
 
-/* ================= TABLET ================= */
+/* ==========================================================
+   4. VOLUNTEER OPPORTUNITIES (ROLES)
+   ========================================================== */
+.get-involved-page .roles-section {
+    padding: 80px 0 90px;
+    background-color: #ffffff;
+}
 
-@media (max-width: 992px){
+.get-involved-page .roles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
 
-    /* HEADER */
+.get-involved-page .role-card {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    transition: all 0.35s ease;
+}
 
-    .header{
-        position:relative;
-    }
+.get-involved-page .role-card:hover {
+    transform: translateY(-8px);
+    background-color: #0b1f44;
+    border-color: #0b1f44;
+    box-shadow: 0 16px 35px rgba(11, 31, 68, 0.2);
+}
 
-    .header .container{
-        width:94%;
-        padding:15px 0;
-        flex-wrap:wrap;
-        gap:15px;
-    }
+.get-involved-page .role-icon {
+    font-size: 42px;
+    color: #0b1f44;
+    margin-bottom: 18px;
+    transition: color 0.3s ease;
+}
 
-    .logo-area{
-        flex:1;
-    }
+.get-involved-page .role-card h3 {
+    color: #0b1f44;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
 
-    .logo-area img{
-        width:70px;
-    }
+.get-involved-page .role-card p {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
 
-    .logo-content h2{
-        font-size:20px;
-    }
+.get-involved-page .role-card:hover .role-icon {
+    color: #ff8800;
+}
 
-    .logo-content p{
-        font-size:8px;
-    }
+.get-involved-page .role-card:hover h3 {
+    color: #ffffff;
+}
 
-    .navbar{
-        order:3;
-        width:100%;
-    }
-
-    .navbar ul{
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:12px 25px;
-    }
-
-    .navbar ul li a{
-        font-size:14px;
-    }
-
-    .donate-btn{
-        padding:11px 16px;
-        font-size:13px;
-    }
-
-
-    /* HERO */
-
-    .hero{
-        position:relative;
-        height:700px;
-    }
-
-    .hero-content{
-        width:90%;
-    }
-
-    .hero h1{
-        font-size:48px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-
-    /* IMPACT */
-
-    .impact{
-        margin-top:0;
-        padding:80px 6%;
-    }
-
-    .impact-container{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-
-    /* WAYS */
-
-    .ways-container{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-
-    /* ROLES */
-
-    .roles-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-
-    /* WHY JOIN */
-
-    .why-join{
-        flex-direction:column;
-        gap:40px;
-    }
-
-    .why-image,
-    .why-content{
-        width:100%;
-    }
-
-    .why-image img{
-        height:450px;
-    }
-
-    .why-content h2{
-        font-size:38px;
-    }
-
-
-    /* CTA */
-
-    .cta h2{
-        font-size:44px;
-    }
-
-
-    /* FOOTER */
-
-    .footer-container{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .footer-col::after{
-        display:none;
-    }
-
-    .newsletter{
-        grid-column:span 1;
-    }
-
+.get-involved-page .role-card:hover p {
+    color: #cbd5e1;
 }
 
 
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px){
-
-    section{
-        padding:65px 20px;
-    }
-
-
-    /* HEADER */
-
-    .header{
-        position:relative;
-        padding:15px 0;
-    }
-
-    .header .container{
-        width:92%;
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-    }
-
-    .logo-area{
-        flex-direction:column;
-        gap:8px;
-    }
-
-    .logo-area img{
-        width:70px;
-    }
-
-    .logo-content h2{
-        font-size:21px;
-    }
-
-    .logo-content p{
-        font-size:8px;
-        letter-spacing:1.5px;
-    }
-
-    .navbar{
-        width:100%;
-    }
-
-    .navbar ul{
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
-    }
-
-    .navbar ul li a{
-        font-size:15px;
-    }
-
-    .donate-btn{
-        width:100%;
-        max-width:220px;
-        justify-content:center;
-        margin:5px auto 0;
-    }
-
-
-    /* HERO */
-
-    .hero{
-        position:relative;
-        height:650px;
-        min-height:650px;
-    }
-
-    .hero-content{
-        width:90%;
-        top:50%;
-    }
-
-    .hero-tag{
-        font-size:13px;
-        padding:8px 18px;
-        margin-bottom:18px;
-    }
-
-    .hero h1{
-        font-size:36px;
-        line-height:1.25;
-    }
-
-    .hero p{
-        font-size:15px;
-        line-height:1.7;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
-        margin-top:30px;
-    }
-
-    .btn-orange,
-    .btn-white{
-        width:100%;
-        max-width:230px;
-        text-align:center;
-        padding:14px 20px;
-    }
-
-
-    /* SECTION TITLE */
-
-    .section-title{
-        margin-bottom:40px;
-    }
-
-    .section-title h2{
-        font-size:32px;
-        line-height:1.3;
-    }
-
-    .section-title p{
-        font-size:15px;
-        line-height:1.6;
-    }
-
-
-    /* IMPACT */
-
-    .impact{
-        margin-top:0;
-        padding:65px 20px;
-        border-radius:30px 30px 0 0;
-    }
-
-    .impact-container{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-
-    .impact-card{
-        padding:35px 20px;
-    }
-
-    .impact-card i{
-        font-size:45px;
-    }
-
-    .impact-card h3{
-        font-size:36px;
-    }
-
-
-    /* WAYS */
-
-    .ways-container{
-        grid-template-columns:1fr;
-        gap:25px;
-    }
-
-    .way-card{
-        padding:35px 25px;
-    }
-
-    .way-card h3{
-        font-size:26px;
-    }
-
-
-    /* ROLES */
-
-    .roles-grid{
-        grid-template-columns:1fr;
-        gap:22px;
-    }
-
-    .role-card{
-        padding:32px 22px;
-    }
-
-
-    /* WHY JOIN */
-
-    .why-join{
-        padding:65px 20px;
-        gap:30px;
-    }
-
-    .why-image img{
-        height:330px;
-        border-radius:18px;
-    }
-
-    .why-content h2{
-        font-size:31px;
-        line-height:1.35;
-    }
-
-    .why-content li{
-        font-size:16px;
-        line-height:1.5;
-        align-items:flex-start;
-    }
-
-    .why-content li i{
-        min-width:32px;
-        width:32px;
-        height:32px;
-        font-size:13px;
-    }
-
-
-    /* CTA */
-
-    .cta{
-        padding:65px 20px;
-    }
-
-    .cta h2{
-        font-size:34px;
-        line-height:1.3;
-    }
-
-    .cta p{
-        font-size:16px;
-        line-height:1.7;
-    }
-
-    .cta a{
-        padding:15px 28px;
-        font-size:14px;
-    }
-
-
-    /* FOOTER */
-
-    .footer-container{
-        grid-template-columns:1fr;
-        padding:40px 25px;
-        gap:35px;
-    }
-
-    .logo-box{
-        justify-content:flex-start;
-    }
-
-    .logo-box img{
-        width:70px;
-        height:70px;
-    }
-
-    .footer-logo-content h3{
-        font-size:20px;
-    }
-
-    .footer-col h3{
-        font-size:21px;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-        padding:20px 15px;
-        font-size:12px;
-        line-height:1.6;
-    }
-
+/* ==========================================================
+   5. WHY VOLUNTEER SECTION
+   ========================================================== */
+.get-involved-page .why-join-section {
+    padding: 80px 0 90px;
+    background-color: #f8fafc;
+}
+
+.get-involved-page .why-join-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.get-involved-page .why-image-box {
+    position: relative;
+    height: 440px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.get-involved-page .why-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.get-involved-page .why-content-box h2 {
+    font-family: 'Playfair Display', 'Poppins', serif;
+    font-size: 40px;
+    color: #0b1f44;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.get-involved-page .why-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px 0;
+}
+
+.get-involved-page .why-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.get-involved-page .check-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ff8800;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    flex-shrink: 0;
 }
 
 
-/* ================= SMALL MOBILE ================= */
+/* ==========================================================
+   6. CTA BANNER SECTION
+   ========================================================== */
+.get-involved-page .cta-section {
+    padding: 20px 0 90px;
+    background-color: #f8fafc;
+}
 
-@media (max-width: 480px){
+.get-involved-page .cta-banner-card {
+    background: linear-gradient(135deg, #0b1f44 0%, #001233 100%), url("get-img.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    padding: 50px 40px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 15px 35px rgba(11, 31, 68, 0.2);
+}
 
-    .hero{
-        height:620px;
-        min-height:620px;
-    }
+.get-involved-page .cta-banner-card h2 {
+    font-family: 'Playfair Display', 'Poppins', serif;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
 
-    .hero h1{
-        font-size:29px;
-    }
+.get-involved-page .cta-banner-card p {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .hero p{
-        font-size:14px;
-    }
+.get-involved-page .cta-btn-orange {
+    display: inline-block;
+    background-color: #ff8800;
+    color: #ffffff;
+    padding: 16px 38px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15.5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 18px rgba(255, 136, 0, 0.35);
+}
 
-    .hero-tag{
-        font-size:12px;
-    }
-
-    .section-title h2{
-        font-size:28px;
-    }
-
-    .impact-card h3{
-        font-size:32px;
-    }
-
-    .why-content h2{
-        font-size:27px;
-    }
-
-    .why-content li{
-        font-size:14px;
-    }
-
-    .why-image img{
-        height:270px;
-    }
-
-    .cta h2{
-        font-size:29px;
-    }
-
-    .footer-container{
-        padding:35px 18px;
-    }
-
+.get-involved-page .cta-btn-orange:hover {
+    background-color: #e07700;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 22px rgba(255, 136, 0, 0.45);
 }
 
 
-/* ================= VERY SMALL MOBILE ================= */
-
-@media (max-width: 360px){
-
-    .hero{
-        height:600px;
-        min-height:600px;
-    }
-
-    .hero h1{
-        font-size:25px;
-    }
-
-    .hero p{
-        font-size:13px;
-    }
-
-    .section-title h2{
-        font-size:25px;
-    }
-
-    .why-content h2{
-        font-size:24px;
-    }
-
-    .cta h2{
-        font-size:26px;
-    }
-
-}
-
-
-/*================ DROPDOWN MENU ================*/
-
-/*================ DROPDOWN MENU (Handled centrally in header.css) ================*/
+/* ================= FOOTER (HANDLED CENTRALLY IN FOOTER.CSS) ================= */
 
 .navbar ul li{
     list-style: none;
     position: relative;
 }
-}
-
 
 
 /* ==========================================================
-   HAMBURGER MENU & MOBILE RESPONSIVE NAVBAR
+   7. RESPONSIVE DESIGN BREAKPOINTS
    ========================================================== */
 
-/* Desktop view par 3-lines icon hidden rahega */
-.hamburger-menu {
-    display: none;
-    color: #ffffff;
-    font-size: 26px;
-    cursor: pointer;
-    padding: 5px;
+/* Laptop / Small Desktop (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .get-involved-page .hero-title {
+        font-size: 44px;
+    }
+
+    .get-involved-page .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .get-involved-page .ways-grid,
+    .get-involved-page .roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .get-involved-page .why-join-wrapper {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .get-involved-page .why-image-box {
+        height: 350px;
+    }
 }
 
-/* Mobile dropdown ke andar wale button ke liye class */
-.mobile-only-btn {
-    display: none;
-}
-
-/* ----------------------------------------------------------
-   MOBILE & SMALL SCREEN STYLES (Jab screen 992px se choti ho)
-   ---------------------------------------------------------- */
-@media screen and (max-width: 992px) {
-    .container {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+/* Tablet & Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .get-involved-page .hero-section {
+        padding: 70px 0 80px;
+        min-height: auto;
     }
 
-    /* Mobile screen par 3 lines (Hamburger) icon dikhega */
-    .hamburger-menu {
-        display: block;
+    .get-involved-page .hero-title {
+        font-size: 34px;
     }
 
-    /* Desktop wala Apply button chhip jayega */
-    .desktop-only-btn {
-        display: none;
+    .get-involved-page .hero-description {
+        font-size: 15px;
     }
 
-    /* Mobile Navbar Dropdown Container (By default Hidden) */
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #00153c; /* Header Blue Theme */
-        display: none; /* Default me hidden rahega */
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        z-index: 99999;
-    }
-
-    .navbar ul {
+    .get-involved-page .hero-buttons-group {
         flex-direction: column;
         width: 100%;
-        gap: 15px;
     }
 
-    /* Jab JavaScript 'is-active' class add karegi tab menu khulega */
-    .navbar.is-active {
-        display: flex !important;
-    }
-
-    .mobile-only-btn {
-        display: inline-flex;
-        margin-top: 15px;
+    .get-involved-page .btn-orange,
+    .get-involved-page .btn-white {
+        width: 100%;
         justify-content: center;
+    }
+
+    .get-involved-page .section-title h2 {
+        font-size: 32px;
+    }
+
+    .get-involved-page .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .get-involved-page .ways-grid,
+    .get-involved-page .roles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .get-involved-page .why-content-box h2 {
+        font-size: 32px;
+    }
+
+    .get-involved-page .cta-banner-card {
+        padding: 35px 20px;
+    }
+
+    .get-involved-page .cta-banner-card h2 {
+        font-size: 30px;
+    }
+
+    .get-involved-page .cta-banner-card p {
+        font-size: 15px;
+    }
+
+    .get-involved-page .cta-btn-orange {
+        width: 100%;
+        text-align: center;
     }
 }
