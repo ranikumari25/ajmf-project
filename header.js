@@ -51,24 +51,29 @@ document.addEventListener('DOMContentLoaded', function () {
         if (parentLink) {
             parentLink.addEventListener('click', function (e) {
                 if (window.innerWidth < 1024) {
-                    // Prevent default navigation for any main menu item that has a submenu
-                    e.preventDefault();
-                    e.stopPropagation();
+                    const icon = parentLink.querySelector('i');
+                    const isIconClick = (icon && (e.target === icon || icon.contains(e.target)));
+                    const href = parentLink.getAttribute('href');
 
-                    const isOpen = dropdown.classList.contains('is-open');
+                    if (isIconClick || !href || href === '#') {
+                        e.preventDefault();
+                        e.stopPropagation();
 
-                    // Collapse all other open dropdowns so only one is open at a time
-                    dropdowns.forEach(function (other) {
-                        if (other !== dropdown) {
-                            other.classList.remove('is-open');
+                        const isOpen = dropdown.classList.contains('is-open');
+
+                        dropdowns.forEach(function (other) {
+                            if (other !== dropdown) {
+                                other.classList.remove('is-open');
+                            }
+                        });
+
+                        if (isOpen) {
+                            dropdown.classList.remove('is-open');
+                        } else {
+                            dropdown.classList.add('is-open');
                         }
-                    });
-
-                    // Toggle current dropdown: click to expand, click again to collapse
-                    if (isOpen) {
-                        dropdown.classList.remove('is-open');
                     } else {
-                        dropdown.classList.add('is-open');
+                        closeMenu();
                     }
                 }
             });
@@ -109,4 +114,45 @@ document.addEventListener('DOMContentLoaded', function () {
             closeMenu();
         }
     });
+
+    // ==========================================================
+    // FOOTER NEWSLETTER FORM VALIDATION & SUBMISSION
+    // ==========================================================
+    const newsletterForms = document.querySelectorAll('.newsletter form, form.newsletter-form');
+    
+    newsletterForms.forEach(function (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const emailInput = form.querySelector('input[type="email"], .newsletter-email');
+            let messageBox = form.querySelector('.newsletter-message');
+            
+            if (!messageBox) {
+                messageBox = document.createElement('div');
+                messageBox.className = 'newsletter-message';
+                messageBox.setAttribute('aria-live', 'polite');
+                form.appendChild(messageBox);
+            }
+            
+            if (!emailInput) return;
+            
+            const emailValue = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!emailValue) {
+                messageBox.textContent = 'Please enter your email address.';
+                messageBox.className = 'newsletter-message error';
+                emailInput.focus();
+            } else if (!emailRegex.test(emailValue)) {
+                messageBox.textContent = 'Please enter a valid email address.';
+                messageBox.className = 'newsletter-message error';
+                emailInput.focus();
+            } else {
+                messageBox.textContent = 'Thank you for subscribing to our newsletter!';
+                messageBox.className = 'newsletter-message success';
+                emailInput.value = '';
+            }
+        });
+    });
 });
+

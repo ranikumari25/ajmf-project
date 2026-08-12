@@ -106,7 +106,7 @@ ul {
 .navbar a{
     color:#fff;
     font-size: 20px;
-    font-family: 'poppins'sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size:15px;
     text-decoration: none;
     font-weight:600;
@@ -823,9 +823,9 @@ FEATURED
 /* Headings */
 
 .footer-col h3{
-    font-family:'Playfair Display',serif;
-    font-size:24px;
-    font-weight:500;
+    font-family:'Poppins', sans-serif;
+    font-size:20px;
+    font-weight:600;
     margin-bottom:20px;
     color:#fff;
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="footer.css">
 
        <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
@@ -84,11 +84,11 @@
 
                 <!-- CONTACT -->
                 <li class="dropdown">
-                    <a href="#">
+                    <a href="contact.html">
                         Contact Us <i class="fa-solid fa-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="contact.html">Get Involved</a></li>
+                        <li><a href="getinvolved.html">Get Involved</a></li>
                         <li><a href="Apply.html">Apply Now</a></li>
                         <li><a href="donate.html">Donate Now</a></li>
                     </ul>
@@ -119,6 +119,55 @@
             <p class="campus-hero-subtitle">Experiencing Growth, Discipline, and Learning Every Day</p>
         </div>
     </section>
+
+    <!-- ================= OUR PARTNER SECTION (EXACT OVERLAPPING DESIGN) ================= -->
+    <section class="our-partner-section" id="partner">
+        <div class="partner-wrapper-row">
+            <!-- LEFT DARK GREEN PANEL -->
+            <div class="partner-green-panel">
+                <span class="partner-tag">OUR PARTNER</span>
+                <h2 class="partner-title">Stronger Together.<br>Greater Impact.</h2>
+                <p class="partner-desc">
+                    AJMF is proud to partner with NavGurukul to empower youth through industry-relevant education, technology and career-focused learning.
+                </p>
+                <a href="partnership.html" class="btn-partner-learn">
+                    Learn About Our Partnership <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- RIGHT CREAM AREA WITH OVERLAPPING WHITE CARD -->
+            <div class="partner-cream-area">
+                <div class="partner-overlapping-card">
+                    <!-- LOGOS GROUP -->
+                    <div class="partner-logos-group">
+                        <img src="logo.jpeg" alt="AJMF Logo" class="partner-logo-img">
+                        <span class="partner-multiply">×</span>
+                        <img src="navgurukul.logo.jpg" alt="NavGurukul Logo" class="partner-logo-img navgurukul-img">
+                    </div>
+
+                    <!-- VERTICAL SEPARATOR LINE (|) -->
+                    <div class="partner-vertical-line"></div>
+
+                    <!-- BENEFITS GROUP (HORIZONTAL ON DESKTOP) -->
+                    <div class="partner-benefits-group">
+                        <div class="partner-benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                            <span class="benefit-label">Quality Education</span>
+                        </div>
+                        <div class="partner-benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-code"></i></div>
+                            <span class="benefit-label">Skill Development</span>
+                        </div>
+                        <div class="partner-benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-briefcase"></i></div>
+                            <span class="benefit-label">Career Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- TIMELINE LIST -->
     <section class="timeline-section">
@@ -321,11 +370,11 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About Us</a></li>
-                    <li><a href="programs.html">Our Programs</a></li>
-                    <li><a href="mission.html#impact">Impact</a></li>
-                    <li><a href="contact.html">Get Involved</a></li>
+                    <li><a href="About.html">About Anish</a></li>
+                    <li><a href="programs.html">Academics</a></li>
+                    <li><a href="gallery.html">Student Life</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
                 </ul>
             </div>
 
@@ -370,9 +419,10 @@
                     Stay updated with our latest
                     initiatives and stories.
                 </p>
-                <form>
-                    <input type="email" placeholder="Enter your email" required>
+                <form class="newsletter-form" novalidate>
+                    <input type="email" class="newsletter-email" placeholder="Enter your email" required aria-label="Email address">
                     <button type="submit">Subscribe</button>
+                    <div class="newsletter-message" aria-live="polite"></div>
                 </form>
             </div>
 

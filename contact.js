@@ -1,53 +1,67 @@
 // ==========================================================
-// GET INVOLVED (CONTACT) PAGE JAVASCRIPT
-// Handles animated number counters & smooth scroll reveals
+// CONTACT US PAGE JAVASCRIPT
+// Handles FAQ accordion toggle & contact form feedback
 // ==========================================================
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ---------------- 1. ANIMATED COUNTER ----------------
-    const counters = document.querySelectorAll(".counter");
+    // ---------------- 1. FAQ ACCORDION ----------------
+    const faqItems = document.querySelectorAll('.faq-item');
 
-    if (counters.length > 0) {
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const counter = entry.target;
-                    const target = +counter.getAttribute("data-target");
+    faqItems.forEach(item => {
+        const questionBtn = item.querySelector('.faq-question');
 
-                    let count = 0;
-                    const speed = target / 80;
+        if (questionBtn) {
+            questionBtn.addEventListener('click', () => {
+                const isOpen = item.classList.contains('active');
 
-                    const updateCounter = () => {
-                        count += speed;
-                        if (count < target) {
-                            counter.innerText = Math.floor(count) + "+";
-                            requestAnimationFrame(updateCounter);
-                        } else {
-                            counter.innerText = target + "+";
-                        }
-                    };
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    const otherBtn = otherItem.querySelector('.faq-question');
+                    const otherAns = otherItem.querySelector('.faq-answer');
+                    if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+                    if (otherAns) otherAns.style.display = 'none';
+                });
 
-                    updateCounter();
-                    counterObserver.unobserve(counter);
+                // Toggle clicked item
+                if (!isOpen) {
+                    item.classList.add('active');
+                    questionBtn.setAttribute('aria-expanded', 'true');
+                    const answer = item.querySelector('.faq-answer');
+                    if (answer) answer.style.display = 'block';
                 }
             });
-        }, {
-            threshold: 0.4
-        });
-
-        counters.forEach(counter => counterObserver.observe(counter));
-    }
-
-    // ---------------- 2. BUTTON HOVER EFFECTS ----------------
-    document.querySelectorAll(".get-involved-page .btn-orange, .get-involved-page .btn-white").forEach(btn => {
-        btn.addEventListener("mouseenter", () => {
-            btn.style.transform = "translateY(-3px)";
-        });
-
-        btn.addEventListener("mouseleave", () => {
-            btn.style.transform = "translateY(0)";
-        });
+        }
     });
+
+    // ---------------- 2. CONTACT FORM SUBMISSION ----------------
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const fullName = document.getElementById('fullName')?.value.trim();
+            const email = document.getElementById('email')?.value.trim();
+            const message = document.getElementById('message')?.value.trim();
+
+            if (!fullName || !email || !message) {
+                if (formStatus) {
+                    formStatus.style.color = '#ef4444';
+                    formStatus.textContent = 'Please fill in all required fields (*).';
+                }
+                return;
+            }
+
+            if (formStatus) {
+                formStatus.style.color = '#16a34a';
+                formStatus.textContent = 'Thank you for reaching out! Your message has been sent successfully. We will get back to you shortly.';
+            }
+
+            contactForm.reset();
+        });
+    }
 
 });

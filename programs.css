@@ -106,7 +106,7 @@ ul {
 .navbar a{
     color:#fff;
     font-size: 20px;
-    font-family: 'poppins'sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size:15px;
     text-decoration: none;
     font-weight:600;
@@ -447,7 +447,7 @@ body.our-programs-page {
 /* Program Card Titles ("School of Programming", "School of Education", etc.) */
 .our-programs-page .program-content h3,
 .our-programs-page .p-title {
-    font-family: 'Playfair Display', Georgia, serif !important;
+    font-family: 'Poppins', sans-serif !important;
     font-size: 34px !important;
     font-weight: 700 !important;
     line-height: 1.3 !important;
@@ -534,8 +534,8 @@ body.our-programs-page {
 
 /* Footer Typography Refinements for Our Programs Page */
 .our-programs-page .footer-col h3 {
-    font-family: 'Playfair Display', serif !important;
-    font-size: 26px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 20px !important;
     font-weight: 600 !important;
 }
 
