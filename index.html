@@ -99,7 +99,7 @@
                     <a href="https://admissions.navgurukul.org/students/" class="donate-btn mobile-donate-btn"
                         target="_blank" rel="noopener">
                         <i class="fa-solid fa-heart"></i>
-                        Apply Here
+                        Apply Now
                     </a>
                 </li>
 
@@ -517,100 +517,174 @@
 
 
 
-    <!-- WHAT WE DO SECTION -->
-    <section class="focus-area-section">
+    <!-- WHAT WE DO SECTION (7 LEARNING APPROACHES SLIDER) -->
+    <section class="focus-area-section" id="what-we-do">
 
         <div class="section-heading">
-            <span class="sub-title">OUR FOCUS AREAS</span>
+            <span class="sub-title">OUR LEARNING METHODOLOGY</span>
             <h2>What We Do</h2>
             <div class="heading-line"></div>
         </div>
 
-        <div class="focus-cards">
+        <div class="what-we-do-slider-wrapper">
+            <button class="slider-arrow-btn prev-btn" id="wwdPrevBtn" aria-label="Previous Slide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
 
-            <!-- Card 1 -->
-            <div class="focus-card">
-                <div class="card-icon">
-                    <i class="fas fa-book-open"></i>
-                </div>
+            <div class="slider-viewport" id="wwdSliderViewport">
+                <div class="slider-track" id="wwdSliderTrack">
 
-                <div class="card-content">
-                    <h3>Education</h3>
-                    <p>
-                        Promoting quality education
-                        for all deserving students.
-                    </p>
+                    <!-- Card 1 -->
+                    <div class="focus-card learning-card" data-card-id="1">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-people-arrows"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Peer-to-Peer Learning</h3>
+                            <p>
+                                Students learn together by collaborating, discussing concepts, and teaching one another, fostering deep understanding and teamwork.
+                            </p>
+                            <button class="card-read-more-btn" data-card-id="1">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
 
-                    <a href="programs.html">
-                        Learn More
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <!-- Card 2 -->
+                    <div class="focus-card learning-card" data-card-id="2">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Mentor-Mentee Learning</h3>
+                            <p>
+                                Experienced mentors provide one-on-one guidance, industry insights, and personalized support to accelerate student growth.
+                            </p>
+                            <button class="card-read-more-btn" data-card-id="2">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="focus-card learning-card" data-card-id="3">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Case Studies</h3>
+                            <p>
+                                Analyzing real-world scenarios to develop critical thinking, problem-solving abilities, and practical decision-making skills.
+                            </p>
+                            <button class="card-read-more-btn" data-card-id="3">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="focus-card learning-card" data-card-id="4">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Group Assignments</h3>
+                            <p>
+                                Collaborative team projects designed to build project management, leadership, communication, and collective accountability.
+                            </p>
+                            <button class="card-read-more-btn" data-card-id="4">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="focus-card learning-card" data-card-id="5">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Simulations & Games</h3>
+                            <p>
+                                Interactive games and scenario-based simulations that make complex concepts engaging, practical, and easy to retain.
+                            </p>
+                            <button class="card-read-more-btn" data-card-id="5">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="focus-card learning-card" data-card-id="6">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Tool-Based Practical Learning</h3>
+                            <p>
+                                Hands-on practice using modern software, digital platforms, and industry-standard tools for immediate job readiness.
+                            </p>
+                            <button class="card-read-more-btn" data-card-id="6">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="focus-card learning-card" data-card-id="7">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Learning Space Activities</h3>
+                            <p>
+                                Dynamic physical and virtual environment activities like workshops, debates, hacks, and creative expression sessions.
+                            </p>
+                            <button class="card-read-more-btn" data-card-id="7">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="focus-card">
-                <div class="card-icon">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
+            <button class="slider-arrow-btn next-btn" id="wwdNextBtn" aria-label="Next Slide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
 
-                <div class="card-content">
-                    <h3>Healthcare</h3>
-                    <p>
-                        Supporting health and
-                        well-being of communities.
-                    </p>
-
-                    <a href="facility.html">
-                        Learn More
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="focus-card">
-                <div class="card-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-
-                <div class="card-content">
-                    <h3>Community</h3>
-                    <p>
-                        Empowering communities
-                        through sustainable initiatives.
-                    </p>
-
-                    <a href="campusled.html">
-                        Learn More
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="focus-card">
-                <div class="card-icon">
-                    <i class="fas fa-hand-holding-heart"></i>
-                </div>
-
-                <div class="card-content">
-                    <h3>Partnership</h3>
-                    <p>
-                        Collaborating with organizations
-                        to create greater impact.
-                    </p>
-
-                    <a href="getinvolved.html">
-                        Learn More
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
+        <div class="wwd-dots-container" id="wwdDots">
+            <span class="wwd-dot active" data-index="0"></span>
+            <span class="wwd-dot" data-index="1"></span>
+            <span class="wwd-dot" data-index="2"></span>
+            <span class="wwd-dot" data-index="3"></span>
+            <span class="wwd-dot" data-index="4"></span>
+            <span class="wwd-dot" data-index="5"></span>
+            <span class="wwd-dot" data-index="6"></span>
         </div>
 
     </section>
+
+    <!-- WHAT WE DO DETAIL MODAL -->
+    <div class="learning-modal-overlay" id="learningModal" aria-hidden="true">
+        <div class="learning-modal-box">
+            <button class="learning-modal-close" id="learningModalCloseBtn" aria-label="Close detail modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="learning-modal-header">
+                <div class="learning-modal-icon" id="learningModalIcon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h3 id="learningModalTitle">Learning Approach</h3>
+            </div>
+            <div class="learning-modal-divider"></div>
+            <div class="learning-modal-body">
+                <p id="learningModalDescription">Detailed information will appear here.</p>
+                <div class="learning-modal-highlights" id="learningModalHighlights"></div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- IMPACT SECTION -->
@@ -798,7 +872,6 @@
                     <li><a href="programs.html">Academics</a></li>
                     <li><a href="gallery.html">Student Life</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="donate.html">Donate</a></li>
                 </ul>
             </div>
 
@@ -806,11 +879,11 @@
             <div class="footer-col">
                 <h3>Our Programs</h3>
                 <ul>
-                    <li><a href="programs.html">Education</a></li>
-                    <li><a href="facility.html">Healthcare</a></li>
-                    <li><a href="campusled.html">Community Development</a></li>
-                    <li><a href="padagogy.html">Research & Innovation</a></li>
-                    <li><a href="Apply.html">Scholarships</a></li>
+                    <li><a href="programs.html">School of Programming</a></li>
+                    <li><a href="programs.html">School of Business</a></li>
+                    <li><a href="programs.html">School of Finance</a></li>
+                    <li><a href="programs.html">School of Education</a></li>
+                    <li><a href="programs.html">School of Second Chance</a></li>
                 </ul>
             </div>
 
@@ -819,20 +892,25 @@
                 <h3>Contact Us</h3>
                 <p>
                     <i class="fas fa-map-marker-alt"></i>
-                    123, Foundation House,<br>
-                    Pune, Maharashtra, India
+                    <a href="https://www.google.com/maps/search/?api=1&query=Anish+Jadhav+Memorial+Foundation+JW3M%2BC7+Gharukul+Properties+Survey+No.+60%2F1+Pathare+Wasti+Lohegaon+Pune+Maharashtra+411047+India" target="_blank" rel="noopener noreferrer">
+                        Anish Jadhav Memorial Foundation<br>
+                        JW3M+C7, Gharukul Properties,<br>
+                        Survey No. 60/1, Pathare Wasti,<br>
+                        Lohegaon, Pune,<br>
+                        Maharashtra 411047, India
+                    </a>
                 </p>
                 <p>
                     <i class="fas fa-phone-alt"></i>
-                    +91 98765 43210
+                    <a href="tel:+919876543210">+91 98765 43210</a>
                 </p>
                 <p>
                     <i class="fas fa-envelope"></i>
-                    info@ajmfoundation.org
+                    <a href="mailto:info@ajmfoundation.org">info@ajmfoundation.org</a>
                 </p>
                 <p>
                     <i class="fas fa-globe"></i>
-                    http://anishjadhavmemorialfoundation.org/
+                    <a href="http://anishjadhavmemorialfoundation.org/" target="_blank" rel="noopener noreferrer">http://anishjadhavmemorialfoundation.org/</a>
                 </p>
             </div>
 
@@ -967,6 +1045,309 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         startAutoSlide();
+    }
+
+    // ==========================================================
+    // WHAT WE DO SECTION (7 LEARNING APPROACHES SLIDER & MODAL)
+    // ==========================================================
+    const track = document.getElementById('wwdSliderTrack');
+    const viewport = document.getElementById('wwdSliderViewport');
+    const wwdPrevBtn = document.getElementById('wwdPrevBtn');
+    const wwdNextBtn = document.getElementById('wwdNextBtn');
+    const wwdDotsContainer = document.getElementById('wwdDots');
+
+    if (track && viewport) {
+        const cards = track.querySelectorAll('.learning-card');
+        const totalCards = cards.length;
+        let currentIndex = 0;
+        let autoSlideTimer = null;
+        const slideDuration = 4000;
+
+        function getVisibleCardsCount() {
+            if (window.innerWidth <= 640) return 1;
+            if (window.innerWidth <= 1024) return 2;
+            return 3;
+        }
+
+        function getMaxIndex() {
+            const visible = getVisibleCardsCount();
+            return Math.max(0, totalCards - visible);
+        }
+
+        function updateSliderPosition() {
+            const maxIdx = getMaxIndex();
+            if (currentIndex > maxIdx) {
+                currentIndex = 0;
+            } else if (currentIndex < 0) {
+                currentIndex = maxIdx;
+            }
+
+            if (cards.length > 0) {
+                const cardWidth = cards[0].getBoundingClientRect().width;
+                const gap = parseFloat(window.getComputedStyle(track).gap) || 25;
+                const moveDistance = (cardWidth + gap) * currentIndex;
+                track.style.transform = `translateX(-${moveDistance}px)`;
+            }
+
+            if (wwdDotsContainer) {
+                const dots = wwdDotsContainer.querySelectorAll('.wwd-dot');
+                dots.forEach((dot, idx) => {
+                    if (idx === currentIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        function nextSlide() {
+            const maxIdx = getMaxIndex();
+            if (currentIndex >= maxIdx) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            updateSliderPosition();
+        }
+
+        function prevSlide() {
+            const maxIdx = getMaxIndex();
+            if (currentIndex <= 0) {
+                currentIndex = maxIdx;
+            } else {
+                currentIndex--;
+            }
+            updateSliderPosition();
+        }
+
+        function startAutoSlide() {
+            stopAutoSlide();
+            autoSlideTimer = setInterval(nextSlide, slideDuration);
+        }
+
+        function stopAutoSlide() {
+            if (autoSlideTimer) {
+                clearInterval(autoSlideTimer);
+                autoSlideTimer = null;
+            }
+        }
+
+        if (wwdNextBtn) {
+            wwdNextBtn.addEventListener('click', function () {
+                nextSlide();
+                startAutoSlide();
+            });
+        }
+
+        if (wwdPrevBtn) {
+            wwdPrevBtn.addEventListener('click', function () {
+                prevSlide();
+                startAutoSlide();
+            });
+        }
+
+        if (wwdDotsContainer) {
+            const dots = wwdDotsContainer.querySelectorAll('.wwd-dot');
+            dots.forEach((dot) => {
+                dot.addEventListener('click', function () {
+                    const idx = parseInt(dot.getAttribute('data-index'), 10);
+                    if (!isNaN(idx)) {
+                        currentIndex = idx;
+                        updateSliderPosition();
+                        startAutoSlide();
+                    }
+                });
+            });
+        }
+
+        const sliderWrapper = document.querySelector('.what-we-do-slider-wrapper');
+        if (sliderWrapper) {
+            sliderWrapper.addEventListener('mouseenter', stopAutoSlide);
+            sliderWrapper.addEventListener('mouseleave', startAutoSlide);
+            sliderWrapper.addEventListener('touchstart', stopAutoSlide, { passive: true });
+            sliderWrapper.addEventListener('touchend', startAutoSlide, { passive: true });
+        }
+
+        window.addEventListener('resize', function () {
+            updateSliderPosition();
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        viewport.addEventListener('touchstart', function (e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        viewport.addEventListener('touchend', function (e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const swipeThreshold = 40;
+            if (touchStartX - touchEndX > swipeThreshold) {
+                nextSlide();
+                startAutoSlide();
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                prevSlide();
+                startAutoSlide();
+            }
+        }
+
+        updateSliderPosition();
+        startAutoSlide();
+
+        // Modal Logic
+        const learningData = {
+            1: {
+                title: "Peer-to-Peer Learning",
+                icon: "fa-solid fa-people-arrows",
+                description: "Peer-to-Peer Learning encourages students to engage in active group discussions, share diverse perspectives, and teach complex topics to fellow learners. This methodology builds confidence, improves communication skills, strengthens subject mastery, and creates a supportive community where everyone grows together.",
+                highlights: [
+                    "Active knowledge sharing among student groups",
+                    "Fosters collaborative problem-solving and communication skills",
+                    "Reinforces subject comprehension through peer explanations",
+                    "Creates a supportive, inclusive, and non-judgmental community"
+                ]
+            },
+            2: {
+                title: "Mentor-Mentee Learning",
+                icon: "fa-solid fa-user-graduate",
+                description: "Mentor-Mentee Learning pairs students with dedicated mentors who offer tailored academic direction, career advice, and personal guidance. Through regular feedback and goal-setting sessions, students overcome learning hurdles, discover career pathways, and gain real-world wisdom from industry practitioners.",
+                highlights: [
+                    "Personalized 1-on-1 academic and career mentorship",
+                    "Continuous feedback loops and individual goal tracking",
+                    "Industry insights and professional guidance",
+                    "Emotional and confidence-building support"
+                ]
+            },
+            3: {
+                title: "Case Studies",
+                icon: "fa-solid fa-lightbulb",
+                description: "Case Studies challenge students to dissect actual challenges faced by organizations and communities. By analyzing root causes, evaluating solutions, and presenting recommendations, learners cultivate analytical thinking, strategic reasoning, and practical decision-making required in professional environments.",
+                highlights: [
+                    "Real-world scenario analysis and critical thinking",
+                    "Identification of root causes and strategic planning",
+                    "Practical decision-making under simulated constraints",
+                    "Presentation and defense of proposed solutions"
+                ]
+            },
+            4: {
+                title: "Group Assignments",
+                icon: "fa-solid fa-people-group",
+                description: "Group Assignments simulate team dynamics in real workplaces. Students divide responsibilities, manage timelines, synthesize individual contributions, and deliver comprehensive projects. This instills collective accountability, adaptability, conflict resolution, and effective teamwork.",
+                highlights: [
+                    "Simulated workplace team dynamics and delegation",
+                    "Project management, deadline tracking, and milestone delivery",
+                    "Conflict resolution and collaborative synthesis",
+                    "Shared accountability for quality deliverables"
+                ]
+            },
+            5: {
+                title: "Simulations & Games",
+                icon: "fa-solid fa-gamepad",
+                description: "Simulations & Games turn abstract theories into immersive, hands-on experiences. Through role-playing games, business simulations, and interactive challenges, students experiment safely with real-world scenarios, make tactical decisions, observe outcomes, and reinforce conceptual knowledge through fun engagement.",
+                highlights: [
+                    "Gamified, experiential learning environments",
+                    "Safe experimentation with real-world variables",
+                    "Immediate feedback loop on strategic choices",
+                    "High student engagement and long-term retention"
+                ]
+            },
+            6: {
+                title: "Tool-Based Practical Learning",
+                icon: "fa-solid fa-laptop-code",
+                description: "Tool-Based Practical Learning equips students with immediate technical competencies. By directly interacting with industry-standard software, coding environments, hardware, and digital productivity tools, learners build tangible portfolios and job-ready skills valued by prospective employers.",
+                highlights: [
+                    "Direct hands-on experience with industry-standard tools",
+                    "Real-world technical skill acquisition and coding practice",
+                    "Portfolio development for job readiness",
+                    "Confidence in using modern technology platforms"
+                ]
+            },
+            7: {
+                title: "Learning Space Activities",
+                icon: "fa-solid fa-shapes",
+                description: "Learning Space Activities transform physical and virtual spaces into vibrant hubs of innovation and expression. From hackathons and interactive debates to creative workshops and outdoor problem-solving, these activities keep learning dynamic, inspiring, and holistic.",
+                highlights: [
+                    "Interactive workshops, hackathons, and debates",
+                    "Holistic creative expression and physical engagement",
+                    "Fosters innovation, spontaneity, and community spirit",
+                    "Adaptable learning environments tailored for every learner"
+                ]
+            }
+        };
+
+        const learningModal = document.getElementById('learningModal');
+        const modalCloseBtn = document.getElementById('learningModalCloseBtn');
+        const modalIcon = document.getElementById('learningModalIcon');
+        const modalTitle = document.getElementById('learningModalTitle');
+        const modalDesc = document.getElementById('learningModalDescription');
+        const modalHighlights = document.getElementById('learningModalHighlights');
+        const readMoreBtns = document.querySelectorAll('.card-read-more-btn');
+
+        function openLearningModal(id) {
+            const item = learningData[id];
+            if (!item || !learningModal) return;
+
+            if (modalIcon) {
+                modalIcon.innerHTML = `<i class="${item.icon}"></i>`;
+            }
+            if (modalTitle) {
+                modalTitle.textContent = item.title;
+            }
+            if (modalDesc) {
+                modalDesc.textContent = item.description;
+            }
+            if (modalHighlights) {
+                modalHighlights.innerHTML = '';
+                item.highlights.forEach(highlightText => {
+                    const div = document.createElement('div');
+                    div.className = 'learning-modal-highlight-item';
+                    div.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>${highlightText}</span>`;
+                    modalHighlights.appendChild(div);
+                });
+            }
+
+            learningModal.classList.add('is-active');
+            document.body.style.overflow = 'hidden';
+            stopAutoSlide();
+        }
+
+        function closeLearningModal() {
+            if (!learningModal) return;
+            learningModal.classList.remove('is-active');
+            document.body.style.overflow = '';
+            startAutoSlide();
+        }
+
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const id = btn.getAttribute('data-card-id');
+                openLearningModal(id);
+            });
+        });
+
+        if (modalCloseBtn) {
+            modalCloseBtn.addEventListener('click', closeLearningModal);
+        }
+
+        if (learningModal) {
+            learningModal.addEventListener('click', function (e) {
+                if (e.target === learningModal) {
+                    closeLearningModal();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && learningModal && learningModal.classList.contains('is-active')) {
+                closeLearningModal();
+            }
+        });
     }
 });
 </script>

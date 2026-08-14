@@ -316,28 +316,38 @@
     }
 
     .mobile-only-item {
-        display: block !important;
-        margin-top: 12px;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin: 16px 0 0 0 !important;
+        padding: 0 !important;
         border-bottom: none !important;
+        box-sizing: border-box !important;
     }
 
     .mobile-donate-btn {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        background: #f57c00;
+        display: inline-flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: #f57c00 !important;
         color: #ffffff !important;
-        padding: 12px 20px;
-        border-radius: 6px;
-        font-weight: 600;
-        text-decoration: none;
-        gap: 10px;
+        padding: 12px 20px !important;
+        border-radius: 6px !important;
+        font-weight: 600 !important;
+        text-decoration: none !important;
+        gap: 10px !important;
         font-size: 16px !important;
-        width: 100%;
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        transition: background-color 0.3s ease !important;
     }
 
     .mobile-donate-btn:hover {
-        background: #e06d00;
+        background: #e06d00 !important;
     }
 }
 

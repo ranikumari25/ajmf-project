@@ -8,10 +8,19 @@
     /* font-family: 'Poppins', sans-serif; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#anish-story {
+    scroll-margin-top: 100px;
+}
+
 body {
     background-color: #ffffff;
     color: #333333;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -207,6 +216,7 @@ ul {
         }
 
         .btn-hero {
+            font-family: 'Poppins', sans-serif;
             padding: 12px 28px;
             border-radius: 4px;
             font-weight: 600;
@@ -243,6 +253,7 @@ ul {
         }
 
         .hero-floating-box {
+            font-family: 'Poppins', sans-serif;
             position: absolute;
             right: 10px;
             top: 65%;
@@ -273,6 +284,7 @@ ul {
         }
 
         .floating-box-text {
+            font-family: 'Poppins', sans-serif;
             font-size: 13px;
             line-height: 1.6;
             color: #2D3748;
@@ -362,6 +374,7 @@ ul {
         }
 
         .journey-intro-text {
+            font-family: 'Poppins', sans-serif;
             font-size: 22px;
             color: #4A5568;
             line-height: 1.4;
@@ -369,13 +382,26 @@ ul {
         }
 
         .btn-view-photos {
+            font-family: 'Poppins', sans-serif;
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
             color: #E06A28;
+            background-color: transparent;
+            border: 1.5px solid #E06A28;
+            border-radius: 25px;
+            padding: 10px 24px;
             text-decoration: none;
-            font-size: 13px;
-            font-weight: 700;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-view-photos:hover {
+            background-color: #E06A28;
+            color: #ffffff;
         }
 
         .journey-col-center {
@@ -417,6 +443,7 @@ ul {
         }
 
         .timeline-text-node h3 {
+            font-family: 'Poppins', sans-serif;
             font-size: 23px;
             font-weight: 700;
             color: #0A1D37;
@@ -424,6 +451,7 @@ ul {
         }
 
         .timeline-text-node p {
+            font-family: 'Poppins', sans-serif;
             font-size: 21px;
             color: #718096;
             line-height: 1.4;
@@ -438,25 +466,28 @@ ul {
 }
 
 .extra-info-text.show {
-    max-height: 500px;
+    max-height: 800px;
     opacity: 1;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .extra-info-text p {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #4A5568;
+    margin-bottom: 20px;
 }
 
-/* Button & Icon Alignment */
-.btn-view-photos {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 600;
+/* ================= OUR PARTNER SECTION TYPOGRAPHY (ABOUT PAGE SCOPED) ================= */
+.our-partner-section .partner-tag,
+.our-partner-section .partner-title,
+.our-partner-section .partner-desc,
+.our-partner-section .btn-partner-learn,
+.our-partner-section .benefit-label,
+.our-partner-section .partner-multiply {
+    font-family: 'Poppins', sans-serif !important;
 }
 
         /* ==========================================================================
@@ -955,111 +986,168 @@ ul {
     background: linear-gradient(135deg, #EA7533 0%, #D35C1C 100%);
 }
 
-/* Fully responsive handling for smaller layout rules */
-@media (max-width: 768px) {
-    .ajmf-vision-banner {
-        margin: 0 20px;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .ajmf-vision-content-left {
-        max-width: 100%;
-        padding: 45px 20px;
-    }
-    .ajmf-vision-image-right {
-        width: 100%;
-        opacity: 0.25; /* Subtle watermark on mobile viewports */
-        background-image: linear-gradient(to top, #0A192F 30%, transparent 100%), 
-                          url('WhatsApp Image 2026-06-23 at 8.02.27 AM(1).jpeg');
-        background-position: center 20%;
-    }
-    .ajmf-vision-text {
-        font-size: 20px;
-    }
-}
-
-/* ================= FOOTER (HANDLED CENTRALLY IN FOOTER.CSS) ================= */
-
-
-/*================ DROPDOWN MENU ================*/
-
-/*================ DROPDOWN MENU (Handled centrally in header.css) ================*/
-
-.navbar ul li{
-    list-style: none;
-    position: relative;
-}
-
-
-
-
-/* ==========================================================
-   HAMBURGER MENU & MOBILE RESPONSIVE NAVBAR
-   ========================================================== */
-
-/* Desktop view par 3-lines icon hidden rahega */
-.hamburger-menu {
-    display: none;
-    color: #ffffff;
-    font-size: 26px;
-    cursor: pointer;
-    padding: 5px;
-}
-
-/* Mobile dropdown ke andar wale button ke liye class */
-.mobile-only-btn {
-    display: none;
-}
-
-/* ----------------------------------------------------------
-   MOBILE & SMALL SCREEN STYLES (Jab screen 992px se choti ho)
-   ---------------------------------------------------------- */
+/* Responsive Handling for About Page Layouts */
 @media screen and (max-width: 992px) {
-    .container {
-        position: relative;
+    .hero-banner-section {
+        padding: 40px 16px 50px 16px;
+        min-height: auto;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
     }
 
-    /* Mobile screen par 3 lines (Hamburger) icon dikhega */
-    .hamburger-menu {
-        display: block;
-    }
-
-    /* Desktop wala Apply button chhip jayega */
-    .desktop-only-btn {
-        display: none;
-    }
-
-    /* Mobile Navbar Dropdown Container (By default Hidden) */
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
+    .hero-portrait-background {
+        order: 1;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        left: auto;
         width: 100%;
-        background-color: #00153c; /* Header Blue Theme */
-        display: none; /* Default me hidden rahega */
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        z-index: 99999;
+        max-width: 440px;
+        height: 320px;
+        margin: 0 auto 28px auto;
+        border-radius: 20px;
+        -webkit-mask-image: none;
+        mask-image: none;
+        opacity: 1;
+        background-position: center 15%;
+        background-size: cover;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        z-index: 5;
     }
 
-    .navbar ul {
+    .hero-container {
+        order: 2;
+        display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
-        gap: 15px;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto;
+        z-index: 10;
     }
 
-    /* Jab JavaScript 'is-active' class add karegi tab menu khulega */
-    .navbar.is-active {
-        display: flex !important;
+    .hero-content-left {
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .mobile-only-btn {
-        display: inline-flex;
-        margin-top: 15px;
+    .hero-tagline {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .hero-main-title {
+        font-size: 36px;
+        line-height: 1.15;
+        margin-bottom: 8px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.65;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .hero-btn-group {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+        gap: 12px;
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+    .hero-floating-box {
+        order: 2;
+        position: relative;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        transform: none;
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 24px 20px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        z-index: 15;
+    }
+
+    .journey-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .orange-top-accent-line {
+        margin: 0 auto 16px;
+    }
+
+    .btn-view-photos {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-portrait-background {
+        height: 260px;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    .hero-main-title {
+        font-size: 28px;
+    }
+
+    .journey-main-heading {
+        font-size: 28px;
+    }
+
+    .journey-intro-text {
+        font-size: 16px;
+    }
+
+    .hero-btn-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-hero {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ajmf-vision-banner {
+        margin: 0 16px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ajmf-vision-content-left {
+        max-width: 100%;
+        padding: 35px 16px;
+    }
+
+    .ajmf-vision-image-right {
+        width: 100%;
+        opacity: 0.25;
+        background-position: center 20%;
+    }
+
+    .ajmf-vision-text {
+        font-size: 18px;
     }
 }

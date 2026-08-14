@@ -167,6 +167,7 @@ ul {
 }
 
 .hero-content h1{
+    font-family: 'Playfair Display', Georgia, serif;
     font-size:56px;
     color:#0b2b6f;
     line-height:1.2;
@@ -576,7 +577,7 @@ body.our-programs-page {
     gap:20px;
     background:#061a52;
     padding:40px;
-    margin:0 140px; 
+    margin: 0 140px 75px 140px; 
     border-radius:20px;
     color:white;
     flex-wrap:wrap;
@@ -697,6 +698,12 @@ body.our-programs-page {
     line-height:1.4;
 }
 /* ================= FOOTER (HANDLED CENTRALLY IN FOOTER.CSS) ================= */
+@media (max-width: 1200px) {
+    .stats {
+        margin: 0 40px 65px 40px;
+    }
+}
+
 @media(max-width:900px){
 
     .hero{
@@ -757,7 +764,7 @@ body.our-programs-page {
 
     .stats{
         justify-content:center;
-        margin: 20px 16px !important;
+        margin: 20px 16px 55px 16px !important;
         padding: 24px 16px !important;
     }
 

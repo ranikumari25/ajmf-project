@@ -13,9 +13,10 @@ const programs = [
     "Build the digital future through project-based learning, coding, teamwork and real-world software development.",
 
     highlights: [
+        "HTML",
+        "CSS",
         "JavaScript",
         "React",
-        "Python",
         "Databases",
         "Projects"
     ],
@@ -24,7 +25,6 @@ const programs = [
             { icon: "fa-solid fa-laptop-code", name: "Software Developer",color:"#3b82f6" },
             { icon: "fa-solid fa-code", name: "Frontend Developer",color:"#3b82f6"  },
             { icon: "fa-solid fa-server", name: "Backend Developer",color:"#3b82f6" },
-            { icon: "fa-solid fa-bug", name: "QA Engineer",color:"#3b82f6"  }
 ]
 },
 
@@ -39,10 +39,10 @@ const programs = [
     "Prepare future educators through modern teaching practices and leadership development.",
 
     highlights: [
-        "Teaching Methods",
-        "Leadership",
-        "Child Development",
-        "Communication"
+        "Learning Science & Metacognition",
+        "AI Tools for Personalized Learning",
+        "Curriculum & Experience Design",
+        "Leadership & Social Enterpreneurship"
     ],
 
     careers: [
@@ -297,4 +297,4 @@ timeline.innerHTML += `
 
 });
 
-
+

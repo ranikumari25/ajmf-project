@@ -159,6 +159,10 @@ ul {
     z-index: 2;
 }
 
+.hero-image {
+    display: none;
+}
+
 .hero-content {
     flex: 1;
     max-width: 620px;
@@ -898,56 +902,8 @@ ul {
    HAMBURGER MENU & MOBILE RESPONSIVE NAVBAR
    ========================================================== */
 
-/* Desktop view par 3-lines icon hidden rahega */
-.hamburger-menu {
-    display: none;
-    color: #ffffff;
-    font-size: 26px;
-    cursor: pointer;
-    padding: 5px;
-}
-
-/* Mobile dropdown ke andar wale button ke liye class */
-.mobile-only-btn {
-    display: none;
-}
-
 /* ================= COMPREHENSIVE RESPONSIVE MEDIA QUERIES FOR MISSION PAGE ================= */
 @media screen and (max-width: 992px) {
-    .hero-container {
-        flex-direction: column;
-        padding: 40px 16px;
-        text-align: center;
-        min-height: auto;
-    }
-
-    .hero-content {
-        max-width: 100%;
-        padding-left: 0;
-        margin-bottom: 30px;
-    }
-
-    .hero-content h1 {
-        font-size: 32px;
-    }
-
-    .hero-content p {
-        font-size: 15px;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .hero-image {
-        width: 100%;
-    }
-
-    .hero-image img {
-        height: 240px;
-        border-bottom-left-radius: 30px;
-    }
-
     .section-title {
         margin-top: 20px;
     }
@@ -1020,12 +976,70 @@ ul {
     }
 }
 
-@media screen and (max-width: 600px) {
+/* ================= MOBILE PHONES ONLY (max-width: 767px) ================= */
+@media screen and (max-width: 767px) {
+    .hero {
+        background: #0B1F44;
+        padding: 0 0 40px 0;
+        min-height: auto;
+        display: block;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .hero-image {
+        display: block !important;
+        width: 100%;
+        order: 1;
+        margin-bottom: 24px;
+        overflow: hidden;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .hero-content {
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+        letter-spacing: 1.2px;
+        margin-bottom: 12px;
+    }
+
     .hero-content h1 {
-        font-size: 26px;
+        font-size: 28px;
+        line-height: 1.25;
+        margin-bottom: 16px;
+    }
+
+    .hero-content p {
+        font-size: 15.5px;
+        line-height: 1.6;
+        margin-bottom: 24px;
     }
 
     .hero-buttons {
+        display: flex;
         flex-direction: column;
         gap: 12px;
     }
@@ -1033,8 +1047,11 @@ ul {
     .btn-primary {
         width: 100%;
         justify-content: center;
+        padding: 14px 24px;
     }
+}
 
+@media screen and (max-width: 600px) {
     .gallery-grid {
         grid-template-columns: 1fr;
     }

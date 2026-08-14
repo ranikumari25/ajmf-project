@@ -741,58 +741,6 @@ ul {
 
 @media (max-width: 768px){
 
-    /* HEADER */
-
-    .header{
-        position:relative;
-    }
-
-    .header .container{
-        width:92%;
-        flex-direction:column;
-        align-items:center;
-        text-align:center;
-    }
-
-    .logo-area{
-        flex-direction:column;
-        gap:8px;
-    }
-
-    .logo-area img{
-        width:75px;
-    }
-
-    .logo-content h2{
-        font-size:22px;
-    }
-
-    .logo-content p{
-        font-size:9px;
-        letter-spacing:1.5px;
-    }
-
-    .navbar{
-        width:100%;
-    }
-
-    .navbar ul{
-        flex-direction:column;
-        align-items:center;
-        gap:12px;
-    }
-
-    .navbar ul li a{
-        font-size:15px;
-    }
-
-    .donate-btn{
-        width:100%;
-        max-width:220px;
-        justify-content:center;
-    }
-
-
     /* EVENTS */
 
     .events-section{
