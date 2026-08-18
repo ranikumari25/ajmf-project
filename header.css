@@ -116,6 +116,135 @@
     color: #f57c00;
 }
 
+/* Hindi Font Support (Noto Sans Devanagari Fallback) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+body.lang-hi,
+body.lang-hi h1,
+body.lang-hi h2,
+body.lang-hi h3,
+body.lang-hi h4,
+body.lang-hi h5,
+body.lang-hi h6,
+body.lang-hi p,
+body.lang-hi a,
+body.lang-hi button,
+body.lang-hi span,
+body.lang-hi li,
+body.lang-hi label {
+    font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif !important;
+}
+
+/* Header Actions & Language Dropdown */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.lang-dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-dropdown-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.lang-dropdown-btn:hover,
+.lang-dropdown-btn:focus {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: #f57c00;
+    color: #ffffff;
+    outline: none;
+}
+
+.lang-dropdown-btn .lang-globe-icon {
+    font-size: 15px;
+    color: #f57c00;
+}
+
+.lang-dropdown-btn .lang-chevron {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.lang-dropdown-wrapper.is-open .lang-chevron {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 130px;
+    background: #0B1F44;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 6px 0;
+    list-style: none;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.25s ease;
+    z-index: 1002;
+}
+
+.lang-dropdown-wrapper.is-open .lang-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-dropdown-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lang-dropdown-menu button,
+.lang-dropdown-menu a {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-dropdown-menu button:hover,
+.lang-dropdown-menu a:hover,
+.lang-dropdown-menu button.is-active,
+.lang-dropdown-menu a.is-active {
+    background: rgba(245, 124, 0, 0.15);
+    color: #f57c00;
+}
+
 /* Desktop Apply Button */
 .donate-btn.desktop-only-btn {
     font-family: 'Poppins', sans-serif;

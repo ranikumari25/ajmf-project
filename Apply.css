@@ -558,7 +558,13 @@ ul {
         /* ==========================================================================
            9. MEDIA RESPONSIVE RULES
            ========================================================================== */
-        @media (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
+            .clean-hero {
+                padding: 60px 24px 50px;
+            }
+            .hero-content h1 {
+                font-size: 38px;
+            }
             .target-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 24px;
@@ -570,24 +576,62 @@ ul {
             .step-box::after {
                 display: none;
             }
-            .footer-grid-layout {
-                grid-template-columns: repeat(2, 1fr);
+            .cta-strip {
+                padding: 45px 30px;
             }
         }
 
-        @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
+            .clean-hero {
+                padding: 40px 16px 35px;
+            }
             .hero-content h1 {
                 font-size: 28px;
             }
+            .hero-subtext {
+                font-size: 14.5px;
+                margin-bottom: 24px;
+            }
+            .target-section,
+            .process-section,
+            .faq-section,
+            .cta-strip-wrapper {
+                padding: 45px 16px;
+            }
             .target-grid, .process-timeline {
                 grid-template-columns: 1fr;
+                gap: 20px;
             }
             .cta-strip {
-                padding: 30px 16px;
+                padding: 30px 20px;
                 border-radius: 16px;
             }
             .cta-strip h3 {
-                font-size: 22px;
+                font-size: 24px;
+            }
+            .cta-strip p {
+                font-size: 14px;
+                margin-bottom: 24px;
+            }
+            .faq-trigger {
+                padding: 16px 20px;
+            }
+            .faq-trigger h4 {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 24px;
+            }
+            .hero-badge {
+                font-size: 10.5px;
+                padding: 4px 12px;
+            }
+            .btn-orange-glow {
+                width: 100%;
+                justify-content: center;
             }
         }
     

@@ -619,7 +619,7 @@ body.our-programs-page {
 .stat-card h2{
     margin:0;
     font-size:22px;     
-    font-weight:400;       
+    /* font-weight:400;        */
     line-height:1.1;
 }
 
@@ -697,92 +697,106 @@ body.our-programs-page {
     color:#333;
     line-height:1.4;
 }
-/* ================= FOOTER (HANDLED CENTRALLY IN FOOTER.CSS) ================= */
-@media (max-width: 1200px) {
+/* ================= FOOTER & RESPONSIVE MEDIA QUERIES ================= */
+@media screen and (max-width: 1024px) {
+    .hero {
+        padding: 30px 24px;
+        min-height: auto;
+    }
+    .hero-content h1 {
+        font-size: 42px;
+    }
     .stats {
-        margin: 0 40px 65px 40px;
+        margin: 0 20px 45px 20px;
+        gap: 20px;
+    }
+    .program-card {
+        padding: 24px 20px;
+        gap: 20px;
     }
 }
 
-@media(max-width:900px){
-
-    .hero{
-        flex-direction:column;
-        padding:40px 16px;
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 16px;
     }
-
-    .hero::before{
-        display:none;
+    .hero::before {
+        display: none;
     }
-
     .hero-content,
-    .hero-image{
-        width:100%;
+    .hero-image {
+        width: 100%;
     }
-
-    .hero-content{
-        padding-top:0;
-        padding-left:0;
+    .hero-content {
+        padding-top: 0;
+        padding-left: 0;
     }
-
-    .hero-content h1{
-        font-size:32px;
+    .hero-content h1 {
+        font-size: 32px;
     }
-
-    .hero-content p{
-        font-size:15px;
+    .hero-content p {
+        font-size: 15px;
     }
-
-    .hero-image{
-        margin-top:20px;
+    .hero-image {
+        margin-top: 20px;
     }
-
-    .hero-image img{
-        border-radius:20px;
+    .hero-image img {
+        border-radius: 20px;
+        max-height: 300px;
     }
-
     .programs {
-        padding: 40px 16px;
+        padding: 35px 16px;
     }
-
-    .program-card{
-        flex-direction:column;
-        align-items:flex-start;
-        padding: 18px 15px;
+    .program-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 16px;
     }
-
     .program-image,
     .program-content,
-    .career-box{
-        width:100%;
+    .career-box {
+        width: 100%;
     }
-
-    .career-box{
-        margin-left:0;
-        margin-top:20px;
+    .career-box {
+        margin-left: 0;
+        margin-top: 16px;
     }
-
-    .stats{
-        justify-content:center;
-        margin: 20px 16px 55px 16px !important;
-        padding: 24px 16px !important;
+    .stats {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 20px 16px 40px 16px !important;
+        padding: 20px 16px !important;
+        gap: 16px;
     }
-
     .campus {
-        padding: 40px 16px;
+        padding: 35px 16px;
     }
-
-    .timeline{
-        justify-content:center;
-        gap:20px;
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
-
-    .timeline::before{
-        display:none;
+    .timeline::before {
+        display: none;
     }
+    .time-item {
+        width: 100%;
+        max-width: 320px;
+    }
+}
 
-    .time-item{
-        width:100%;
-        max-width:250px;
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 26px;
+    }
+    .hero-content p {
+        font-size: 13.5px;
+    }
+    .tag {
+        font-size: 22px;
+    }
+    .program-card h3 {
+        font-size: 20px;
     }
 }

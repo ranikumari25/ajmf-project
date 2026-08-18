@@ -132,19 +132,21 @@ ul {
 /* ================= HERO SECTION ================= */
 .hero {
     position: relative;
-    background: linear-gradient(
+    background-color: #0c1b33;
+    background-image: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.58) 0%,
-        rgba(0, 0, 0, 0.32) 35%,
-        rgba(0, 0, 0, 0) 70%
+        rgba(12, 27, 51, 0.92) 0%,
+        rgba(12, 27, 51, 0.58) 42%,
+        rgba(12, 27, 51, 0.20) 68%,
+        rgba(0, 0, 0, 0) 90%
     ), url('missionstudent.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 85% 15%;
     background-repeat: no-repeat;
-    padding: 120px 0 120px;
+    padding: 100px 0 100px;
     margin: 0; 
     width: 100%;
-    min-height: 620px;
+    min-height: 520px;
     display: flex;
     align-items: center;
 }
@@ -165,7 +167,7 @@ ul {
 
 .hero-content {
     flex: 1;
-    max-width: 620px;
+    max-width: 650px;
 }
 
 .hero-subtitle {
@@ -264,8 +266,7 @@ ul {
 .mission-vision {
     background: #f4f7fc; 
     width: 100%;
-    padding: 150px 10% 60px 10%;
-    padding: -5px;
+    padding: 90px 10% 90px 10%;
     position: relative;
     z-index: 1;
     border-radius: 120px 0 0 0; 
@@ -274,20 +275,33 @@ ul {
 .mv-wrapper {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    max-width: 1100px;
+    gap: 36px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
 .mv-card {
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 16px;
-    padding: 35px;
+    border-radius: 18px;
+    padding: 42px 38px;
     flex: 1;
     box-shadow: 0 15px 35px rgba(3, 27, 78, 0.06); 
     display: flex;
+    flex-direction: column;
     gap: 20px;
+}
+
+.mv-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mv-card-header h3 {
+    font-size: 25px;
+    color: #031b4e;
+    margin: 0;
 }
 
 .mv-icon {
@@ -418,15 +432,24 @@ ul {
 .partner-journey {
     background: #f8fafc;
     width: 100%;        
-    max-width: 1200%;    
-    padding: 40px  10%;  
+    padding: 65px 10%;  
     margin: 0 auto;         
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 
-.partner-card, .journey-card {
+.partner-card {
+    background: #f8fafc;
+    border-radius: 18px;
+    padding: 38px 42px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(3, 27, 78, 0.04);
+    border: 1px solid #e2e8f0;
+    box-sizing: border-box;
+}
+
+.journey-card {
     background: #f4f7fc;
     border-radius: 16px;
     padding: 20px;
@@ -661,18 +684,24 @@ ul {
     margin:8px 0 30px;
 }
 
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+    gap: 18px;
 }
 
-.gallery-grid img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:12px;
-    transition:.4s;
+.gallery-grid img {
+    width: 100% !important;
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .gallery-grid img:hover{
@@ -818,12 +847,18 @@ ul {
     max-height:90%;
 }
 
-.image-viewer-container img{
-    width:auto;
-    max-width:100%;
-    max-height:90vh;
-    border-radius:12px;
-    display:block;
+.clickable-image {
+    cursor: pointer;
+}
+
+.image-viewer-container img {
+    width: auto;
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
 }
 
 .image-viewer-close{

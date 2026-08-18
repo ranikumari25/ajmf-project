@@ -440,11 +440,11 @@ ul {
 .contact p{
     display:flex;
     align-items:flex-start;
-    gap:12px;
-    margin-bottom:18px;
-    line-height:1.7;
+    gap:10px;
+    margin-bottom:12px !important;
+    line-height:1.5;
     color:#e7e7e7;
-    font-size:13px;
+    font-size:16px;
 }
 
 .contact i{
