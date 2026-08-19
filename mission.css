@@ -266,10 +266,14 @@ ul {
 .mission-vision {
     background: #f4f7fc; 
     width: 100%;
-    padding: 90px 10% 90px 10%;
+    padding: 100px 10% 90px 10%;
     position: relative;
     z-index: 1;
     border-radius: 120px 0 0 0; 
+}
+
+.mission-vision .section-title {
+    margin-top: 0;
 }
 
 .mv-wrapper {
@@ -948,8 +952,12 @@ ul {
     }
 
     .mission-vision {
-        padding: 40px 16px;
+        padding: 55px 20px;
         border-radius: 30px 0 0 0;
+    }
+
+    .mission-vision .section-title {
+        margin-top: 0;
     }
 
     .mv-wrapper {
