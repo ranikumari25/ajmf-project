@@ -791,31 +791,148 @@ ul {
     background:rgba(255,255,255,.15);
 }
 
-@media (max-width: 992px) {
-    .impact-container {
-        width: 90%;
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
+@media (max-width: 768px) {
+    /* 1. "OUR STRATEGIC PARTNERS" FONT WEIGHT */
+    .partner-card h2 {
+        font-size: 26px !important;
+        font-weight: 600 !important;
+        line-height: 1.25 !important;
+        color: #031b4e !important;
+        margin-bottom: 18px !important;
+        text-align: left !important;
     }
 
+    /* 2. STRATEGIC PARTNER SECTION PARAGRAPH SIZING & LEFT ALIGNMENT */
+    .partner-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        text-align: left !important;
+        gap: 20px !important;
+    }
+
+    .partner-text-content {
+        width: 100% !important;
+        text-align: left !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .partner-text-content p,
+    .partner-content p,
+    .partner-card p {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        color: #555555 !important;
+        text-align: left !important;
+        margin-bottom: 14px !important;
+        padding: 0 !important;
+    }
+
+    /* 3. IMPACT SECTION — "OUR IMPACT" IN ONE SINGLE LINE & BOTTOM PADDING */
+    .impact-section {
+        padding: 40px 16px 50px 16px !important;
+    }
+
+    .impact-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 20px 45px 20px !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+        align-items: center !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .impact-title {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .impact-title h2 {
+        font-size: 28px !important;
+        font-weight: 600 !important;
+        white-space: nowrap !important;
+        text-align: center !important;
+        color: #ffffff !important;
+        margin: 0 auto !important;
+        line-height: 1.2 !important;
+    }
+
+    /* 4. IMPACT CARD BOTTOM SPACING */
     .impact-stats {
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
+        width: fit-content !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 26px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .impact-item {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        gap: 18px !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .impact-icon {
+        flex: 0 0 64px !important;
+        width: 64px !important;
+        height: 64px !important;
+        min-width: 64px !important;
+        border-radius: 50% !important;
+        background: #ff7a00 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        flex-shrink: 0 !important;
+    }
+
+    .impact-icon i {
+        font-size: 26px !important;
+        color: #ffffff !important;
+        margin: 0 !important;
+    }
+
+    .impact-text {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        min-width: 160px !important;
+    }
+
+    .impact-text h3 {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: clamp(2rem, 7vw, 2.5rem) !important;
+        font-weight: 600 !important;
+        line-height: 1.1 !important;
+        color: #ff7a00 !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+    .impact-text p {
+        font-size: 15px !important;
+        color: #ffffff !important;
+        margin: 4px 0 0 0 !important;
+        text-align: left !important;
     }
 
     .divider {
-        display: none;
-    }
-}
-
-@media (max-width: 600px) {
-    .impact-stats {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
+        display: none !important;
     }
 }
 
@@ -962,6 +1079,14 @@ ul {
 
     .mv-wrapper {
         flex-direction: column;
+    }
+
+    .impact-item h3,
+    .impact-text h3 {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: clamp(2rem, 7vw, 2.5rem) !important;
+        font-weight: 600 !important;
+        line-height: 1.1 !important;
     }
 
     .founder {

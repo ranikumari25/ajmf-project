@@ -23,111 +23,7 @@ ul {
     list-style: none;
 }
 
-/* ================= HEADER ================= */
 
-.header{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background: #0B1F44;
-    padding: 26px 0;   /* pehle 20px tha */
-    transition: .35s;
-}
-
-.hero-content{
-    padding-left: 60px;
-}
-
-.header .container{
-    width:98%;
-    max-width:1700px;
-    margin:0 auto;
-    display:flex;
-    align-items:center;
-    /* justify-content:space-between; */
-}
-
-.logo-area{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin-left:0px;      /* Left se bas thoda sa space */
-    flex-shrink:0;
-}
-
-.logo-area img{
-    width:78px;
-    height:78px;
-    border-radius:50%;
-}
-.logo-content h2{
-    font-family: 'poppins',sans-serif;
-    font-weight: 400;
-    color:#fff;
-    font-size:24px;
-    line-height:1.2;
-}
-
-.logo-content p{
-     font-family: 'poppins',sans-serif;
-    color:#d7d7d7;
-    font-size:11px;
-    letter-spacing:2px;
-}
-
-.navbar{
-    flex:1;
-    margin-left:50px;   
-    margin-right:40px;    
-    justify-content:center;
-}
-
-.navbar ul{
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
-    /* width:700px;       */
-    gap: 28px;;
-}
-
-.navbar ul li a{
-    font-family: 'poppins',sans-serif;
-    text-decoration: none;
-    font-size: 20px;
-    align-items: center;
-    gap: 3px;     
-    font-weight: 500;    
-    color: #fff;
-    transition: 0.3s ease;
-    letter-spacing: 0.5px;
-}
-
-.navbar a{
-    color:#fff;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size:15px;
-    text-decoration: none;
-    font-weight:600;
-    transition:.3s;
-}
-.navbar ul li a:hover{
-    color: #f57c00;
-}
-
-.donate-btn{
-    font-family:'Poppins',sans-serif;
-    background: #f57c00;
-    color:#fff;
-    margin-left: 80px;
-    padding:14px 28px;
-    border-radius:6px;
-    font-weight:600;
-    display:flex;
-    gap:10px;
-    align-items:center;
-}
 
 /* ==========================
    HERO
@@ -1867,43 +1763,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 /* 4. Mobile Layout Overrides */
 @media screen and (max-width: 768px) {
 
-    /* Header Padding & Margins Fix */
-    .header {
-        height: auto !important;
-        padding: 15px 10px !important;
-    }
 
-    .header .container {
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 15px !important;
-        width: 100% !important;
-        padding: 0 10px !important;
-    }
-
-    .logo-area {
-        flex-direction: column !important;
-        text-align: center !important;
-        gap: 8px !important;
-    }
-
-    .logo-area img {
-        margin-left: 0 !important; /* Fixed margin remove */
-        width: 60px !important;
-        height: 60px !important;
-    }
-
-    .donate-btn {
-        margin-right: 0 !important; /* Fixed margin remove */
-    }
-
-    .navbar ul {
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 10px 15px !important;
-    }
 
     /* Hero Showcase & Video Fix */
     .campus-showcase {
@@ -1974,8 +1834,54 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     }
 
     .gallery-stats {
-        grid-template-columns: 1fr !important;
-        padding: 40px 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 30px 16px !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .gallery-stats .stat-box,
+    .stat-box {
+        width: 100% !important;
+        max-width: 320px !important;
+        min-height: auto !important;
+        padding: 24px 18px !important;
+        margin: 0 auto !important;
+        border-radius: 18px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .gallery-stats .stat-box i,
+    .stat-box i {
+        font-size: 42px !important;
+        color: #ff8c00 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .gallery-stats .stat-box h2,
+    .stat-box h2,
+    .gallery-stats h2,
+    .stat-item h2,
+    .stat-item h3 {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: clamp(1.8rem, 6.5vw, 2.2rem) !important;
+        font-weight: 600 !important;
+        line-height: 1.1 !important;
+        margin-bottom: 4px !important;
+    }
+
+    .gallery-stats .stat-box p,
+    .stat-box p {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 14.5px !important;
+        color: #ddd !important;
+        margin: 0 !important;
     }
 
     .gallery-cta {

@@ -477,14 +477,76 @@ ul {
     .pedagogy-page .impact-ribbon-bar-section {
         margin: 20px auto !important;
         width: 100% !important;
-        padding: 24px 16px !important;
+        padding: 30px 20px !important;
         border-radius: 16px !important;
     }
 
     .pedagogy-page .ribbon-flex-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: fit-content !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        gap: 26px !important;
+    }
+
+    .pedagogy-page .ribbon-metric-item {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
         gap: 20px !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .pedagogy-page .ribbon-icon-circle {
+        flex: 0 0 64px !important;
+        width: 64px !important;
+        height: 64px !important;
+        min-width: 64px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.08) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        flex-shrink: 0 !important;
+    }
+
+    .pedagogy-page .ribbon-icon-circle i {
+        font-size: 26px !important;
+        color: #ff8c00 !important;
+        margin: 0 !important;
+    }
+
+    .pedagogy-page .ribbon-text-data {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        min-width: 160px !important;
+    }
+
+    .pedagogy-page .ribbon-text-data h3 {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: clamp(1.8rem, 6.5vw, 2.3rem) !important;
+        font-weight: 600 !important;
+        color: #ff8c00 !important;
+        line-height: 1.1 !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+
+    .pedagogy-page .ribbon-text-data p {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 15px !important;
+        color: #e2e8f0 !important;
+        font-weight: 500 !important;
+        margin: 4px 0 0 0 !important;
+        text-align: left !important;
     }
 }

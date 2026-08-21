@@ -759,8 +759,66 @@ ul {
                 max-width: 350px;
             }
             .ajmf-stats-row {
-                flex-direction: column;
-                gap: 30px;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                width: fit-content !important;
+                max-width: 100% !important;
+                margin: 0 auto !important;
+                gap: 28px !important;
+            }
+            .ajmf-stat-item {
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+                text-align: left !important;
+                gap: 18px !important;
+                width: 100% !important;
+                min-width: auto !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                border-right: none !important;
+            }
+            .ajmf-stat-icon-circle {
+                flex: 0 0 64px !important;
+                width: 64px !important;
+                height: 64px !important;
+                min-width: 64px !important;
+                border-radius: 50% !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                flex-shrink: 0 !important;
+                margin: 0 !important;
+            }
+            .ajmf-stat-icon-circle i {
+                font-size: 26px !important;
+                color: #E06A28 !important;
+                margin: 0 !important;
+            }
+            .ajmf-stat-info {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                text-align: left !important;
+                min-width: 160px !important;
+            }
+            .ajmf-stat-number {
+                font-family: 'Poppins', sans-serif !important;
+                font-size: clamp(2rem, 7vw, 2.5rem) !important;
+                font-weight: 600 !important;
+                line-height: 1.1 !important;
+                color: #E06A28 !important;
+                margin: 0 !important;
+                text-align: left !important;
+            }
+            .ajmf-stat-label {
+                font-size: 15px !important;
+                color: #0A1D37 !important;
+                font-weight: 600 !important;
+                margin: 4px 0 0 0 !important;
+                text-align: left !important;
             }
         }
         @media (max-width: 600px) {

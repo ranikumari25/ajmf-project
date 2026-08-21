@@ -372,7 +372,16 @@ RESPONSIVE DESIGN
     }
 
     .story-img {
-        height: 210px;
+        height: 260px !important;
+        max-height: 65vw !important;
+        overflow: hidden !important;
+    }
+
+    .story-img img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center top !important;
     }
 
     .story-content h2 {

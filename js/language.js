@@ -29,16 +29,21 @@ function ensureLanguageSelectorExists() {
     if (!container || container.querySelector('.lang-dropdown-wrapper')) return;
 
     let actionsDiv = container.querySelector('.header-actions');
+    const hamburgerBtn = container.querySelector('.hamburger-menu, #hamburgerBtn');
     const desktopBtn = container.querySelector('.donate-btn.desktop-only-btn');
 
     if (!actionsDiv) {
         actionsDiv = document.createElement('div');
         actionsDiv.className = 'header-actions';
-        if (desktopBtn) {
+        if (hamburgerBtn) {
+            hamburgerBtn.parentNode.insertBefore(actionsDiv, hamburgerBtn);
+        } else if (desktopBtn) {
             desktopBtn.parentNode.insertBefore(actionsDiv, desktopBtn);
-            actionsDiv.appendChild(desktopBtn);
         } else {
             container.appendChild(actionsDiv);
+        }
+        if (desktopBtn) {
+            actionsDiv.appendChild(desktopBtn);
         }
     }
 
@@ -56,7 +61,14 @@ function ensureLanguageSelectorExists() {
             <li><button type="button" class="lang-option" data-lang="hi">हिंदी</button></li>
         </ul>
     `;
-    actionsDiv.appendChild(wrapper);
+    if (desktopBtn && desktopBtn.parentNode === actionsDiv) {
+        actionsDiv.insertBefore(wrapper, desktopBtn);
+    } else {
+        actionsDiv.appendChild(wrapper);
+        if (desktopBtn) {
+            actionsDiv.appendChild(desktopBtn);
+        }
+    }
 
     // Dropdown toggle event
     const btn = wrapper.querySelector('#langDropdownBtn');

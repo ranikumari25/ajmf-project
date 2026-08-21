@@ -1,4 +1,4 @@
-﻿/* ==========================================================
+/* ==========================================================
    AJMF GET INVOLVED PAGE STYLES (getinvolved.css)
    Scoped strictly under .get-involved-page / .get-involved-body
    ========================================================== */
@@ -616,6 +616,14 @@
 
     .get-involved-page .section-title h2 {
         font-size: 32px;
+    }
+
+    .get-involved-page .stat-number-box h3,
+    .get-involved-page .counter {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: clamp(2rem, 7vw, 2.5rem) !important;
+        font-weight: 600 !important;
+        line-height: 1.1 !important;
     }
 }
 
