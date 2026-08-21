@@ -1077,133 +1077,7 @@ FEATURED
 }
 
 
-/*================ DROPDOWN MENU (Handled centrally in header.css) ================*/
 
-.navbar ul li{
-    list-style: none;
-    position: relative;
-}
-
-
-/* ================= GLOBAL RESETS & FONTS ================= */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
-    background: #f7f8fc;
-    color: #222;
-    overflow-x: hidden;
-    width: 100%;
-}
-
-img, video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-/* ================= HEADER ================= */
-
-.header {
-    position: sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 15px 0;
-    background: #0B1F44;
-    transition: .35s;
-}
-
-.header .container {
-    width: 90%;
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo-area img {
-    border-radius: 50%;
-    width: 65px;
-    height: 65px;
-    object-fit: cover;
-}
-
-.logo-content h2 {
-    font-weight: 400;
-    color: #fff;
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-.logo-content p {
-    color: #d7d7d7;
-    font-size: 10px;
-    letter-spacing: 2px;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.navbar ul li a {
-    font-size: 16px;      
-    font-weight: 400;    
-    color: #fff;
-    transition: 0.3s ease;
-}
-
-.navbar ul li a:hover,
-.navbar ul li a.active {
-    color: #f57c00;
-}
-
-.donate-btn {
-    background: #f57c00;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: 600;
-    display: inline-flex;
-    gap: 8px;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 14px;
-}
 
 /* ================= HERO SHOWCASE ================= */
 
@@ -1618,19 +1492,6 @@ ul {
 
 /* TABLETS & SMALL LAPTOPS (max-width: 992px) */
 @media screen and (max-width: 992px) {
-    .header .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo-area {
-        flex-direction: column;
-    }
-
-    .navbar ul {
-        gap: 15px;
-    }
-
     .campus-showcase {
         flex-direction: column;
     }
@@ -1714,19 +1575,6 @@ ul {
 
 /* SMALL MOBILES (max-width: 480px) */
 @media screen and (max-width: 480px) {
-    .logo-area img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .logo-content h2 {
-        font-size: 16px;
-    }
-
-    .navbar ul li a {
-        font-size: 13px;
-    }
-
     .video-box video {
         height: 220px;
     }
@@ -1882,6 +1730,19 @@ h1, h2, h3, h4, h5, h6, p, span, a {
         font-size: 14.5px !important;
         color: #ddd !important;
         margin: 0 !important;
+    }
+
+    .tour-content .hero-btn {
+        width: fit-content !important;
+        max-width: 82% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 11px 22px !important;
+        font-size: 14.5px !important;
+        box-sizing: border-box !important;
     }
 
     .gallery-cta {

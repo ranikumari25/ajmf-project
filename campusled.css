@@ -4,10 +4,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .student-led-campus-page {
     background-color: #f8fafc;
     color: #333333;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -644,20 +663,32 @@
     }
 }
 
-/* Mobile (max-width: 600px) */
-@media screen and (max-width: 600px) {
-    .student-led-campus-page .council-hero-content h1 {
-        font-size: 28px;
-    }
-
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
     .student-led-campus-page .hero-buttons {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
     .student-led-campus-page .primary-btn {
-        width: 100%;
+        width: auto;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-flex;
         justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        font-size: 14.5px;
+    }
+}
+
+/* Mobile (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .student-led-campus-page .council-hero-content h1 {
+        font-size: 28px;
     }
 
     .student-led-campus-page .section-heading h2 {

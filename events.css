@@ -411,18 +411,6 @@ ul {
 
 @media (max-width: 1400px){
 
-    .header .container{
-        width:94%;
-    }
-
-    .navbar ul{
-        gap:25px;
-    }
-
-    .navbar ul li a{
-        font-size:16px;
-    }
-
     .event-content h3{
         font-size:36px;
     }
@@ -437,39 +425,6 @@ ul {
 /* ================= LAPTOP ================= */
 
 @media (max-width: 1200px){
-
-    .header{
-        height:95px;
-    }
-
-    .logo-area{
-        gap:10px;
-    }
-
-    .logo-area img{
-        width:75px;
-    }
-
-    .logo-content h2{
-        font-size:21px;
-    }
-
-    .logo-content p{
-        font-size:9px;
-    }
-
-    .navbar ul{
-        gap:18px;
-    }
-
-    .navbar ul li a{
-        font-size:14px;
-    }
-
-    .donate-btn{
-        padding:12px 18px;
-        font-size:14px;
-    }
 
     .events-section{
         width:92%;
@@ -734,18 +689,6 @@ ul {
 /* ================= SMALL MOBILE ================= */
 
 @media (max-width: 480px){
-
-    .logo-area img{
-        width:65px;
-    }
-
-    .logo-content h2{
-        font-size:19px;
-    }
-
-    .logo-content p{
-        font-size:8px;
-    }
 
     .section-heading h2{
         font-size:29px;

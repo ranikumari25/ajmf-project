@@ -1164,11 +1164,29 @@ ul {
 
     .hero-btn-group {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 12px;
+        gap: 14px;
         width: 100%;
         margin-bottom: 28px;
+    }
+
+    .btn-hero {
+        width: auto;
+        min-width: 165px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 22px;
+        font-size: 14px;
+        height: 44px;
+        min-height: 44px;
+        max-height: 44px;
+        box-sizing: border-box;
     }
 
     .hero-floating-box {
@@ -1223,11 +1241,16 @@ ul {
 
     .hero-btn-group {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        gap: 14px;
     }
 
     .btn-hero {
-        width: 100%;
+        width: auto;
+        min-width: 165px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
         justify-content: center;
     }
 
