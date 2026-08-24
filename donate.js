@@ -12,20 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             const textToCopy = btn.getAttribute('data-copy');
+            const currentLang = localStorage.getItem('language') || 'en';
 
             if (textToCopy) {
                 navigator.clipboard.writeText(textToCopy).then(() => {
                     // Show Feedback
                     const originalIcon = btn.innerHTML;
                     btn.innerHTML = '<i class="fa-solid fa-check" style="color: #22c55e;"></i>';
-                    btn.setAttribute('title', 'Copied!');
+                    btn.setAttribute('title', (currentLang === 'hi') ? 'कॉपी हो गया!' : 'Copied!');
 
-                    // Show temporary Toast notification if possible
-                    showToast('Copied to clipboard!');
+                    // Show temporary Toast notification
+                    showToast((currentLang === 'hi') ? 'क्लिपबोर्ड पर कॉपी हो गया!' : 'Copied to clipboard!');
 
                     setTimeout(() => {
                         btn.innerHTML = originalIcon;
-                        btn.setAttribute('title', 'Copy to clipboard');
+                        btn.setAttribute('title', (currentLang === 'hi') ? 'क्लिपबोर्ड पर कॉपी करें' : 'Copy to clipboard');
                     }, 2000);
                 }).catch(err => {
                     console.error('Copy failed: ', err);

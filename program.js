@@ -1,6 +1,7 @@
 const programs = [
 
 {
+    titleKey: "prog_sop",
     title: "School of Programming",
     color:"#284a9fff",
     careerIcon: "fa-solid fa-briefcase",
@@ -9,247 +10,235 @@ const programs = [
     image:
     "Sop.jpeg",
 
+    descKey: "sop_desc",
     description:
     "Build the digital future through project-based learning, coding, teamwork and real-world software development.",
 
     highlights: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Databases",
-        "Projects"
+        { key: "hl_html", text: "HTML" },
+        { key: "hl_css", text: "CSS" },
+        { key: "hl_js", text: "JavaScript" },
+        { key: "hl_react", text: "React" },
+        { key: "hl_db", text: "Databases" },
+        { key: "hl_projects", text: "Projects" }
     ],
 
     careers: [
-            { icon: "fa-solid fa-laptop-code", name: "Software Developer",color:"#3b82f6" },
-            { icon: "fa-solid fa-code", name: "Frontend Developer",color:"#3b82f6"  },
-            { icon: "fa-solid fa-server", name: "Backend Developer",color:"#3b82f6" },
+            { icon: "fa-solid fa-laptop-code", key: "career_sw_dev", name: "Software Developer", color:"#3b82f6" },
+            { icon: "fa-solid fa-code", key: "career_fe_dev", name: "Frontend Developer", color:"#3b82f6" },
+            { icon: "fa-solid fa-server", key: "career_be_dev", name: "Backend Developer", color:"#3b82f6" }
 ]
 },
 
 {
+    titleKey: "prog_soe",
     title: "School of Education",
     color:"#284a9fff",
     careerIcon: "fa-solid fa-book-open",
     careerColor: "#a855f7",
     image:"Soe.jpeg",
 
+    descKey: "soe_desc",
     description:
     "Prepare future educators through modern teaching practices and leadership development.",
 
     highlights: [
-        "Learning Science & Metacognition",
-        "AI Tools for Personalized Learning",
-        "Curriculum & Experience Design",
-        "Leadership & Social Enterpreneurship"
+        { key: "hl_learning_science", text: "Learning Science & Metacognition" },
+        { key: "hl_ai_tools", text: "AI Tools for Personalized Learning" },
+        { key: "hl_curriculum_design", text: "Curriculum & Experience Design" },
+        { key: "hl_leadership_ent", text: "Leadership & Social Enterpreneurship" }
     ],
 
     careers: [
-             { icon: "fa-solid fa-chalkboard-user", name: "Teacher",color:"#a855f7" },
-             { icon: "fa-solid fa-user-graduate", name: "Trainer",color:"#a855f7"  },
-             { icon: "fa-solid fa-school", name: "School Leader",color:"#a855f7"  },
-             { icon: "fa-solid fa-hands-helping", name: "Mentor",color:"#a855f7"  }
+             { icon: "fa-solid fa-chalkboard-user", key: "career_teacher", name: "Teacher", color:"#a855f7" },
+             { icon: "fa-solid fa-user-graduate", key: "career_trainer", name: "Trainer", color:"#a855f7" },
+             { icon: "fa-solid fa-school", key: "career_school_leader", name: "School Leader", color:"#a855f7" },
+             { icon: "fa-solid fa-hands-helping", key: "career_mentor", name: "Mentor", color:"#a855f7" }
 ]
 },
 
 {
+    titleKey: "prog_sosc",
     title: "School of Second Chance",
     color:"#284a9fff",
     careerIcon: "fa-solid fa-utensils",
     careerColor: "#22c55e" ,
     image:"Sosc.jpeg",
 
+    descKey: "sosc_desc",
     description:
     "A life-changing program focused on rebuilding confidence and creating new opportunities.",
 
     highlights: [
-        "Life Skills",
-        "Culinary Skills",
-        "Entrepreneurship",
-        "Career Readiness"
+        { key: "hl_life_skills", text: "Life Skills" },
+        { key: "hl_culinary_skills", text: "Culinary Skills" },
+        { key: "hl_entrepreneurship", text: "Entrepreneurship" },
+        { key: "hl_career_readiness", text: "Career Readiness" }
     ],
 
    careers: [
-           { icon: "fa-solid fa-utensils", name: "Chef",color:"#22c55e" },
-           { icon: "fa-solid fa-briefcase", name: "Entrepreneur",color:"#22c55e" },
-           { icon: "fa-solid fa-hotel", name: "Hospitality Professional",color:"#22c55e" }
+           { icon: "fa-solid fa-utensils", key: "career_chef", name: "Chef", color:"#22c55e" },
+           { icon: "fa-solid fa-briefcase", key: "career_entrepreneur", name: "Entrepreneur", color:"#22c55e" },
+           { icon: "fa-solid fa-hotel", key: "career_hospitality", name: "Hospitality Professional", color:"#22c55e" }
 ]
 },
 {
+    titleKey: "prog_sob",
     title: "School of Business",
     color:"#284a9fff",
     careerIcon: "fa-solid fa-chart-line",
     careerColor: "#f97316" ,
     image:"Sob.jpeg",
 
+    descKey: "sob_desc",
     description:
     "Develop business, marketing, operations and leadership skills for modern industries.",
 
     highlights: [
-        "Business Fundamentals",
-        "Marketing",
-        "Sales & Operations",
-        "Leadership Skills",
-        "Data Analysis"
+        { key: "hl_biz_fund", text: "Business Fundamentals" },
+        { key: "hl_marketing", text: "Marketing" },
+        { key: "hl_sales_ops", text: "Sales & Operations" },
+        { key: "hl_leadership_skills", text: "Leadership Skills" },
+        { key: "hl_data_analysis", text: "Data Analysis" }
     ],
 
     careers: [
-           { icon: "fa-solid fa-chart-line", name: "Business Analyst",color:"#f97316" },
-           { icon: "fa-solid fa-bullhorn", name: "Marketing Executive",color:"#f97316" },
-           { icon: "fa-solid fa-gear", name: "Operations Associate",color:"#f97316" },
-           { icon: "fa-solid fa-handshake", name: "Sales Executive",color:"#f97316" }
+           { icon: "fa-solid fa-chart-line", key: "career_biz_analyst", name: "Business Analyst", color:"#f97316" },
+           { icon: "fa-solid fa-bullhorn", key: "career_mkt_exec", name: "Marketing Executive", color:"#f97316" },
+           { icon: "fa-solid fa-gear", key: "career_ops_assoc", name: "Operations Associate", color:"#f97316" },
+           { icon: "fa-solid fa-handshake", key: "career_sales_exec", name: "Sales Executive", color:"#f97316" }
 ]
 },
 {
+    titleKey: "prog_sof",
     title: "School of Finance",
     color:"#284a9fff",
     careerIcon: "fa-solid fa-building-columns",
     careerColor: "#f59e0b",
     image:"Sof.jpeg",
 
+    descKey: "sof_desc",
     description:
     "Learn finance, business operations and analytical thinking for modern careers.",
 
     highlights: [
-        "Accounting",
-        "Financial Analysis",
-        "Investments",
-        "Business Planning"
+        { key: "hl_accounting", text: "Accounting" },
+        { key: "hl_fin_analysis", text: "Financial Analysis" },
+        { key: "hl_investments", text: "Investments" },
+        { key: "hl_biz_planning", text: "Business Planning" }
     ],
    careers: [
-            { icon: "fa-solid fa-chart-pie", name: "Financial Analyst",color:"#f59e0b"},
-            { icon: "fa-solid fa-building-columns", name: "Banking Professional",color:"#f59e0b"},
-            { icon: "fa-solid fa-coins", name: "Investment Advisor",color:"#f59e0b"}
+            { icon: "fa-solid fa-chart-pie", key: "career_fin_analyst", name: "Financial Analyst", color:"#f59e0b" },
+            { icon: "fa-solid fa-building-columns", key: "career_banking_prof", name: "Banking Professional", color:"#f59e0b" },
+            { icon: "fa-solid fa-coins", key: "career_invest_adv", name: "Investment Advisor", color:"#f59e0b" }
  ]
 
 },
 
 ];
 
-const cardsContainer =
-document.getElementById("cards-container");
+const cardsContainer = document.getElementById("cards-container");
 
-programs.forEach(program => {
+if (cardsContainer) {
+    programs.forEach(program => {
+        cardsContainer.innerHTML += `
+        <div class="program-card">
+            <div class="program-image">
+                <img src="${program.image}" alt="${program.title}">
+            </div>
 
-cardsContainer.innerHTML += `
+            <div class="program-content">
+                <h3 class="p-title" data-i18n="${program.titleKey}">
+                    ${program.title}
+                </h3>
 
-<div class="program-card">
-    <div class="program-image">
+                <p class="p-description" data-i18n="${program.descKey}">
+                    ${program.description}
+                </p>
+                <h4 class="highlights-title" data-i18n="curriculum_highlights" style="color:${program.color}; margin-top:18px; margin-bottom:10px; font-size:18px; font-family:'Poppins', sans-serif; font-weight:700; letter-spacing:0.5px;">
+                      Curriculum Highlights
+                </h4>
 
-        <img src="${program.image}" alt="">
+                <ul class="p-highlights">
+                    ${program.highlights
+                        .map(item => `<li data-i18n="${item.key}">${item.text}</li>`)
+                        .join("")}
+                </ul>
+            </div>
 
-    </div>
+            <div class="career-box" style="border:0.1px solid ${program.careerColor};">
+                <h4 class="p-career" data-i18n="career_paths" style="color:${program.careerColor}">
+                     <i class="${program.careerIcon}"></i>
+                     Career Paths
+                </h4>
 
-    <div class="program-content">
+                <ul class="career-list">
+                   ${program.careers
+                    .map(career => `
+                 <li>
+                    <i class="${career.icon}" style="color:${career.color}"></i>
+                    <span data-i18n="${career.key}">${career.name}</span>
+                 </li>
+                `)
+                    .join("")}
+                </ul>
+            </div>
+        </div>
+        `;
+    });
 
-        <h3 class="p-title">
-            ${program.title }
-           
-        </h3>
-
-        <p class="p-description">
-            ${program.description}
-        </p>
-        <h4 class="highlights-title" style="color:${program.color}; margin-top:18px; margin-bottom:10px; font-size:18px; font-family:'Poppins', sans-serif; font-weight:700; letter-spacing:0.5px;">
-              Curriculum Highlights
-      </h4>
-
-        <ul class="p-highlights">
-            ${program.highlights
-                .map(item => `<li>${item}</li>`)
-                .join("")}
-        </ul>
-
-    </div>
-
-<div class="career-box" style="border:0.1px solid ${program.careerColor};">
-    <h4 class="p-career" style="color:${program.careerColor}">
-         <i class="${program.careerIcon}"></i>
-           Career Paths
-      </h4>
-
-        <ul class="career-list">
-
-           ${program.careers
-            .map(career => `
-         <li>
-      <i class="${career.icon}" style="color:${career.color}"></i>
-            ${career.name}
-      </li>
-        `)
-              .join("")}
-
-        </ul>
-
-    </div>
-
-</div>
-
-`;
-
-});
-
-
+    if (typeof applyTranslations === 'function') {
+        const savedLang = localStorage.getItem('language') || 'en';
+        applyTranslations(savedLang);
+    }
+}
 
 const campusSchedule = [
-
-
-
 {
     icon:"💪",
     time:"06:00 AM",
     task:"Exercise"
 },
-
 {
     icon:"🍳",
     time:"08:30 AM",
     task:"Breakfast"
 },
-
 {
     icon:"📚",
     time:"09:00 AM",
     task:"Session 1"
 },
-
 {
     icon:"🍽️",
     time:"01:00 PM",
     task:"Lunch"
 },
-
 {
     icon:"📚",
     time:"02:00 PM",
     task:"Session 2"
 },
-
 {
     icon:"📖",
     time:"04:00 PM",
     task:"English Activity"
 },
-
 {
     icon:"🍟",
     time:"05:00 PM",
     task:"Snacks Break"
 },
-
 {
     icon:"⚽",
     time:"05:30 PM",
     task:"Culture Activity"
 },
-
 {
     icon:"📚",
     time:"06:30 PM",
     task:"Session 3"
 },
-
 {
     icon:"🍽️",
     time:"08:30 PM",
@@ -260,41 +249,29 @@ const campusSchedule = [
     time:"10:30 PM",
     task:"Lights Out"
 }
-
-
 ];
 
-const timelineContainer =
-document.getElementById("timeline-container");
+const timelineContainer = document.getElementById("timeline-container");
 
-timelineContainer.innerHTML =
-`<div class="timeline"></div>`;
+if (timelineContainer) {
+    timelineContainer.innerHTML = `<div class="timeline"></div>`;
+    const timeline = timelineContainer.querySelector(".timeline");
 
-const timeline =
-document.querySelector(".timeline");
-
-campusSchedule.forEach(item => {
-
-timeline.innerHTML += `
-
-<div class="time-item">
-
-    <div class="circle">
-        ${item.icon}
-    </div>
-
-    <div class="time-card">
-
-        <h4>${item.time}</h4>
-
-        <p>${item.task}</p>
-
-    </div>
-
-</div>
-
-`;
-
-});
+    if (timeline) {
+        campusSchedule.forEach(item => {
+            timeline.innerHTML += `
+            <div class="time-item">
+                <div class="circle">
+                    ${item.icon}
+                </div>
+                <div class="time-card">
+                    <h4>${item.time}</h4>
+                    <p>${item.task}</p>
+                </div>
+            </div>
+            `;
+        });
+    }
+}
 
 

@@ -46,18 +46,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const fullName = document.getElementById('fullName')?.value.trim();
             const email = document.getElementById('email')?.value.trim();
             const message = document.getElementById('message')?.value.trim();
+            const currentLang = localStorage.getItem('language') || 'en';
 
             if (!fullName || !email || !message) {
                 if (formStatus) {
                     formStatus.style.color = '#ef4444';
-                    formStatus.textContent = 'Please fill in all required fields (*).';
+                    formStatus.textContent = (currentLang === 'hi')
+                        ? 'कृपया सभी आवश्यक फ़ील्ड (*) भरें।'
+                        : 'Please fill in all required fields (*).';
                 }
                 return;
             }
 
             if (formStatus) {
                 formStatus.style.color = '#16a34a';
-                formStatus.textContent = 'Thank you for reaching out! Your message has been sent successfully. We will get back to you shortly.';
+                formStatus.textContent = (currentLang === 'hi')
+                    ? 'संपर्क करने के लिए धन्यवाद! आपका संदेश सफलतापूर्वक भेज दिया गया है। हम जल्द ही आपसे संपर्क करेंगे।'
+                    : 'Thank you for reaching out! Your message has been sent successfully. We will get back to you shortly.';
             }
 
             contactForm.reset();
