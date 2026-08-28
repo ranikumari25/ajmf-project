@@ -4,7 +4,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.donate-page {
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body.donate-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
     background-color: #f8fafc;
     color: #333333;
     font-family: 'Poppins', sans-serif;
@@ -13,6 +24,14 @@
 
 .donate-page * {
     box-sizing: border-box;
+}
+
+.donate-main-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Base Page Container */
@@ -1229,6 +1248,22 @@
 
 /* Mobile (max-width: 768px) */
 @media screen and (max-width: 768px) {
+    html, body.donate-page {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .donate-main-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
     .donate-hero-section {
         padding: 40px 16px 50px;
     }

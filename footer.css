@@ -401,6 +401,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    gap: 32px;
     position: relative;
     border-radius: 24px;
     background-color: #FFF8EF;
@@ -483,17 +484,17 @@
 .partner-overlapping-card {
     background-color: #ffffff;
     border-radius: 22px;
-    padding: 42px 52px;
+    padding: 42px 48px;
     box-shadow: 0 16px 45px rgba(11, 31, 68, 0.09);
     border: 1px solid #e2e8f0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin-left: -60px;
-    width: calc(100% + 60px);
+    margin-left: 0;
+    width: 100%;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .partner-logos-group {
@@ -520,9 +521,11 @@
 }
 
 .partner-multiply {
-    font-size: 28px;
-    font-weight: 300;
-    color: #94a3b8;
+    font-size: 24px;
+    color: #059669;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .partner-vertical-line {
@@ -587,20 +590,22 @@
     .partner-wrapper-row {
         flex-direction: column;
         align-items: stretch;
+        gap: 28px;
     }
     .partner-green-panel {
         width: 100%;
         padding: 45px 35px;
-        border-radius: 26px 26px 0 0;
+        border-radius: 22px;
     }
     .partner-cream-area {
         padding: 0;
+        width: 100%;
     }
     .partner-overlapping-card {
         margin-left: 0;
         width: 100%;
-        margin-top: -30px;
-        border-radius: 24px;
+        margin-top: 0;
+        border-radius: 22px;
     }
 }
 
@@ -619,7 +624,9 @@
         height: 1px;
     }
     .partner-multiply {
-        display: none;
+        display: flex;
+        font-size: 20px;
+        color: #059669;
     }
     .partner-benefits-group {
         flex-direction: column;

@@ -5,8 +5,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* SOFT COOL-TONED LIGHT BLUE / OFF-WHITE PAGE BACKGROUND (#F4F8FA) */
-.get-involved-body {
+body.get-involved-body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
     background-color: #F4F8FA;
     color: #1e293b;
     font-family: 'Poppins', sans-serif;
@@ -21,6 +32,10 @@
     background-color: #F4F8FA;
     position: relative;
     width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .get-container {
@@ -588,6 +603,22 @@
 }
 
 @media screen and (max-width: 768px) {
+    html, body.get-involved-body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .get-involved-page {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
     .get-involved-page .hero-split-grid {
         grid-template-columns: 1fr;
         gap: 32px;
