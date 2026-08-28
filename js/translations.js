@@ -1,5 +1,5 @@
 /* ==========================================================
-   AJMF CENTRALIZED TRANSLATION DICTIONARY
+   Anish Jadhav Memorial Foundation CENTRALIZED TRANSLATION DICTIONARY
    Contains English (en) and Hindi (hi) translations for all 17 website pages.
    ========================================================== */
 
@@ -60,7 +60,7 @@ const translations = {
 
         // --- HERO SLIDES (HOME PAGE) ---
         "slide1_title": "Empowering Every Child Through Education",
-        "slide1_desc": "Anish Jadhav Memorial Foundation (AJMF) is a non-profit organization working to provide quality education, skills and opportunities to children from underserved communities.",
+        "slide1_desc": "Anish Jadhav Memorial Foundation (Anish Jadhav Memorial Foundation) is a non-profit organization working to provide quality education, skills and opportunities to children from underserved communities.",
         "slide1_feat1_title": "Education",
         "slide1_feat1_desc": "Providing access to quality learning.",
         "slide1_feat2_title": "Empowerment",
@@ -72,7 +72,7 @@ const translations = {
         "slide2_desc": "Our programs focus on education, digital literacy, life skills, and career readiness. Through workshops, mentorship, and partnerships, we help students build confidence and prepare for a brighter future.",
         
         "slide3_title": "Creating Meaningful Change Together",
-        "slide3_desc": "With the support of volunteers, donors, and partner organizations, AJMF has reached hundreds of students through educational programs, community events, and skill development initiatives.",
+        "slide3_desc": "With the support of volunteers, donors, and partner organizations, Anish Jadhav Memorial Foundation has reached hundreds of students through educational programs, community events, and skill development initiatives.",
 
         "slide4_title": "Be Part of the Change",
         "slide4_desc": "Every contribution makes a difference. Whether you choose to donate, volunteer, or partner with us, your support helps create opportunities for children and strengthens communities.",
@@ -80,15 +80,15 @@ const translations = {
         // --- PARTNERSHIP SECTION ---
         "partner_label": "OUR PARTNER",
         "partner_title_stronger": "Stronger Together.<br>Greater Impact.",
-        "partner_banner_title": "AJMF × NavGurukul Partnership",
+        "partner_banner_title": "Anish Jadhav Memorial Foundation <i class=\"fa-solid fa-handshake partner-handshake\"></i> <img src=\"navgurukul-wordmark-light.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo ng-wordmark-light\"> Partnership",
         "partner_banner_subtitle": "Stronger Together. Greater Impact.",
-        "partner_banner_desc": "AJMF is proud to partner with NavGurukul to empower youth through industry-relevant education, technology and career-focused learning.",
+        "partner_banner_desc": "Anish Jadhav Memorial Foundation is proud to partner with <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> to empower youth through industry-relevant education, technology and career-focused learning.",
         "partner_benefit_1": "Quality Education",
         "partner_benefit_2": "Skill Development",
         "partner_benefit_3": "Career Opportunities",
 
         // --- SECTION HEADINGS & TITLES ---
-        "section_why_ajmf": "Why Choose AJMF",
+        "section_why_ajmf": "Why Choose Anish Jadhav Memorial Foundation",
         "section_anish_journey": "Anish's Journey",
         "section_memories": "Memories That Inspire",
         "section_our_mission": "Our Mission",
@@ -131,14 +131,14 @@ const translations = {
         // --- ABOUT SECTION (HOME & ABOUT PAGE) ---
         "about_us_tag": "ABOUT US",
         "about_story_title": "The Story Behind<br>Anish Jadhav Memorial Foundation",
-        "about_p1": "The Anish Jadhav Memorial Foundation (AJMF) is a non-profit organization established in the loving memory of Anish Jadhav Sir. His vision, values and commitment to society continue to inspire us every day.",
-        "about_p2": "AJMF works towards education to create a positive and lasting impact on society.",
+        "about_p1": "The Anish Jadhav Memorial Foundation (Anish Jadhav Memorial Foundation) is a non-profit organization established in the loving memory of Anish Jadhav Sir. His vision, values and commitment to society continue to inspire us every day.",
+        "about_p2": "Anish Jadhav Memorial Foundation works towards education to create a positive and lasting impact on society.",
         "about_p3": "We believe that every child deserves equal opportunities to learn, grow and succeed.",
         "about_extra_p1": "We believe that every child deserves equal opportunities to learn, grow and succeed. Through scholarships, mentorship programs, skill development workshops and community initiatives, we strive to build a brighter future for the next generation.",
         "about_extra_p2": "Our foundation also collaborates with educational institutions, volunteers and partner organizations to create sustainable social impact across different communities.",
         "about_float_text": "Many Children<br>Countless Dreams<br>One Mission",
         "about_hero_title": "About Anish Jadhav",
-        "about_hero_desc": "Anish Jadhav was a bright, compassionate, and visionary young mind whose legacy continues to inspire everything we do at AJMF.",
+        "about_hero_desc": "Anish Jadhav was a bright, compassionate, and visionary young mind whose legacy continues to inspire everything we do at Anish Jadhav Memorial Foundation.",
         "about_edu_title": "Empowering Education",
         "about_edu_desc": "Creating opportunities for young minds to learn, grow, and achieve their full potential.",
         "about_comm_title": "Community Empowerment",
@@ -207,10 +207,10 @@ const translations = {
         "wwd_card7_title": "Learning Space Activities",
         "wwd_card7_desc": "Dynamic physical and virtual environment activities like workshops, debates, hacks, and creative expression sessions.",
 
-        // --- WHY CHOOSE AJMF ---
-        "why_ajmf_tag": "WHY AJMF?",
-        "why_ajmf_title": "Why Choose AJMF?",
-        "why_ajmf_intro": "More than an educational space, AJMF is a community where students are supported, challenged, and empowered to build a meaningful future.",
+        // --- WHY CHOOSE Anish Jadhav Memorial Foundation ---
+        "why_ajmf_tag": "WHY Anish Jadhav Memorial Foundation?",
+        "why_ajmf_title": "Why Choose Anish Jadhav Memorial Foundation?",
+        "why_ajmf_intro": "More than an educational space, Anish Jadhav Memorial Foundation is a community where students are supported, challenged, and empowered to build a meaningful future.",
         "why_card1_title": "Student-Centered Growth",
         "why_card1_desc": "Every student receives an environment that supports their individual journey, confidence, and personal development.",
         "why_card2_title": "Real Opportunities",
@@ -218,13 +218,13 @@ const translations = {
         "why_card3_title": "A Strong Community",
         "why_card3_desc": "We create a supportive community where students learn, collaborate, and grow together.",
         "why_card4_title": "Beyond Education",
-        "why_card4_desc": "AJMF focuses not only on learning, but also on confidence, leadership, life skills, and long-term growth.",
+        "why_card4_desc": "Anish Jadhav Memorial Foundation focuses not only on learning, but also on confidence, leadership, life skills, and long-term growth.",
 
         // --- TESTIMONIALS ---
         "testimonial_tag": "WHAT PEOPLE SAY",
         "testimonial_title": "Voices That Inspire Us",
         "testimonial_card1_p": "The foundation has been a blessing in my life. It gave me the support and confidence to pursue my dreams.",
-        "testimonial_card2_p": "AJMF is doing an incredible job in transforming lives through education and community support.",
+        "testimonial_card2_p": "Anish Jadhav Memorial Foundation is doing an incredible job in transforming lives through education and community support.",
         "testimonial_card3_p": "Proud to be associated with an organization that truly cares and works for the betterment of society.",
         "role_student": "Student",
         "role_volunteer": "Volunteer",
@@ -264,7 +264,7 @@ const translations = {
         // --- ABOUT ANISH PAGE ---
         "about_hero_tagline": "IN LOVING MEMORY OF",
         "about_hero_subtitle": "Inspiring Lives Beyond Time",
-        "about_hero_description": "The Anish Jadhav Memorial Foundation (AJMF) was established in loving memory of Anish, the beloved son of Brigadier Kishor and Mrs. Neeta Jadhav.",
+        "about_hero_description": "The Anish Jadhav Memorial Foundation (Anish Jadhav Memorial Foundation) was established in loving memory of Anish, the beloved son of Brigadier Kishor and Mrs. Neeta Jadhav.",
         "our_story": "Our Story",
         "about_floating_text": "A life that touched many, continues to inspire millions.",
 
@@ -608,27 +608,27 @@ const translations = {
 
         "s1_title": "Breaking Barriers Through Education",
         "s1_name": "Shreya Kirola",
-        "s1_short": "My name is Shreya Verma and I joined NavGurukul in October 2022 after completing my 12th grade at the age of 18. At that time, I had no coding background and wasn't confident speaking with others. Over time, NavGurukul helped me grow both technically and personally. I was selected as the Culture Coordinator, where I had the opportunity to lead and manage a group of 100+ girls. I interacted with everyone, organized cultural activities, and helped create a positive environment on",
+        "s1_short": "My name is Shreya Verma and I joined <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> in October 2022 after completing my 12th grade at the age of 18. At that time, I had no coding background and wasn't confident speaking with others. Over time, <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> helped me grow both technically and personally. I was selected as the Culture Coordinator, where I had the opportunity to lead and manage a group of 100+ girls. I interacted with everyone, organized cultural activities, and helped create a positive environment on",
         "s1_full": "campus. This experience played a major role in building my confidence and strengthening my leadership skills. In September 2024, I secured a job, which was a significant milestone in my journey. I returned home with valuable experience, skills, and confidence that I didn't have when I first started.",
 
         "s2_title": "Growing Into A Confident Leader",
         "s2_name": "Shreya Verma",
-        "s2_short": "My name is Shreya Kirola, and I come from Uttarakhand. My journey with Navgurukul began when I heard about it from my cousin, who studied there and built a successful career. Her achievements inspired me deeply, and with the hope of transforming my own future, I decided to join Navgurukul.At Navgurukul, I became a part of the School of Programming, where I got the opportunity to learn different programming languages and build a strong technical foundation. But Navgurukul was not j-",
-        "s2_full": "-ust about coding — it equally focused on personality development, communication, and essential life skills. These experiences helped me grow not only as a learner but also as a confident individual. With continuous support,guidance, and a nurturing environment,I was able to crack my placement interview successfully. Today, I am proud to be working at House of Travellers, starting a new and exciting chapter of my professional journey. I am truly grateful to Navgurukul for empowering me with the skills, confidence, and opportunities that helped change my life.",
+        "s2_short": "My name is Shreya Kirola, and I come from Uttarakhand. My journey with <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> began when I heard about it from my cousin, who studied there and built a successful career. Her achievements inspired me deeply, and with the hope of transforming my own future, I decided to join <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\">.At <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\">, I became a part of the School of Programming, where I got the opportunity to learn different programming languages and build a strong technical foundation. But <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> was not j-",
+        "s2_full": "-ust about coding — it equally focused on personality development, communication, and essential life skills. These experiences helped me grow not only as a learner but also as a confident individual. With continuous support,guidance, and a nurturing environment,I was able to crack my placement interview successfully. Today, I am proud to be working at House of Travellers, starting a new and exciting chapter of my professional journey. I am truly grateful to <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> for empowering me with the skills, confidence, and opportunities that helped change my life.",
 
         "s3_title": "Health Coordinator to College Job Success",
         "s3_name": "Micannsee Thakur",
-        "s3_short": "My name is Micansee Thakur, and I come from a middle-class background. I joined NavGurukul at 16 after 10th grade, with no coding knowledge or communication skills. Encouraged by a family acquaintance, I began my journey on 7th October 2022. NavGurukul transformed my life—I gained technical skills, improved my communication, and learned teamwork and responsibility. I served as a Health Coordinator and held four council positions, which boosted my confidence and leadership. T-",
-        "s3_full": "-he campus was student-driven and supportive, and I made lifelong friends. I took a break for my 12th board exams, during which I lost my father—a deeply painful time. I returned on 30th April 2024 with renewed determination. While many of my peers were placed, I kept striving. On 29th January 2025, I received a job offer from SIRT College, Bhopal, with a salary of ₹20,000–₹25,000/month, and began my career the next day. NavGurukul made me confident, independent, and ready to achieve my dreams. I'm truly grateful for everything it has given me.",
+        "s3_short": "My name is Micansee Thakur, and I come from a middle-class background. I joined <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> at 16 after 10th grade, with no coding knowledge or communication skills. Encouraged by a family acquaintance, I began my journey on 7th October 2022. <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> transformed my life—I gained technical skills, improved my communication, and learned teamwork and responsibility. I served as a Health Coordinator and held four council positions, which boosted my confidence and leadership. T-",
+        "s3_full": "-he campus was student-driven and supportive, and I made lifelong friends. I took a break for my 12th board exams, during which I lost my father—a deeply painful time. I returned on 30th April 2024 with renewed determination. While many of my peers were placed, I kept striving. On 29th January 2025, I received a job offer from SIRT College, Bhopal, with a salary of ₹20,000–₹25,000/month, and began my career the next day. <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> made me confident, independent, and ready to achieve my dreams. I'm truly grateful for everything it has given me.",
 
         "s4_title": "From Job Rejections to Frappe Success",
         "s4_name": "Khushi Rawat",
-        "s4_short": "In 2022, after completing her graduation, she stood at a difficult crossroads. Pursuing a master’s degree was financially challenging, and despite taking a gap year to find a job, she faced constant rejections. During this tough time, her father introduced her to NavGurukul. Unsure but hopeful, she decided to take a chance and joined on 8th March 2023, the day everyone was celebrating Holi.Her initial days were full of emotions, doubt, and loneliness. Seeing others struggle for years made her",
+        "s4_short": "In 2022, after completing her graduation, she stood at a difficult crossroads. Pursuing a master’s degree was financially challenging, and despite taking a gap year to find a job, she faced constant rejections. During this tough time, her father introduced her to <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\">. Unsure but hopeful, she decided to take a chance and joined on 8th March 2023, the day everyone was celebrating Holi.Her initial days were full of emotions, doubt, and loneliness. Seeing others struggle for years made her",
         "s4_full": "question her decision, but she chose to stay focused. She pushed herself, studied late nights, and worked hard to improve—learning one of the most important lessons on the way: patience.Within four months, she reached Module 5 and became job-ready. But when NetWest visited for hiring, she wasn’t allowed to participate because she hadn’t completed the mandatory six months. It was heartbreaking, but she didn’t give up.After completing six months, she finally got an opportunity with Frappe. She worked sincerely on the project, submitted her test, and waited. During that time, she even received another offer, but her heart was set on Frappe.And then, on 4th January, the call came—Frappe wanted to interview her. She travelled to Mumbai for the first time, completed her interview, enjoyed her first chass, and eventually heard the life-changing words: She was selected. Sitting alone afterward, she reflected on her journey—from rejection and uncertainty to hope and achievement. She realized that everything happens at the right time for a reason. Frappe didn’t just give her a job; they gave her confidence and a new beginning.Today, she is grateful—for the opportunities, for the people who believed in her, and for the journey that transformed her life.",
 
         "s5_title": "Zero Tech Skills to Dream Career",
         "s5_name": "Muskan Thakur",
-        "s5_short": "My name is Muskan Thakur, and I come from a humble middle-class background. I joined NavGurukul after completing my graduation, with very limited exposure to computers or communication skills. With the support of my family and the belief that I could build a better future, I began my journey with determination. NavGurukul completely transformed me — I learned technical skills, improved my communication, and developed confidence, teamwork and leadership",
+        "s5_short": "My name is Muskan Thakur, and I come from a humble middle-class background. I joined <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> after completing my graduation, with very limited exposure to computers or communication skills. With the support of my family and the belief that I could build a better future, I began my journey with determination. <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> completely transformed me — I learned technical skills, improved my communication, and developed confidence, teamwork and leadership",
         "s5_full": "qualities. I tookresponsibility in various campus activities, which helped me grow personally and professionally. During my learning journey, I faced many challenges, but the campus environment, mentors and peers helped me continue moving forward.",
 
         "btn_read_story": "Read Full Story",
@@ -669,14 +669,14 @@ const translations = {
         "btn_send_message": "Send Message",
 
         "faq_heading": "Frequently Asked Questions",
-        "faq_sub": "Find quick answers to common inquiries about AJMF and how to reach us.",
+        "faq_sub": "Find quick answers to common inquiries about Anish Jadhav Memorial Foundation and how to reach us.",
         "faq1_q": "Where is Anish Jadhav Memorial Foundation located?",
-        "faq1_a": "AJMF is located at Gharkul Properties, Plot No. 60/1/1, Survey No 60, Pathare Wasti, Lohegaon, Pune, Maharashtra 411047, India.",
-        "faq2_q": "How can I apply for programs at AJMF?",
+        "faq1_a": "Anish Jadhav Memorial Foundation is located at Gharkul Properties, Plot No. 60/1/1, Survey No 60, Pathare Wasti, Lohegaon, Pune, Maharashtra 411047, India.",
+        "faq2_q": "How can I apply for programs at Anish Jadhav Memorial Foundation?",
         "faq2_a": "You can apply online through our official Admissions portal by clicking the \"Apply Here\" button in the header or visiting admissions.navgurukul.org.",
-        "faq3_q": "How can I volunteer or contribute to AJMF?",
+        "faq3_q": "How can I volunteer or contribute to Anish Jadhav Memorial Foundation?",
         "faq3_a": "You can reach out to us using the contact form above or email us directly at info@ajmf.org to explore mentorship, training, and volunteer opportunities.",
-        "faq4_q": "What are the office hours for contacting AJMF?",
+        "faq4_q": "What are the office hours for contacting Anish Jadhav Memorial Foundation?",
         "faq4_a": "Our administrative office operates Monday through Friday from 9:00 AM to 6:00 PM IST.",
         "faq5_q": "How can I donate to support students?",
         "faq5_a": "You can donate directly through our Donate Now page or contact us at info@ajmf.org for CSR partnerships and corporate sponsorships.",
@@ -704,7 +704,7 @@ const translations = {
         "way2_link": "Donate Now →",
 
         "way3_title": "Partner With Us",
-        "way3_desc": "Collaborate with AJMF through CSR, institutional partnerships and program support.",
+        "way3_desc": "Collaborate with Anish Jadhav Memorial Foundation through CSR, institutional partnerships and program support.",
         "way3_link": "Partner With Us →",
 
         "way4_title": "Support Students",
@@ -729,12 +729,12 @@ const translations = {
 
         "mini_tag_partner": "PARTNER WITH US",
         "partner_block_title": "Let’s Create Impact<br>Together",
-        "partner_block_desc": "Organizations and institutions can work with AJMF to create meaningful and scalable social change.",
+        "partner_block_desc": "Organizations and institutions can work with Anish Jadhav Memorial Foundation to create meaningful and scalable social change.",
         "partner_li1": "CSR & Institutional Partnerships",
         "partner_li2": "Skill Development Initiatives",
         "partner_li3": "Hiring & Placement Support",
         "partner_li4": "Educational Program Sponsorship",
-        "btn_partner_ajmf": "Partner With AJMF →",
+        "btn_partner_ajmf": "Partner With Anish Jadhav Memorial Foundation →",
 
         "final_cta_title": "Together, We Can Create<br>More Opportunities.",
         "final_cta_desc": "Whether you volunteer your time, support a student, donate, or partner with us, every contribution helps us move closer to a more empowered future.",
@@ -743,7 +743,7 @@ const translations = {
         // --- APPLY NOW PAGE ---
         "hero_badge_apply": "Admissions Open 2026",
         "hero_title_apply": "Join the Revolution in <span>Education</span>",
-        "hero_sub_apply": "In proud collaboration with <strong>NavGurukul</strong>, we offer a completely fully-funded software engineering residential program designed for high-potential youth from underserved Indian communities.",
+        "hero_sub_apply": "In proud collaboration with <strong><img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"></strong>, we offer a completely fully-funded software engineering residential program designed for high-potential youth from underserved Indian communities.",
         "btn_start_application": "Start Your Application",
 
         "who_can_apply_title": "Who Can Apply?",
@@ -779,7 +779,7 @@ const translations = {
 
         "faq_apply_intro": "Clear answers to help you navigate your residential scholarship journey with complete confidence.",
         "faq_apply1_q": "Is the residential training course completely free?",
-        "faq_apply1_a": "Yes, absolutely. The Anish Jadhav Memorial Foundation in collaboration with NavGurukul provides 100% free lodging, boarding, study resources, laptops, and technical mentorship. You don't have to pay anything.",
+        "faq_apply1_a": "Yes, absolutely. The Anish Jadhav Memorial Foundation in collaboration with <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> provides 100% free lodging, boarding, study resources, laptops, and technical mentorship. You don't have to pay anything.",
         "faq_apply2_q": "What is the minimum age and qualification needed?",
         "faq_apply2_a": "We welcome driven youth who are 16 years of age or older. There is no strict pre-requisite for high-level computer education; basic logical skills and high motivation are sufficient.",
         "faq_apply3_q": "Where is the residential campus located?",
@@ -842,9 +842,9 @@ const translations = {
         "stories_change_desc": "Meet the inspiring students whose lives were transformed through the generosity of donors like you.",
 
         "priyanka_batch": "Software Development Batch 2025",
-        "priyanka_quote": "\"Coming from a small village, I never imagined I would code software applications. The AJMF scholarship gave me a home, laptop, and training. Today I work as a frontend developer!\"",
+        "priyanka_quote": "\"Coming from a small village, I never imagined I would code software applications. The Anish Jadhav Memorial Foundation scholarship gave me a home, laptop, and training. Today I work as a frontend developer!\"",
         "anjali_batch": "School of Education 2025",
-        "anjali_quote": "\"The support from AJMF donors provided me with books, meals, and mentorship. I am now leading academic peer circles and inspiring dozens of young girls to pursue education.\"",
+        "anjali_quote": "\"The support from Anish Jadhav Memorial Foundation donors provided me with books, meals, and mentorship. I am now leading academic peer circles and inspiring dozens of young girls to pursue education.\"",
         "pooja_batch": "School of Business 2025",
         "pooja_quote": "\"Your donation built our computer lab and healthcare facilities. It allowed me to focus entirely on my studies without financial stress. Thank you for believing in us!\"",
 
@@ -853,15 +853,15 @@ const translations = {
 
         // --- PARTNERSHIP PAGE ---
         "tagline_stronger": "STRONGER TOGETHER",
-        "hero_title_partnership": "AJMF × <span>NavGurukul</span><br>Partnership",
+        "hero_title_partnership": "Anish Jadhav Memorial Foundation × <span><img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"></span><br>Partnership",
         "hero_desc_partnership": "Working together to empower young minds from underserved communities through quality education, software engineering, and industry-relevant career opportunities.",
         "btn_explore_partnership": "Explore Our Partnership",
         "btn_watch_more": "WATCH MORE",
 
         "sub_about_partnership": "ABOUT OUR PARTNERSHIP",
         "about_partnership_heading": "Building sustainable bridges between talent and tech opportunities.",
-        "about_p1": "The <strong>Anish Jadhav Memorial Foundation</strong> (AJMF) is proud to collaborate with <strong>NavGurukul</strong>, a visionary non-profit organization dedicated to bringing higher education and tech careers to youth from underprivileged backgrounds.",
-        "about_p2": "Through this alliance, AJMF and NavGurukul combine residential infrastructure, community outreach, mentorship, and intensive software engineering training to offer a completely fully-funded learning journey for aspiring students.",
+        "about_p1": "The <strong>Anish Jadhav Memorial Foundation</strong> (Anish Jadhav Memorial Foundation) is proud to collaborate with <strong><img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"></strong>, a visionary non-profit organization dedicated to bringing higher education and tech careers to youth from underprivileged backgrounds.",
+        "about_p2": "Through this alliance, Anish Jadhav Memorial Foundation and <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> combine residential infrastructure, community outreach, mentorship, and intensive software engineering training to offer a completely fully-funded learning journey for aspiring students.",
         "since_2022": "SINCE 2022",
 
         "timeline_left_title": "WHEN OUR PARTNERSHIP BEGAN",
@@ -874,7 +874,7 @@ const translations = {
         "step3_timeline_title": "Growing Impact",
         "step3_timeline_desc": "Transforming lives and creating a brighter tomorrow.",
 
-        "why_partnered_title": "Why AJMF Partnered With NavGurukul",
+        "why_partnered_title": "Why Anish Jadhav Memorial Foundation Partnered With <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\">",
         "why1_title": "Digital & Tech Skills",
         "why1_desc": "Providing hands-on software development training in HTML, CSS, JavaScript, and modern web frameworks.",
         "why2_title": "Expanding Access",
@@ -905,14 +905,14 @@ const translations = {
 
         "partnership_impact_title": "Our Partnership Impact",
 
-        "life_learning_title": "Life & Learning at AJMF × NavGurukul",
+        "life_learning_title": "Life & Learning at Anish Jadhav Memorial Foundation × <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\">",
         "gallery_overlay_1": "Interactive Classrooms",
         "gallery_overlay_2": "Mentorship Sessions",
         "gallery_overlay_3": "Hands-on Learning",
         "gallery_overlay_4": "Student Collaboration",
 
         "looking_ahead_title": "Looking Ahead",
-        "looking_ahead_desc": "Together, AJMF and NavGurukul remain committed to deepening our impact, scaling our residential software development programs, and empowering thousands of additional young minds across India.",
+        "looking_ahead_desc": "Together, Anish Jadhav Memorial Foundation and <img src=\"navgurukul-wordmark.svg\" alt=\"NavGurukul\" class=\"ng-wordmark-logo\"> remain committed to deepening our impact, scaling our residential software development programs, and empowering thousands of additional young minds across India.",
         "ahead1_title": "More Students<br>More Futures",
         "ahead1_desc": "We aim to reach and empower thousands more young learners.",
         "ahead2_title": "Stronger Programs<br>Better Outcomes",
@@ -980,7 +980,7 @@ const translations = {
 
         // --- HERO SLIDES (HOME PAGE) ---
         "slide1_title": "शिक्षा के माध्यम से हर बच्चे को सशक्त बनाना",
-        "slide1_desc": "अनिश जाधव मेमोरियल फाउंडेशन (AJMF) एक गैर-लाभकारी संगठन है जो वंचित समुदायों के बच्चों को गुणवत्तापूर्ण शिक्षा, कौशल और अवसर प्रदान करने के लिए काम कर रहा है।",
+        "slide1_desc": "अनिश जाधव मेमोरियल फाउंडेशन (Anish Jadhav Memorial Foundation) एक गैर-लाभकारी संगठन है जो वंचित समुदायों के बच्चों को गुणवत्तापूर्ण शिक्षा, कौशल और अवसर प्रदान करने के लिए काम कर रहा है।",
         "slide1_feat1_title": "शिक्षा",
         "slide1_feat1_desc": "गुणवत्तापूर्ण शिक्षा तक पहुँच प्रदान करना।",
         "slide1_feat2_title": "सशक्तिकरण",
@@ -992,7 +992,7 @@ const translations = {
         "slide2_desc": "हमारे कार्यक्रम शिक्षा, डिजिटल साक्षरता, जीवन कौशल और करियर की तैयारी पर ध्यान केंद्रित करते हैं। कार्यशालाओं, परामर्श और साझेदारी के माध्यम से, हम छात्रों को आत्मविश्वास बनाने और बेहतर भविष्य के लिए तैयार होने में मदद करते हैं।",
 
         "slide3_title": "साथ मिलकर सार्थक बदलाव लाना",
-        "slide3_desc": "स्वयंसेवकों, दाताओं और साझेदार संगठनों के सहयोग से, AJMF ने शैक्षिक कार्यक्रमों, सामुदायिक आयोजनों और कौशल विकास पहलों के माध्यम से सैकड़ों छात्रों तक पहुँच बनाई है।",
+        "slide3_desc": "स्वयंसेवकों, दाताओं और साझेदार संगठनों के सहयोग से, Anish Jadhav Memorial Foundation ने शैक्षिक कार्यक्रमों, सामुदायिक आयोजनों और कौशल विकास पहलों के माध्यम से सैकड़ों छात्रों तक पहुँच बनाई है।",
 
         "slide4_title": "बदलाव का हिस्सा बनें",
         "slide4_desc": "हर योगदान एक बदलाव लाता है। चाहे आप दान देना चाहें, स्वयंसेवा करना चाहें या हमारे साथ साझेदारी करना चाहें, आपका समर्थन बच्चों के लिए अवसर पैदा करता है और समुदायों को मजबूत बनाता है।",
@@ -1000,15 +1000,15 @@ const translations = {
         // --- PARTNERSHIP SECTION ---
         "partner_label": "हमारा पार्टनर",
         "partner_title_stronger": "साथ मिलकर सशक्त।<br>बड़ा प्रभाव।",
-        "partner_banner_title": "AJMF × नवगुरुकुल साझेदारी",
+        "partner_banner_title": "Anish Jadhav Memorial Foundation × नवगुरुकुल साझेदारी",
         "partner_banner_subtitle": "साथ मिलकर सशक्त। बड़ा प्रभाव।",
-        "partner_banner_desc": "उद्योग-प्रासंगिक शिक्षा, प्रौद्योगिकी और करियर-केंद्रित शिक्षण के माध्यम से युवाओं को सशक्त बनाने के लिए AJMF को नवगुरुकुल के साथ साझेदारी करने पर गर्व है।",
+        "partner_banner_desc": "उद्योग-प्रासंगिक शिक्षा, प्रौद्योगिकी और करियर-केंद्रित शिक्षण के माध्यम से युवाओं को सशक्त बनाने के लिए Anish Jadhav Memorial Foundation को नवगुरुकुल के साथ साझेदारी करने पर गर्व है।",
         "partner_benefit_1": "गुणवत्तापूर्ण शिक्षा",
         "partner_benefit_2": "कौशल विकास",
         "partner_benefit_3": "करियर के अवसर",
 
         // --- SECTION TITLES & CARDS ---
-        "section_why_ajmf": "AJMF क्यों चुनें",
+        "section_why_ajmf": "Anish Jadhav Memorial Foundation क्यों चुनें",
         "section_anish_journey": "अनिश की यात्रा",
         "section_memories": "प्रेरणादायक यादें",
         "section_our_mission": "हमारा मिशन",
@@ -1051,14 +1051,14 @@ const translations = {
         // --- ABOUT SECTION (HOME & ABOUT PAGE) ---
         "about_us_tag": "हमारे बारे में",
         "about_story_title": "अनिश जाधव मेमोरियल फाउंडेशन<br>के पीछे की कहानी",
-        "about_p1": "अनिश जाधव मेमोरियल फाउंडेशन (AJMF) अनिश जाधव सर की प्यारी याद में स्थापित एक गैर-लाभकारी संस्था है। उनके दृष्टिकोण, मूल्य और समाज के प्रति प्रतिबद्धता हमें हर दिन प्रेरित करती है।",
-        "about_p2": "AJMF समाज पर सकारात्मक और स्थायी प्रभाव डालने के लिए शिक्षा की दिशा में काम करता है।",
+        "about_p1": "अनिश जाधव मेमोरियल फाउंडेशन (Anish Jadhav Memorial Foundation) अनिश जाधव सर की प्यारी याद में स्थापित एक गैर-लाभकारी संस्था है। उनके दृष्टिकोण, मूल्य और समाज के प्रति प्रतिबद्धता हमें हर दिन प्रेरित करती है।",
+        "about_p2": "Anish Jadhav Memorial Foundation समाज पर सकारात्मक और स्थायी प्रभाव डालने के लिए शिक्षा की दिशा में काम करता है।",
         "about_p3": "हमारा मानना है कि हर बच्चा सीखने, बढ़ने और सफल होने के समान अवसरों का हकदार है।",
         "about_extra_p1": "हमारा मानना है कि हर बच्चा सीखने, बढ़ने और सफल होने के समान अवसरों का हकदार है। छात्रवृत्ति, परामर्श कार्यक्रम, कौशल विकास कार्यशालाओं और सामुदायिक पहलों के माध्यम से, हम अगली पीढ़ी के लिए एक उज्ज्वल भविष्य बनाने का प्रयास करते हैं।",
         "about_extra_p2": "हमारा फाउंडेशन विभिन्न समुदायों में टिकाऊ सामाजिक प्रभाव पैदा करने के लिए शैक्षणिक संस्थानों, स्वयंसेवकों और साझेदार संगठनों के साथ भी सहयोग करता है।",
         "about_float_text": "अनेक बच्चे<br>अनगिनत सपने<br>एक मिशन",
         "about_hero_title": "अनिश जाधव के बारे में",
-        "about_hero_desc": "अनिश जाधव एक मेधावी, दयालु और दूरदर्शी युवा थे जिनकी विरासत AJMF में हमारे हर कार्य को प्रेरित करती रहती है।",
+        "about_hero_desc": "अनिश जाधव एक मेधावी, दयालु और दूरदर्शी युवा थे जिनकी विरासत Anish Jadhav Memorial Foundation में हमारे हर कार्य को प्रेरित करती रहती है।",
         "about_edu_title": "शिक्षा को सशक्त बनाना",
         "about_edu_desc": "युवा दिमागों को सीखने, बढ़ने और अपनी पूरी क्षमता हासिल करने के अवसर प्रदान करना।",
         "about_comm_title": "सामुदायिक सशक्तिकरण",
@@ -1127,10 +1127,10 @@ const translations = {
         "wwd_card7_title": "लर्निंग स्पेस गतिविधियाँ",
         "wwd_card7_desc": "कार्यशालाएं, वाद-विवाद, हैकाथॉन और रचनात्मक अभिव्यक्ति सत्र जैसी गतिशील भौतिक और आभासी वातावरण गतिविधियां।",
 
-        // --- WHY CHOOSE AJMF ---
-        "why_ajmf_tag": "AJMF क्यों?",
-        "why_ajmf_title": "AJMF क्यों चुनें?",
-        "why_ajmf_intro": "एक शैक्षिक स्थान से अधिक, AJMF एक ऐसा समुदाय है जहाँ छात्रों का समर्थन किया जाता है, उन्हें चुनौतियों का सामना करने और एक अर्थपूर्ण भविष्य के निर्माण के लिए सशक्त बनाया जाता है।",
+        // --- WHY CHOOSE Anish Jadhav Memorial Foundation ---
+        "why_ajmf_tag": "Anish Jadhav Memorial Foundation क्यों?",
+        "why_ajmf_title": "Anish Jadhav Memorial Foundation क्यों चुनें?",
+        "why_ajmf_intro": "एक शैक्षिक स्थान से अधिक, Anish Jadhav Memorial Foundation एक ऐसा समुदाय है जहाँ छात्रों का समर्थन किया जाता है, उन्हें चुनौतियों का सामना करने और एक अर्थपूर्ण भविष्य के निर्माण के लिए सशक्त बनाया जाता है।",
         "why_card1_title": "छात्र-केंद्रित विकास",
         "why_card1_desc": "प्रत्येक छात्र को एक ऐसा वातावरण मिलता है जो उनकी व्यक्तिगत यात्रा, आत्मविश्वास और व्यक्तिगत विकास का समर्थन करता है।",
         "why_card2_title": "वास्तविक अवसर",
@@ -1138,13 +1138,13 @@ const translations = {
         "why_card3_title": "एक मजबूत समुदाय",
         "why_card3_desc": "हम एक सहायक समुदाय का निर्माण करते हैं जहाँ छात्र सीखते हैं, सहयोग करते हैं और एक साथ बढ़ते हैं।",
         "why_card4_title": "शिक्षा से परे",
-        "why_card4_desc": "AJMF न केवल सीखने पर, बल्कि आत्मविश्वास, नेतृत्व, जीवन कौशल और दीर्घकालिक विकास पर भी ध्यान केंद्रित करता है।",
+        "why_card4_desc": "Anish Jadhav Memorial Foundation न केवल सीखने पर, बल्कि आत्मविश्वास, नेतृत्व, जीवन कौशल और दीर्घकालिक विकास पर भी ध्यान केंद्रित करता है।",
 
         // --- TESTIMONIALS ---
         "testimonial_tag": "लोग क्या कहते हैं",
         "testimonial_title": "हमें प्रेरित करने वाली आवाज़ें",
         "testimonial_card1_p": "यह फाउंडेशन मेरे जीवन में एक वरदान रहा है। इसने मुझे अपने सपनों को पूरा करने का समर्थन और आत्मविश्वास दिया।",
-        "testimonial_card2_p": "AJMF शिक्षा और सामुदायिक सहायता के माध्यम से जीवन को बदलने में एक अद्भुत काम कर रहा है।",
+        "testimonial_card2_p": "Anish Jadhav Memorial Foundation शिक्षा और सामुदायिक सहायता के माध्यम से जीवन को बदलने में एक अद्भुत काम कर रहा है।",
         "testimonial_card3_p": "ऐसे संगठन से जुड़ने पर गर्व है जो वास्तव में समाज की भलाई के लिए ध्यान रखता है और काम करता है।",
         "role_student": "छात्र",
         "role_volunteer": "स्वयंसेवक",
@@ -1182,7 +1182,7 @@ const translations = {
         // --- ABOUT ANISH PAGE ---
         "about_hero_tagline": "की प्यारी याद में",
         "about_hero_subtitle": "समय से परे जीवन को प्रेरित करना",
-        "about_hero_description": "अनिश जाधव मेमोरियल फाउंडेशन (AJMF) की स्थापना ब्रिगेडियर किशोर और श्रीमती नीता जाधव के प्यारे बेटे अनिश की प्यारी याद में की गई थी।",
+        "about_hero_description": "अनिश जाधव मेमोरियल फाउंडेशन (Anish Jadhav Memorial Foundation) की स्थापना ब्रिगेडियर किशोर और श्रीमती नीता जाधव के प्यारे बेटे अनिश की प्यारी याद में की गई थी।",
         "our_story": "हमारी कहानी",
         "about_floating_text": "एक जीवन जिसने कई लोगों को छुआ, लाखों लोगों को प्रेरित करता रहता है।",
 
@@ -1587,14 +1587,14 @@ const translations = {
         "btn_send_message": "संदेश भेजें",
 
         "faq_heading": "अक्सर पूछे जाने वाले प्रश्न",
-        "faq_sub": "AJMF और हम तक पहुँचने के तरीके के बारे में सामान्य प्रश्नों के त्वरित उत्तर पाएं।",
+        "faq_sub": "Anish Jadhav Memorial Foundation और हम तक पहुँचने के तरीके के बारे में सामान्य प्रश्नों के त्वरित उत्तर पाएं।",
         "faq1_q": "अनिश जाधव मेमोरियल फाउंडेशन कहाँ स्थित है?",
-        "faq1_a": "AJMF घरकुल प्रॉपर्टीज, प्लॉट नंबर 60/1/1, सर्वे नंबर 60, पाठारे वस्ती, लोहेगांव, पुणे, महाराष्ट्र 411047, भारत में स्थित है।",
-        "faq2_q": "मैं AJMF के कार्यक्रमों के लिए कैसे आवेदन कर सकता हूँ?",
+        "faq1_a": "Anish Jadhav Memorial Foundation घरकुल प्रॉपर्टीज, प्लॉट नंबर 60/1/1, सर्वे नंबर 60, पाठारे वस्ती, लोहेगांव, पुणे, महाराष्ट्र 411047, भारत में स्थित है।",
+        "faq2_q": "मैं Anish Jadhav Memorial Foundation के कार्यक्रमों के लिए कैसे आवेदन कर सकता हूँ?",
         "faq2_a": "आप हेडर में \"यहाँ आवेदन करें\" बटन पर क्लिक करके या admissions.navgurukul.org पर जाकर हमारे आधिकारिक प्रवेश पोर्टल के माध्यम से ऑनलाइन आवेदन कर सकते हैं।",
-        "faq3_q": "मैं AJMF में स्वयंसेवा या योगदान कैसे कर सकता हूँ?",
+        "faq3_q": "मैं Anish Jadhav Memorial Foundation में स्वयंसेवा या योगदान कैसे कर सकता हूँ?",
         "faq3_a": "मेंटॉरशिप, प्रशिक्षण और स्वयंसेवा के अवसरों का पता लगाने के लिए आप ऊपर दिए गए संपर्क फ़ॉर्म का उपयोग करके हमसे संपर्क कर सकते हैं या सीधे info@ajmf.org पर ईमेल कर सकते हैं।",
-        "faq4_q": "AJMF से संपर्क करने के लिए कार्यालय का समय क्या है?",
+        "faq4_q": "Anish Jadhav Memorial Foundation से संपर्क करने के लिए कार्यालय का समय क्या है?",
         "faq4_a": "हमारा प्रशासनिक कार्यालय सोमवार से शुक्रवार तक सुबह 9:00 बजे से शाम 6:00 बजे IST तक संचालित होता है।",
         "faq5_q": "मैं छात्रों का समर्थन करने के लिए कैसे दान कर सकता हूँ?",
         "faq5_a": "आप हमारे दान करें पेज के माध्यम से सीधे दान कर सकते हैं या सीएसआर साझेदारी और कॉर्पोरेट प्रायोजन के लिए info@ajmf.org पर हमसे संपर्क कर सकते हैं।",
@@ -1622,7 +1622,7 @@ const translations = {
         "way2_link": "अभी दान करें →",
 
         "way3_title": "हमारे साथ भागीदारी करें",
-        "way3_desc": "सीएसआर, संस्थागत साझेदारी और कार्यक्रम समर्थन के माध्यम से AJMF के साथ सहयोग करें।",
+        "way3_desc": "सीएसआर, संस्थागत साझेदारी और कार्यक्रम समर्थन के माध्यम से Anish Jadhav Memorial Foundation के साथ सहयोग करें।",
         "way3_link": "हमारे साथ भागीदारी करें →",
 
         "way4_title": "छात्रों का समर्थन करें",
@@ -1647,12 +1647,12 @@ const translations = {
 
         "mini_tag_partner": "हमारे साथ भागीदारी करें",
         "partner_block_title": "आइए मिलकर<br>प्रभाव बनाएं",
-        "partner_block_desc": "संगठन और संस्थान सार्थक और स्केलेबल सामाजिक परिवर्तन लाने के लिए AJMF के साथ काम कर सकते हैं।",
+        "partner_block_desc": "संगठन और संस्थान सार्थक और स्केलेबल सामाजिक परिवर्तन लाने के लिए Anish Jadhav Memorial Foundation के साथ काम कर सकते हैं।",
         "partner_li1": "सीएसआर और संस्थागत साझेदारी",
         "partner_li2": "कौशल विकास पहल",
         "partner_li3": "हायरिंग और प्लेसमेंट सपोर्ट",
         "partner_li4": "शैक्षणिक कार्यक्रम प्रायोजन",
-        "btn_partner_ajmf": "AJMF के साथ भागीदार बनें →",
+        "btn_partner_ajmf": "Anish Jadhav Memorial Foundation के साथ भागीदार बनें →",
 
         "final_cta_title": "एक साथ मिलकर, हम और अधिक<br>अवसर पैदा कर सकते हैं।",
         "final_cta_desc": "चाहे आप अपना समय स्वयंसेवा में दें, किसी छात्र का समर्थन करें, दान करें, या हमारे साथ भागीदार बनें, हर योगदान हमें एक अधिक सशक्त भविष्य के करीब ले जाने में मदद करता है।",
@@ -1760,9 +1760,9 @@ const translations = {
         "stories_change_desc": "उन प्रेरक छात्रों से मिलें जिनके जीवन आप जैसे दाताओं की उदारता से बदल गए।",
 
         "priyanka_batch": "सॉफ्टवेयर डेवलपमेंट बैच 2025",
-        "priyanka_quote": "\"एक छोटे से गाँव से आने के कारण, मैंने कभी नहीं सोचा था कि मैं सॉफ्टवेयर एप्लिकेशन कोड करूँगी। AJMF छात्रवृत्ति ने मुझे एक घर, लैपटॉप और प्रशिक्षण दिया। आज मैं एक फ्रंटएंड डेवलपर के रूप में काम करती हूँ!\"",
+        "priyanka_quote": "\"एक छोटे से गाँव से आने के कारण, मैंने कभी नहीं सोचा था कि मैं सॉफ्टवेयर एप्लिकेशन कोड करूँगी। Anish Jadhav Memorial Foundation छात्रवृत्ति ने मुझे एक घर, लैपटॉप और प्रशिक्षण दिया। आज मैं एक फ्रंटएंड डेवलपर के रूप में काम करती हूँ!\"",
         "anjali_batch": "स्कूल ऑफ एजुकेशन 2025",
-        "anjali_quote": "\"AJMF दाताओं के समर्थन ने मुझे पुस्तकें, भोजन और मेंटॉरशिप प्रदान की। मैं अब अकादमिक पीयर सर्किलों का नेतृत्व कर रही हूँ और दर्जनों युवा लड़कियों को शिक्षा प्राप्त करने के लिए प्रेरित कर रही हूँ।\"",
+        "anjali_quote": "\"Anish Jadhav Memorial Foundation दाताओं के समर्थन ने मुझे पुस्तकें, भोजन और मेंटॉरशिप प्रदान की। मैं अब अकादमिक पीयर सर्किलों का नेतृत्व कर रही हूँ और दर्जनों युवा लड़कियों को शिक्षा प्राप्त करने के लिए प्रेरित कर रही हूँ।\"",
         "pooja_batch": "स्कूल ऑफ बिजनेस 2025",
         "pooja_quote": "\"आपके दान ने हमारी कंप्यूटर लैब और स्वास्थ्य सुविधाओं का निर्माण किया। इसने मुझे वित्तीय तनाव के बिना अपनी पढ़ाई पर पूरी तरह ध्यान केंद्रित करने की अनुमति दी। हम पर विश्वास करने के लिए धन्यवाद!\"",
 
@@ -1771,15 +1771,15 @@ const translations = {
 
         // --- PARTNERSHIP PAGE ---
         "tagline_stronger": "साथ मिलकर मजबूत",
-        "hero_title_partnership": "AJMF × <span>नवगुरुकुल</span><br>साझेदारी",
+        "hero_title_partnership": "Anish Jadhav Memorial Foundation × <span>नवगुरुकुल</span><br>साझेदारी",
         "hero_desc_partnership": "गुणवत्तापूर्ण शिक्षा, सॉफ्टवेयर इंजीनियरिंग और उद्योग-प्रासंगिक करियर अवसरों के माध्यम से वंचित समुदायों के युवा दिमागों को सशक्त बनाने के लिए मिलकर काम करना।",
         "btn_explore_partnership": "हमारी साझेदारी के बारे में जानें",
         "btn_watch_more": "पूरा वीडियो देखें",
 
         "sub_about_partnership": "हमारी साझेदारी के बारे में",
         "about_partnership_heading": "प्रतिभा और तकनीक के अवसरों के बीच टिकाऊ पुल का निर्माण।",
-        "about_p1": "<strong>अनिश जाधव मेमोरियल फाउंडेशन</strong> (AJMF) <strong>नवगुरुकुल</strong> के साथ सहयोग करने पर गर्व महसूस करता है, जो एक दूरदर्शी गैर-लाभकारी संगठन है जो वंचित पृष्ठभूमि के युवाओं के लिए उच्च शिक्षा और तकनीकी करियर लाने के लिए समर्पित है।",
-        "about_p2": "इस गठबंधन के माध्यम से, AJMF और नवगुरुकुल आवासीय बुनियादी ढांचे, सामुदायिक पहुंच, मेंटॉरशिप और गहन सॉफ्टवेयर इंजीनियरिंग प्रशिक्षण को मिलाकर महत्वाकांक्षी छात्रों के लिए पूरी तरह से वित्तपोषित शिक्षण यात्रा प्रदान करते हैं।",
+        "about_p1": "<strong>अनिश जाधव मेमोरियल फाउंडेशन</strong> (Anish Jadhav Memorial Foundation) <strong>नवगुरुकुल</strong> के साथ सहयोग करने पर गर्व महसूस करता है, जो एक दूरदर्शी गैर-लाभकारी संगठन है जो वंचित पृष्ठभूमि के युवाओं के लिए उच्च शिक्षा और तकनीकी करियर लाने के लिए समर्पित है।",
+        "about_p2": "इस गठबंधन के माध्यम से, Anish Jadhav Memorial Foundation और नवगुरुकुल आवासीय बुनियादी ढांचे, सामुदायिक पहुंच, मेंटॉरशिप और गहन सॉफ्टवेयर इंजीनियरिंग प्रशिक्षण को मिलाकर महत्वाकांक्षी छात्रों के लिए पूरी तरह से वित्तपोषित शिक्षण यात्रा प्रदान करते हैं।",
         "since_2022": "2022 से",
 
         "timeline_left_title": "हमारी साझेदारी कब शुरू हुई",
@@ -1792,7 +1792,7 @@ const translations = {
         "step3_timeline_title": "बढ़ता प्रभाव",
         "step3_timeline_desc": "जीवन को बदलना और एक उज्जवल कल का निर्माण करना।",
 
-        "why_partnered_title": "AJMF ने नवगुरुकुल के साथ साझेदारी क्यों की",
+        "why_partnered_title": "Anish Jadhav Memorial Foundation ने नवगुरुकुल के साथ साझेदारी क्यों की",
         "why1_title": "डिजिटल और तकनीकी कौशल",
         "why1_desc": "HTML, CSS, JavaScript और आधुनिक वेब फ्रेमवर्क में व्यावहारिक सॉफ्टवेयर विकास प्रशिक्षण प्रदान करना।",
         "why2_title": "पहुंच का विस्तार",
@@ -1823,14 +1823,14 @@ const translations = {
 
         "partnership_impact_title": "हमारी साझेदारी का प्रभाव",
 
-        "life_learning_title": "AJMF × नवगुरुकुल में जीवन और सीखना",
+        "life_learning_title": "Anish Jadhav Memorial Foundation × नवगुरुकुल में जीवन और सीखना",
         "gallery_overlay_1": "इंटरएक्टिव कक्षाएं",
         "gallery_overlay_2": "मेंटॉरशिप सत्र",
         "gallery_overlay_3": "व्यावहारिक शिक्षण",
         "gallery_overlay_4": "छात्र सहयोग",
 
         "looking_ahead_title": "आगे की राह",
-        "looking_ahead_desc": "एक साथ मिलकर, AJMF और नवगुरुकुल अपने प्रभाव को गहरा करने, हमारे आवासीय सॉफ्टवेयर विकास कार्यक्रमों को बढ़ाने और भारत भर में हजारों अतिरिक्त युवा दिमागों को सशक्त बनाने के लिए प्रतिबद्ध हैं।",
+        "looking_ahead_desc": "एक साथ मिलकर, Anish Jadhav Memorial Foundation और नवगुरुकुल अपने प्रभाव को गहरा करने, हमारे आवासीय सॉफ्टवेयर विकास कार्यक्रमों को बढ़ाने और भारत भर में हजारों अतिरिक्त युवा दिमागों को सशक्त बनाने के लिए प्रतिबद्ध हैं।",
         "ahead1_title": "अधिक छात्र<br>अधिक भविष्य",
         "ahead1_desc": "हमारा लक्ष्य हजारों और युवा शिक्षार्थियों तक पहुँचना और उन्हें सशक्त बनाना है।",
         "ahead2_title": "मजबूत कार्यक्रम<br>बेहतर परिणाम",

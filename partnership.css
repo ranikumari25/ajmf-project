@@ -158,6 +158,14 @@ body {
   color: #f8941d;
 }
 
+.partner-handshake {
+  color: #f8941d;
+  font-size: 0.85em;
+  margin: 0 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 .hero-desc {
   font-size: 16px;
   line-height: 1.6;

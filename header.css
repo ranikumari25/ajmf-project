@@ -695,6 +695,21 @@ body.lang-hi label {
         width: 32px !important;
         height: 32px !important;
     }
+}
+
+/* ==========================================================
+   NAVGURUKUL WORDMARK LOGO UTILITY CLASS
+   ========================================================== */
+.ng-wordmark-logo {
+    height: 1.15em;
+    width: auto;
+    max-height: 36px;
+    min-height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 4px;
+    object-fit: contain;
+}
 
     .lang-dropdown-btn .lang-globe-icon {
         font-size: 13px !important;
