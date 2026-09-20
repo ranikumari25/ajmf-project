@@ -388,17 +388,14 @@ header.header.white-header {
 
 .ajmf-memory-label .label-line,
 .ajmf-memory-label div {
-    width: 60px;
-    height: 2px;
-    background: #fb923c !important;
-    border-radius: 2px;
+    display: none !important;
 }
 
 .hero-title,
 .ajmf-hero-content h1 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 58px;
-    line-height: 1.1;
+    font-size: 66px;
+    line-height: 1.08;
     font-weight: 700;
     letter-spacing: -1px;
     color: #ffffff !important;
