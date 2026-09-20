@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -24,7 +24,7 @@
 
 <!---  HEADER  --->
 
-<header class="header">
+<header class="header white-header">
     <div class="container">
 
         <div class="logo-area">
@@ -119,52 +119,93 @@
     </div>
 </header>
 
-<section class="hero-banner-section">
-    <div class="container hero-container">
+<!-- ================= HERO SECTION ================= -->
+<section class="ajmf-hero">
+    <!-- Subtle Decorative CSS Shapes -->
+    <div class="hero-shape-peach"></div>
+    <div class="hero-shape-orange"></div>
+    <div class="hero-leaf-accent">
+        <svg viewBox="0 0 140 200" fill="none" stroke="#f7ddd2" stroke-width="2.5" stroke-linecap="round">
+            <path d="M20 180C45 130 55 90 85 45 C115 120 150 80 200 25" />
+            <path d="M55 145 C35 130 25 110 38 94 C58 98 68 121 55 145Z" fill="#f7ddd2" opacity="0.6" />
+            <path d="M76 100 C55 84 50 63 65 50 C86 58 91 82 76 100Z" fill="#f7ddd2" opacity="0.6" />
+        </svg>
+    </div>
 
-        <div class="hero-content-left">
-            <p class="hero-tagline" data-i18n="about_hero_tagline">IN LOVING MEMORY OF</p>
-            <h1 class="hero-main-title">Anish <span class="highlight-orange">Jadhav</span></h1>
-            <p class="hero-subtitle" data-i18n="about_hero_subtitle">Inspiring Lives Beyond Time</p>
+    <div class="ajmf-hero-container">
+
+        <!-- LEFT SIDE: CONTENT -->
+        <div class="ajmf-hero-content">
+
+            <div class="ajmf-memory-label">
+                <span data-i18n="about_hero_tagline">IN LOVING MEMORY OF</span>
+                <div class="label-line"></div>
+            </div>
+
+            <h1 class="hero-title">
+                Anish <span>Jadhav</span>
+            </h1>
+
+            <h2 class="hero-subtitle" data-i18n="about_hero_subtitle">
+                Inspiring Lives Beyond Time
+            </h2>
+
             <p class="hero-description" data-i18n="about_hero_description">
-                The Anish Jadhav Memorial Foundation (Anish Jadhav Memorial Foundation) was established in loving memory
-                of Anish, the beloved son of Brigadier Kishor and Mrs. Neeta Jadhav.
+                The Anish Jadhav Memorial Foundation
+                (Anish Jadhav Memorial Foundation) was established
+                in loving memory of Anish, the beloved son of
+                Brigadier Kishor and Mrs. Neeta Jadhav.
             </p>
-            <div class="hero-btn-group">
-                <a href="#anish-story" class="btn-hero btn-orange">
-                    <span data-i18n="our_story">Our Story</span> <i class="fas fa-chevron-right"></i>
+
+            <div class="ajmf-hero-buttons">
+                <a href="#anish-story" class="ajmf-btn-primary">
+                    <span data-i18n="our_story">Our Story</span>
+                    <i class="fas fa-arrow-right"></i>
                 </a>
-                <a href="getinvolved.html" class="btn-hero btn-transparent">
-                    <span data-i18n="nav_getinvolved">Get Involved</span> <i class="fas fa-chevron-right"></i>
+
+                <a href="getinvolved.html" class="ajmf-btn-outline">
+                    <span data-i18n="nav_getinvolved">Get Involved</span>
+                    <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
+
         </div>
 
-        <div class="hero-floating-box">
-            <div class="heart-icon-circle">
-                <i class="fas fa-heart"></i>
+        <!-- RIGHT SIDE: FRAMED PHOTO & FLOATING CARD -->
+        <div class="ajmf-hero-photo-area">
+            <div class="ajmf-photo-frame">
+                <img src="images-photo/anish's_smile.jpeg" alt="Anish Jadhav" class="ajmf-hero-photo" />
             </div>
-            <p class="floating-box-text" data-i18n="about_floating_text">
-                A life that touched many, continues to inspire millions.
-            </p>
-            <div class="floating-box-divider"></div>
+
+            <!-- FLOATING CARD -->
+            <div class="ajmf-hero-card">
+                <div class="ajmf-heart-circle">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p data-i18n="about_floating_text">
+                    A life that touched many,<br>
+                    continues to inspire<br>
+                    millions.
+                </p>
+                <div class="card-line"></div>
+            </div>
         </div>
 
     </div>
-
-    <div class="hero-portrait-background"></div>
-
-    <div class="hero-ambient-glow"></div>
 </section>
 
 
 <section class="journey-content-section" id="anish-story">
     <div class="journey-container">
 
+        <!-- LEFT COLUMN: Content & Read More -->
         <div class="journey-col-left">
             <div class="orange-top-accent-line"></div>
             <p class="journey-tag-label" data-i18n="section_anish_journey">ANISH'S JOURNEY</p>
-            <h2 class="journey-main-heading" data-i18n="journey_main_heading">A Life of Passion, Purpose and Impact</h2>
+            <h2 class="journey-main-heading" data-i18n="journey_main_heading">
+                A Life of <span class="highlight-orange">Passion</span>, Purpose & <span
+                    class="highlight-orange">Impact</span>
+            </h2>
 
             <p class="journey-intro-text" data-i18n="journey_p1">
                 Anish was a bright, deeply compassionate, and multitalented young man who left a lasting impression on
@@ -194,17 +235,77 @@
             </a>
         </div>
 
+        <!-- CENTER COLUMN: Editorial Scrapbook Photo Composition -->
         <div class="journey-col-center">
-            <div class="center-portrait-card">
-                <img src="images-photo/anish.png" alt="Anish Journey" class="journey-card-img">
+            <div class="journey-polaroid-wrapper">
+                <!-- Layer 1: Light Cream/Beige/Peach Zigzag Paint-Brush Backdrop -->
+                <div class="journey-painted-backdrop"></div>
+
+                <!-- Layer 2: Half-Hidden Vintage Camera Line-Art Sketch (On LEFT Side) -->
+                <div class="journey-camera-sketch-wrapper">
+                    <svg class="journey-camera-sketch-svg" viewBox="0 0 180 150" fill="none" stroke="#B87A4F"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Detailed Rangefinder Vintage Camera Body -->
+                        <rect x="20" y="42" width="145" height="92" rx="10" fill="rgba(253, 246, 238, 0.92)"
+                            stroke="#B87A4F" />
+                        <path d="M20 66H165" stroke="#D4996A" stroke-width="1.5" stroke-dasharray="4 3" />
+                        <path d="M50 42V26C50 23 52 21 55 21H125C128 21 130 23 130 26V42"
+                            fill="rgba(250, 238, 224, 0.85)" />
+                        <!-- Buttons & Dial -->
+                        <rect x="35" y="26" width="12" height="16" rx="2" fill="#E06A28" />
+                        <circle cx="145" cy="28" r="8" stroke="#B87A4F" fill="#FDF5EB" />
+                        <rect x="100" y="28" width="20" height="11" rx="2" stroke="#B87A4F" fill="#E06A28"
+                            opacity="0.4" />
+                        <!-- Main Concentric Lens -->
+                        <circle cx="90" cy="88" r="36" fill="#FDF5EB" stroke="#B87A4F" />
+                        <circle cx="90" cy="88" r="28" fill="rgba(224, 106, 40, 0.15)" stroke="#D4996A" />
+                        <circle cx="90" cy="88" r="18" fill="#B87A4F" opacity="0.25" />
+                        <circle cx="82" cy="80" r="5" fill="#FFFFFF" opacity="0.8" />
+                        <rect x="35" y="52" width="18" height="14" rx="2" stroke="#D4996A" />
+                        <path d="M12 60H20M165 60H173" stroke="#B87A4F" stroke-width="3" />
+                    </svg>
+                </div>
+
+                <!-- Layer 3: Subtle Hand-Drawn Sparkle Doodles -->
+                <div class="journey-doodle-backdrop">
+                    <svg class="journey-doodle-svg doodle-left-sparkle" viewBox="0 0 40 40" fill="none" stroke="#D4996A"
+                        stroke-width="1.8" stroke-linecap="round">
+                        <path d="M20 5V35M5 20H35M10 10L30 30M30 10L10 30" opacity="0.75" />
+                    </svg>
+                    <svg class="journey-doodle-svg doodle-top-sparkle" viewBox="0 0 40 40" fill="none" stroke="#E06A28"
+                        stroke-width="1.6" stroke-linecap="round">
+                        <path d="M20 5V35M5 20H35" opacity="0.6" />
+                    </svg>
+                </div>
+
+                <!-- Layer 4: Upper-Right Handwritten Text Note -->
+                <div class="journey-note-top-right">
+                    <span class="journey-script-text">A brighter<br>tomorrow</span>
+                </div>
+
+                <!-- Layer 5: Tilted Framed Anish Photograph (Rotated Clockwise) -->
+                <div class="journey-polaroid-frame">
+                    <div class="journey-tape-accent"></div>
+                    <img src="images-photo/anish.png" alt="Anish Journey" class="journey-card-img">
+                </div>
+
+                <!-- Layer 6: Lower-Right Floating Paper Card -->
+                <div class="journey-card-bottom-right">
+                    <div class="journey-floating-paper">
+                        <span class="journey-floating-text">Capture<br>Create<br>Inspire</span>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- RIGHT COLUMN: 4 Journey Highlight Items -->
         <div class="journey-col-right">
             <div class="timeline-list-wrapper">
 
                 <div class="timeline-item-row">
-                    <div class="timeline-orange-dot"></div>
+                    <div class="journey-icon-circle">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
                     <div class="timeline-text-node">
                         <h3 data-i18n="timeline_node1_title">Early Life & Education</h3>
                         <p data-i18n="timeline_node1_desc">Excelled in academics and developed a curiosity for learning
@@ -213,25 +314,31 @@
                 </div>
 
                 <div class="timeline-item-row">
-                    <div class="timeline-orange-dot"></div>
+                    <div class="journey-icon-circle">
+                        <i class="fas fa-camera"></i>
+                    </div>
                     <div class="timeline-text-node">
                         <h3 data-i18n="timeline_node2_title">Passion for Photography</h3>
                         <p data-i18n="timeline_node2_desc">A gifted photographer who saw the world through a unique and
-                            creative time.</p>
+                            creative lens.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item-row">
-                    <div class="timeline-orange-dot"></div>
+                    <div class="journey-icon-circle">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
                     <div class="timeline-text-node">
                         <h3 data-i18n="timeline_node3_title">Career at Nikon</h3>
-                        <p data-i18n="timeline_node3_desc">Associated with Nikon India Ltd., where the talent and
+                        <p data-i18n="timeline_node3_desc">Associated with Nikon India Ltd., where his talent and
                             dedication were truly recognized.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item-row">
-                    <div class="timeline-orange-dot"></div>
+                    <div class="journey-icon-circle">
+                        <i class="fas fa-heart"></i>
+                    </div>
                     <div class="timeline-text-node">
                         <h3 data-i18n="timeline_node4_title">Community Impact</h3>
                         <p data-i18n="timeline_node4_desc">Supported education, conducted workshops and inspired young
@@ -346,49 +453,85 @@
         </div>
     </section>
 
-    <section class="ajmf-section-container ajmf-stats-banner">
-        <div class="ajmf-section-tagline" data-i18n="legacy_numbers">His Legacy In Numbers</div>
-        <h2 class="ajmf-section-title" data-i18n="impact_that_lasts">Creating Impact That Lasts</h2>
-        <div class="ajmf-title-divider"></div>
-
-        <div class="ajmf-stats-row">
-            <div class="ajmf-stat-item">
-                <div class="ajmf-stat-icon-circle">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="ajmf-stat-info">
-                    <div class="ajmf-stat-number">500+</div>
-                    <div class="ajmf-stat-label" data-i18n="stat_students_inspired">Students Inspired</div>
-                </div>
+    <!-- ================= HIS LEGACY IN NUMBERS SECTION ================= -->
+    <section class="stats-outer-wrapper">
+        <div class="ajmf-stats-inner-card">
+            <!-- LEFT BOTANICAL LEAF DECORATION (SAME AS HIS VALUES SECTION) -->
+            <div class="stats-tree-left">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 320">
+                    <path d="M20 300 C45 250 55 210 85 165 C115 120 150 80 200 25" fill="none" stroke="#f3cabb" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M55 225 C35 210 25 190 38 174 C58 178 68 201 55 225Z" fill="#f7ddd2"/>
+                    <path d="M63 218 C72 195 91 185 105 194 C101 214 82 226 63 218Z" fill="#f7ddd2"/>
+                    <path d="M76 180 C55 164 50 143 65 130 C86 138 91 162 76 180Z" fill="#f7ddd2"/>
+                    <path d="M86 174 C99 151 119 145 132 157 C126 177 105 185 86 174Z" fill="#f7ddd2"/>
+                    <path d="M105 138 C86 122 82 102 98 90 C118 100 122 121 105 138Z" fill="#f7ddd2"/>
+                    <path d="M116 132 C130 109 150 104 163 116 C157 136 137 143 116 132Z" fill="#f7ddd2"/>
+                    <path d="M135 101 C119 85 117 66 132 54 C150 65 153 85 135 101Z" fill="#f7ddd2"/>
+                    <path d="M147 94 C161 73 179 69 191 81 C185 99 166 105 147 94Z" fill="#f7ddd2"/>
+                    <path d="M163 68 C151 52 154 36 168 28 C182 40 179 57 163 68Z" fill="#f7ddd2"/>
+                    <circle cx="35" cy="260" r="5" fill="#f3cabb"/>
+                    <circle cx="72" cy="205" r="4" fill="#f3cabb"/>
+                    <circle cx="112" cy="145" r="5" fill="#f3cabb"/>
+                </svg>
             </div>
 
-            <div class="ajmf-stat-item">
-                <div class="ajmf-stat-icon-circle">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                </div>
-                <div class="ajmf-stat-info">
-                    <div class="ajmf-stat-number">7+</div>
-                    <div class="ajmf-stat-label" data-i18n="stat_programs">Programs Conducted</div>
-                </div>
+            <!-- RIGHT HANDWRITTEN DECORATION (INSIDE INNER CARD) -->
+            <div class="stats-script-right">
+                <span>A<br>brighter<br>tomorrow</span>
+                <svg class="script-stroke-svg" viewBox="0 0 80 15" fill="none" stroke="#E06A28" stroke-width="2"
+                    stroke-linecap="round">
+                    <path d="M5 8C25 3 55 12 75 5" opacity="0.65" />
+                </svg>
             </div>
 
-            <div class="ajmf-stat-item">
-                <div class="ajmf-stat-icon-circle">
-                    <i class="fas fa-handshake"></i>
-                </div>
-                <div class="ajmf-stat-info">
-                    <div class="ajmf-stat-number">10+</div>
-                    <div class="ajmf-stat-label" data-i18n="stat_partners">Partner Organizations</div>
-                </div>
+            <!-- CENTERED HEADING WITH EYEBROW ACCENT LINES -->
+            <div class="stats-header-group">
+                <div class="ajmf-section-tagline" data-i18n="legacy_numbers">HIS LEGACY IN NUMBERS</div>
+                <h2 class="ajmf-section-title" data-i18n="impact_that_lasts">Creating <span
+                        class="highlight-orange">Impact</span> That Lasts</h2>
+                <div class="ajmf-title-divider"></div>
             </div>
 
-            <div class="ajmf-stat-item">
-                <div class="ajmf-stat-icon-circle">
-                    <i class="fas fa-calendar-check"></i>
+            <!-- 4 IMPACT ITEMS IN ONE ROW (DESKTOP) WITH SUBTLE DIVIDERS -->
+            <div class="ajmf-stats-row">
+                <div class="ajmf-stat-item">
+                    <div class="ajmf-stat-icon-circle">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="ajmf-stat-info">
+                        <div class="ajmf-stat-number">500+</div>
+                        <div class="ajmf-stat-label" data-i18n="stat_students_inspired">Students Inspired</div>
+                    </div>
                 </div>
-                <div class="ajmf-stat-info">
-                    <div class="ajmf-stat-number">25+</div>
-                    <div class="ajmf-stat-label" data-i18n="stat_events_label">Events</div>
+
+                <div class="ajmf-stat-item">
+                    <div class="ajmf-stat-icon-circle">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="ajmf-stat-info">
+                        <div class="ajmf-stat-number">7+</div>
+                        <div class="ajmf-stat-label" data-i18n="stat_programs">Programs Conducted</div>
+                    </div>
+                </div>
+
+                <div class="ajmf-stat-item">
+                    <div class="ajmf-stat-icon-circle">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="ajmf-stat-info">
+                        <div class="ajmf-stat-number">10+</div>
+                        <div class="ajmf-stat-label" data-i18n="stat_partners">Partner Organizations</div>
+                    </div>
+                </div>
+
+                <div class="ajmf-stat-item">
+                    <div class="ajmf-stat-icon-circle">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="ajmf-stat-info">
+                        <div class="ajmf-stat-number">25+</div>
+                        <div class="ajmf-stat-label" data-i18n="stat_events_label">Events</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -398,42 +541,133 @@
 
 
 <section class="ajmf-gallery-section">
+
+    <!-- Right side decorative leaves -->
+    <div class="ajmf-leaf-tree">
+
+        <span class="tree-stem"></span>
+
+        <span class="leaf leaf-1"></span>
+        <span class="leaf leaf-2"></span>
+        <span class="leaf leaf-3"></span>
+        <span class="leaf leaf-4"></span>
+        <span class="leaf leaf-5"></span>
+        <span class="leaf leaf-6"></span>
+        <span class="leaf leaf-7"></span>
+        <span class="leaf leaf-8"></span>
+
+    </div>
+
+
     <div class="ajmf-gallery-container">
-        <div class="ajmf-section-tagline" data-i18n="glimpses_of_anish">Glimpses Of Anish</div>
-        <h2 class="ajmf-section-title" data-i18n="section_memories">Memories That Inspire</h2>
+
+        <!-- Heading -->
+
+        <div
+            class="ajmf-section-tagline"
+            data-i18n="glimpses_of_anish">
+            Glimpses Of Anish
+        </div>
+
+        <h2
+            class="ajmf-section-title"
+            data-i18n="section_memories">
+            Memories That Inspire
+        </h2>
+
         <div class="ajmf-title-divider"></div>
+
+
+        <!-- Gallery Cards -->
 
         <div class="ajmf-gallery-grid">
 
-            <div class="ajmf-gallery-card" style="background-image: url('images-photo/anish_camra.jpeg');">
+
+            <!-- CARD 1 -->
+
+            <div
+                class="ajmf-gallery-card"
+                style="
+                    background-image: url('images-photo/anish_camra.jpeg');
+                    background-position: center;
+                    background-size: contain;
+                "
+            >
+
                 <div class="ajmf-gallery-overlay">
+
                     <div class="ajmf-gallery-icon-circle">
-                        <i class="fas fa-regular fa-camera"></i>
+                        <i class="fas fa-camera"></i>
                     </div>
-                    <h4 data-i18n="gallery_card1_text">A Visionary<br>Eye for Life</h4>
+
+                    <h4 data-i18n="gallery_card1_text">
+                        A Visionary<br>
+                        Eye for Life
+                    </h4>
+
                 </div>
+
             </div>
 
-            <div class="ajmf-gallery-card" style="background-image: url('images-photo/anish\'s_smile.jpeg');">
+
+            <!-- CARD 2 -->
+
+            <div
+                class="ajmf-gallery-card"
+                style="
+                    background-image: url('images-photo/anish\'s_smile.jpeg');
+                    background-position: center;
+                    /* background-size: cover; */
+                "
+            >
+
                 <div class="ajmf-gallery-overlay">
+
                     <div class="ajmf-gallery-icon-circle">
-                        <i class="fas fa-regular fa-face-smile"></i>
+                        <i class="fas fa-face-smile"></i>
                     </div>
-                    <h4 data-i18n="gallery_card2_text">The Smile<br>That Led Teams</h4>
+
+                    <h4 data-i18n="gallery_card2_text">
+                        The Smile<br>
+                        That Led Teams
+                    </h4>
+
                 </div>
+
             </div>
 
-            <div class="ajmf-gallery-card" style="background-image: url('images-photo/anish.png');">
+
+            <!-- CARD 3 -->
+
+            <div
+                class="ajmf-gallery-card"
+                style="
+                    background-image: url('images-photo/anish.png');
+                    background-position: center;
+                    background-size: cover;
+                "
+            >
+
                 <div class="ajmf-gallery-overlay">
+
                     <div class="ajmf-gallery-icon-circle">
-                        <i class="fas fa-regular fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <h4 data-i18n="gallery_card3_text">Driven by<br>Professional Excellence</h4>
+
+                    <h4 data-i18n="gallery_card3_text">
+                        Driven by<br>
+                        Professional Excellence
+                    </h4>
+
                 </div>
+
             </div>
+
 
         </div>
+
     </div>
+
 </section>
 
 
@@ -506,11 +740,13 @@
             <div class="footer-col">
                 <h3 data-i18n="nav_programs">Our Programs</h3>
                 <ul>
-                    <li><a href="programs.html#school-of-programming" data-i18n="prog_sop">School of Programming</a></li>
+                    <li><a href="programs.html#school-of-programming" data-i18n="prog_sop">School of Programming</a>
+                    </li>
                     <li><a href="programs.html#school-of-business" data-i18n="prog_sob">School of Business</a></li>
                     <li><a href="programs.html#school-of-finance" data-i18n="prog_sof">School of Finance</a></li>
                     <li><a href="programs.html#school-of-education" data-i18n="prog_soe">School of Education</a></li>
-                    <li><a href="programs.html#school-of-second-chance" data-i18n="prog_sosc">School of Second Chance</a></li>
+                    <li><a href="programs.html#school-of-second-chance" data-i18n="prog_sosc">School of Second
+                            Chance</a></li>
                 </ul>
             </div>
 

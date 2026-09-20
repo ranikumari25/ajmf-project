@@ -3,7 +3,8 @@
    ========================================================== */
 
 /* Ensure ancestor overflow doesn't break sticky positioning */
-html, body {
+html,
+body {
     overflow-x: clip !important;
 }
 
@@ -468,7 +469,7 @@ body.lang-hi label {
         transition: transform 0.3s ease;
     }
 
-    .dropdown.is-open > a .fa-chevron-down {
+    .dropdown.is-open>a .fa-chevron-down {
         transform: rotate(180deg);
     }
 
@@ -717,7 +718,8 @@ body.lang-hi label {
 .navgurukul-text .nav-text,
 .navgurukul-brand .nav-text,
 .ng-nav {
-    color: #E60067 !important; /* Professional NavGurukul pink */
+    color: #E60067 !important;
+    /* Professional NavGurukul pink */
     font-weight: 700;
     text-decoration: none !important;
     cursor: default !important;
@@ -727,7 +729,8 @@ body.lang-hi label {
 .navgurukul-text .gurukul-text,
 .navgurukul-brand .gurukul-text,
 .ng-gurukul {
-    color: #000000 !important; /* Black for Gurukul */
+    color: #000000 !important;
+    /* Black for Gurukul */
     font-weight: 700;
     text-decoration: none !important;
     cursor: default !important;
@@ -741,7 +744,8 @@ body.lang-hi label {
 .dark-bg .navgurukul-name .gurukul-text,
 .hero-title .navgurukul-name .gurukul-text,
 .partner-green-panel .navgurukul-name .gurukul-text {
-    color: #FFFFFF !important; /* White on dark background */
+    color: #FFFFFF !important;
+    /* White on dark background */
 }
 
 /* Remove underlines and pointer cursor from wrapping links */
@@ -762,3 +766,53 @@ a:hover .navgurukul-brand {
     pointer-events: none !important;
 }
 
+/* ==========================================================
+   DROPDOWN MENU TEXT COLOR OVERRIDE — PURE WHITE (#ffffff)
+   ========================================================== */
+.navbar .dropdown-menu a,
+.navbar .dropdown-menu a span,
+.navbar .dropdown-menu li a,
+.navbar .dropdown-menu li a span,
+.navbar .dropdown-content a,
+.navbar .dropdown-content a span,
+nav .dropdown-menu a,
+nav .dropdown-menu a span,
+nav .dropdown-content a,
+nav .dropdown-content a span,
+nav .submenu a,
+nav .submenu a span,
+header nav .dropdown-menu a,
+header nav .dropdown-menu a span,
+header nav .dropdown-menu li a,
+header nav .dropdown-menu li a span,
+.white-header .dropdown-menu li a,
+.white-header .dropdown-menu li a span {
+    color: #ffffff !important;
+}
+
+.navbar .dropdown-menu a:hover,
+.navbar .dropdown-menu a:focus,
+.navbar .dropdown-menu a:active,
+.navbar .dropdown-menu li a:hover,
+.navbar .dropdown-menu li a:focus,
+.navbar .dropdown-menu li a:active,
+nav .dropdown-menu a:hover,
+nav .dropdown-menu a:focus,
+nav .dropdown-menu a:active,
+nav .dropdown-menu li a:hover,
+nav .dropdown-menu li a:focus,
+nav .dropdown-menu li a:active,
+header nav .dropdown-menu a:hover,
+header nav .dropdown-menu a:focus,
+header nav .dropdown-menu a:active,
+header nav .dropdown-menu li a:hover,
+header nav .dropdown-menu li a:focus,
+header nav .dropdown-menu li a:active,
+.white-header .dropdown-menu li a:hover,
+.white-header .dropdown-menu li a:focus,
+.white-header .dropdown-menu li a:active,
+.white-header .dropdown-menu li a:hover span,
+.white-header .dropdown-menu li a:focus span,
+.white-header .dropdown-menu li a:active span {
+    color: #ffffff !important;
+}
