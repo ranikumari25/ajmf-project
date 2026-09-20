@@ -270,11 +270,11 @@ header.header.white-header {
     position: relative;
     width: 100%;
     background: linear-gradient(108deg, #071529 0%, #0d213f 40%, #132b4f 65%, #924416 92%, #b25016 100%);
-    padding: 75px 0 90px 0;
+    padding: 50px 0 65px 0;
     overflow: hidden;
     display: flex;
     align-items: center;
-    min-height: 580px;
+    min-height: 520px;
     color: #ffffff;
 }
 
@@ -309,9 +309,9 @@ header.header.white-header {
 /* Botanical Flower Asset Watermark */
 .hero-flower-watermark {
     position: absolute;
-    left: 28%;
+    left: 20%;
     bottom: -10px;
-    height: 400px;
+    height: 380px;
     width: auto;
     opacity: 0.85;
     pointer-events: none;
@@ -332,13 +332,13 @@ header.header.white-header {
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
 }
 
-/* Main Container - Two-Column Cohesive Layout */
+/* Main Container - Aligned with Header Container */
 .ajmf-hero-container {
-    max-width: 1400px;
-    width: 94%;
+    max-width: 1700px;
+    width: 98%;
     height: auto;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
