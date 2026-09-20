@@ -306,30 +306,30 @@ header.header.white-header {
     z-index: 1;
 }
 
-/* Botanical Flower Asset Watermark */
+/* Botanical Flower Asset Watermark (Left of script text) */
 .hero-flower-watermark {
     position: absolute;
-    left: 20%;
+    left: 25%;
     bottom: -10px;
     height: 380px;
     width: auto;
-    opacity: 0.85;
+    opacity: 0.75;
     pointer-events: none;
     z-index: 2;
     object-fit: contain;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset */
+/* Handwritten Brighter Tomorrow Image Asset (Right side of the leaves stem) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: -55px;
-    bottom: 110px;
-    width: 200px;
+    left: -115px;
+    top: 55px;
+    width: 170px;
     height: auto;
     z-index: 12;
     pointer-events: none;
     object-fit: contain;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
 }
 
 /* Main Container - Aligned with Header Container */
