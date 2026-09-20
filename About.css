@@ -305,6 +305,21 @@ header.header.white-header {
     z-index: 1;
 }
 
+.hero-grey-reddish {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+    max-width: 80%;
+    object-fit: cover;
+    opacity: 0.65;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
 /* Main Container Layout */
 .ajmf-hero-container {
     max-width: 1440px;
