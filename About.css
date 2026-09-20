@@ -270,11 +270,11 @@ header.header.white-header {
     position: relative;
     width: 100%;
     background: linear-gradient(108deg, #071529 0%, #0d213f 40%, #132b4f 65%, #924416 92%, #b25016 100%);
-    padding: 50px 0 65px 0;
+    padding: 55px 0 85px 0;
     overflow: hidden;
     display: flex;
     align-items: center;
-    min-height: 520px;
+    min-height: 540px;
     color: #ffffff;
 }
 
@@ -306,30 +306,30 @@ header.header.white-header {
     z-index: 1;
 }
 
-/* Botanical Flower Asset Watermark (Left of script text) */
+/* Botanical Flower Asset Watermark (Placed in center gap) */
 .hero-flower-watermark {
     position: absolute;
-    left: 25%;
-    bottom: -10px;
+    left: 40%;
+    bottom: 0;
     height: 380px;
     width: auto;
-    opacity: 0.75;
+    opacity: 0.85;
     pointer-events: none;
     z-index: 2;
     object-fit: contain;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset (Right side of the leaves stem) */
+/* Handwritten Brighter Tomorrow Image Asset (Side-by-Side right next to flower stem) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: -115px;
-    top: 55px;
-    width: 170px;
+    left: 52%;
+    top: 90px;
+    width: 185px;
     height: auto;
     z-index: 12;
     pointer-events: none;
     object-fit: contain;
-    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
 }
 
 /* Main Container - Aligned with Header Container */
@@ -493,7 +493,8 @@ header.header.white-header {
     font-weight: 600;
     letter-spacing: 2.2px;
     text-transform: uppercase;
-    margin-top: 4px;
+    margin-top: 8px;
+    margin-bottom: 24px;
 }
 
 .ajmf-hero-tagline-bar .tagline-text {
