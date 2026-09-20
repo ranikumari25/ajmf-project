@@ -266,41 +266,31 @@ header.header.white-header {
    AJMF HERO - ELEGANT DARK GRADIENT MEMORIAL BANNER
    ========================================================= */
 
+/* =========================================================
+   AJMF HERO - ELEGANT DARK GRADIENT MEMORIAL BANNER
+   ========================================================= */
+
 .ajmf-hero {
     position: relative;
     width: 100%;
-    background: linear-gradient(108deg, #071529 0%, #0d213f 40%, #132b4f 65%, #924416 92%, #b25016 100%);
-    padding: 50px 0 0 0;
+    background: #061325;
+    padding: 60px 0 0 0;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    min-height: 520px;
+    min-height: 540px;
     color: #ffffff;
 }
 
-/* Reddish Background Glow Image Assets */
+/* Reddish Background Glow Image Assets matching reference design */
 .hero-reddish-left {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: auto;
-    max-width: 55%;
+    width: 45%;
     object-fit: cover;
-    opacity: 0.85;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.hero-reddish-center {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: auto;
-    max-width: 65%;
-    object-fit: cover;
-    opacity: 0.9;
+    opacity: 0.8;
     pointer-events: none;
     z-index: 1;
 }
@@ -308,16 +298,26 @@ header.header.white-header {
 .hero-grey-reddish {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 40%;
     height: 100%;
-    width: auto;
-    max-width: 80%;
+    width: 45%;
     object-fit: cover;
-    opacity: 0.65;
+    opacity: 0.85;
     pointer-events: none;
     z-index: 1;
     mix-blend-mode: screen;
+}
+
+.hero-reddish-center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+    opacity: 0.95;
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* Main Container Layout */
@@ -356,26 +356,26 @@ header.header.white-header {
     z-index: 10;
 }
 
-/* Botanical Flower Asset Watermark (Sticking directly to hero bottom line with negative margin) */
+/* Botanical Flower Asset Watermark (Right of left text, coming from bottom edge) */
 .hero-flower-watermark {
     position: absolute;
-    left: 340px;
-    bottom: -150px;
-    height: 530px;
+    left: 440px;
+    bottom: -110px;
+    height: 520px;
     width: auto;
-    opacity: 0.85;
+    opacity: 0.55;
+    filter: brightness(0.6) contrast(1.1);
     pointer-events: none;
     z-index: 2;
     object-fit: contain;
-    margin-bottom: -10px;
 }
 
 /* Handwritten Brighter Tomorrow Image Asset (Right side of flower stem) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 500px;
+    left: 600px;
     bottom: 120px;
-    width: 175px;
+    width: 195px;
     height: auto;
     z-index: 12;
     pointer-events: none;
@@ -395,7 +395,7 @@ header.header.white-header {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2.5px;
-    color: #fb923c !important;
+    color: #ea580c !important;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -418,7 +418,7 @@ header.header.white-header {
 
 .hero-title span,
 .ajmf-hero-content h1 span {
-    color: #f97316 !important;
+    color: #ea580c !important;
 }
 
 .hero-subtitle,
@@ -512,18 +512,18 @@ header.header.white-header {
 }
 
 .ajmf-hero-tagline-bar .tagline-text {
-    color: #e2e8f0;
+    color: #8ea3bb;
 }
 
 .ajmf-hero-tagline-bar .bar-line {
     width: 28px;
     height: 2px;
-    background: #f97316;
+    background: #ea580c;
     display: inline-block;
 }
 
 .ajmf-hero-tagline-bar .dot {
-    color: #f97316;
+    color: #ea580c;
     font-weight: 700;
     margin: 0 4px;
 }
@@ -547,21 +547,24 @@ header.header.white-header {
 .ajmf-photo-frame {
     position: relative;
     width: 100%;
-    max-width: 440px;
+    max-width: 480px;
     background: transparent;
     padding: 0;
-    border-radius: 24px 24px 0 0;
+    border-radius: 0;
     z-index: 4;
+    display: flex;
+    align-items: flex-end;
 }
 
 .ajmf-hero-photo {
     width: 100%;
-    height: 480px;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 20px 20px 0 0;
+    height: 520px;
+    object-fit: contain;
+    object-position: bottom center;
+    border-radius: 0;
     display: block;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
 }
 
 /* Handwritten Script Accent Text */
@@ -583,16 +586,15 @@ header.header.white-header {
 /* Modern Floating Quote Card */
 .ajmf-hero-card {
     position: absolute;
-    bottom: -15px;
-    right: -25px;
+    bottom: 80px;
+    right: 0;
     width: 230px;
     background: #ffffff;
-    border-radius: 18px;
-    padding: 22px 18px;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    padding: 24px 18px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
     text-align: center;
     z-index: 10;
-    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .ajmf-heart-circle {
