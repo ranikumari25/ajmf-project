@@ -345,8 +345,8 @@ header.header.white-header {
 .hero-flower-watermark {
     position: absolute;
     left: 350px;
-    bottom: 0;
-    height: 420px;
+    bottom: -100px;
+    height: 480px;
     width: auto;
     opacity: 0.85;
     pointer-events: none;
