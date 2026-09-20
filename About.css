@@ -273,51 +273,13 @@ header.header.white-header {
 .ajmf-hero {
     position: relative;
     width: 100%;
-    background: #061325;
+    background: linear-gradient(108deg, #061325 0%, #0b1f3b 45%, #132d54 70%, #873e15 92%, #aa4914 100%);
     padding: 60px 0 0 0;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
     min-height: 540px;
     color: #ffffff;
-}
-
-/* Reddish Background Glow Image Assets matching reference design */
-.hero-reddish-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 45%;
-    object-fit: cover;
-    opacity: 0.8;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.hero-grey-reddish {
-    position: absolute;
-    top: 0;
-    left: 40%;
-    height: 100%;
-    width: 45%;
-    object-fit: cover;
-    opacity: 0.85;
-    pointer-events: none;
-    z-index: 1;
-    mix-blend-mode: screen;
-}
-
-.hero-reddish-center {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 45%;
-    object-fit: cover;
-    opacity: 0.95;
-    pointer-events: none;
-    z-index: 1;
 }
 
 /* Main Container Layout */
