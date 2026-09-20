@@ -146,7 +146,7 @@ body.lang-hi label {
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     flex-shrink: 0;
 }
 
@@ -156,13 +156,13 @@ body.lang-hi label {
 }
 
 .lang-dropdown-btn {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 10px 16px;
-    border-radius: 6px;
+    background: #f8fafc;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+    padding: 9px 18px;
+    border-radius: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 14.5px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     display: inline-flex;
@@ -170,23 +170,26 @@ body.lang-hi label {
     gap: 8px;
     white-space: nowrap;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
 .lang-dropdown-btn:hover,
 .lang-dropdown-btn:focus {
-    background: rgba(255, 255, 255, 0.18);
-    border-color: #f57c00;
-    color: #ffffff;
+    background: #ffffff;
+    border-color: #ea580c;
+    color: #0f172a;
     outline: none;
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.15);
 }
 
 .lang-dropdown-btn .lang-globe-icon {
     font-size: 15px;
-    color: #f57c00;
+    color: #ea580c;
 }
 
 .lang-dropdown-btn .lang-chevron {
     font-size: 12px;
+    color: #64748b;
     transition: transform 0.3s ease;
 }
 
@@ -198,11 +201,11 @@ body.lang-hi label {
     position: absolute;
     top: calc(100% + 8px);
     right: 0;
-    min-width: 130px;
-    background: #0B1F44;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    min-width: 140px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     padding: 6px 0;
     list-style: none;
     margin: 0;
@@ -231,7 +234,7 @@ body.lang-hi label {
     text-align: left;
     background: transparent;
     border: none;
-    color: #ffffff;
+    color: #1e293b;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -248,28 +251,37 @@ body.lang-hi label {
 .lang-dropdown-menu a:hover,
 .lang-dropdown-menu button.is-active,
 .lang-dropdown-menu a.is-active {
-    background: rgba(245, 124, 0, 0.15);
-    color: #f57c00;
+    background: #fff7ed;
+    color: #ea580c;
 }
 
 /* Desktop Apply Button */
 .donate-btn.desktop-only-btn {
     font-family: 'Poppins', sans-serif;
-    background: #f57c00;
-    color: #ffffff;
-    padding: 14px 28px;
-    border-radius: 6px;
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+    color: #ffffff !important;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 14.5px;
     font-weight: 600;
     display: inline-flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
     text-decoration: none;
     white-space: nowrap;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
+    transition: all 0.3s ease;
+}
+
+.donate-btn.desktop-only-btn i {
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .donate-btn.desktop-only-btn:hover {
-    background: #e06d00;
+    background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(234, 88, 12, 0.45);
 }
 
 /* Desktop Header Layout & Order */

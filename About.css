@@ -259,15 +259,20 @@ header.header.white-header {
    AJMF HERO - COHESIVE LIGHT ELEGANT THEME (#fffaf5)
    ========================================================= */
 
+/* =========================================================
+   AJMF HERO - ELEGANT DARK GRADIENT MEMORIAL BANNER
+   ========================================================= */
+
 .ajmf-hero {
     position: relative;
     width: 100%;
-    background-color: #fffaf5;
+    background: linear-gradient(108deg, #071529 0%, #0d213f 40%, #132b4f 65%, #924416 92%, #b25016 100%);
     padding: 75px 0 90px 0;
     overflow: hidden;
     display: flex;
     align-items: center;
-    min-height: 560px;
+    min-height: 580px;
+    color: #ffffff;
 }
 
 /* Decorative CSS Shapes */
@@ -278,9 +283,9 @@ header.header.white-header {
     width: 460px;
     height: 460px;
     border-radius: 50%;
-    background: #f7ddd2;
-    opacity: 0.45;
-    filter: blur(40px);
+    background: #ea580c;
+    opacity: 0.15;
+    filter: blur(60px);
     pointer-events: none;
     z-index: 1;
 }
@@ -292,7 +297,7 @@ header.header.white-header {
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    background: rgba(255, 121, 0, 0.12);
+    background: rgba(249, 115, 22, 0.2);
     filter: blur(50px);
     pointer-events: none;
     z-index: 1;
@@ -304,7 +309,7 @@ header.header.white-header {
     right: 3%;
     width: 160px;
     height: 220px;
-    opacity: 0.6;
+    opacity: 0.25;
     pointer-events: none;
     z-index: 1;
 }
@@ -334,7 +339,7 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content - Cohesive Light Theme */
+/* Left Content */
 .ajmf-hero-content {
     position: relative;
     left: auto;
@@ -363,33 +368,33 @@ header.header.white-header {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2.5px;
-    color: #ff7900;
+    color: #fb923c !important;
     text-transform: uppercase;
     white-space: nowrap;
 }
 
 .ajmf-memory-label .label-line,
 .ajmf-memory-label div {
-    width: 80px;
+    width: 60px;
     height: 2px;
-    background: #ff7900;
+    background: #fb923c !important;
     border-radius: 2px;
 }
 
 .hero-title,
 .ajmf-hero-content h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 54px;
-    line-height: 1.12;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 58px;
+    line-height: 1.1;
     font-weight: 700;
     letter-spacing: -1px;
-    color: #0b2d5c;
+    color: #ffffff !important;
     margin: 0 0 10px 0;
 }
 
 .hero-title span,
 .ajmf-hero-content h1 span {
-    color: #ff7900;
+    color: #f97316 !important;
 }
 
 .hero-subtitle,
@@ -398,21 +403,22 @@ header.header.white-header {
     font-size: 26px;
     line-height: 1.35;
     font-style: italic;
-    font-weight: 500;
-    color: #0b2d5c;
+    font-weight: 400;
+    color: #ffffff !important;
     margin: 0 0 20px 0;
+    opacity: 0.95;
 }
 
 .hero-description,
 .ajmf-hero-content>p {
     font-family: 'Poppins', sans-serif;
-    font-size: 16.5px;
-    line-height: 1.7;
+    font-size: 15.5px;
+    line-height: 1.65;
     font-weight: 400;
-    color: #475569;
+    color: #cbd5e1 !important;
     margin: 0 0 32px 0;
     width: 100%;
-    max-width: 530px;
+    max-width: 520px;
 }
 
 .ajmf-hero-buttons {
@@ -420,18 +426,19 @@ header.header.white-header {
     align-items: center;
     gap: 16px;
     flex-wrap: wrap;
+    margin-bottom: 24px;
 }
 
 .ajmf-hero-buttons a {
     height: 48px;
-    padding: 0 30px;
+    padding: 0 28px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border-radius: 30px;
+    border-radius: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 14.5px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -440,32 +447,52 @@ header.header.white-header {
 /* Primary Button (Our Story) */
 .ajmf-btn-primary {
     color: #ffffff !important;
-    background: #ff7900 !important;
-    border: 1.5px solid #ff7900 !important;
-    box-shadow: 0 6px 20px rgba(255, 121, 0, 0.3) !important;
+    background: #ea580c !important;
+    border: 1.5px solid #ea580c !important;
+    box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4) !important;
 }
 
 .ajmf-btn-primary:hover {
-    background: #ea6b00 !important;
-    border-color: #ea6b00 !important;
+    background: #c2410c !important;
+    border-color: #c2410c !important;
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(255, 121, 0, 0.4) !important;
+    box-shadow: 0 8px 25px rgba(234, 88, 12, 0.5) !important;
 }
 
-/* Secondary Button (Get Involved) - Dark Navy Border & Text on Light Background */
+/* Secondary Button (Get Involved) */
 .ajmf-btn-outline {
-    color: #0b2d5c !important;
+    color: #ffffff !important;
     background: transparent !important;
-    border: 1.5px solid #0b2d5c !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.75) !important;
 }
 
 .ajmf-btn-outline:hover {
-    background: #0b2d5c !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: #ffffff !important;
     color: #ffffff !important;
     transform: translateY(-2px);
 }
 
-/* Right Photo Area & Modern Frame */
+/* Bottom Tagline Bar */
+.ajmf-hero-tagline-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #fcd34d;
+    text-transform: uppercase;
+}
+
+.ajmf-hero-tagline-bar .bar-line {
+    width: 30px;
+    height: 2px;
+    background: #fcd34d;
+}
+
+/* Right Photo Area */
 .ajmf-hero-photo-area {
     position: relative;
     flex: 1;
@@ -480,59 +507,61 @@ header.header.white-header {
     z-index: 5;
 }
 
-.ajmf-hero-photo-area::before,
-.ajmf-hero-photo-area::after {
-    display: none;
-}
-
 .ajmf-photo-frame {
     position: relative;
     width: 100%;
     max-width: 440px;
-    background: #ffffff;
-    padding: 14px;
+    background: transparent;
+    padding: 0;
     border-radius: 24px;
-    box-shadow: 0 20px 45px rgba(11, 45, 92, 0.1);
-    border: 1px solid rgba(247, 221, 210, 0.8);
     z-index: 4;
 }
 
 .ajmf-hero-photo {
     width: 100%;
-    height: 420px;
+    height: 440px;
     object-fit: cover;
     object-position: top center;
-    border-radius: 16px;
+    border-radius: 20px;
     display: block;
-    filter: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    -webkit-mask-image: none !important;
-    mask-image: none !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Handwritten Script Accent Text */
+.hero-script-overlay {
+    position: absolute;
+    left: -40px;
+    bottom: 80px;
+    font-family: 'Caveat', 'Playfair Display', cursive, serif;
+    font-size: 32px;
+    font-style: italic;
+    color: #fcd34d;
+    z-index: 12;
+    transform: rotate(-8deg);
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    pointer-events: none;
+    line-height: 1.1;
 }
 
 /* Modern Floating Quote Card */
 .ajmf-hero-card {
     position: absolute;
-    bottom: -20px;
-    right: -20px;
-    width: 240px;
-    min-height: auto;
+    bottom: -15px;
+    right: -25px;
+    width: 230px;
     background: #ffffff;
     border-radius: 18px;
     padding: 22px 18px;
-    box-shadow: 0 16px 36px rgba(11, 45, 92, 0.12);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
     text-align: center;
     z-index: 10;
-    border: 1px solid rgba(255, 121, 0, 0.15);
-    transform: none;
-    top: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .ajmf-heart-circle {
-    width: 38px;
-    height: 38px;
-    background: #fff4ea;
+    width: 42px;
+    height: 42px;
+    background: #fff7ed;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -541,22 +570,25 @@ header.header.white-header {
 }
 
 .ajmf-heart-circle i {
-    color: #ff7900;
+    color: #ea580c;
     font-size: 16px;
 }
 
 .ajmf-hero-card p {
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    line-height: 1.55;
-    color: #0b2d5c;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #1e293b;
     font-weight: 600;
     margin: 0 0 10px 0;
 }
 
-.ajmf-hero-card .card-line,
-.ajmf-hero-card>span {
-    display: block;
+.ajmf-hero-card .card-line {
+    width: 24px;
+    height: 3px;
+    background: #ea580c;
+    border-radius: 2px;
+    margin: 0 auto;
 }
 
 
