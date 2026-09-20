@@ -322,7 +322,7 @@ header.header.white-header {
 /* Botanical Flower Asset Watermark (Leaf asset coming from deep bottom edge) */
 .hero-flower-watermark {
     position: absolute;
-    left: 360px;
+    left: 290px;
     bottom: -160px;
     height: 550px;
     width: auto;
@@ -337,7 +337,7 @@ header.header.white-header {
 /* Handwritten Brighter Tomorrow Image Asset (Right side of flower stem) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 520px;
+    left: 450px;
     bottom: 110px;
     width: 185px;
     height: auto;
