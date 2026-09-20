@@ -341,17 +341,18 @@ header.header.white-header {
     z-index: 10;
 }
 
-/* Botanical Flower Asset Watermark (Sticking directly to hero bottom line) */
+/* Botanical Flower Asset Watermark (Sticking directly to hero bottom line with negative margin) */
 .hero-flower-watermark {
     position: absolute;
-    left: 350px;
-    bottom: -100px;
-    height: 480px;
+    left: 340px;
+    bottom: -150px;
+    height: 530px;
     width: auto;
     opacity: 0.85;
     pointer-events: none;
     z-index: 2;
     object-fit: contain;
+    margin-bottom: -10px;
 }
 
 /* Handwritten Brighter Tomorrow Image Asset (Right side of flower stem) */
