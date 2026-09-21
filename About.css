@@ -282,17 +282,17 @@ header.header.white-header {
     color: #ffffff;
 }
 
-/* Main Container Layout - Dedicated 3-column layout matching reference screenshot */
+/* Main Container Layout - Balanced max-width container with efficient left/right padding */
 .ajmf-hero-container {
     max-width: 1440px;
-    width: 95%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 24px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 20px;
+    gap: 16px;
     position: relative;
     z-index: 5;
     overflow: visible;
@@ -302,14 +302,14 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper - Exact standard position & alignment */
+/* Left Content Wrapper - Exact position & alignment without excessive left blank space */
 .ajmf-hero-content {
     position: relative;
     left: auto;
     top: auto;
     transform: none;
-    flex: 1;
-    max-width: 490px;
+    flex: 0 0 460px;
+    max-width: 480px;
     width: auto;
     background: transparent;
     padding: 0 0 25px 0;
@@ -324,7 +324,7 @@ header.header.white-header {
 /* Botanical Flower Asset Watermark (Leaf asset coming from deep bottom edge) */
 .hero-flower-watermark {
     position: absolute;
-    left: 360px;
+    left: 280px;
     bottom: -120px;
     height: 500px;
     width: auto;
@@ -339,7 +339,7 @@ header.header.white-header {
 /* Handwritten Brighter Tomorrow Image Asset (Right side of flower stem) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 500px;
+    left: 430px;
     bottom: 90px;
     width: 180px;
     height: auto;
@@ -495,17 +495,18 @@ header.header.white-header {
     margin: 0 4px;
 }
 
-/* Center-Right Photo Area - Significantly Larger Anish Portrait */
+/* Right-Side Photo Area - Prominent Large Anish Portrait pushed further right */
 .ajmf-hero-photo-area {
     position: relative;
-    flex: 1;
-    max-width: 580px;
+    flex: 0 1 540px;
+    max-width: 560px;
     width: 100%;
     height: auto;
     background: transparent;
     padding: 0;
+    margin-left: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
     align-self: flex-end;
     z-index: 5;
@@ -514,14 +515,14 @@ header.header.white-header {
 .ajmf-photo-frame {
     position: relative;
     width: 100%;
-    max-width: 560px;
+    max-width: 540px;
     background: transparent;
     padding: 0;
     border-radius: 0;
     z-index: 4;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .ajmf-hero-photo {
@@ -529,7 +530,7 @@ header.header.white-header {
     height: 540px;
     max-height: 560px;
     object-fit: contain;
-    object-position: bottom center;
+    object-position: bottom right;
     border-radius: 0;
     display: block;
     margin-bottom: 0;
@@ -561,6 +562,7 @@ header.header.white-header {
     justify-content: flex-end;
     align-self: center;
     margin-bottom: 20px;
+    margin-left: 0;
     z-index: 10;
 }
 
