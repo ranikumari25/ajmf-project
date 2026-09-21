@@ -2275,7 +2275,7 @@ body::before {
 /* Left Botanical Leaf Asset - Exposed clearly beside the cards */
 .values-botanical-left {
     position: absolute;
-    left: -75px;
+    left: -120px;
     top: 40px;
     height: 320px;
     width: auto;
