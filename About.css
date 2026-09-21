@@ -278,7 +278,7 @@ header.header.white-header {
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    min-height: 440px;
+    min-height: 390px;
     color: #ffffff;
 }
 
@@ -302,7 +302,7 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper - Top-aligned with align-self: flex-start (45px distance from top edge) */
+/* Left Content Wrapper - Top-aligned with top spacing unchanged, reduced bottom padding */
 .ajmf-hero-content {
     position: relative;
     left: auto;
@@ -312,7 +312,7 @@ header.header.white-header {
     max-width: 480px;
     width: auto;
     background: transparent;
-    padding: 25px 0 10px 0;
+    padding: 25px 0 0 0;
     margin-top: 0;
     margin-left: 0;
     align-self: flex-start;
@@ -476,7 +476,7 @@ header.header.white-header {
     letter-spacing: 2.2px;
     text-transform: uppercase;
     margin-top: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .ajmf-hero-tagline-bar .tagline-text {
