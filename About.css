@@ -498,8 +498,8 @@ header.header.white-header {
 /* Right-Side Photo Area - Prominent Large Anish Portrait pushed further right & shifted upward */
 .ajmf-hero-photo-area {
     position: relative;
-    flex: 0 1 650px;
-    max-width: 670px;
+    flex: 0 1 730px;
+    max-width: 750px;
     width: 100%;
     height: auto;
     background: transparent !important;
@@ -519,7 +519,7 @@ header.header.white-header {
 .ajmf-photo-frame {
     position: relative;
     width: 100%;
-    max-width: 650px;
+    max-width: 730px;
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
@@ -549,8 +549,8 @@ header.header.white-header {
     position: relative;
     z-index: 3;
     width: 100%;
-    height: 650px;
-    max-height: 670px;
+    height: 720px;
+    max-height: 740px;
     object-fit: contain;
     object-position: bottom right;
     border-radius: 0;
@@ -562,7 +562,7 @@ header.header.white-header {
     box-shadow: none !important;
     outline: none !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
-    transform: translate(30px, -105px);
+    transform: translate(35px, -145px);
 }
 
 /* Handwritten Script Accent Text */
