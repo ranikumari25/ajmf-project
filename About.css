@@ -1920,7 +1920,24 @@ header.header.white-header {
     width: 100%;
     padding: 50px 0 80px 0;
     background-color: #FFFBF5;
+    position: relative;
+    overflow: hidden;
     box-sizing: border-box;
+}
+
+/* Left Botanical Leaf Asset - Vertically Centered along Far Left Edge */
+.vision-botanical-left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 310px;
+    width: auto;
+    pointer-events: none;
+    z-index: 1;
+    object-fit: contain;
+    filter: none;
+    opacity: 1;
 }
 
 .ajmf-vision-banner {
@@ -2198,8 +2215,10 @@ header.header.white-header {
         background-position: center 20%;
     }
 
-    .ajmf-vision-text {
-        font-size: 18px;
+    .vision-botanical-left {
+        left: -15px;
+        height: 220px;
+        opacity: 0.6;
     }
 }
 
