@@ -2764,3 +2764,249 @@ header nav .dropdown-menu li a:active,
 .white-header .dropdown-menu li a:active span {
     color: #ffffff !important;
 }
+
+/* =========================================================
+   HIS LEGACY IN NUMBERS SECTION - CREATING IMPACT THAT LASTS
+   ========================================================= */
+
+.stats-outer-wrapper {
+    width: 100%;
+    padding: 60px 0 70px 0;
+    background: #fff9f3;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Wide Centered Rounded Cream/Off-White Card */
+.ajmf-stats-inner-card {
+    max-width: 1440px;
+    width: 94%;
+    margin: 0 auto;
+    background: #fffdfa;
+    border: 1.5px solid #f2e7d7;
+    border-radius: 24px;
+    padding: 42px 40px 48px 40px;
+    box-shadow: 0 10px 35px rgba(11, 45, 92, 0.035);
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Botanical Leaf Asset - Left Side */
+.stats-leaf-asset-left {
+    position: absolute;
+    left: -40px;
+    bottom: -30px;
+    height: 300px;
+    width: auto;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 1;
+    object-fit: contain;
+    filter: brightness(0.95);
+}
+
+/* Handwritten Script Asset - Right Side */
+.stats-script-asset-right {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    width: 155px;
+    height: auto;
+    opacity: 0.85;
+    pointer-events: none;
+    z-index: 3;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.12));
+}
+
+/* Top Center Header Group */
+.stats-header-group {
+    text-align: center;
+    margin-bottom: 42px;
+    position: relative;
+    z-index: 2;
+}
+
+.stats-header-group .ajmf-section-tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #ea580c !important;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.stats-header-group .ajmf-section-tagline::before,
+.stats-header-group .ajmf-section-tagline::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 1.5px;
+    background: #ea580c;
+    opacity: 0.6;
+}
+
+.stats-header-group .ajmf-section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #0b2d5c !important;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.stats-header-group .ajmf-section-title .highlight-orange {
+    color: #ea580c !important;
+}
+
+/* 4 Statistics Columns Row */
+.ajmf-stats-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+/* Individual Stat Column */
+.ajmf-stat-col {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 24px;
+    border-right: 1px solid #ebdccb;
+    box-sizing: border-box;
+}
+
+.ajmf-stat-col:first-child {
+    padding-left: 10px;
+}
+
+.ajmf-stat-col:last-child {
+    border-right: none;
+    padding-right: 10px;
+}
+
+/* Soft Light-Orange Icon Circle */
+.ajmf-stat-icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #fdeee2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ajmf-stat-icon-circle i {
+    font-size: 20px;
+    color: #ea580c;
+}
+
+/* Stat Text Info Area */
+.ajmf-stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ajmf-stat-number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #ea580c !important;
+    line-height: 1.05;
+    margin-bottom: 4px;
+}
+
+.ajmf-stat-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0b2d5c !important;
+    line-height: 1.25;
+    margin-bottom: 6px;
+}
+
+.ajmf-stat-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #64748b !important;
+    margin: 0;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 1100px) {
+    .ajmf-stats-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 20px;
+    }
+
+    .ajmf-stat-col {
+        border-right: none;
+        padding: 16px;
+        background: rgba(254, 243, 235, 0.4);
+        border-radius: 14px;
+        border: 1px solid #f5e4d5;
+    }
+
+    .ajmf-stat-col:first-child,
+    .ajmf-stat-col:last-child {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .stats-outer-wrapper {
+        padding: 40px 0 50px 0;
+    }
+
+    .ajmf-stats-inner-card {
+        padding: 32px 18px;
+        border-radius: 18px;
+    }
+
+    .stats-header-group .ajmf-section-title {
+        font-size: 28px;
+    }
+
+    .stats-script-asset-right {
+        width: 105px;
+        right: 12px;
+        top: 18px;
+    }
+
+    .stats-leaf-asset-left {
+        height: 180px;
+        left: -30px;
+        bottom: -20px;
+    }
+
+    .ajmf-stats-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .ajmf-stat-col {
+        padding: 16px;
+    }
+
+    .ajmf-stat-number {
+        font-size: 28px;
+    }
+
+    .ajmf-stat-label {
+        font-size: 14px;
+    }
+}
