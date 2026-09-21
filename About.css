@@ -498,8 +498,8 @@ header.header.white-header {
 /* Right-Side Photo Area - Prominent Large Anish Portrait pushed further right */
 .ajmf-hero-photo-area {
     position: relative;
-    flex: 0 1 540px;
-    max-width: 560px;
+    flex: 0 1 650px;
+    max-width: 670px;
     width: 100%;
     height: auto;
     background: transparent !important;
@@ -519,7 +519,7 @@ header.header.white-header {
 .ajmf-photo-frame {
     position: relative;
     width: 100%;
-    max-width: 540px;
+    max-width: 650px;
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
@@ -549,8 +549,8 @@ header.header.white-header {
     position: relative;
     z-index: 3;
     width: 100%;
-    height: 540px;
-    max-height: 560px;
+    height: 650px;
+    max-height: 670px;
     object-fit: contain;
     object-position: bottom right;
     border-radius: 0;
@@ -679,16 +679,16 @@ header.header.white-header {
 
     .ajmf-hero-photo-area {
         padding: 0;
-        max-width: 400px;
+        max-width: 480px;
     }
 
     .ajmf-photo-frame {
-        max-width: 380px;
+        max-width: 460px;
         padding: 0;
     }
 
     .ajmf-hero-photo {
-        height: 420px;
+        height: 500px;
     }
 
     .ajmf-hero-card-col {
@@ -788,7 +788,7 @@ header.header.white-header {
         right: auto !important;
         bottom: auto !important;
         width: 100% !important;
-        max-width: 400px !important;
+        max-width: 480px !important;
         height: auto !important;
         background: transparent !important;
         background-color: transparent !important;
@@ -805,7 +805,7 @@ header.header.white-header {
 
     .ajmf-photo-frame {
         width: 100% !important;
-        max-width: 360px !important;
+        max-width: 440px !important;
         padding: 0 !important;
         background: transparent !important;
         background-color: transparent !important;
@@ -816,8 +816,8 @@ header.header.white-header {
     }
 
     .ajmf-hero-photo {
-        height: 320px !important;
-        object-fit: cover !important;
+        height: 385px !important;
+        object-fit: contain !important;
         object-position: top center !important;
         border-radius: 0 !important;
         background: transparent !important;
