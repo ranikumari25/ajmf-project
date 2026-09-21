@@ -990,227 +990,39 @@ header.header.white-header {
     box-shadow: 0 6px 20px rgba(249, 115, 22, 0.25);
 }
 
-/* --- CENTER COLUMN: Editorial Scrapbook Photo Composition --- */
+/* --- CENTER COLUMN: Complete Anish Polaroid Photo Composition --- */
 .journey-col-center {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 5;
 }
 
-.journey-polaroid-wrapper {
+.journey-composition-wrapper {
     position: relative;
-    padding: 25px;
+    width: 100%;
+    max-width: 480px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
-/* Layer 1: Light Cream/Beige/Peach Zigzag Paint-Brush Backdrop */
-.journey-painted-backdrop {
-    position: absolute;
-    width: 380px;
-    height: 440px;
-    background: linear-gradient(135deg, rgba(255, 244, 234, 0.95) 0%, rgba(253, 235, 218, 0.85) 40%, rgba(255, 241, 230, 0.9) 70%, rgba(255, 251, 245, 0.7) 100%);
-    border-radius: 46% 54% 62% 38% / 42% 58% 42% 58%;
-    transform: rotate(-6deg);
-    z-index: 1;
-    filter: blur(2px);
-    box-shadow: inset 0 0 40px rgba(249, 115, 22, 0.12);
-    pointer-events: none;
-}
-
-.journey-painted-backdrop::before {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: -30px;
-    right: -20px;
-    bottom: -20px;
-    background: linear-gradient(45deg, rgba(255, 235, 215, 0.8) 0%, rgba(247, 215, 190, 0.6) 50%, rgba(255, 245, 235, 0.4) 100%);
-    border-radius: 38% 62% 48% 52% / 60% 40% 60% 40%;
-    transform: rotate(12deg);
-    filter: blur(6px);
-}
-
-.journey-painted-backdrop::after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    right: -35px;
-    bottom: -30px;
-    background: radial-gradient(ellipse at center, rgba(250, 225, 205, 0.65) 0%, rgba(253, 245, 235, 0.3) 70%, transparent 100%);
-    border-radius: 62% 38% 55% 45% / 40% 60% 40% 60%;
-    transform: rotate(-14deg);
-    filter: blur(8px);
-}
-
-/* Layer 2: Vintage Camera Line-Art Sketch */
-.journey-camera-sketch-wrapper {
-    position: absolute;
-    left: -48px;
-    bottom: 40px;
-    width: 175px;
-    z-index: 1.5;
-    transform: rotate(-12deg);
-    pointer-events: none;
-    filter: drop-shadow(0 4px 10px rgba(184, 122, 79, 0.2));
-}
-
-.journey-camera-sketch-svg {
+.journey-composition-img {
     width: 100%;
     height: auto;
+    max-width: 460px;
+    object-fit: contain;
     display: block;
+    margin: 0 auto;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: drop-shadow(0 15px 30px rgba(184, 122, 79, 0.15));
 }
 
-/* Layer 3: Hand-Drawn Line-Art Doodles */
-.journey-doodle-backdrop {
-    position: absolute;
-    inset: -20px;
-    z-index: 1.2;
-    pointer-events: none;
-}
-
-.journey-polaroid-frame {
-    position: relative;
-    z-index: 2;
-    background: #FFFFFF;
-    padding: 14px 14px 42px 14px;
-    border-radius: 6px;
-    box-shadow: 0 18px 36px rgba(18, 52, 91, 0.1), 0 6px 14px rgba(0, 0, 0, 0.04);
-    transform: rotate(3deg);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    max-width: 290px;
-    width: 100%;
-}
-
-.journey-doodle-svg {
-    position: absolute;
-    filter: drop-shadow(0 2px 4px rgba(224, 106, 40, 0.12));
-}
-
-.doodle-left-sparkle {
-    top: 20px;
-    left: -20px;
-    width: 40px;
-    height: 40px;
-    transform: rotate(-15deg);
-}
-
-.doodle-top-sparkle {
-    top: -15px;
-    right: 30px;
-    width: 36px;
-    height: 36px;
-    transform: rotate(20deg);
-}
-
-/* Layer 4: Upper-Right Handwritten Text ("A brighter tomorrow") */
-.journey-note-top-right {
-    position: absolute;
-    top: -24px;
-    right: -18px;
-    z-index: 3;
-    transform: rotate(-5deg);
-    pointer-events: none;
-}
-
-.journey-note-top-right .journey-script-text {
-    font-family: 'Caveat', 'Dancing Script', 'Reenie Beanie', cursive, sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: #2D251E;
-    line-height: 1.15;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
-    display: block;
-}
-
-/* Layer 5: Tilted Framed Anish Photograph (Rotated Clockwise) */
-.journey-polaroid-frame {
-    position: relative;
-    z-index: 2;
-    background: #ffffff;
-    padding: 14px 14px 20px 14px;
-    border-radius: 8px;
-    box-shadow: 0 18px 36px rgba(8, 36, 92, 0.12), 0 6px 14px rgba(0, 0, 0, 0.05);
-    transform: rotate(3deg);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    max-width: 290px;
-    width: 100%;
-}
-
-.journey-polaroid-frame:hover {
-    transform: rotate(1.5deg) scale(1.02);
-    box-shadow: 0 22px 44px rgba(8, 36, 92, 0.16), 0 8px 18px rgba(0, 0, 0, 0.07);
-}
-
-.journey-tape-accent {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%) rotate(-2deg);
-    width: 90px;
-    height: 26px;
-    background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-    z-index: 3;
-    backdrop-filter: blur(2px);
-}
-
-.journey-card-img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 4px;
-    display: block;
-}
-
-/* Layer 6: Lower-Right Floating Paper Card ("Capture Create Inspire") */
-.journey-card-bottom-right {
-    position: absolute;
-    bottom: -18px;
-    right: -24px;
-    z-index: 4;
-    transform: rotate(6deg);
-    pointer-events: none;
-}
-
-.journey-floating-paper {
-    background: #FAF6F0;
-    padding: 10px 18px;
-    border-radius: 6px;
-    border: 1px solid rgba(212, 153, 106, 0.25);
-    box-shadow: 0 10px 24px rgba(45, 37, 30, 0.12), 0 4px 8px rgba(0, 0, 0, 0.04);
-}
-
-.journey-floating-text {
-    font-family: 'Caveat', 'Dancing Script', 'Reenie Beanie', cursive, sans-serif;
-    font-size: 19px;
-    font-weight: 700;
-    color: #2D251E;
-    line-height: 1.25;
-    text-align: center;
-    display: block;
-    letter-spacing: 0.5px;
-}
-
-.journey-polaroid-caption {
-    position: absolute;
-    bottom: 12px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.journey-handwritten-text {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 14px;
-    font-style: italic;
-    color: #4A5568;
-    font-weight: 600;
+.journey-composition-img:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 20px 40px rgba(184, 122, 79, 0.22));
 }
 
 /* --- RIGHT COLUMN: 4 Highlight Cards --- */
