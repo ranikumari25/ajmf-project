@@ -302,7 +302,7 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper - Top-aligned with align-self: stretch (45px distance from top edge maintained) */
+/* Left Content Wrapper - Top-aligned with align-self: flex-start (45px distance from top edge maintained) */
 .ajmf-hero-content {
     position: relative;
     left: auto;
@@ -312,10 +312,10 @@ header.header.white-header {
     max-width: 620px;
     width: auto;
     background: transparent;
-    padding: 25px 0 0 0;
+    padding: 25px 0 10px 0;
     margin-top: 0;
     margin-left: 0;
-    align-self: stretch;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -464,7 +464,7 @@ header.header.white-header {
     transform: translateY(-2px);
 }
 
-/* Bottom Tagline Bar - Pushed to bottom of container with exactly 25px gap to bottom edge */
+/* Bottom Tagline Bar - Continuous content flow directly 22px below buttons */
 .ajmf-hero-tagline-bar {
     display: flex;
     align-items: center;
@@ -474,8 +474,8 @@ header.header.white-header {
     font-weight: 600;
     letter-spacing: 2.2px;
     text-transform: uppercase;
-    margin-top: auto;
-    margin-bottom: 25px;
+    margin-top: 22px;
+    margin-bottom: 0;
 }
 
 .ajmf-hero-tagline-bar .tagline-text {
