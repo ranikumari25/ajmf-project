@@ -322,11 +322,11 @@ header.header.white-header {
     z-index: 10;
 }
 
-/* Botanical Flower Asset Watermark (Soft muted silhouette positioned behind right side of text block) */
+/* Botanical Flower Asset Watermark (Soft muted silhouette positioned behind right side of text block, lower start point) */
 .hero-flower-watermark {
     position: absolute;
     left: 330px;
-    bottom: -10px;
+    bottom: -55px;
     top: auto;
     height: 380px;
     width: auto;
@@ -512,7 +512,7 @@ header.header.white-header {
     outline: none !important;
     padding: 0;
     margin-left: 40px;
-    margin-right: -50px;
+    margin-right: -105px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -566,7 +566,7 @@ header.header.white-header {
     box-shadow: none !important;
     outline: none !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
-    transform: none;
+    transform: translateX(55px);
 }
 
 /* Handwritten Script Accent Text */
