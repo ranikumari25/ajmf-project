@@ -158,16 +158,16 @@ header.header.white-header {
     color: #475569 !important;
 }
 
-.white-header .navbar > ul > li > a {
+.white-header .navbar>ul>li>a {
     color: #1f2937 !important;
     font-weight: 600 !important;
 }
 
-.white-header .navbar > ul > li > a:hover {
+.white-header .navbar>ul>li>a:hover {
     color: #e75e18 !important;
 }
 
-.white-header .navbar ul li.dropdown > a i {
+.white-header .navbar ul li.dropdown>a i {
     color: #6b7280 !important;
 }
 
@@ -282,18 +282,17 @@ header.header.white-header {
     color: #ffffff;
 }
 
-/* Main Container Layout - Reduced left padding for page content */
+/* Main Container Layout - Reduced 3.5% outer horizontal padding matching visual target */
 .ajmf-hero-container {
-    max-width: 1440px;
-    width: 100%;
+    max-width: 1720px;
+    width: 94%;
     height: auto;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 24px;
+    padding: 0 3.5%;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 12px;
+    gap: 16px;
     position: relative;
     z-index: 5;
     overflow: visible;
@@ -303,7 +302,7 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper - Left-aligned text content */
+/* Left Content Wrapper - Exact position & alignment without excessive left blank space */
 .ajmf-hero-content {
     position: relative;
     left: auto;
@@ -496,7 +495,7 @@ header.header.white-header {
     margin: 0 4px;
 }
 
-/* Right-Side Photo Area - Prominent Large Anish Portrait shifted further right close to floating card */
+/* Right-Side Photo Area - Prominent Large Anish Portrait pushed further right */
 .ajmf-hero-photo-area {
     position: relative;
     flex: 0 1 540px;
@@ -506,7 +505,6 @@ header.header.white-header {
     background: transparent;
     padding: 0;
     margin-left: auto;
-    margin-right: -10px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -550,15 +548,15 @@ header.header.white-header {
     color: #fcd34d;
     z-index: 12;
     transform: rotate(-8deg);
-    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     pointer-events: none;
     line-height: 1.1;
 }
 
-/* Far-Right Dedicated Card Column (Right next to portrait, zero overlap) */
+/* Far-Right Dedicated Card Column (Small gap from portrait, zero overlap) */
 .ajmf-hero-card-col {
-    flex: 0 0 215px;
-    max-width: 220px;
+    flex: 0 0 220px;
+    max-width: 230px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
