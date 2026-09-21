@@ -322,15 +322,15 @@ header.header.white-header {
     z-index: 10;
 }
 
-/* Botanical Flower Asset Watermark (Moved upward as requested) */
+/* Botanical Flower Asset Watermark (Soft whitish/cream subtle silhouette) */
 .hero-flower-watermark {
     position: absolute;
     left: 360px;
     top: 30px;
     height: 480px;
     width: auto;
-    opacity: 0.55;
-    filter: brightness(0.6) contrast(1.1);
+    opacity: 0.35;
+    filter: brightness(0) invert(0.92) sepia(0.25);
     pointer-events: none;
     z-index: 2;
     object-fit: contain;
