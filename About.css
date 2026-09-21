@@ -502,7 +502,7 @@ header.header.white-header {
     max-width: 560px;
     width: 100%;
     height: auto;
-    background: transparent;
+    background: transparent !important;
     padding: 0;
     margin-left: auto;
     display: flex;
@@ -516,7 +516,7 @@ header.header.white-header {
     position: relative;
     width: 100%;
     max-width: 540px;
-    background: transparent;
+    background: transparent !important;
     padding: 0;
     border-radius: 0;
     z-index: 4;
@@ -542,19 +542,7 @@ header.header.white-header {
 }
 
 .hero-portrait-spotlight-img {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 125%;
-    height: 115%;
-    object-fit: cover;
-    opacity: 0.65;
-    mix-blend-mode: screen;
-    z-index: 2;
-    pointer-events: none;
-    mask-image: radial-gradient(ellipse at 50% 40%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 70%);
-    -webkit-mask-image: radial-gradient(ellipse at 50% 40%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 70%);
+    display: none !important;
 }
 
 .ajmf-hero-photo {
@@ -568,6 +556,7 @@ header.header.white-header {
     border-radius: 0;
     display: block;
     margin-bottom: 0;
+    background: transparent !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
 }
 
