@@ -2358,6 +2358,77 @@ body::before {
     border-radius: 2px;
 }
 
+/* =========================================================
+   HOME PAGE 4 STANDALONE STATISTIC CARDS (MATCHING REFERENCE)
+   ========================================================= */
+.home-stats-strip-section {
+    padding: 35px 0 25px 0;
+    background: #fff9f3;
+    position: relative;
+    z-index: 2;
+}
+
+.home-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home-stat-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px 18px 22px 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(11, 45, 92, 0.04);
+    border: 1px solid #f2e7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.home-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(11, 45, 92, 0.08);
+}
+
+.home-stat-card .stat-icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fdeee2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.home-stat-card .stat-icon-circle i {
+    font-size: 20px;
+    color: #ea580c;
+}
+
+.home-stat-card .home-stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0b2d5c !important;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+.home-stat-card .home-stat-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #64748b !important;
+    line-height: 1.3;
+}
+
 /* 4 Compact Equal-Sized White Values Cards Grid with 16px fixed gap */
 /* Do not use justify-content: space-between for the value cards, because it is creating excessive gaps. Use a fixed small gap instead. */
 .ajmf-values-grid {
