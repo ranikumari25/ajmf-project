@@ -339,7 +339,7 @@ header.header.white-header {
 /* Handwritten Brighter Tomorrow Image Asset (Positioned to the RIGHT side of left hero content, prominent & larger size) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 580px;
+    left: 615px;
     top: 110px;
     width: 330px;
     height: auto;
@@ -562,7 +562,7 @@ header.header.white-header {
     box-shadow: none !important;
     outline: none !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
-    transform: translate(65px, -170px);
+    transform: translate(85px, -170px);
 }
 
 /* Handwritten Script Accent Text */
