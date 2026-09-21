@@ -274,21 +274,21 @@ header.header.white-header {
     position: relative;
     width: 100%;
     background: linear-gradient(108deg, #061325 0%, #0b1f3b 45%, #132d54 70%, #873e15 92%, #aa4914 100%);
-    padding: 35px 0 0 0;
+    padding: 20px 0 0 0;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    min-height: 500px;
+    min-height: 440px;
     color: #ffffff;
 }
 
-/* Main Container Layout */
+/* Main Container Layout - Efficient horizontal spacing */
 .ajmf-hero-container {
     max-width: 1440px;
-    width: 95%;
+    width: 98%;
     height: auto;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -301,7 +301,7 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper */
+/* Left Content Wrapper - Compact vertical spacing */
 .ajmf-hero-content {
     position: relative;
     left: auto;
@@ -311,7 +311,7 @@ header.header.white-header {
     max-width: 500px;
     width: auto;
     background: transparent;
-    padding: 0 0 30px 0;
+    padding: 0 0 15px 0;
     margin-top: 0;
     display: flex;
     flex-direction: column;
@@ -323,22 +323,22 @@ header.header.white-header {
 .hero-flower-watermark {
     position: absolute;
     left: 290px;
-    bottom: -160px;
-    height: 550px;
+    bottom: -130px;
+    height: 480px;
     width: auto;
     opacity: 0.6;
     filter: brightness(0.6) contrast(1.1);
     pointer-events: none;
     z-index: 2;
     object-fit: contain;
-    margin-bottom: -20px;
+    margin-bottom: -15px;
 }
 
 /* Handwritten Brighter Tomorrow Image Asset (Right side of flower stem) */
 .hero-brighter-tomorrow-img {
     position: absolute;
     left: 450px;
-    bottom: 110px;
+    bottom: 80px;
     width: 185px;
     height: auto;
     z-index: 12;
@@ -352,7 +352,7 @@ header.header.white-header {
     align-items: center;
     gap: 14px;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .ajmf-memory-label span {
@@ -378,7 +378,7 @@ header.header.white-header {
     font-weight: 700;
     letter-spacing: -1px;
     color: #ffffff !important;
-    margin: 0 0 10px 0;
+    margin: 0 0 6px 0;
 }
 
 .hero-title span,
@@ -394,7 +394,7 @@ header.header.white-header {
     font-style: italic;
     font-weight: 400;
     color: #ffffff !important;
-    margin: 0 0 20px 0;
+    margin: 0 0 12px 0;
     opacity: 0.95;
 }
 
@@ -405,7 +405,7 @@ header.header.white-header {
     line-height: 1.65;
     font-weight: 400;
     color: #cbd5e1 !important;
-    margin: 0 0 32px 0;
+    margin: 0 0 18px 0;
     width: 100%;
     max-width: 520px;
 }
@@ -415,11 +415,11 @@ header.header.white-header {
     align-items: center;
     gap: 16px;
     flex-wrap: wrap;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 }
 
 .ajmf-hero-buttons a {
-    height: 48px;
+    height: 46px;
     padding: 0 28px;
     display: inline-flex;
     align-items: center;
@@ -472,8 +472,25 @@ header.header.white-header {
     font-weight: 600;
     letter-spacing: 2.2px;
     text-transform: uppercase;
-    margin-top: 8px;
-    margin-bottom: 24px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.ajmf-hero-tagline-bar .tagline-text {
+    color: #8ea3bb;
+}
+
+.ajmf-hero-tagline-bar .bar-line {
+    width: 28px;
+    height: 2px;
+    background: #ea580c;
+    display: inline-block;
+}
+
+.ajmf-hero-tagline-bar .dot {
+    color: #ea580c;
+    font-weight: 700;
+    margin: 0 4px;
 }
 
 .ajmf-hero-tagline-bar .tagline-text {
@@ -523,7 +540,7 @@ header.header.white-header {
 
 .ajmf-hero-photo {
     width: 100%;
-    height: 520px;
+    height: 460px;
     object-fit: contain;
     object-position: bottom center;
     border-radius: 0;
@@ -551,7 +568,7 @@ header.header.white-header {
 /* Modern Floating Quote Card */
 .ajmf-hero-card {
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     right: 0;
     width: 230px;
     background: #ffffff;
@@ -602,13 +619,13 @@ header.header.white-header {
 
 @media (max-width: 1100px) {
     .ajmf-hero {
-        padding: 50px 0 70px 0;
+        padding: 25px 0 40px 0;
         min-height: auto;
     }
 
     .ajmf-hero-container {
-        gap: 32px;
-        padding: 0 20px;
+        gap: 24px;
+        padding: 0 16px;
     }
 
     .hero-title,
@@ -624,7 +641,7 @@ header.header.white-header {
     .hero-description,
     .ajmf-hero-content>p {
         font-size: 15px;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     .ajmf-hero-photo-area {
@@ -659,7 +676,7 @@ header.header.white-header {
 
 @media (max-width: 768px) {
     .ajmf-hero {
-        padding: 40px 0 60px 0;
+        padding: 24px 0 32px 0;
         height: auto !important;
         min-height: auto !important;
         background: #fffaf5 !important;
