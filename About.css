@@ -274,11 +274,11 @@ header.header.white-header {
     position: relative;
     width: 100%;
     background: linear-gradient(108deg, #061325 0%, #0b1f3b 45%, #132d54 70%, #873e15 92%, #aa4914 100%);
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    min-height: 440px;
+    min-height: 420px;
     color: #ffffff;
 }
 
@@ -312,7 +312,7 @@ header.header.white-header {
     max-width: 620px;
     width: auto;
     background: transparent;
-    padding: 25px 0 10px 0;
+    padding: 15px 0 5px 0;
     margin-top: 0;
     margin-left: 0;
     align-self: flex-start;
@@ -495,7 +495,7 @@ header.header.white-header {
     margin: 0 4px;
 }
 
-/* Right-Side Photo Area - Prominent Large Anish Portrait pushed further right */
+/* Right-Side Photo Area - Prominent Large Anish Portrait pushed further right & shifted upward */
 .ajmf-hero-photo-area {
     position: relative;
     flex: 0 1 650px;
@@ -562,6 +562,7 @@ header.header.white-header {
     box-shadow: none !important;
     outline: none !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
+    transform: translateY(-70px);
 }
 
 /* Handwritten Script Accent Text */
