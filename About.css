@@ -274,17 +274,17 @@ header.header.white-header {
     position: relative;
     width: 100%;
     background: linear-gradient(108deg, #061325 0%, #0b1f3b 45%, #132d54 70%, #873e15 92%, #aa4914 100%);
-    padding: 10px 0 0 0;
+    padding: 0;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    min-height: 420px;
+    min-height: 400px;
     color: #ffffff;
 }
 
-/* Main Container Layout - Reduced 3.5% outer horizontal padding matching visual target */
+/* Main Container Layout - Matching reference composition */
 .ajmf-hero-container {
-    max-width: 1720px;
+    max-width: 1550px;
     width: 94%;
     height: auto;
     margin: 0 auto;
@@ -292,7 +292,7 @@ header.header.white-header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 16px;
+    gap: 0;
     position: relative;
     z-index: 5;
     overflow: visible;
@@ -302,51 +302,54 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper - Top-aligned with align-self: flex-start (45px distance from top edge maintained) */
+/* Left Content Wrapper - Compact block matching reference */
 .ajmf-hero-content {
     position: relative;
     left: auto;
     top: auto;
     transform: none;
-    flex: 0 0 580px;
-    max-width: 620px;
+    flex: 0 0 460px;
+    max-width: 480px;
     width: auto;
     background: transparent;
-    padding: 15px 0 5px 0;
+    padding: 30px 0 25px 0;
     margin-top: 0;
     margin-left: 0;
-    align-self: flex-start;
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 10;
 }
 
-/* Botanical Flower Asset Watermark (Soft muted light-gray/cream subtle silhouette) */
+/* Botanical Flower Asset Watermark (Soft muted silhouette positioned behind right side of text block) */
 .hero-flower-watermark {
     position: absolute;
-    left: 360px;
-    top: 30px;
-    height: 480px;
+    left: 330px;
+    bottom: -10px;
+    top: auto;
+    height: 380px;
     width: auto;
-    opacity: 0.22;
+    opacity: 0.25;
     filter: brightness(0) invert(0.55) sepia(0.15);
     pointer-events: none;
     z-index: 2;
     object-fit: contain;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset (Positioned clearly to the RIGHT side of botanical leaves, no overlap) */
+/* Handwritten Brighter Tomorrow Image Asset (Positioned to the RIGHT side of leaf illustration, between leaf & Anish torso) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 730px;
-    top: 110px;
-    width: 320px;
+    left: 440px;
+    bottom: 45px;
+    top: auto;
+    width: 210px;
     height: auto;
     z-index: 12;
     pointer-events: none;
     object-fit: contain;
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
+    transform: rotate(-6deg);
 }
 
 .ajmf-memory-label {
@@ -375,7 +378,7 @@ header.header.white-header {
 .hero-title,
 .ajmf-hero-content h1 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 66px;
+    font-size: 64px;
     line-height: 1.08;
     font-weight: 700;
     letter-spacing: -1px;
@@ -391,7 +394,7 @@ header.header.white-header {
 .hero-subtitle,
 .ajmf-hero-content h2 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 26px;
+    font-size: 25px;
     line-height: 1.35;
     font-style: italic;
     font-weight: 400;
@@ -403,13 +406,13 @@ header.header.white-header {
 .hero-description,
 .ajmf-hero-content>p {
     font-family: 'Poppins', sans-serif;
-    font-size: 15.5px;
+    font-size: 15px;
     line-height: 1.65;
     font-weight: 400;
     color: #cbd5e1 !important;
     margin: 0 0 18px 0;
     width: 100%;
-    max-width: 580px;
+    max-width: 460px;
 }
 
 .ajmf-hero-buttons {
@@ -495,11 +498,11 @@ header.header.white-header {
     margin: 0 4px;
 }
 
-/* Right-Side Photo Area - Prominent Large Anish Portrait pushed further right & shifted upward */
+/* Right-Side Photo Area - Prominent Large Anish Portrait matching reference */
 .ajmf-hero-photo-area {
     position: relative;
-    flex: 0 1 770px;
-    max-width: 790px;
+    flex: 1 1 auto;
+    max-width: 620px;
     width: 100%;
     height: auto;
     background: transparent !important;
@@ -508,9 +511,10 @@ header.header.white-header {
     box-shadow: none !important;
     outline: none !important;
     padding: 0;
-    margin-left: auto;
+    margin-left: 40px;
+    margin-right: -50px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     align-self: flex-end;
     z-index: 5;
@@ -519,7 +523,7 @@ header.header.white-header {
 .ajmf-photo-frame {
     position: relative;
     width: 100%;
-    max-width: 770px;
+    max-width: 600px;
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
@@ -530,7 +534,7 @@ header.header.white-header {
     z-index: 4;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .ajmf-hero-photo-area::before,
@@ -549,10 +553,10 @@ header.header.white-header {
     position: relative;
     z-index: 3;
     width: 100%;
-    height: 760px;
-    max-height: 780px;
+    height: 480px;
+    max-height: 500px;
     object-fit: contain;
-    object-position: bottom right;
+    object-position: bottom center;
     border-radius: 0;
     display: block;
     margin-bottom: 0;
@@ -562,7 +566,7 @@ header.header.white-header {
     box-shadow: none !important;
     outline: none !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
-    transform: translate(115px, -170px);
+    transform: none;
 }
 
 /* Handwritten Script Accent Text */
