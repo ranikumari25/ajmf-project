@@ -336,12 +336,12 @@ header.header.white-header {
     object-fit: contain;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset (Positioned to the RIGHT side of left hero content, prominent & larger size) */
+/* Handwritten Brighter Tomorrow Image Asset (Positioned clearly to the RIGHT side of botanical leaves, no overlap) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 615px;
+    left: 730px;
     top: 110px;
-    width: 330px;
+    width: 320px;
     height: auto;
     z-index: 12;
     pointer-events: none;
@@ -562,7 +562,7 @@ header.header.white-header {
     box-shadow: none !important;
     outline: none !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
-    transform: translate(85px, -170px);
+    transform: translate(115px, -170px);
 }
 
 /* Handwritten Script Accent Text */
