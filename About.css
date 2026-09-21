@@ -302,7 +302,7 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper - Reduced top margin so hero text starts much closer to the top edge */
+/* Left Content Wrapper - Top-aligned with align-self: flex-start (45px distance from top edge) */
 .ajmf-hero-content {
     position: relative;
     left: auto;
@@ -312,9 +312,10 @@ header.header.white-header {
     max-width: 480px;
     width: auto;
     background: transparent;
-    padding: 0 0 5px 0;
-    margin-top: -45px;
+    padding: 25px 0 10px 0;
+    margin-top: 0;
     margin-left: 0;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
