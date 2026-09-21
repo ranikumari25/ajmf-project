@@ -503,6 +503,10 @@ header.header.white-header {
     width: 100%;
     height: auto;
     background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
     padding: 0;
     margin-left: auto;
     display: flex;
@@ -517,6 +521,10 @@ header.header.white-header {
     width: 100%;
     max-width: 540px;
     background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
     padding: 0;
     border-radius: 0;
     z-index: 4;
@@ -525,20 +533,12 @@ header.header.white-header {
     justify-content: flex-end;
 }
 
-/* Soft Radial Spotlight Glow behind Anish Portrait - Concentrated around upper body & portrait area */
-.ajmf-photo-frame::before {
-    content: "";
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120%;
-    height: 110%;
-    background: radial-gradient(ellipse at 50% 40%, rgba(212, 110, 50, 0.45) 0%, rgba(160, 75, 28, 0.25) 45%, rgba(6, 19, 37, 0) 75%);
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
-    filter: blur(25px);
+.ajmf-hero-photo-area::before,
+.ajmf-hero-photo-area::after,
+.ajmf-photo-frame::before,
+.ajmf-photo-frame::after {
+    display: none !important;
+    content: none !important;
 }
 
 .hero-portrait-spotlight-img {
@@ -557,6 +557,10 @@ header.header.white-header {
     display: block;
     margin-bottom: 0;
     background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
 }
 
@@ -787,6 +791,10 @@ header.header.white-header {
         max-width: 400px !important;
         height: auto !important;
         background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
         padding: 0 !important;
         margin-left: 0 !important;
         display: flex !important;
@@ -798,15 +806,25 @@ header.header.white-header {
     .ajmf-photo-frame {
         width: 100% !important;
         max-width: 360px !important;
-        padding: 10px !important;
-        border-radius: 20px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+        border-radius: 0 !important;
     }
 
     .ajmf-hero-photo {
         height: 320px !important;
         object-fit: cover !important;
         object-position: top center !important;
-        border-radius: 14px !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
     }
 
     /* Dedicated Card Column - Positioned Safely Below Photo Frame */
