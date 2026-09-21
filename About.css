@@ -2252,308 +2252,386 @@ body::before {
 }
 
 /* =========================================================
-   HIS VALUES - DECORATIVE LEAF BRANCHES
-   Leaves on BOTH sides of the branch
+   HIS VALUES, OUR GUIDING LIGHT & PARTNERSHIP SECTION (REFERENCE IMAGE 5)
    ========================================================= */
 
-.ajmf-custom-wrapper>.ajmf-section-container:first-child {
-    position: relative;
-    overflow: visible;
-}
-
-
-/* ================= LEFT BRANCH ================= */
-
-.ajmf-custom-wrapper>.ajmf-section-container:first-child::before {
-    content: "";
-    position: absolute;
-
-    left: calc(50% - 900px);
-    top: 50%;
-    transform: translateY(-40%);
-
-    width: 220px;
-    height: 320px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    pointer-events: none;
-    z-index: 2;
-
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 320'%3E%3Cpath d='M20 300 C45 250 55 210 85 165 C115 120 150 80 200 25' fill='none' stroke='%23f3cabb' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M55 225 C35 210 25 190 38 174 C58 178 68 201 55 225Z' fill='%23f7ddd2'/%3E%3Cpath d='M63 218 C72 195 91 185 105 194 C101 214 82 226 63 218Z' fill='%23f7ddd2'/%3E%3Cpath d='M76 180 C55 164 50 143 65 130 C86 138 91 162 76 180Z' fill='%23f7ddd2'/%3E%3Cpath d='M86 174 C99 151 119 145 132 157 C126 177 105 185 86 174Z' fill='%23f7ddd2'/%3E%3Cpath d='M105 138 C86 122 82 102 98 90 C118 100 122 121 105 138Z' fill='%23f7ddd2'/%3E%3Cpath d='M116 132 C130 109 150 104 163 116 C157 136 137 143 116 132Z' fill='%23f7ddd2'/%3E%3Cpath d='M135 101 C119 85 117 66 132 54 C150 65 153 85 135 101Z' fill='%23f7ddd2'/%3E%3Cpath d='M147 94 C161 73 179 69 191 81 C185 99 166 105 147 94Z' fill='%23f7ddd2'/%3E%3Cpath d='M163 68 C151 52 154 36 168 28 C182 40 179 57 163 68Z' fill='%23f7ddd2'/%3E%3Ccircle cx='35' cy='260' r='5' fill='%23f3cabb'/%3E%3Ccircle cx='72' cy='205' r='4' fill='%23f3cabb'/%3E%3Ccircle cx='112' cy='145' r='5' fill='%23f3cabb'/%3E%3C/svg%3E");
-}
-
-
-/* ================= RIGHT BRANCH ================= */
-
-.ajmf-custom-wrapper>.ajmf-section-container:first-child::after {
-    content: "";
-    position: absolute;
-
-    right: calc(50% - 900px);
-    top: 50%;
-    transform: translateY(-40%) scaleX(-1);
-
-    width: 220px;
-    height: 320px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    pointer-events: none;
-    z-index: 2;
-
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 320'%3E%3Cpath d='M20 300 C45 250 55 210 85 165 C115 120 150 80 200 25' fill='none' stroke='%23f3cabb' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M55 225 C35 210 25 190 38 174 C58 178 68 201 55 225Z' fill='%23f7ddd2'/%3E%3Cpath d='M63 218 C72 195 91 185 105 194 C101 214 82 226 63 218Z' fill='%23f7ddd2'/%3E%3Cpath d='M76 180 C55 164 50 143 65 130 C86 138 91 162 76 180Z' fill='%23f7ddd2'/%3E%3Cpath d='M86 174 C99 151 119 145 132 157 C126 177 105 185 86 174Z' fill='%23f7ddd2'/%3E%3Cpath d='M105 138 C86 122 82 102 98 90 C118 100 122 121 105 138Z' fill='%23f7ddd2'/%3E%3Cpath d='M116 132 C130 109 150 104 163 116 C157 136 137 143 116 132Z' fill='%23f7ddd2'/%3E%3Cpath d='M135 101 C119 85 117 66 132 54 C150 65 153 85 135 101Z' fill='%23f7ddd2'/%3E%3Cpath d='M147 94 C161 73 179 69 191 81 C185 99 166 105 147 94Z' fill='%23f7ddd2'/%3E%3Cpath d='M163 68 C151 52 154 36 168 28 C182 40 179 57 163 68Z' fill='%23f7ddd2'/%3E%3Ccircle cx='35' cy='260' r='5' fill='%23f3cabb'/%3E%3Ccircle cx='72' cy='205' r='4' fill='%23f3cabb'/%3E%3Ccircle cx='112' cy='145' r='5' fill='%23f3cabb'/%3E%3C/svg%3E");
-}
-
-/* ===== EXTRA FALLING LEAVES ===== */
-
-.ajmf-custom-wrapper>.ajmf-section-container:first-child .ajmf-values-grid {
-    position: relative;
-    overflow: visible;
-}
-
-.ajmf-custom-wrapper>.ajmf-section-container:first-child .ajmf-values-grid::before {
-    content: "";
-    position: absolute;
-    width: 13px;
-    height: 22px;
-    background: #f7ddd2;
-    border-radius: 80% 20% 80% 20%;
-    left: -120px;
-    top: 25px;
-    transform: rotate(35deg);
-    opacity: 0.85;
-    z-index: 5;
-    pointer-events: none;
-
-    box-shadow:
-        35px 75px 0 #f3cabb,
-        -25px 145px 0 #f7ddd2,
-        50px 205px 0 #f3cabb;
-}
-
-.ajmf-custom-wrapper>.ajmf-section-container:first-child .ajmf-values-grid::after {
-    content: "";
-    position: absolute;
-    width: 13px;
-    height: 22px;
-    background: #f7ddd2;
-    border-radius: 20% 80% 20% 80%;
-    right: -120px;
-    top: 40px;
-    transform: rotate(-35deg);
-    opacity: 0.85;
-    z-index: 5;
-    pointer-events: none;
-
-    box-shadow:
-        -35px 70px 0 #f3cabb,
-        25px 140px 0 #f7ddd2,
-        -45px 200px 0 #f3cabb;
-}
-
-/* =========================================================
-   PARTNERSHIP SECTION - SCREENSHOT STYLE
-========================================================= */
-
-.our-partner-section {
+.ajmf-values-outer-wrapper {
     width: 100%;
-    padding: 55px 0;
-    background: #fff7ed;
+    padding: 60px 0 70px 0;
+    background: #fff9f3;
+    position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
-.partner-wrapper-row {
+.ajmf-values-container {
+    max-width: 1440px;
     width: 94%;
-    max-width: 1475px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
 
+/* Left Botanical Leaf Asset (12_values_botanical_left.png / ic_flower.png) */
+.values-botanical-left {
+    position: absolute;
+    left: -40px;
+    top: -20px;
+    height: 380px;
+    width: auto;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 1;
+    object-fit: contain;
+}
+
+/* Right Handwritten Script Asset (13_values_handwritten_right.png / script accent) */
+.values-script-right {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+    z-index: 1;
+    font-family: 'Caveat', 'Playfair Display', cursive, serif;
+    font-size: 26px;
+    font-style: italic;
+    color: #e28743;
+    opacity: 0.85;
+    line-height: 1.15;
+    text-align: right;
+    pointer-events: none;
+}
+
+.values-script-right .accent-stroke {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #ea580c;
+    margin-top: 4px;
+    margin-left: auto;
+}
+
+/* Values Header Group */
+.values-header-group {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.values-header-group .ajmf-section-tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #ea580c !important;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.values-header-group .ajmf-section-tagline::before,
+.values-header-group .ajmf-section-tagline::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 1.5px;
+    background: #ea580c;
+    opacity: 0.6;
+}
+
+.values-header-group .ajmf-section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #0b2d5c !important;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.ajmf-title-divider {
+    width: 36px;
+    height: 2.5px;
+    background-color: #ea580c;
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* 4 Equal-Sized White Values Cards Grid */
+.ajmf-values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.ajmf-value-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 32px 24px 30px 24px;
+    box-shadow: 0 10px 30px rgba(11, 45, 92, 0.04);
+    border: 1px solid #f2e7d7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.ajmf-value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(11, 45, 92, 0.1);
+}
+
+.ajmf-icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #fdeee2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.ajmf-icon-circle i {
+    font-size: 20px;
+    color: #ea580c;
+}
+
+.ajmf-card-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #0b2d5c !important;
+    margin: 0 0 8px 0;
+}
+
+.ajmf-card-divider {
+    width: 28px;
+    height: 2px;
+    background: #ea580c;
+    margin: 0 auto 14px auto;
+    border-radius: 2px;
+}
+
+.ajmf-card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #64748b !important;
+    margin: 0;
+}
+
+/* ================= PARTNERSHIP ROW (MATCHING REFERENCE IMAGE 5) ================= */
+.our-partner-wrapper {
+    max-width: 1440px;
+    width: 94%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.partner-row-container {
     display: flex;
     align-items: stretch;
     gap: 22px;
 }
 
-
-/* ================= LEFT DARK CARD ================= */
-
-.partner-green-panel {
-    width: 44%;
-    min-height: 285px;
-
-    padding: 30px;
-    box-sizing: border-box;
-
-    background: #071b35;
-    border-radius: 16px;
-
+/* LEFT DARK NAVY PANEL (14_partner_photo_panel.png style) */
+.partner-left-panel {
+    flex: 0 0 44%;
+    max-width: 44%;
+    background: #061325;
+    background-image: linear-gradient(135deg, rgba(6, 19, 37, 0.95) 0%, rgba(11, 31, 59, 0.92) 100%),
+        url('images-photo/partners1.jpeg');
+    background-size: cover;
+    background-position: center right;
+    border-radius: 20px;
+    padding: 38px 36px 36px 36px;
+    box-shadow: 0 12px 35px rgba(6, 19, 37, 0.2);
     position: relative;
-    z-index: 2;
-
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    overflow: hidden;
-}
-
-
-/* soft image-like decorative effect */
-
-.partner-green-panel::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-
-    right: -80px;
-    top: -20px;
-
-    background: radial-gradient(circle,
-            rgba(255, 255, 255, 0.12),
-            transparent 65%);
-
-    pointer-events: none;
-}
-
-
-/* OUR PARTNER */
-
-.our-partner-section .partner-tag {
-    color: #f57c00 !important;
-    font-size: 13px !important;
-    font-weight: 700 !important;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-
-/* HEADING */
-
-.our-partner-section .partner-title {
-    color: #ffffff !important;
-    font-size: 30px !important;
-    line-height: 1.15 !important;
-    margin: 0 0 12px 0 !important;
-    font-weight: 700 !important;
-}
-
-
-/* DESCRIPTION */
-
-.our-partner-section .partner-desc {
-    color: #e7edf5 !important;
-    font-size: 13px !important;
-    line-height: 1.5 !important;
-    max-width: 480px;
-    margin: 0 0 18px 0 !important;
-}
-
-
-/* NAVGURUKUL */
-
-.our-partner-section .nav-text {
-    color: #f57c00;
-    font-weight: 600;
-}
-
-.our-partner-section .gurukul-text {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-
-/* BUTTON */
-
-.our-partner-section .btn-partner-learn {
-    width: fit-content;
-
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-
-    padding: 10px 18px;
-
-    background: #f57c00;
-    color: #ffffff !important;
-
-    border-radius: 25px;
-    text-decoration: none;
-
-    font-size: 12px !important;
-    font-weight: 600 !important;
-
-    transition: 0.3s ease;
-}
-
-.our-partner-section .btn-partner-learn:hover {
-    background: #e66f00;
-    transform: translateY(-2px);
-}
-
-
-/* ================= RIGHT CREAM AREA ================= */
-
-.partner-cream-area {
-    width: 56%;
-
-    min-height: 285px;
-
-    background: #fff4e8;
-    border-radius: 16px;
-
-    display: flex;
-    align-items: center;
-
-    padding: 18px;
     box-sizing: border-box;
 }
 
-
-/* WHITE CARD */
-
-.partner-overlapping-card {
-    width: 100%;
-    min-height: 215px;
-
-    background: #ffffff;
-
-    border-radius: 14px;
-
-    display: flex;
-    align-items: stretch;
-
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
-
-    overflow: hidden;
+.partner-left-panel .partner-tag {
+    font-family: 'Poppins', sans-serif;
+    color: #ea580c !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
 }
 
+.partner-left-panel .partner-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #ffffff !important;
+    font-size: 32px !important;
+    line-height: 1.18 !important;
+    margin: 0 0 14px 0 !important;
+    font-weight: 700 !important;
+}
 
-/* ================= LOGOS ================= */
+.partner-left-panel .partner-title .highlight-orange {
+    color: #ea580c !important;
+}
 
-.partner-logos-group {
-    width: 25%;
+.partner-left-panel .partner-desc {
+    font-family: 'Poppins', sans-serif;
+    color: #cbd5e1 !important;
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+    margin: 0 0 22px 0 !important;
+    max-width: 440px;
+}
 
+.partner-left-panel .btn-partner-learn {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: #ea580c;
+    color: #ffffff !important;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 6px 18px rgba(234, 88, 12, 0.35);
+    transition: all 0.3s ease;
+}
+
+.partner-left-panel .btn-partner-learn:hover {
+    background: #c2410c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(234, 88, 12, 0.45);
+}
+
+/* Script Overlay Accent inside Left Panel */
+.partner-script-accent {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    font-family: 'Caveat', 'Playfair Display', cursive, serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff;
+    line-height: 1.1;
+    opacity: 0.85;
+    text-align: right;
+    pointer-events: none;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.partner-script-accent .accent-stroke {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #ea580c;
+    margin-top: 4px;
+    margin-left: auto;
+}
+
+/* RIGHT WHITE PANEL (15_partner_logo_panel.png style) */
+.partner-right-panel {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px 24px;
+    box-shadow: 0 10px 30px rgba(11, 45, 92, 0.04);
+    border: 1px solid #f2e7d7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.partner-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 14px;
+    box-sizing: border-box;
+}
+
+.partner-logos-block {
+    justify-content: center;
+}
+
+.partner-logos-pair {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    gap: 8px;
-
-    padding: 15px;
-
-    box-sizing: border-box;
+    gap: 12px;
+    margin-bottom: 14px;
 }
 
-
 .partner-logo-img {
-    width: 55px !important;
-    height: 55px !important;
-
+    height: 48px;
+    width: auto;
     object-fit: contain;
+}
+
+.partner-logo-img.navgurukul-img {
+    height: 42px;
+}
+
+.partner-times {
+    color: #94a3b8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.partner-divider {
+    width: 1px;
+    height: 120px;
+    background: #ebdccb;
+    flex-shrink: 0;
+}
+
+.partner-icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fdeee2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.partner-icon-circle i {
+    font-size: 18px;
+    color: #ea580c;
+}
+
+.partner-block-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #0b2d5c !important;
+    margin: 0 0 6px 0;
+    line-height: 1.25;
+}
+
+.partner-block-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: #64748b !important;
+    margin: 0;
 }
 
 

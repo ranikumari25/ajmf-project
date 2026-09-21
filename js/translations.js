@@ -307,6 +307,11 @@ const translations = {
         "gallery_card2_desc": "Kindness that brought people together.",
         "gallery_card3_title": "Driven By Professional Excellence",
         "gallery_card3_desc": "Turning passion into opportunities.",
+        "our_partner_title": "Our Partner",
+        "our_partner_desc": "Working together for a brighter tomorrow.",
+        "partner_benefit_1_desc": "Building practical skills for real opportunities.",
+        "partner_benefit_2_desc": "Hands-on learning for future careers.",
+        "partner_benefit_3_desc": "Creating pathways to meaningful growth.",
 
         "vision_banner_text": "His vision continues to inspire future generations every day.",
         "support_mission": "Support The Mission",
