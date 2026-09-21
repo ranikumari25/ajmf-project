@@ -308,8 +308,8 @@ header.header.white-header {
     left: auto;
     top: auto;
     transform: none;
-    flex: 0 0 460px;
-    max-width: 480px;
+    flex: 0 0 440px;
+    max-width: 460px;
     width: auto;
     background: transparent;
     padding: 0 0 20px 0;
@@ -324,7 +324,7 @@ header.header.white-header {
 /* Botanical Flower Asset Watermark (Leaf asset coming from deep bottom edge) */
 .hero-flower-watermark {
     position: absolute;
-    left: 260px;
+    left: 240px;
     bottom: -130px;
     height: 480px;
     width: auto;
@@ -339,9 +339,9 @@ header.header.white-header {
 /* Handwritten Brighter Tomorrow Image Asset (Right side of flower stem) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 410px;
+    left: 390px;
     bottom: 80px;
-    width: 175px;
+    width: 170px;
     height: auto;
     z-index: 12;
     pointer-events: none;
@@ -495,17 +495,18 @@ header.header.white-header {
     margin: 0 4px;
 }
 
-/* Center Photo Area - Prominent Large Anish Portrait */
+/* Right-Center Photo Area - Prominent Large Anish Portrait on Right Side */
 .ajmf-hero-photo-area {
     position: relative;
-    flex: 1;
+    flex: 0 1 520px;
     max-width: 540px;
     width: 100%;
     height: auto;
     background: transparent;
     padding: 0;
+    margin-left: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
     align-self: flex-end;
     z-index: 5;
@@ -521,15 +522,15 @@ header.header.white-header {
     z-index: 4;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .ajmf-hero-photo {
     width: 100%;
-    height: 520px;
-    max-height: 540px;
+    height: 530px;
+    max-height: 550px;
     object-fit: contain;
-    object-position: bottom center;
+    object-position: bottom right;
     border-radius: 0;
     display: block;
     margin-bottom: 0;
@@ -552,15 +553,16 @@ header.header.white-header {
     line-height: 1.1;
 }
 
-/* Right Dedicated Card Column (No overlapping on Anish portrait) */
+/* Far-Right Dedicated Card Column (Close to image, zero overlap) */
 .ajmf-hero-card-col {
-    flex: 0 0 230px;
-    max-width: 240px;
+    flex: 0 0 220px;
+    max-width: 230px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     align-self: center;
     margin-bottom: 25px;
+    margin-left: 0;
     z-index: 10;
 }
 
@@ -763,6 +765,7 @@ header.header.white-header {
         height: auto !important;
         background: transparent !important;
         padding: 0 !important;
+        margin-left: 0 !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
