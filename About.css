@@ -2956,23 +2956,24 @@ header nav .dropdown-menu li a:active,
     padding: 38px 36px 42px 36px;
     box-shadow: 0 10px 30px rgba(11, 45, 92, 0.04);
     position: relative;
+    overflow: hidden;
     z-index: 2;
     box-sizing: border-box;
 }
 
-/* Botanical Leaf Asset - Left Side */
+/* Botanical Leaf Asset - Positioned Inside Card on Left Edge */
 .stats-leaf-asset-left {
     position: absolute;
-    left: 10px;
+    left: -20px;
     top: 50%;
     transform: translateY(-50%);
-    height: 320px;
+    height: 270px;
     width: auto;
     pointer-events: none;
     z-index: 1;
     object-fit: contain;
     filter: none;
-    opacity: 1;
+    opacity: 0.18;
 }
 
 /* Handwritten Script Asset - Right Side */
