@@ -282,17 +282,18 @@ header.header.white-header {
     color: #ffffff;
 }
 
-/* Main Container Layout - Balanced max-width container with efficient left/right padding */
+/* Main Container Layout - Reduced left padding for page content */
 .ajmf-hero-container {
     max-width: 1440px;
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 0 24px;
+    padding-left: 15px;
+    padding-right: 24px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 16px;
+    gap: 12px;
     position: relative;
     z-index: 5;
     overflow: visible;
@@ -302,7 +303,7 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper - Exact position & alignment without excessive left blank space */
+/* Left Content Wrapper - Left-aligned text content */
 .ajmf-hero-content {
     position: relative;
     left: auto;
@@ -495,7 +496,7 @@ header.header.white-header {
     margin: 0 4px;
 }
 
-/* Right-Side Photo Area - Prominent Large Anish Portrait pushed further right */
+/* Right-Side Photo Area - Prominent Large Anish Portrait shifted further right close to floating card */
 .ajmf-hero-photo-area {
     position: relative;
     flex: 0 1 540px;
@@ -505,6 +506,7 @@ header.header.white-header {
     background: transparent;
     padding: 0;
     margin-left: auto;
+    margin-right: -10px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -553,10 +555,10 @@ header.header.white-header {
     line-height: 1.1;
 }
 
-/* Far-Right Dedicated Card Column (Small gap from portrait, zero overlap) */
+/* Far-Right Dedicated Card Column (Right next to portrait, zero overlap) */
 .ajmf-hero-card-col {
-    flex: 0 0 220px;
-    max-width: 230px;
+    flex: 0 0 215px;
+    max-width: 220px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
