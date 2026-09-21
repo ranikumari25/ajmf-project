@@ -302,7 +302,7 @@ header.header.white-header {
     display: none;
 }
 
-/* Left Content Wrapper - Exact position & alignment without excessive left blank space */
+/* Left Content Wrapper - Balanced vertical spacing above and below text content */
 .ajmf-hero-content {
     position: relative;
     left: auto;
@@ -312,8 +312,8 @@ header.header.white-header {
     max-width: 480px;
     width: auto;
     background: transparent;
-    padding: 0 0 25px 0;
-    margin-top: 0;
+    padding: 0 0 5px 0;
+    margin-top: -15px;
     margin-left: 0;
     display: flex;
     flex-direction: column;
@@ -321,7 +321,7 @@ header.header.white-header {
     z-index: 10;
 }
 
-/* Botanical Flower Asset Watermark (Leaf asset coming from deep bottom edge) */
+/* Botanical Flower Asset Watermark (Leaf illustration kept in exact position) */
 .hero-flower-watermark {
     position: absolute;
     left: 280px;
@@ -336,12 +336,12 @@ header.header.white-header {
     margin-bottom: -15px;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset (Right side of flower stem) */
+/* Handwritten Brighter Tomorrow Image Asset (Positioned to the RIGHT side of the leaf illustration, larger & prominent) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 430px;
-    bottom: 90px;
-    width: 180px;
+    left: 480px;
+    bottom: 120px;
+    width: 210px;
     height: auto;
     z-index: 12;
     pointer-events: none;
