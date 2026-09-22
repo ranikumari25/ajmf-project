@@ -285,10 +285,10 @@ header.header.white-header {
 /* Main Container Layout - Matching reference composition */
 .ajmf-hero-container {
     max-width: 1550px;
-    width: 94%;
+    width: 96%;
     height: auto;
     margin: 0 auto;
-    padding: 0 3.5%;
+    padding: 0 25px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -325,7 +325,7 @@ header.header.white-header {
 /* Botanical Flower Asset Watermark (Soft muted silhouette positioned behind right side of text block, lower start point) */
 .hero-flower-watermark {
     position: absolute;
-    left: 330px;
+    left: 300px;
     bottom: -55px;
     top: auto;
     height: 380px;
@@ -337,11 +337,11 @@ header.header.white-header {
     object-fit: contain;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset (Positioned to the RIGHT side of leaf illustration, between leaf & Anish torso) */
+/* Handwritten Brighter Tomorrow Image Asset (Positioned near right side of button row, above/near botanical leaf) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 440px;
-    bottom: 45px;
+    left: 360px;
+    bottom: 50px;
     top: auto;
     width: 210px;
     height: auto;
