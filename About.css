@@ -322,10 +322,10 @@ header.header.white-header {
     z-index: 10;
 }
 
-/* Botanical Flower Asset Watermark (Soft muted silhouette positioned behind right side of text block, lower start point) */
+/* Botanical Flower Asset Watermark (Moved further LEFT) */
 .hero-flower-watermark {
     position: absolute;
-    left: 330px;
+    left: 270px;
     bottom: -55px;
     top: auto;
     height: 380px;
@@ -337,10 +337,10 @@ header.header.white-header {
     object-fit: contain;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset (Positioned to the RIGHT side of leaf illustration, between leaf & Anish torso) */
+/* Handwritten Brighter Tomorrow Image Asset (Moved further RIGHT to sit clearly beside botanical leaves) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 440px;
+    left: 495px;
     bottom: 45px;
     top: auto;
     width: 210px;
