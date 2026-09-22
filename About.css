@@ -337,10 +337,10 @@ header.header.white-header {
     object-fit: contain;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset (Positioned clearly on the RIGHT side of botanical leaf) */
+/* Handwritten Brighter Tomorrow Image Asset (Shifted further RIGHT with clear gap from botanical leaf) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 475px;
+    left: 545px;
     bottom: 50px;
     top: auto;
     width: 210px;
