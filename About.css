@@ -322,11 +322,11 @@ header.header.white-header {
     z-index: 10;
 }
 
-/* Botanical Flower Asset Watermark (Moved much further DOWN starting from bottom area) */
+/* Botanical Flower Asset Watermark (Soft muted silhouette positioned behind right side of text block, lower start point) */
 .hero-flower-watermark {
     position: absolute;
-    left: 270px;
-    bottom: -110px;
+    left: 330px;
+    bottom: -55px;
     top: auto;
     height: 380px;
     width: auto;
@@ -337,10 +337,10 @@ header.header.white-header {
     object-fit: contain;
 }
 
-/* Handwritten Brighter Tomorrow Image Asset (Moved slightly further RIGHT) */
+/* Handwritten Brighter Tomorrow Image Asset (Positioned to the RIGHT side of leaf illustration, between leaf & Anish torso) */
 .hero-brighter-tomorrow-img {
     position: absolute;
-    left: 520px;
+    left: 440px;
     bottom: 45px;
     top: auto;
     width: 210px;
@@ -502,7 +502,7 @@ header.header.white-header {
 .ajmf-hero-photo-area {
     position: relative;
     flex: 1 1 auto;
-    max-width: 750px;
+    max-width: 620px;
     width: 100%;
     height: auto;
     background: transparent !important;
@@ -512,7 +512,7 @@ header.header.white-header {
     outline: none !important;
     padding: 0;
     margin-left: 40px;
-    margin-right: -140px;
+    margin-right: -105px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -523,7 +523,7 @@ header.header.white-header {
 .ajmf-photo-frame {
     position: relative;
     width: 100%;
-    max-width: 730px;
+    max-width: 600px;
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
@@ -553,8 +553,8 @@ header.header.white-header {
     position: relative;
     z-index: 3;
     width: 100%;
-    height: 680px;
-    max-height: 700px;
+    height: 480px;
+    max-height: 500px;
     object-fit: contain;
     object-position: bottom center;
     border-radius: 0;
@@ -566,7 +566,8 @@ header.header.white-header {
     box-shadow: none !important;
     outline: none !important;
     filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.4));
-    transform: translate(75px, -70px);
+    transform: scale(1.25) translateX(45px);
+    transform-origin: bottom center;
 }
 
 /* Handwritten Script Accent Text */
