@@ -420,3 +420,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+/* ==========================================================
+   FORCE HIGH RESOLUTION (1080P HD) YOUTUBE HERO BACKGROUND VIDEO
+   ========================================================== */
+(function loadYouTubeHeroAPI() {
+    const iframe = document.getElementById('heroYoutubeBg');
+    if (!iframe) return;
+
+    if (!window.YT) {
+        const tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        if (firstScriptTag && firstScriptTag.parentNode) {
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        }
+    }
+
+    const prevReady = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = function () {
+        if (typeof prevReady === 'function') prevReady();
+        new YT.Player('heroYoutubeBg', {
+            events: {
+                'onReady': function (event) {
+                    event.target.mute();
+                    if (typeof event.target.setPlaybackQuality === 'function') {
+                        event.target.setPlaybackQuality('hd1080');
+                    }
+                    event.target.playVideo();
+                },
+                'onStateChange': function (event) {
+                    if (event.data === YT.PlayerState.PLAYING) {
+                        if (typeof event.target.setPlaybackQuality === 'function') {
+                            event.target.setPlaybackQuality('hd1080');
+                        }
+                    }
+                }
+            }
+        });
+    };
+})();
