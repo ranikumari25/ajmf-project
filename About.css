@@ -1795,7 +1795,7 @@ header.header.white-header {
 }
 
 .card-2-bg {
-    background-image: url('images-photo/anish\'s_smile.jpeg');
+    background-image: url("images-photo/anish's_smile.jpeg");
     background-position: center 20%;
     background-size: cover;
 }
